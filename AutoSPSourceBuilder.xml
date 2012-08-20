@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--This file is used in conjunction with AutoSPSourceBuilder.ps1.
+    It will be updated regularly as new language packs, cumulative updates and service packs are released.
+    For updates to this file and the associated script, please visit http://autospsourcebuilder.codeplex.com-->
+<Products>
+    <Product Name="SP2010">
+        <Prerequisites>
+            <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 (x64)" Url="http://download.microsoft.com/download/C/9/F/C9F6B386-824B-4F9E-BD5D-F95BB254EC61/Redist/amd64/Microsoft%20Sync%20Framework/Synchronization.msi" />
+            <Prerequisite Name="Microsoft Chart Controls for the Microsoft .NET Framework 3.5" Url="http://download.microsoft.com/download/c/c/4/cc4dcac6-ea60-4868-a8e0-62a8510aa747/MSChart.exe" />
+            <Prerequisite Name="Microsoft .NET Framework 3.5 Service Pack 1" Url="http://download.microsoft.com/download/2/0/e/20e90413-712f-438c-988e-fdaa79a8ac3d/dotnetfx35.exe" />
+            <Prerequisite Name="Windows PowerShell 2.0" Url="http://download.microsoft.com/download/2/8/6/28686477-3242-4E96-9009-30B16BED89AF/Windows6.0-KB968930-x64.msu" />
+            <Prerequisite Name="Windows Identity Framework (Win2008 R2)" Url="http://download.microsoft.com/download/D/7/2/D72FD747-69B6-40B7-875B-C2B40A6B2BDD/Windows6.1-KB974405-x64.msu" />
+            <Prerequisite Name="WCF fix for Win2008 SP2" Url="http://download.microsoft.com/download/6/8/1/681F5144-4092-489B-87E4-63F05E95079C/Windows6.0-KB976394-x64.msu" />
+            <Prerequisite Name="WCF fix for Win2008 R2" Url="http://download.microsoft.com/download/E/C/7/EC785FAB-DA49-4417-ACC3-A76D26440FC2/Windows6.1-KB976462-v2-x64.msu" />
+            <Prerequisite Name="Windows Identity Framework (Win2008 SP2)" Url="http://download.microsoft.com/download/D/7/2/D72FD747-69B6-40B7-875B-C2B40A6B2BDD/Windows6.0-KB974405-x64.msu" />
+            <Prerequisite Name="SQL Server 2008 Native Client" Url="http://download.microsoft.com/download/3/5/5/35522a0d-9743-4b8c-a5b3-f10529178b8a/sqlncli.msi" />
+            <Prerequisite Name="Microsoft SQL Server 2008 Analysis Services ADOMD.NET" Url="http://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/SQLSERVER2008_ASADOMD10.msi" />
+            <Prerequisite Name="ADO.NET Data Services v1.5 CTP2 (Win2008 SP2)" Url="http://download.microsoft.com/download/1/7/1/171CCDD6-420D-4635-867E-6799E99AB93F/ADONETDataServices_v15_CTP2_RuntimeOnly.exe" />
+            <Prerequisite Name="IIS management cmdlets" Url="http://download.microsoft.com/download/B/8/6/B8617908-B777-4A86-A629-FFD1094990BD/iis7psprov_x64.msi" />
+            <Prerequisite Name="SQL 2008 R2 Reporting Services SharePoint 2010 Add-in" Url="http://download.microsoft.com/download/1/0/F/10F1C44B-6607-41ED-9E82-DF7003BFBC40/1033/x64/rsSharePoint.msi" />
+            <Prerequisite Name="Microsoft Server Speech Platform Runtime" Url="http://download.microsoft.com/download/8/D/F/8DFE3CE7-6424-4801-90C3-85879DE2B3DE/Platform/x64/SpeechPlatformRuntime.msi" />
+            <Prerequisite Name="Microsoft Server Speech Recognition Language - TELE(en-US)" Url="http://download.microsoft.com/download/E/0/3/E033A120-73D0-4629-8AED-A1D728CB6E34/SR/MSSpeech_SR_en-US_TELE.msi" />
+        </Prerequisites>
+        <ServicePacks>
+            <ServicePack Name="SP1" Build="14.0.6024.1000" Url="http://download.microsoft.com/download/9/7/3/9738F0E2-2151-435D-9665-CE0346EC3637/officeserver2010sp1-kb2460045-x64-fullfile-en-us.exe" />
+        </ServicePacks>
+        <CumulativeUpdates>
+            <CumulativeUpdate Name="December 2011" Build="14.0.6114.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2597014fullfilex64glb/14.0000.6114.5000/free/441699_intl_x64_zip.exe" ExpandedFile="office2010-kb2597014-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2012" Build="14.0.6117.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2597150fullfilex64glb/14.0000.6117.5002/free/445300_intl_x64_zip.exe" ExpandedFile="office2010-kb2597150-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2012" Build="14.0.6120.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2598151fullfilex64glb/14.0000.6120.5006/free/449357_intl_x64_zip.exe" ExpandedFile="office2010-kb2598151-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2012" Build="14.0.6123.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2598354fullfilex64glb/14.0000.6123.5002/free/450081_intl_x64_zip.exe" ExpandedFile="office2010-kb2598354-fullfile-x64-glb.exe" />
+        </CumulativeUpdates>
+        <LanguagePacks>
+            <LanguagePack Name="fr-fr" Url="http://download.microsoft.com/download/8/0/B/80B8DB8F-D863-4DD9-98E0-A3698510EF13/ServerLanguagePack.exe">
+                <ServicePacks>
+                    <ServicePack Name="SP1" Url="http://download.microsoft.com/download/9/3/1/93102373-D4FC-4ADA-8CF3-8DCA51A9F2F2/serverlanguagepack2010sp1-kb2460056-x64-fullfile-fr-fr.exe" />
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="da-dk" Url="http://download.microsoft.com/download/C/D/7/CD76DD3E-95E4-4504-93CF-F7CD6D8B7CF5/ServerLanguagePack.exe">
+                <ServicePacks>
+                    <ServicePack Name="SP1" Url="http://download.microsoft.com/download/3/E/E/3EE2A9A0-14D7-4E93-A1BB-360BED6948FD/serverlanguagepack2010sp1-kb2460056-x64-fullfile-da-dk.exe" />
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/7/3/8/738597D9-2817-46D7-8F70-7FBBEE73ABCF/ServerLanguagePack.exe">
+                <ServicePacks>
+                    <ServicePack Name="SP1" Url="http://download.microsoft.com/download/5/3/1/5313817C-ACCB-4DE4-9D06-9ED51249D93B/serverlanguagepack2010sp1-kb2460056-x64-fullfile-de-de.exe" />
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="es-es" Url="http://download.microsoft.com/download/0/D/5/0D547EA0-C094-4D06-BE15-F5111A1D4642/ServerLanguagePack.exe">
+                <ServicePacks>
+                    <ServicePack Name="SP1" Url="http://download.microsoft.com/download/1/4/3/143687D4-BB41-4FD9-8CD7-F204A5DF8140/serverlanguagepack2010sp1-kb2460056-x64-fullfile-es-es.exe" />
+                </ServicePacks>
+            </LanguagePack>
+        </LanguagePacks>
+    </Product>
+    <Product Name="OfficeWebApps2010">
+        <ServicePacks>
+            <ServicePack Name="SP1" Url="http://download.microsoft.com/download/3/F/E/3FE388C1-B4A2-4B5A-9397-A9702977EA80/wacserver2010sp1-kb2460073-x64-fullfile-en-us.exe" />
+        </ServicePacks>
+        <CumulativeUpdates>
+            <CumulativeUpdate Name="December 2011" Build="" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/webappskb2597083fullfilex64glb/14.0000.6114.5000/free/441687_ENU_x64_zip.exe" ExpandedFile="webapps-kb2597083-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2598022fullfilex64glb/14.0000.6117.5000/free/444700_intl_x64_zip.exe" ExpandedFile="webapps-kb2598022-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/excelwebappkb2598142fullfilex64glb/14.0000.6120.5000/free/447177_intl_x64_zip.exe" ExpandedFile="excelwebapp-kb2598142-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687273fullfilex64glb/14.0000.6123.5000/free/449877_intl_x64_zip.exe" ExpandedFile="webapps-kb2687273-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/officeserver2010kb2687305fullfilex64glb/14.0000.6123.5000/free/449893_intl_x64_zip.exe>" ExpandedFile="officeserver2010-kb2687305-fullfile-x64-glb" />
+        </CumulativeUpdates>
+    </Product>
+    <Product Name="SP2013">
+        <Prerequisites>
+            <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/D/0/F/D0F564A3-6734-470B-9772-AC38B3B6D8C2/dotNetFx45_Full_x86_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=225702" />
+            <Prerequisite Name="Windows Management Framework 3.0 (CTP2)" Url="http://download.microsoft.com/download/5/2/B/52B59966-3009-4F39-A99E-3732717BBE2A/Windows6.1-KB2506143-x64.msu" />
+            <Prerequisite Name="Microsoft SQL Server 2008 r2 Native Client" Url="http://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/sqlncli.msi" />
+            <Prerequisite Name="Windows Identity Foundation (KB974405)" Url="http://download.microsoft.com/download/D/7/2/D72FD747-69B6-40B7-875B-C2B40A6B2BDD/Windows6.1-KB974405-x64.msu" />
+            <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" />
+            <Prerequisite Name="Windows Server AppFabric" Url="http://download.microsoft.com/download/A/6/7/A678AB47-496B-4907-B3D4-0A2D280A13C0/WindowsServerAppFabricSetup_x64.exe" />
+            <Prerequisite Name="Windows Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/r2/MicrosoftIdentityExtensions-64.msi" />
+            <Prerequisite Name="Microsoft Information Protection and Control Client" Url="http://download.microsoft.com/download/9/1/D/91DA8796-BE1D-46AF-8489-663AB7811517/setup_msipc_x64.msi" />
+            <Prerequisite Name="Microsoft WCF Data Services 5.0" Url="http://download.microsoft.com/download/8/F/9/8F93DBBD-896B-4760-AC81-646F61363A6D/WcfDataServices.exe" />
+            <Prerequisite Name="CU Package 1 for Microsoft AppFabric 1.1 for Windows Server (KB2671763)" Url="http://download.microsoft.com/download/7/B/5/7B51D8D1-20FD-4BF0-87C7-4714F5A1C313/AppFabric1.1-RTM-KB2671763-x64-ENU.exe" />
+            <Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes" Url="http://hotfixv4.microsoft.com/Windows%207/Windows%20Server2008%20R2%20SP1/sp2/Fix402568/7600/free/447698_intl_x64_zip.exe" />
+            <Prerequisite Name="KB2554876 - The SharePoint parsing process crashes in Windows Server 2008 R2" Url="http://hotfixv4.microsoft.com/Windows%207/Windows%20Server2008%20R2%20SP1/sp2/Fix368051/7600/free/433385_intl_x64_zip.exe" />
+            <Prerequisite Name="KB2472264 - You cannot customize some TCP configurations by using the netsh command in Windows Server 2008 R2" Url="http://hotfixv4.microsoft.com/Windows%207/Windows%20Server2008%20R2%20SP1/sp2/Fix354400/7600/free/427087_intl_x64_zip.exe" />
+        </Prerequisites>
+        <ServicePacks>
+            <!--There are currently no Service Packs for SharePoint 2013-->
+        </ServicePacks>
+        <CumulativeUpdates>
+            <!--There are currently no Cumulative Updates for SharePoint 2013-->
+        </CumulativeUpdates>
+        <LanguagePacks>
+            <LanguagePack Name="es-es" Url="http://download.microsoft.com/download/A/D/C/ADC08A72-68CF-49E1-AFD1-256D487A070C/serverlanguagepack_es-es_x64.exe">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="ja-jp" Url="http://download.microsoft.com/download/4/9/C/49C55B16-27F7-4B50-9C47-40822D381BE6/serverlanguagepack_ja-jp_x64.exe">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+        </LanguagePacks>
+    </Product>
+</Products>

@@ -29,6 +29,7 @@
             <CumulativeUpdate Name="February 2012" Build="14.0.6117.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2597150fullfilex64glb/14.0000.6117.5002/free/445300_intl_x64_zip.exe" ExpandedFile="office2010-kb2597150-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2012" Build="14.0.6120.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2598151fullfilex64glb/14.0000.6120.5006/free/449357_intl_x64_zip.exe" ExpandedFile="office2010-kb2598151-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2012" Build="14.0.6123.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2598354fullfilex64glb/14.0000.6123.5002/free/450081_intl_x64_zip.exe" ExpandedFile="office2010-kb2598354-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2012" Build="14.0.6126.5001" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2687353fullfilex64glb/14.0000.6126.5001/free/452630_intl_x64_zip.exe" ExpandedFile="office2010-kb2687353-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="fr-fr" Url="http://download.microsoft.com/download/8/0/B/80B8DB8F-D863-4DD9-98E0-A3698510EF13/ServerLanguagePack.exe">
@@ -99,5 +100,18 @@
                 </ServicePacks>
             </LanguagePack>
         </LanguagePacks>
+    </Product>
+    <Product Name="OfficeWebApps2013">
+        <Prerequisites>
+            <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/D/0/F/D0F564A3-6734-470B-9772-AC38B3B6D8C2/dotNetFx45_Full_x86_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=225702" />
+            <Prerequisite Name="Windows Management Framework 3.0 (CTP2)" Url="http://download.microsoft.com/download/5/2/B/52B59966-3009-4F39-A99E-3732717BBE2A/Windows6.1-KB2506143-x64.msu" />
+            <Prerequisite Name="KB2592525 - An application that uses DirectWrite does not start in a restricted security context in Windows 7 or in Windows Server 2008 R2" Url="http://download.microsoft.com/download/5/E/A/5EA7504B-E2B3-43A1-8279-892E007D50A0/Windows6.1-KB2592525-x64.msu" />
+        </Prerequisites>
+        <ServicePacks>
+            <!--There are currently no Service Packs for Office Web Apps 2013-->
+        </ServicePacks>
+        <CumulativeUpdates>
+            <!--There are currently no Cumulative Updates for Office Web Apps 2013-->
+        </CumulativeUpdates>
     </Product>
 </Products>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--This file is used in conjunction with AutoSPSourceBuilder.ps1.
-    It will be updated regularly as new language packs, cumulative updates and service packs are released.
+    It will be updated regularly as new language packs, cumulative updates and service packs are released, so there is normally no need for you to edit it.
     For updates to this file and the associated script, please visit http://autospsourcebuilder.codeplex.com-->
 <Products>
     <Product Name="SP2010">
@@ -29,7 +29,7 @@
             <CumulativeUpdate Name="February 2012" Build="14.0.6117.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2597150fullfilex64glb/14.0000.6117.5002/free/445300_intl_x64_zip.exe" ExpandedFile="office2010-kb2597150-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2012" Build="14.0.6120.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2598151fullfilex64glb/14.0000.6120.5006/free/449357_intl_x64_zip.exe" ExpandedFile="office2010-kb2598151-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2012" Build="14.0.6123.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2598354fullfilex64glb/14.0000.6123.5002/free/450081_intl_x64_zip.exe" ExpandedFile="office2010-kb2598354-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="August 2012" Build="14.0.6126.5001" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2687353fullfilex64glb/14.0000.6126.5001/free/452630_intl_x64_zip.exe" ExpandedFile="office2010-kb2687353-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2012" Build="14.0.6126.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2687353fullfilex64glb/14.0000.6126.5001/free/452630_intl_x64_zip.exe" ExpandedFile="office2010-kb2687353-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="fr-fr" Url="http://download.microsoft.com/download/8/0/B/80B8DB8F-D863-4DD9-98E0-A3698510EF13/ServerLanguagePack.exe">

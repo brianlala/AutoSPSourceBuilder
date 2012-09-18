@@ -63,7 +63,7 @@
             <CumulativeUpdate Name="February 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2598022fullfilex64glb/14.0000.6117.5000/free/444700_intl_x64_zip.exe" ExpandedFile="webapps-kb2598022-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/excelwebappkb2598142fullfilex64glb/14.0000.6120.5000/free/447177_intl_x64_zip.exe" ExpandedFile="excelwebapp-kb2598142-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687273fullfilex64glb/14.0000.6123.5000/free/449877_intl_x64_zip.exe" ExpandedFile="webapps-kb2687273-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/officeserver2010kb2687305fullfilex64glb/14.0000.6123.5000/free/449893_intl_x64_zip.exe>" ExpandedFile="officeserver2010-kb2687305-fullfile-x64-glb" />
+            <!--<CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/officeserver2010kb2687305fullfilex64glb/14.0000.6123.5000/free/449893_intl_x64_zip.exe>" ExpandedFile="officeserver2010-kb2687305-fullfile-x64-glb" />-->
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">

@@ -16,7 +16,7 @@
             <Prerequisite Name="SQL Server 2008 Native Client" Url="http://download.microsoft.com/download/3/5/5/35522a0d-9743-4b8c-a5b3-f10529178b8a/sqlncli.msi" />
             <Prerequisite Name="Microsoft SQL Server 2008 Analysis Services ADOMD.NET" Url="http://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/SQLSERVER2008_ASADOMD10.msi" />
             <Prerequisite Name="ADO.NET Data Services v1.5 CTP2 (Win2008 SP2)" Url="http://download.microsoft.com/download/1/7/1/171CCDD6-420D-4635-867E-6799E99AB93F/ADONETDataServices_v15_CTP2_RuntimeOnly.exe" />
-            <Prerequisite Name="IIS management cmdlets" Url="http://download.microsoft.com/download/B/8/6/B8617908-B777-4A86-A629-FFD1094990BD/iis7psprov_x64.msi" />
+            <Prerequisite Name="IIS Management Cmdlets" Url="http://download.microsoft.com/download/B/8/6/B8617908-B777-4A86-A629-FFD1094990BD/iis7psprov_x64.msi" />
             <Prerequisite Name="SQL 2008 R2 Reporting Services SharePoint 2010 Add-in" Url="http://download.microsoft.com/download/1/0/F/10F1C44B-6607-41ED-9E82-DF7003BFBC40/1033/x64/rsSharePoint.msi" />
             <Prerequisite Name="Microsoft Server Speech Platform Runtime" Url="http://download.microsoft.com/download/8/D/F/8DFE3CE7-6424-4801-90C3-85879DE2B3DE/Platform/x64/SpeechPlatformRuntime.msi" />
             <Prerequisite Name="Microsoft Server Speech Recognition Language - TELE(en-US)" Url="http://download.microsoft.com/download/E/0/3/E033A120-73D0-4629-8AED-A1D728CB6E34/SR/MSSpeech_SR_en-US_TELE.msi" />
@@ -249,11 +249,13 @@
     </Product>
     <Product Name="SP2013">
         <Prerequisites>
-            <!-- These URLs came from http://blogs.technet.com/b/wbaer/archive/2012/11/12/sharepoint-server-2013-software-prerequisites.aspx -->
+            <!-- Most of these URLs came from http://blogs.technet.com/b/wbaer/archive/2012/11/12/sharepoint-server-2013-software-prerequisites.aspx -->
+            <Prerequisite Name="Microsoft .NET Framework 4.5 (Full File)" Url="http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe" Permalink="http://go.microsoft.com/?linkid=9816306" />
             <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/B/A/4/BA4A7E71-2906-4B2D-A0E1-80CF16844F5F/dotNetFx45_Full_setup.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=250950" />
             <Prerequisite Name="Windows Management Framework 3.0" Url="http://download.microsoft.com/download/E/7/6/E76850B8-DA6E-4FF5-8CCE-A24FC513FD16/Windows6.1-KB2506143-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=233187" />
-            <Prerequisite Name="Microsoft SQL Server 2008 R2 SP1 Native Client" Url="http://download.microsoft.com/download/B/6/3/B63CAC7F-44BB-41FA-92A3-CBF71360F022/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=188401" />
-            <!-- <Prerequisite Name="Microsoft SQL Server 2008 R2 Native Client" Url="http://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=228086" /> -->
+            <!-- <Prerequisite Name="Microsoft SQL Server 2008 R2 Native Client" Url="http://download.microsoft.com/download/B/6/3/B63CAC7F-44BB-41FA-92A3-CBF71360F022/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=188401" /> -->
+            <Prerequisite Name="Microsoft SQL Server 2008 R2 SP1 Native Client" Url="http://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=228086" />
+            <Prerequisite Name="Microsoft SQL Server 2008 R2 SP2 Native Client" Url="http://download.microsoft.com/download/F/7/B/F7B7A246-6B35-40E9-8509-72D2F8D63B80/sqlncli_amd64.msi" Permalink="http://www.microsoft.com/en-us/download/details.aspx?id=30440" />
             <Prerequisite Name="Windows Identity Foundation (KB974405)" Url="http://download.microsoft.com/download/D/7/2/D72FD747-69B6-40B7-875B-C2B40A6B2BDD/Windows6.1-KB974405-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=226830" />
             <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=224449" />
             <Prerequisite Name="Windows Server AppFabric" Url="http://download.microsoft.com/download/A/6/7/A678AB47-496B-4907-B3D4-0A2D280A13C0/WindowsServerAppFabricSetup_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=235496" />
@@ -336,6 +338,7 @@
     </Product>
     <Product Name="OfficeWebApps2013">
         <Prerequisites>
+            <Prerequisite Name="Microsoft .NET Framework 4.5 (Full File)" Url="http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe" Permalink="http://go.microsoft.com/?linkid=9816306" />
             <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/B/A/4/BA4A7E71-2906-4B2D-A0E1-80CF16844F5F/dotNetFx45_Full_setup.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=250950" />
             <Prerequisite Name="Windows Management Framework 3.0" Url="http://download.microsoft.com/download/E/7/6/E76850B8-DA6E-4FF5-8CCE-A24FC513FD16/Windows6.1-KB2506143-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=233187" />
             <Prerequisite Name="KB2592525 - An application that uses DirectWrite does not start in a restricted security context in Windows 7 or in Windows Server 2008 R2" Url="http://download.microsoft.com/download/5/E/A/5EA7504B-E2B3-43A1-8279-892E007D50A0/Windows6.1-KB2592525-x64.msu" />

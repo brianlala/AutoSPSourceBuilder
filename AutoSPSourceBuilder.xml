@@ -245,12 +245,11 @@
             <CumulativeUpdate Name="April 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/excelwebappkb2598142fullfilex64glb/14.0000.6120.5000/free/447177_intl_x64_zip.exe" ExpandedFile="excelwebapp-kb2598142-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687273fullfilex64glb/14.0000.6123.5000/free/449877_intl_x64_zip.exe" ExpandedFile="webapps-kb2687273-fullfile-x64-glb.exe" />
             <!--<CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/officeserver2010kb2687305fullfilex64glb/14.0000.6123.5000/free/449893_intl_x64_zip.exe>" ExpandedFile="officeserver2010-kb2687305-fullfile-x64-glb" />-->
-            <CumulativeUpdate Name="October 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687562fullfilex64glb/14.0000.6129.5000/free/455132_intl_x64_zip.exe" ExpandedFile="webapps-kb2687562-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">
         <Prerequisites>
-            <!-- Most of these URLs came from http://blogs.technet.com/b/wbaer/archive/2012/11/12/sharepoint-server-2013-software-prerequisites.aspx and also http://www.toddklindt.com/blog/Lists/Posts/Post.aspx?ID=349 -->
+            <!-- Most of these URLs came from http://blogs.technet.com/b/wbaer/archive/2012/11/12/sharepoint-server-2013-software-prerequisites.aspx -->
             <Prerequisite Name="Microsoft .NET Framework 4.5 (Full File)" Url="http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe" Permalink="http://go.microsoft.com/?linkid=9816306" />
             <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/B/A/4/BA4A7E71-2906-4B2D-A0E1-80CF16844F5F/dotNetFx45_Full_setup.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=250950" />
             <Prerequisite Name="Windows Management Framework 3.0" Url="http://download.microsoft.com/download/E/7/6/E76850B8-DA6E-4FF5-8CCE-A24FC513FD16/Windows6.1-KB2506143-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=233187" />
@@ -267,9 +266,6 @@
             <Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes" Url="http://hotfixv4.microsoft.com/Windows%207/Windows%20Server2008%20R2%20SP1/sp2/Fix402568/7600/free/447698_intl_x64_zip.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=258851" />
             <Prerequisite Name="KB2554876 - The SharePoint parsing process crashes in Windows Server 2008 R2" Url="http://hotfixv4.microsoft.com/Windows%207/Windows%20Server2008%20R2%20SP1/sp2/Fix368051/7600/free/433385_intl_x64_zip.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=258850" />
             <Prerequisite Name="KB2472264 - You cannot customize some TCP configurations by using the netsh command in Windows Server 2008 R2" Url="http://hotfixv4.microsoft.com/Windows%207/Windows%20Server2008%20R2%20SP1/sp2/Fix354400/7600/free/427087_intl_x64_zip.exe" />
-            <Prerequisite Name="KB2567680 - MS11-063: Vulnerability in Windows Client/Server Run-time subsystem could allow elevation of privilege: August 9, 2011" Url="http://download.microsoft.com/download/C/D/A/CDAF5DD8-3B9A-4F8D-A48F-BEFE53C5B249/Windows6.1-KB2567680-x64.msu" Permalink="http://www.microsoft.com/en-us/download/details.aspx?id=27039" />
-            <Prerequisite Name="KB2759112 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in... Windows Server 2008 R2, Windows Server 2008 R2 SP1..." Url="http://download.microsoft.com/download/5/6/3/5631B753-A009-48AF-826C-2D2C29B94172/NDP45-KB2759112-x64.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=267536" />
-            <Prerequisite Name="KB2765317 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in Windows 8, Windows RT, and Windows Server 2012" Url="http://download.microsoft.com/download/0/2/E/02E9E569-5462-48EB-AF57-8DCCF852E6F4/Windows8-RT-KB2765317-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=268725" />
         </Prerequisites>
         <ServicePacks>
             <!--There are currently no Service Packs for SharePoint 2013-->

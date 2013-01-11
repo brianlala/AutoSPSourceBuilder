@@ -31,6 +31,7 @@
             <CumulativeUpdate Name="June 2012" Build="14.0.6123.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2598354fullfilex64glb/14.0000.6123.5002/free/450081_intl_x64_zip.exe" ExpandedFile="office2010-kb2598354-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2012" Build="14.0.6126.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2687353fullfilex64glb/14.0000.6126.5001/free/452630_intl_x64_zip.exe" ExpandedFile="office2010-kb2687353-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2012" Build="14.0.6129.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2687564fullfilex64glb/14.0000.6129.5003/free/455598_intl_x64_zip.exe" ExpandedFile="office2010-kb2687564-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2012" Build="14.0.6131.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2596955fullfilex64glb/14.0.6131.5003/free/456830_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2596955-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -50,7 +51,7 @@
             </LanguagePack>
             <LanguagePack Name="cs-cz" Url="http://download.microsoft.com/download/7/B/6/7B67B8FC-81C6-446A-9681-897C0888D592/ServerLanguagePack.exe">
                 <ServicePacks>
-                    <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP1" Url="http://download.microsoft.com/download/8/0/1/80196546-CC61-4276-A082-25F2D7DA17AE/spflanguagepack2010sp1-kb2460059-x64-fullfile-cs-cz.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="da-dk" Url="http://download.microsoft.com/download/C/D/7/CD76DD3E-95E4-4504-93CF-F7CD6D8B7CF5/ServerLanguagePack.exe">
@@ -240,12 +241,13 @@
             <ServicePack Name="SP1" Url="http://download.microsoft.com/download/3/F/E/3FE388C1-B4A2-4B5A-9397-A9702977EA80/wacserver2010sp1-kb2460073-x64-fullfile-en-us.exe" />
         </ServicePacks>
         <CumulativeUpdates>
-            <CumulativeUpdate Name="December 2011" Build="" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/webappskb2597083fullfilex64glb/14.0000.6114.5000/free/441687_ENU_x64_zip.exe" ExpandedFile="webapps-kb2597083-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="February 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2598022fullfilex64glb/14.0000.6117.5000/free/444700_intl_x64_zip.exe" ExpandedFile="webapps-kb2598022-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="April 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/excelwebappkb2598142fullfilex64glb/14.0000.6120.5000/free/447177_intl_x64_zip.exe" ExpandedFile="excelwebapp-kb2598142-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687273fullfilex64glb/14.0000.6123.5000/free/449877_intl_x64_zip.exe" ExpandedFile="webapps-kb2687273-fullfile-x64-glb.exe" />
-            <!--<CumulativeUpdate Name="June 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/officeserver2010kb2687305fullfilex64glb/14.0000.6123.5000/free/449893_intl_x64_zip.exe>" ExpandedFile="officeserver2010-kb2687305-fullfile-x64-glb" />-->
-            <CumulativeUpdate Name="October 2012" Build="" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687562fullfilex64glb/14.0000.6129.5000/free/455132_intl_x64_zip.exe" ExpandedFile="webapps-kb2687562-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2011" Build="14.0000.6114.5000" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/webappskb2597083fullfilex64glb/14.0000.6114.5000/free/441687_ENU_x64_zip.exe" ExpandedFile="webapps-kb2597083-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2012" Build="14.0000.6117.5000" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2598022fullfilex64glb/14.0000.6117.5000/free/444700_intl_x64_zip.exe" ExpandedFile="webapps-kb2598022-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2012" Build="14.0000.6120.5000" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/excelwebappkb2598142fullfilex64glb/14.0000.6120.5000/free/447177_intl_x64_zip.exe" ExpandedFile="excelwebapp-kb2598142-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2012" Build="14.0000.6123.5000" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687273fullfilex64glb/14.0000.6123.5000/free/449877_intl_x64_zip.exe" ExpandedFile="webapps-kb2687273-fullfile-x64-glb.exe" />
+            <!--<CumulativeUpdate Name="June 2012" Build="14.0000.6123.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/officeserver2010kb2687305fullfilex64glb/14.0000.6123.5000/free/449893_intl_x64_zip.exe>" ExpandedFile="officeserver2010-kb2687305-fullfile-x64-glb.exe" />-->
+            <CumulativeUpdate Name="October 2012" Build="14.0000.6129.5000" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687562fullfilex64glb/14.0000.6129.5000/free/455132_intl_x64_zip.exe" ExpandedFile="webapps-kb2687562-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2012" Build="14.0.6131.5001" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/wacwfexlwacwfe2010kb2726912fullfilex64gl/14.0.6131.5001/free/456360_intl_x64_zip.exe" ExpandedFile="wacwfexlwacwfe2010-kb2726912-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">
@@ -275,7 +277,7 @@
             <!--There are currently no Service Packs for SharePoint 2013-->
         </ServicePacks>
         <CumulativeUpdates>
-            <!--There are currently no Cumulative Updates for SharePoint 2013-->
+            <CumulativeUpdate Name="December 2012" Build="15.0.4433.1506" Url="http://download.microsoft.com/download/3/D/7/3D70095D-58F8-4E8B-8179-053EB23BA490/sts2013-kb2752058-fullfile-x64-glb.exe" ExpandedFile="sts2013-kb2752058-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="">

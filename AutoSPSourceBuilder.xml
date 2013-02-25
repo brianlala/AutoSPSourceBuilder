@@ -32,6 +32,7 @@
             <CumulativeUpdate Name="August 2012" Build="14.0.6126.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2687353fullfilex64glb/14.0000.6126.5001/free/452630_intl_x64_zip.exe" ExpandedFile="office2010-kb2687353-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2012" Build="14.0.6129.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2687564fullfilex64glb/14.0000.6129.5003/free/455598_intl_x64_zip.exe" ExpandedFile="office2010-kb2687564-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2012" Build="14.0.6131.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2596955fullfilex64glb/14.0.6131.5003/free/456830_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2596955-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2013" Build="14.0.6134.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2767793fullfilex64glb/14.0.6134.5000/free/459176_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2767793-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -353,7 +354,7 @@
             <!--There are currently no Service Packs for Office Web Apps 2013-->
         </ServicePacks>
         <CumulativeUpdates>
-            <!--There are currently no Cumulative Updates for Office Web Apps 2013-->
+            <CumulativeUpdate Name="February 2013" Build="15.0.4481.1000" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2760486fullfilex64glb/15.0.4481.1000/free/459195_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2760486-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">

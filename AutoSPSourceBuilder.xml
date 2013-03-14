@@ -254,7 +254,7 @@
     <Product Name="SP2013">
         <Prerequisites>
             <!-- Most of these URLs came from http://blogs.technet.com/b/wbaer/archive/2012/11/12/sharepoint-server-2013-software-prerequisites.aspx and also http://www.toddklindt.com/blog/Lists/Posts/Post.aspx?ID=349 -->
-            <Prerequisite Name="Microsoft .NET Framework 4.5 (Full File)" Url="http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe" Permalink="http://go.microsoft.com/?linkid=9816306" />
+            <Prerequisite Name="Microsoft .NET Framework 4.5 (Full File)" Url="http://download.microsoft.com/download/b/a/4/ba4a7e71-2906-4b2d-a0e1-80cf16844f5f/dotnetfx45_full_x86_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=225702" />
             <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/B/A/4/BA4A7E71-2906-4B2D-A0E1-80CF16844F5F/dotNetFx45_Full_setup.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=250950" />
             <Prerequisite Name="Windows Management Framework 3.0" Url="http://download.microsoft.com/download/E/7/6/E76850B8-DA6E-4FF5-8CCE-A24FC513FD16/Windows6.1-KB2506143-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=233187" />
             <!-- <Prerequisite Name="Microsoft SQL Server 2008 R2 Native Client" Url="http://download.microsoft.com/download/B/6/3/B63CAC7F-44BB-41FA-92A3-CBF71360F022/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=188401" /> -->
@@ -279,6 +279,7 @@
         </ServicePacks>
         <CumulativeUpdates>
             <CumulativeUpdate Name="December 2012" Build="15.0.4433.1506" Url="http://download.microsoft.com/download/3/D/7/3D70095D-58F8-4E8B-8179-053EB23BA490/sts2013-kb2752058-fullfile-x64-glb.exe" ExpandedFile="sts2013-kb2752058-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2013" Build="15.0.4481.1005" Url="http://download.microsoft.com/download/5/1/C/51CA768E-C79E-41BA-91D4-7F7D929B0BFE/ubersrvsp2013-kb2767999-fullfile-x64-glb.exe" ExpandedFile="ubersrvsp2013-kb2767999-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="">
@@ -291,7 +292,7 @@
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="es-es" Url="http://download.microsoft.com/download/A/D/C/ADC08A72-68CF-49E1-AFD1-256D487A070C/serverlanguagepack_es-es_x64.exe">
+            <LanguagePack Name="es-es" Url="">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
@@ -306,7 +307,7 @@
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="ja-jp" Url="http://download.microsoft.com/download/4/9/C/49C55B16-27F7-4B50-9C47-40822D381BE6/serverlanguagepack_ja-jp_x64.ex">
+            <LanguagePack Name="ja-jp" Url="">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
@@ -355,6 +356,7 @@
         </ServicePacks>
         <CumulativeUpdates>
             <CumulativeUpdate Name="February 2013" Build="15.0.4481.1000" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2760486fullfilex64glb/15.0.4481.1000/free/459195_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2760486-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2013" Build="" Url="http://download.microsoft.com/download/4/6/2/46250927-D971-4443-89FE-131D4B123FFC/wacserver2013-kb2760445-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb2760445-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">

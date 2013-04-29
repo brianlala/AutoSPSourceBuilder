@@ -281,6 +281,7 @@
         <CumulativeUpdates>
             <CumulativeUpdate Name="December 2012" Build="15.0.4433.1506" Url="http://download.microsoft.com/download/3/D/7/3D70095D-58F8-4E8B-8179-053EB23BA490/sts2013-kb2752058-fullfile-x64-glb.exe" ExpandedFile="sts2013-kb2752058-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2013" Build="15.0.4481.1005" Url="http://download.microsoft.com/download/5/1/C/51CA768E-C79E-41BA-91D4-7F7D929B0BFE/ubersrvsp2013-kb2767999-fullfile-x64-glb.exe" ExpandedFile="ubersrvsp2013-kb2767999-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2013" Build="15.0.4505.1005" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2726992fullfilex64glb/15.0.4505.1005/free/462705_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2726992-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="">

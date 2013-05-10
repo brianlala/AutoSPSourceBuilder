@@ -181,7 +181,7 @@
                     <ServicePack Name="SP1" Url="" />
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="ro" Url="http://download.microsoft.com/download/8/8/0/880A4C0E-25CA-43B5-84EF-A788FA462AB2/ServerLanguagePack.exe">
+            <LanguagePack Name="ro-ro" Url="http://download.microsoft.com/download/8/8/0/880A4C0E-25CA-43B5-84EF-A788FA462AB2/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
                 </ServicePacks>
@@ -196,7 +196,7 @@
                     <ServicePack Name="SP1" Url="" />
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="sl" Url="http://download.microsoft.com/download/0/3/5/035FD96F-04B1-4461-B8E9-6492654C8549/ServerLanguagePack.exe">
+            <LanguagePack Name="sl-si" Url="http://download.microsoft.com/download/0/3/5/035FD96F-04B1-4461-B8E9-6492654C8549/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
                 </ServicePacks>
@@ -221,7 +221,7 @@
                     <ServicePack Name="SP1" Url="" />
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="uk" Url="http://download.microsoft.com/download/5/9/D/59DEC052-7E29-4F40-A27A-9AA94A8AAA1A/ServerLanguagePack.exe">
+            <LanguagePack Name="uk-ua" Url="http://download.microsoft.com/download/5/9/D/59DEC052-7E29-4F40-A27A-9AA94A8AAA1A/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
                 </ServicePacks>
@@ -284,62 +284,212 @@
             <CumulativeUpdate Name="April 2013" Build="15.0.4505.1005" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2726992fullfilex64glb/15.0.4505.1005/free/462705_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2726992-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
-            <LanguagePack Name="de-de" Url="">
+            <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="en-us" Url="">
+            <LanguagePack Name="pt-pt" Url="http://download.microsoft.com/download/7/8/F/78FB2A94-17CE-4868-B0FE-13F040C0C20D/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="es-es" Url="">
+            <LanguagePack Name="nb-no" Url="http://download.microsoft.com/download/6/0/8/608C2644-CDC5-454C-8847-6AE361F6E8A8/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="fr-fr" Url="">
+            <LanguagePack Name="hu-hu" Url="http://download.microsoft.com/download/6/5/A/65AD2772-9E94-4759-B1EF-AC005D02D46E/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="it-it" Url="">
+            <LanguagePack Name="hr-hr" Url="http://download.microsoft.com/download/F/D/E/FDE4C692-CE78-4DD8-ADBF-125496AC8ECF/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="ja-jp" Url="">
+            <LanguagePack Name="ar" Url="http://download.microsoft.com/download/3/2/C/32C97E8A-E1C4-4BC3-B4B5-1E85B2E0A571/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="ko-kr" Url="">
+            <LanguagePack Name="bg-bg" Url="http://download.microsoft.com/download/B/0/E/B0EBA8B9-B02F-431C-82B6-0D1200810F42/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="nl-nl" Url="">
+            <LanguagePack Name="ro-ro" Url="http://download.microsoft.com/download/3/8/7/387A62B6-1337-4184-8170-D0FE4022FB95/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="pt-br" Url="">
+            <LanguagePack Name="sl-si" Url="http://download.microsoft.com/download/7/B/2/7B28E9EA-0D5A-46E4-A28F-D58922F3A671/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="ru-ru" Url="">
+            <LanguagePack Name="sr" Url="http://download.microsoft.com/download/3/1/E/31E75F38-5E93-481A-8A8C-05B109659976/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="zh-cn" Url="">
+            <LanguagePack Name="uk-ua" Url="http://download.microsoft.com/download/F/B/1/FB18DA8C-D51A-4FE6-8F8C-1D68B1C384D1/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="zh-tw" Url="">
+            <LanguagePack Name="hi" Url="http://download.microsoft.com/download/7/F/B/7FBA6A64-6A6F-4EAB-A771-2E8D183AFE98/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="th-th" Url="http://download.microsoft.com/download/E/6/B/E6B24EFB-CC50-4726-82DE-D5C0F46E4C3B/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="kk" Url="http://download.microsoft.com/download/0/D/1/0D1FD1A6-9104-4E57-A531-DDD26EE82E8F/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="ca" Url="http://download.microsoft.com/download/0/B/C/0BC8EDC2-688F-421C-A4E3-3D04DD15216A/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="el-gr" Url="http://download.microsoft.com/download/E/8/E/E8E0345B-C797-4E31-A659-AA3DAA042A0A/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="et-ee" Url="http://download.microsoft.com/download/3/B/8/3B805199-1A30-4EC5-AD58-959CC81F0812/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="eu" Url="http://download.microsoft.com/download/F/B/B/FBB5B83D-652C-4638-A79B-F8B7BD50234E/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="lt-lt" Url="http://download.microsoft.com/download/B/3/4/B34407F5-E988-4382-BA22-F3D1C323FE61/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="lv-lv" Url="http://download.microsoft.com/download/A/5/6/A56DA37D-556A-4F56-B7D6-784C46AE76BD/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="gl" Url="http://download.microsoft.com/download/4/8/6/48640DFA-15B6-4097-934A-D035BC2B84D3/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="he" Url="http://download.microsoft.com/download/8/A/2/8A2A50AB-71C3-41DC-9FD1-D43D299F774F/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="fi-fi" Url="http://download.microsoft.com/download/3/A/3/3A373EA3-0B2C-4263-A43E-1D7CE24203B8/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="sv-se" Url="http://download.microsoft.com/download/8/3/A/83A25F77-218F-4D81-8AC5-8B3C99ACBF11/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="sk-sk" Url="http://download.microsoft.com/download/A/F/B/AFB28486-72D4-4B84-8081-C7C10ECC63B9/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="tr-tr" Url="http://download.microsoft.com/download/7/A/1/7A1CF175-DE29-4A6F-97C3-C1A617678938/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="cs-cz" Url="http://download.microsoft.com/download/F/4/E/F4E58045-B977-466D-85EA-0CB058029E8B/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="da-dk" Url="http://download.microsoft.com/download/F/5/A/F5A6AE89-7340-48F0-B822-C9E3BA41A5DE/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/3/E/5/3E5E17EE-F614-4336-9587-26236A7B0B2A/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="en-us" Url="http://download.microsoft.com/download/7/E/C/7EC7E73F-F172-453F-877C-640AF0B82D26/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="es-es" Url="http://download.microsoft.com/download/2/F/A/2FA13301-EE74-489A-B1E2-83B50CE0E642/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="fr-fr" Url="http://download.microsoft.com/download/7/C/6/7C6EC6E3-E077-4A7F-9981-BE047700E88C/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="it-it" Url="http://download.microsoft.com/download/A/6/8/A6809C29-566D-4BFF-BC35-AE5CC520B89D/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="ja-jp" Url="http://download.microsoft.com/download/2/C/4/2C413366-D5E5-434A-A344-9AD96701D244/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="ms" Url="http://download.microsoft.com/download/2/8/C/28C4B3AA-F698-46BA-80FD-A1AA43C881C1/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="ko-kr" Url="http://download.microsoft.com/download/0/0/D/00D60DFF-E7D2-4EA2-BF6B-0FD591ED7AC3/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="nl-nl" Url="http://download.microsoft.com/download/8/D/2/8D20657B-3B41-45AB-9B0D-4FAFA51BB8BC/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="pt-br" Url="http://download.microsoft.com/download/A/E/F/AEF379B3-CDFE-4CFD-8855-DE860FB44D6E/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="ru-ru" Url="http://download.microsoft.com/download/D/C/D/DCD385DA-5FDB-4EB2-8988-D0439EE2E473/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="vi-vn" Url="http://download.microsoft.com/download/A/E/0/AE0D2AD5-45C4-46B5-B586-9EDB643293C1/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="zh-cn" Url="http://download.microsoft.com/download/4/7/7/477BFB7A-C9C2-4B1D-8408-D70D4AF52DBA/serverlanguagepack.img">
+                <ServicePacks>
+                    <!--There are currently no Service Packs for SharePoint 2013 language packs-->
+                </ServicePacks>
+            </LanguagePack>
+            <LanguagePack Name="zh-tw" Url="http://download.microsoft.com/download/F/2/D/F2D67EBD-C9AE-482E-83FA-C4669F058073/serverlanguagepack.img">
                 <ServicePacks>
                     <!--There are currently no Service Packs for SharePoint 2013 language packs-->
                 </ServicePacks>

@@ -23,6 +23,7 @@
         </Prerequisites>
         <ServicePacks>
             <ServicePack Name="SP1" Build="14.0.6024.1000" Url="http://download.microsoft.com/download/9/7/3/9738F0E2-2151-435D-9665-CE0346EC3637/officeserver2010sp1-kb2460045-x64-fullfile-en-us.exe" />
+            <ServicePack Name="SP2" Build="14.0.7015.1000" Url="http://download.microsoft.com/download/9/B/F/9BFC169F-BEFD-4344-B1EC-24CCF34570C0/oserversp2010-kb2687453-fullfile-x64-en-us.exe" />
         </ServicePacks>
         <CumulativeUpdates>
             <CumulativeUpdate Name="December 2011" Build="14.0.6114.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/office2010kb2597014fullfilex64glb/14.0000.6114.5000/free/441699_intl_x64_zip.exe" ExpandedFile="office2010-kb2597014-fullfile-x64-glb.exe" />
@@ -34,207 +35,249 @@
             <CumulativeUpdate Name="December 2012" Build="14.0.6131.5003" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2596955fullfilex64glb/14.0.6131.5003/free/456830_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2596955-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="February 2013" Build="14.0.6134.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2767793fullfilex64glb/14.0.6134.5000/free/459176_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2767793-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2013" Build="14.0.6137.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2775353fullfilex64glb/14.0.6137.5000/free/462150_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2775353-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="June 2013" Build="14.0.7102.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2817363fullfilex64glb/14.0.7102.5000/free/464692_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2817363-fullfile-x64-glb.exe" />
+            <!--<CumulativeUpdate Name="June 2013" Build="14.0.7102.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2817363fullfilex64glb/14.0.7102.5000/free/464692_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2817363-fullfile-x64-glb.exe" />-->
+            <CumulativeUpdate Name="June 2013" Build="14.0.7102.5004" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2817527fullfilex64glb/14.0.7102.5004/free/465798_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2817527-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2013" Build="14.0.7106.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2817570fullfilex64glb/14.0.7106.5000/free/466827_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2817570-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="bg" Url="http://download.microsoft.com/download/9/1/C/91CFFA84-3A8C-4B2B-BD1F-AF77073C832D/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="ca" Url="http://download.microsoft.com/download/0/7/B/07B06744-859A-40CF-84BB-4C8113F9FB75/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="cs-cz" Url="http://download.microsoft.com/download/7/B/6/7B67B8FC-81C6-446A-9681-897C0888D592/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/8/0/1/80196546-CC61-4276-A082-25F2D7DA17AE/spflanguagepack2010sp1-kb2460059-x64-fullfile-cs-cz.exe" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/E/D/4/ED44DA7B-F494-4D73-A763-6F3474CA04CE/oslpksp2010-kb2687462-fullfile-x64-cs-cz.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="da-dk" Url="http://download.microsoft.com/download/C/D/7/CD76DD3E-95E4-4504-93CF-F7CD6D8B7CF5/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/3/E/E/3EE2A9A0-14D7-4E93-A1BB-360BED6948FD/serverlanguagepack2010sp1-kb2460056-x64-fullfile-da-dk.exe" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/7/3/8/738597D9-2817-46D7-8F70-7FBBEE73ABCF/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/5/3/1/5313817C-ACCB-4DE4-9D06-9ED51249D93B/serverlanguagepack2010sp1-kb2460056-x64-fullfile-de-de.exe" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/9/6/7/967CE0A7-DBFD-432C-9161-1FA120D1652E/oslpksp2010-kb2687462-fullfile-x64-de-de.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="el" Url="http://download.microsoft.com/download/5/F/0/5F03CC80-D10A-43D5-AA1D-E84C6C077E2C/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="en" Url="http://download.microsoft.com/download/1/7/F/17F6BB3B-662F-4555-9760-DB44D3B3F6A4/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="es-es" Url="http://download.microsoft.com/download/0/D/5/0D547EA0-C094-4D06-BE15-F5111A1D4642/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/1/4/3/143687D4-BB41-4FD9-8CD7-F204A5DF8140/serverlanguagepack2010sp1-kb2460056-x64-fullfile-es-es.exe" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/E/9/7/E9734A6E-FDE9-4259-BB68-F3B109E97A4A/oslpksp2010-kb2687462-fullfile-x64-es-es.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="et" Url="http://download.microsoft.com/download/4/4/6/446DDD4D-DC67-4663-B7C5-CCFA79316703/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="eu" Url="http://download.microsoft.com/download/0/D/B/0DB91457-43D2-4BCC-A7AF-8559C3E3E1CF/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/3/0/8/3088D41E-BB9B-46B0-BDFD-4F1E2454ED5D/serverlanguagepack2010sp1-kb2460056-x64-fullfile-eu-es.exe" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="fi-fi" Url="http://download.microsoft.com/download/1/1/6/116C7960-6DFB-468E-BBCB-15E8706783F3/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="fr-fr" Url="http://download.microsoft.com/download/8/0/B/80B8DB8F-D863-4DD9-98E0-A3698510EF13/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/9/3/1/93102373-D4FC-4ADA-8CF3-8DCA51A9F2F2/serverlanguagepack2010sp1-kb2460056-x64-fullfile-fr-fr.exe" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/6/8/0/6801EC62-2A70-4164-83C4-76242B9AD75C/oslpksp2010-kb2687462-fullfile-x64-fr-fr.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="gl" Url="http://download.microsoft.com/download/D/0/F/D0FE84CB-B591-4D5E-9406-CBA2476D4A94/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="he" Url="http://download.microsoft.com/download/D/1/0/D10A5EC6-6C6B-4C4B-9FF1-A662B397E850/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="hi" Url="http://download.microsoft.com/download/7/9/5/795A36AA-D414-4D67-A84D-6815D2FB5A88/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="hr-hr" Url="http://download.microsoft.com/download/B/6/B/B6B2439C-EB60-4361-AB83-71CB6B890ADE/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/9/0/A/90A3E5D2-E817-4ABA-B886-E2887D5253CD/serverlanguagepack2010sp1-kb2460056-x64-fullfile-hr-hr.exe" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="hu-hu" Url="http://download.microsoft.com/download/F/D/B/FDB09771-D7FF-4123-A66D-2F0A58687E90/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="it-it" Url="http://download.microsoft.com/download/A/8/4/A843E91B-7AEE-47B4-A144-49F525DEBD9D/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/4/8/C/48C56815-CB78-488A-82F0-5D1522DE27A3/serverlanguagepack2010sp1-kb2460056-x64-fullfile-it-it.exe" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/2/6/4/264786E6-93EF-401F-95A3-7922081D4C11/oslpksp2010-kb2687462-fullfile-x64-it-it.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="ja-jp" Url="http://download.microsoft.com/download/9/4/D/94DDA001-2059-4F02-8810-8662C1098F8D/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="kk" Url="http://download.microsoft.com/download/F/C/D/FCD57DCD-2BFB-4638-94A3-583AD688CB4D/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="ko-kr" Url="http://download.microsoft.com/download/B/9/D/B9DB186A-8126-49A9-AFA8-C6D63F12AA40/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="lt" Url="http://download.microsoft.com/download/E/E/E/EEE0F34F-94D1-4202-B0D0-213C93E20536/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="lv" Url="http://download.microsoft.com/download/3/E/D/3EDD2930-7BEC-4490-B917-7A49CBA7C5E5/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="nb-no" Url="http://download.microsoft.com/download/D/5/9/D596FB84-8ED3-44A4-88D1-FDD4798E226A/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/1/D/A/1DA0F6B3-855C-4972-AF35-71642E23596D/serverlanguagepack2010sp1-kb2460056-x64-fullfile-nb-no.exe" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/B/1/6/B169C3DD-EF9A-45E8-B537-9C151B8C3F82/oslpksp2010-kb2687462-fullfile-x64-nb-no.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="nl-nl" Url="http://download.microsoft.com/download/D/8/C/D8C7212B-6DFE-439D-B7D6-EFB35D66041E/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/4/D/2/4D2E1F35-22BF-49A0-852D-DEB8EAAD9AAE/serverlanguagepack2010sp1-kb2460056-x64-fullfile-nl-nl.exe"/>
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/2/1/1/211C380B-A30E-4AF5-972B-00F3887415DA/oslpksp2010-kb2687462-fullfile-x64-nl-nl.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/B/F/1/BF1F45F4-44A8-453D-882D-03BAC1F6A0B5/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="pt-br" Url="http://download.microsoft.com/download/6/9/F/69F59A23-C22F-4B22-9D72-790E84F6070E/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="pt-pt" Url="http://download.microsoft.com/download/0/E/F/0EF8F011-89A6-43AE-BD52-090918750432/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="ro-ro" Url="http://download.microsoft.com/download/8/8/0/880A4C0E-25CA-43B5-84EF-A788FA462AB2/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="ru-ru" Url="http://download.microsoft.com/download/2/6/D/26D339A3-0304-4B66-8062-98BDC0E0D413/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/0/F/3/0F3E4FF8-DDAF-417D-BB90-B75AC8EA0B2B/oslpksp2010-kb2687462-fullfile-x64-ru-ru.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="sk-sk" Url="http://download.microsoft.com/download/0/E/7/0E7A8426-7797-48F9-B396-AA96ADD1D899/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="sl-si" Url="http://download.microsoft.com/download/0/3/5/035FD96F-04B1-4461-B8E9-6492654C8549/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="sr" Url="http://download.microsoft.com/download/F/D/2/FD2B1BA8-9841-46F9-A4A7-B97294554249/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="sv-se" Url="http://download.microsoft.com/download/5/2/9/5296BCC9-F0ED-461F-9E22-8A816DEC75C8/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="http://download.microsoft.com/download/B/2/F/B2F6C120-226E-4E16-8327-3D90BE5B4688/oslpksp2010-kb2687462-fullfile-x64-sv-se.exe" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="th" Url="http://download.microsoft.com/download/E/E/A/EEA4DC8B-4979-44C5-AF5E-E326DA04661C/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="tr-tr" Url="http://download.microsoft.com/download/2/1/1/2118AF0D-A747-486E-A5BB-6B35E5588247/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="uk-ua" Url="http://download.microsoft.com/download/5/9/D/59DEC052-7E29-4F40-A27A-9AA94A8AAA1A/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="zh-cn" Url="http://download.microsoft.com/download/D/F/C/DFCC90EE-FC55-4EC3-8618-7A2ED0B6F20F/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
             <LanguagePack Name="zh-tw" Url="http://download.microsoft.com/download/5/D/E/5DE5B04D-DA7E-41DD-8BB5-FE7BF02630B8/ServerLanguagePack.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="" />
+                    <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
         </LanguagePacks>
@@ -242,6 +285,7 @@
     <Product Name="OfficeWebApps2010">
         <ServicePacks>
             <ServicePack Name="SP1" Url="http://download.microsoft.com/download/3/F/E/3FE388C1-B4A2-4B5A-9397-A9702977EA80/wacserver2010sp1-kb2460073-x64-fullfile-en-us.exe" />
+            <ServicePack Name="SP2" Url="http://download.microsoft.com/download/6/2/6/626CCDDB-7B27-43AC-93DB-F695B1C69B14/wacsp2010-kb2687470-fullfile-x64-en-us.exe" />
         </ServicePacks>
         <CumulativeUpdates>
             <CumulativeUpdate Name="December 2011" Build="14.0000.6114.5000" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/webappskb2597083fullfilex64glb/14.0000.6114.5000/free/441687_ENU_x64_zip.exe" ExpandedFile="webapps-kb2597083-fullfile-x64-glb.exe" />
@@ -284,6 +328,7 @@
             <CumulativeUpdate Name="March 2013" Build="15.0.4481.1005" Url="http://download.microsoft.com/download/5/1/C/51CA768E-C79E-41BA-91D4-7F7D929B0BFE/ubersrvsp2013-kb2767999-fullfile-x64-glb.exe" ExpandedFile="ubersrvsp2013-kb2767999-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2013" Build="15.0.4505.1005" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2726992fullfilex64glb/15.0.4505.1005/free/462705_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2726992-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2013" Build="15.0.4517.1005" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2817414fullfilex64glb/15.0.4517.1005/free/465210_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2817414-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2013" Build="15.0.4535.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2817616fullfilex64glb/15.0.4535.1000/free/466901_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2817616-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -513,6 +558,7 @@
             <CumulativeUpdate Name="March 2013" Build="15.0.4481.1005" Url="http://download.microsoft.com/download/4/6/2/46250927-D971-4443-89FE-131D4B123FFC/wacserver2013-kb2760445-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb2760445-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2013" Build="15.0.4505.1001" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2799821fullfilex64glb/15.0.4505.1001/free/462100_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2799821-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2013" Build="15.0.4517.1003" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2817350fullfilex64glb/15.0.4517.1003/free/464713_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2817350-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2013" Build="15.0.4535.1000" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2817521fullfilex64glb/15.0.4535.1000/free/466900_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2817521-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">

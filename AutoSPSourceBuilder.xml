@@ -37,7 +37,7 @@
             <CumulativeUpdate Name="April 2013" Build="14.0.6137.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2775353fullfilex64glb/14.0.6137.5000/free/462150_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2775353-fullfile-x64-glb.exe" />
             <!--<CumulativeUpdate Name="June 2013" Build="14.0.7102.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2817363fullfilex64glb/14.0.7102.5000/free/464692_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2817363-fullfile-x64-glb.exe" />-->
             <CumulativeUpdate Name="June 2013" Build="14.0.7102.5004" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2817527fullfilex64glb/14.0.7102.5004/free/465798_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2817527-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="August 2013" Build="14.0.7106.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2817570fullfilex64glb/14.0.7106.5000/free/466827_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2817570-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2013" Build="14.0.7106.5002" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2825949fullfilex64glb/14.0.7106.5002/free/467611_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2825949-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">

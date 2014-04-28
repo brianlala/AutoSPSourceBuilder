@@ -41,6 +41,7 @@
             <CumulativeUpdate Name="October 2013" Build="14.0.7108.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2825786fullfilex64glb/14.0.7110.5000/free/469233_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2825786-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2013" Build="14.0.7113.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2849971fullfilex64glb/14.0.7113.5000/free/471191_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2849971-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="February 2014" Build="14.0.7116.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2863913fullfilex64glb/14.0.7116.5000/free/472941_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2863913-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2014" Build="14.0.7121.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2878250fullfilex64glb/14.0.7121.5004/free/474468_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2878250-fullfile-x64-glb.exe" />            
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -312,6 +313,8 @@
             <Prerequisite Name="Windows Identity Foundation (KB974405)" Url="http://download.microsoft.com/download/D/7/2/D72FD747-69B6-40B7-875B-C2B40A6B2BDD/Windows6.1-KB974405-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=226830" />
             <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=224449" />
             <Prerequisite Name="Windows Server AppFabric" Url="http://download.microsoft.com/download/A/6/7/A678AB47-496B-4907-B3D4-0A2D280A13C0/WindowsServerAppFabricSetup_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=235496" />
+            <!-- Item below is not really a Prerequisite; it's a cumulative update to AppFabric -->
+            <Prerequisite Name="Windows Server AppFabric Cumulative Update Package 4" Url="http://hotfixv4.microsoft.com/Velocity/latest/2800726_x64_ENU/1.1.2124.2/free/462228_ENU_x64_zip.exe" Permalink="http://support.microsoft.com/hotfix/KBHotfix.aspx?kbnum=2800726" />
             <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="http://go.microsoft.com/fwlink/p/?linkid=252368" />
             <Prerequisite Name="Microsoft Information Protection and Control Client" Url="http://download.microsoft.com/download/9/1/D/91DA8796-BE1D-46AF-8489-663AB7811517/setup_msipc_x64.msi" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=219568" />
             <Prerequisite Name="Microsoft WCF Data Services 5.0" Url="http://download.microsoft.com/download/8/F/9/8F93DBBD-896B-4760-AC81-646F61363A6D/WcfDataServices.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=247921" />
@@ -326,7 +329,7 @@
             <Prerequisite Name="KB2765317 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in Windows 8, Windows RT, and Windows Server 2012" Url="http://download.microsoft.com/download/0/2/E/02E9E569-5462-48EB-AF57-8DCCF852E6F4/Windows8-RT-KB2765317-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=268725" />
         </Prerequisites>
         <ServicePacks>
-            <ServicePack Name="SP1" Build="15.0.4569.1000" Url="http://download.microsoft.com/download/A/A/E/AAED8A9D-F862-4FDD-9AE0-341AD37301F1/officeserversp2013-kb2817429-fullfile-x64-en-us.exe" />
+            <ServicePack Name="SP1" Build="15.0.4569.1000" Url="http://download.microsoft.com/download/7/A/8/7A84E002-6512-4506-A812-CA66FF6766D9/officeserversp2013-kb2880552-fullfile-x64-en-us.exe" />
         </ServicePacks>
         <CumulativeUpdates>
             <CumulativeUpdate Name="December 2012" Build="15.0.4433.1506" Url="http://download.microsoft.com/download/3/D/7/3D70095D-58F8-4E8B-8179-053EB23BA490/sts2013-kb2752058-fullfile-x64-glb.exe" ExpandedFile="sts2013-kb2752058-fullfile-x64-glb.exe" />
@@ -565,7 +568,7 @@
             <Prerequisite Name="KB2592525 - An application that uses DirectWrite does not start in a restricted security context in Windows 7 or in Windows Server 2008 R2" Url="http://download.microsoft.com/download/5/E/A/5EA7504B-E2B3-43A1-8279-892E007D50A0/Windows6.1-KB2592525-x64.msu" />
         </Prerequisites>
         <ServicePacks>
-            <ServicePack Name="SP1" Build="15.0.4569.1000" Url="http://download.microsoft.com/download/1/0/A/10A47B85-DFD6-4967-920C-F41E3A72A44A/wacserversp2013-kb2817431-fullfile-x64-glb.exe" />
+            <ServicePack Name="SP1" Build="15.0.4569.1000" Url="http://download.microsoft.com/download/F/E/2/FE25F2E9-BECB-424E-B8B3-BB377112A191/wacserversp2013-kb2880558-fullfile-x64-glb.exe" />
         </ServicePacks>
         <CumulativeUpdates>
             <CumulativeUpdate Name="February 2013" Build="15.0.4481.1000" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2760486fullfilex64glb/15.0.4481.1000/free/459195_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2760486-fullfile-x64-glb.exe" />
@@ -575,6 +578,7 @@
             <CumulativeUpdate Name="August 2013" Build="15.0.4535.1000" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2817521fullfilex64glb/15.0.4535.1000/free/466900_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2817521-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2013" Build="15.0.4551.1003" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2825686fullfilex64glb/15.0.4551.1003/free/469690_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2825686-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2013" Build="15.0.4551.1508" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2850013fullfilex64glb/15.0.4551.1508/free/471273_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2850013-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2014" Build="15.0.4605.1001" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2863899fullfilex64glb/15.0.4605.1001/free/474524_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2863899-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -644,7 +648,7 @@
             <!--The prerequisites for Project Server 2013 are the same as those for SharePoint Server 2013 (upon which Project Server 2013 depends) so nothing will be listed here-->
         </Prerequisites>
         <ServicePacks>
-            <ServicePack Name="SP1" Build="15.0.4569.1000" Url="http://download.microsoft.com/download/5/6/D/56D405AD-1A15-4F70-8462-1E4AF4E23736/projectserversp2013-kb2817434-fullfile-x64-en-us.exe" />
+            <ServicePack Name="SP1" Build="15.0.4569.1000" Url="http://download.microsoft.com/download/9/6/6/966D7B78-77BF-44D7-B97D-C8592812BB73/projectserversp2013-kb2880553-fullfile-x64-en-us.exe" />
         </ServicePacks>
         <CumulativeUpdates>
             <CumulativeUpdate Name="March 2013" Build="15.0.4481.1005" Url="http://download.microsoft.com/download/E/A/F/EAFF6423-B0ED-4C18-BAE9-7323BCFBAF1A/ubersrvprjsp2013-kb2768001-fullfile-x64-glb.exe" ExpandedFile="ubersrvprjsp2013-kb2768001-fullfile-x64-glb.exe" />

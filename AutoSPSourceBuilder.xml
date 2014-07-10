@@ -43,6 +43,7 @@
             <CumulativeUpdate Name="February 2014" Build="14.0.7116.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2863913fullfilex64glb/14.0.7116.5000/free/472941_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2863913-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2014" Build="14.0.7121.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2878250fullfilex64glb/14.0.7121.5004/free/474468_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2878250-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2014" Build="14.0.7125.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2880972fullfilex64glb/14.0.7125.5002/free/476047_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2880972-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2014" Build="14.0.7128.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2883005fullfilex64glb/14.0.7128.5001/free/476701_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2883005-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -300,6 +301,7 @@
             <!--<CumulativeUpdate Name="June 2012" Build="14.0.6123.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/officeserver2010kb2687305fullfilex64glb/14.0000.6123.5000/free/449893_intl_x64_zip.exe>" ExpandedFile="officeserver2010-kb2687305-fullfile-x64-glb.exe" />-->
             <CumulativeUpdate Name="October 2012" Build="14.0.6129.5000" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/webappskb2687562fullfilex64glb/14.0000.6129.5000/free/455132_intl_x64_zip.exe" ExpandedFile="webapps-kb2687562-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2012" Build="14.0.6131.5001" Url="http://hotfixv4.microsoft.com/Microsoft%20Web%20%20Access%20Controls%20%202010/sp2/wacwfexlwacwfe2010kb2726912fullfilex64gl/14.0.6131.5001/free/456360_intl_x64_zip.exe" ExpandedFile="wacwfexlwacwfe2010-kb2726912-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2014" Build="14.0.7125.5000" Url="http://download.microsoft.com/download/E/4/1/E41CD805-285F-4F25-A4BD-B8C9B0A4B033/wac2010-kb2881027-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb2881027-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">
@@ -348,6 +350,9 @@
             <CumulativeUpdate Name="June 2014" Build="15.0.4617.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp2/ubersrv2013kb2881061fullfilex64glb/15.0.4623.1001/free/476037_intl_x64_zip.exe" ExpandedFile="ubersrv.exe" />
             <CumulativeUpdate Name="June 2014" Build="15.0.4617.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp2/ubersrv1/15.0.4623.1001/free/476038_intl_x64_zip.exe" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="June 2014" Build="15.0.4617.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp2/ubersrv2/15.0.4623.1001/free/476039_intl_x64_zip.exe" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="July 2014" Build="15.0.4631.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp2/ubersrv2013kb2882989fullfilex64glb/15.0.4631.1001/free/476667_intl_x64_zip.exe" ExpandedFile="ubersrv.exe" />
+            <CumulativeUpdate Name="July 2014" Build="15.0.4631.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp2/ubersrvcab1/15.0.4631.1001/free/476668_intl_x64_zip.exe" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="July 2014" Build="15.0.4631.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp2/ubersrvcab2/15.0.4631.1001/free/476669_intl_x64_zip.exe" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -587,6 +592,7 @@
             <CumulativeUpdate Name="December 2013" Build="15.0.4551.1508" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2850013fullfilex64glb/15.0.4551.1508/free/471273_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2850013-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2014" Build="15.0.4605.1002" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2863899fullfilex64glb/15.0.4605.1001/free/474524_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2863899-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2014" Build="15.0.4617.1000" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2881051fullfilex64glb/15.0.4623.1001/free/476105_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2881051-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2014" Build="15.0.4631.1000" Url="http://hotfixv4.microsoft.com/Microsoft Office Web Apps Server 2013/sp1/wacserver2013kb2883003fullfilex64glb/15.0.4631.1000/free/476728_intl_x64_zip.exe" ExpandedFile="wacserver2013-kb2883003-fullfile-x64-glb.exe" />      
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -672,6 +678,9 @@
             <CumulativeUpdate Name="June 2014" Build="15.0.4617.1000" Url="http://hotfixv4.microsoft.com/Microsoft Project Server 2013/sp2/ubersrvprj2013kb2881062fullfilex64glb/15.0.4623.1001/free/476040_intl_x64_zip.exe" ExpandedFile="ubersrvprj.exe" />
             <CumulativeUpdate Name="June 2014" Build="15.0.4617.1000" Url="http://hotfixv4.microsoft.com/Microsoft Project Server 2013/sp2/ubersrvprj1/15.0.4623.1001/free/476041_intl_x64_zip.exe" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="June 2014" Build="15.0.4617.1000" Url="http://hotfixv4.microsoft.com/Microsoft Project Server 2013/latest/ubersrvprj2/15.0.4623.1001/free/476042_intl_x64_zip.exe" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="July 2014" Build="15.0.4631.1000" Url="http://hotfixv4.microsoft.com/Microsoft Project Server 2013/sp2/ubersrvprj2013kb2882990fullfilex64glb/15.0.4631.1001/free/476670_intl_x64_zip.exe" ExpandedFile="ubersrvprj.exe" />
+            <CumulativeUpdate Name="July 2014" Build="15.0.4631.1000" Url="http://hotfixv4.microsoft.com/Microsoft Project Server 2010/sp2/ubersrvprjcab1/15.0.4631.1001/free/476671_intl_x64_zip.exe" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="July 2014" Build="15.0.4631.1000" Url="http://hotfixv4.microsoft.com/Microsoft Project Server 2013/sp2/ubersrvprjcab2/15.0.4631.1001/free/476672_intl_x64_zip.exe" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
 </Products>

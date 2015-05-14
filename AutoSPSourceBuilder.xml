@@ -51,7 +51,8 @@
             <CumulativeUpdate Name="December 2014" Build="14.0.7140.5000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2010/sp2/ubersrv2010kb2899583fullfilex64glb/14.0.7140.5000/free/480616_intl_x64_zip.exe" ExpandedFile="ubersrv2010-kb2899583-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="February 2015" Build="14.0.7143.5000" Url="http://download.microsoft.com/download/7/5/3/7532B20E-846C-4C8D-A6E2-E16DEDB2116B/ubersrv2010-kb2899558-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb2899558-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2015" Build="14.0.7145.5000" Url="http://download.microsoft.com/download/2/D/0/2D043D72-6F11-4213-AEC1-DEFDD2EE4FEE/ubersrv2010-kb2956201-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb2956201-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="April 2015" Build="14.0.7147.5000" Url="http://download.microsoft.com/download/9/6/2/9623EFB7-C002-4379-B15A-348BDD5CC96E/ubersrv2010-kb2965294-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb2965294-fullfile-x64-glb.exe" />            
+            <CumulativeUpdate Name="April 2015" Build="14.0.7147.5000" Url="http://download.microsoft.com/download/9/6/2/9623EFB7-C002-4379-B15A-348BDD5CC96E/ubersrv2010-kb2965294-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb2965294-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2015" Build="14.0.7149.5000" Url="http://download.microsoft.com/download/9/C/C/9CC2BC39-C2A3-4436-9C9B-FA5E8D7CEC90/ubersrv2010-kb3015569-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3015569-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -350,7 +351,7 @@
             <CumulativeUpdate Name="June 2013" Build="15.0.4517.1005" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2817414fullfilex64glb/15.0.4517.1005/free/465210_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2817414-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2013" Build="15.0.4535.1000" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2817616fullfilex64glb/15.0.4535.1000/free/466901_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2817616-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2013" Build="15.0.4551.1001" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2825647fullfilex64glb/15.0.4551.1005/free/469951_intl_x64_zip.exe" ExpandedFile="ubersrv2013-kb2825647-fullfile-x64-glb.exe" />
-            <!--Note: due to the new way CUs are being packaged for SP2013, you will see two CUs representing two download links and files from December 2013 onward. See http://blogs.technet.com/b/office_sustained_engineering/archive/2013/12/20/change-sharepoint-2013-rollup-update-for-the-december-2013-cumulative-update-packaging.aspx for more info.-->
+            <!--Note: due to the new way CUs are being packaged for SP2013, you will see two or more CUs representing two download links and files from December 2013 onward. See http://blogs.technet.com/b/office_sustained_engineering/archive/2013/12/20/change-sharepoint-2013-rollup-update-for-the-december-2013-cumulative-update-packaging.aspx for more info.-->
             <CumulativeUpdate Name="December 2013" Build="15.0.4551.1508" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv2013kb2850024fullfilex64glb/15.0.4551.1511/free/471358_intl_x64_zip.exe" ExpandedFile="ubersrv.exe" />
             <CumulativeUpdate Name="December 2013" Build="15.0.4551.1508" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp1/ubersrv_1/15.0.4551.1511/free/471445_intl_x64_zip.exe" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="April 2014" Build="15.0.4605.1002" Url="http://hotfixv4.microsoft.com/Microsoft SharePoint Server 2013/sp2/ubersrv2013kb2878240fullfilex64glb/15.0.4605.1004/free/475240_intl_x64_zip.exe" ExpandedFile="ubersrv.exe" />
@@ -385,6 +386,9 @@
             <CumulativeUpdate Name="March 2015" Build="15.0.4701.1000" Url="http://download.microsoft.com/download/3/9/4/3942AD9A-7817-4332-A3A7-AEAA313348EA/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
             <CumulativeUpdate Name="April 2015" Build="15.0.4711.1000" Url="http://download.microsoft.com/download/B/6/1/B61E68A1-0FB2-4D86-B3C1-E999C15A2DF4/ubersrv2013-kb2965266-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb2965266-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2015" Build="15.0.4711.1000" Url="http://download.microsoft.com/download/B/6/1/B61E68A1-0FB2-4D86-B3C1-E999C15A2DF4/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="May 2015" Build="15.0.4719.1000" Url="http://download.microsoft.com/download/C/A/1/CA1F9458-5477-4727-863A-538B9439856E/ubersrv2013-kb3039780-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3039780-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2015" Build="15.0.4719.1000" Url="http://download.microsoft.com/download/C/A/1/CA1F9458-5477-4727-863A-538B9439856E/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="May 2015" Build="15.0.4719.1000" Url="http://download.microsoft.com/download/C/A/1/CA1F9458-5477-4727-863A-538B9439856E/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">

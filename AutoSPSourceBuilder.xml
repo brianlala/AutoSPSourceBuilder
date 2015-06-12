@@ -53,6 +53,7 @@
             <CumulativeUpdate Name="March 2015" Build="14.0.7145.5000" Url="http://download.microsoft.com/download/2/D/0/2D043D72-6F11-4213-AEC1-DEFDD2EE4FEE/ubersrv2010-kb2956201-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb2956201-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2015" Build="14.0.7147.5000" Url="http://download.microsoft.com/download/9/6/2/9623EFB7-C002-4379-B15A-348BDD5CC96E/ubersrv2010-kb2965294-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb2965294-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2015" Build="14.0.7149.5000" Url="http://download.microsoft.com/download/9/C/C/9CC2BC39-C2A3-4436-9C9B-FA5E8D7CEC90/ubersrv2010-kb3015569-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3015569-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2015" Build="14.0.7151.5000" Url="http://download.microsoft.com/download/0/B/9/0B9E510F-3AFB-4C7C-B745-1FEA3C1652B0/ubersrv2010-kb3054880-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3054880-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -389,6 +390,9 @@
             <CumulativeUpdate Name="May 2015" Build="15.0.4719.1000" Url="http://download.microsoft.com/download/C/A/1/CA1F9458-5477-4727-863A-538B9439856E/ubersrv2013-kb3039780-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3039780-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2015" Build="15.0.4719.1000" Url="http://download.microsoft.com/download/C/A/1/CA1F9458-5477-4727-863A-538B9439856E/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="May 2015" Build="15.0.4719.1000" Url="http://download.microsoft.com/download/C/A/1/CA1F9458-5477-4727-863A-538B9439856E/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="June 2015" Build="15.0.4727.1000" Url="http://download.microsoft.com/download/0/0/B/00B82588-4C90-44E1-B2C2-80F2184ABDCD/ubersrv2013-kb3054866-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3054866-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2015" Build="15.0.4727.1000" Url="http://download.microsoft.com/download/0/0/B/00B82588-4C90-44E1-B2C2-80F2184ABDCD/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="June 2015" Build="15.0.4727.1000" Url="http://download.microsoft.com/download/0/0/B/00B82588-4C90-44E1-B2C2-80F2184ABDCD/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -634,6 +638,7 @@
             <CumulativeUpdate Name="February 2015" Build="15.0.4693.1000" Url="http://download.microsoft.com/download/C/A/0/CA0DD4D4-B593-477F-A3A7-241CF5E57856/wacserver2013-kb2956101-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb2956101-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2015" Build="15.0.4701.1000" Url="http://download.microsoft.com/download/A/9/A/A9AC627D-68E0-4AD2-AE01-AFBF8D320D04/wacserver2013-kb2956158-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb2956158-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2015" Build="15.0.4711.1000" Url="http://download.microsoft.com/download/7/3/D/73D9A80C-1430-42D6-9303-B07D09021942/wacserver2013-kb2965306-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb2965306-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2015" Build="15.0.4727.1000" Url="http://download.microsoft.com/download/2/B/D/2BD35CF2-206B-4C5F-B8EF-7BDA0C34F0BB/wacserver2013-kb3054863-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3054863-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">

@@ -55,6 +55,7 @@
             <CumulativeUpdate Name="May 2015" Build="14.0.7149.5000" Url="http://download.microsoft.com/download/9/C/C/9CC2BC39-C2A3-4436-9C9B-FA5E8D7CEC90/ubersrv2010-kb3015569-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3015569-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2015" Build="14.0.7151.5000" Url="http://download.microsoft.com/download/0/B/9/0B9E510F-3AFB-4C7C-B745-1FEA3C1652B0/ubersrv2010-kb3054880-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3054880-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2015" Build="14.0.7155.5000" Url="http://download.microsoft.com/download/1/9/0/19048A94-93DA-4420-8D90-6457E893EEEA/ubersrv2010-kb3055040-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3055040-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2015" Build="14.0.7157.5000" Url="http://download.microsoft.com/download/6/7/E/67E4870E-21A4-40B5-BB84-24A5E2E177C7/ubersrv2010-kb3085521-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3085521-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -400,6 +401,12 @@
             <CumulativeUpdate Name="August 2015" Build="15.0.4745.1000" Url="http://download.microsoft.com/download/0/9/8/098C8CAE-7A63-4947-9A9B-2BD3B42829FD/ubersrv2013-kb3055009-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3055009-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2015" Build="15.0.4745.1000" Url="http://download.microsoft.com/download/0/9/8/098C8CAE-7A63-4947-9A9B-2BD3B42829FD/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="August 2015" Build="15.0.4745.1000" Url="http://download.microsoft.com/download/0/9/8/098C8CAE-7A63-4947-9A9B-2BD3B42829FD/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/6/1/6/616129BF-42B5-4B1F-AB6B-8437D8A1F5D8/sts2013-kb3085501-fullfile-x64-glb.exe" ExpandedFile="sts2013-kb3085501-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/5/0/E/50E5758B-E57C-4238-BBC2-B72D428628AF/coreserverloc2013-kb3085481-fullfile-x64-glb.exe" ExpandedFile="coreserverloc2013-kb3085481-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/8/3/A/83A324E3-6B7C-4996-AF62-652478097C2E/svrproofloc2013-kb3054998-fullfile-x64-glb.exe" ExpandedFile="svrproofloc2013-kb3054998-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/D/D/2/DD2D2280-DAD6-4A7F-9EBF-64002D4C1054/xlsrvloc2013-kb3085483-fullfile-x64-glb.exe" ExpandedFile="xlsrvloc2013-kb3085483-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/E/5/E/E5ED420E-287C-44C3-93B8-D283AAF5A4F8/oserver2013-kb3054870-fullfile-x64-glb.exe" ExpandedFile="oserver2013-kb3054870-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/9/4/6/946EA960-6E8F-46EB-8282-1D280361E27A/acsrvloc2013-kb3054813-fullfile-x64-glb.exe" ExpandedFile="acsrvloc2013-kb3054813-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">

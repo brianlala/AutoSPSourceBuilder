@@ -57,6 +57,7 @@
             <CumulativeUpdate Name="August 2015" Build="14.0.7155.5000" Url="http://download.microsoft.com/download/1/9/0/19048A94-93DA-4420-8D90-6457E893EEEA/ubersrv2010-kb3055040-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3055040-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2015" Build="14.0.7157.5000" Url="http://download.microsoft.com/download/6/7/E/67E4870E-21A4-40B5-BB84-24A5E2E177C7/ubersrv2010-kb3085521-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3085521-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2015" Build="14.0.7160.5000" Url="https://download.microsoft.com/download/4/5/B/45BBF91E-F90F-4FD8-BB02-E3BE9DEE3022/ubersrv2010-kb3085603-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3085603-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2015" Build="14.0.7162.5000" Url="https://download.microsoft.com/download/1/3/6/136241F5-10B5-43A7-8D51-1809275969FD/ubersrv2010-kb3101534-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3101534-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -414,6 +415,9 @@
             <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/A/2/1/A21474C3-5DAB-4BC9-A4C0-CDF963408056/ubersrv2013-kb3085492-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3085492-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/A/2/1/A21474C3-5DAB-4BC9-A4C0-CDF963408056/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/A/2/1/A21474C3-5DAB-4BC9-A4C0-CDF963408056/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/0/8/D/08D5D5EA-FFC0-43EA-A73C-BE557D2F5B37/ubersrv2013-kb3101373-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3101373-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/0/8/D/08D5D5EA-FFC0-43EA-A73C-BE557D2F5B37/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/0/8/D/08D5D5EA-FFC0-43EA-A73C-BE557D2F5B37/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -664,6 +668,7 @@
             <CumulativeUpdate Name="August 2015" Build="15.0.4745.1000" Url="http://download.microsoft.com/download/C/1/7/C17F6CF8-2018-44B3-8F21-B93F1EB2F9E2/wacserver2013-kb3055003-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3055003-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/F/F/D/FFD01831-5356-41AB-9FCB-43DD5220FAC4/wacserver2013-kb3085487-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3085487-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/0/5/9/0594BDA4-9995-4093-8182-29A694282303/wacserver2013-kb3085571-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3085571-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/5/9/5/5956B062-3497-42D0-85B7-D487CB547BFD/wacserver2013-kb3101367-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3101367-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -765,23 +770,30 @@
             <CumulativeUpdate Name="March 2015" Build="15.0.4701.1000" Url="http://download.microsoft.com/download/1/8/6/186B5021-AF1C-4898-BE04-CEB2B3DAFBCE/ubersrvprj2013-kb2956162-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb2956162-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2015" Build="15.0.4701.1000" Url="http://download.microsoft.com/download/1/8/6/186B5021-AF1C-4898-BE04-CEB2B3DAFBCE/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="March 2015" Build="15.0.4701.1000" Url="http://download.microsoft.com/download/1/8/6/186B5021-AF1C-4898-BE04-CEB2B3DAFBCE/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/3/3/0/330F7FBE-C46B-42F5-BF38-F0376E665B21/ubersrvprj2013-kb3085489-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3085489-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/3/3/0/330F7FBE-C46B-42F5-BF38-F0376E665B21/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/3/3/0/330F7FBE-C46B-42F5-BF38-F0376E665B21/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/8/5/1/85135C95-AE79-479F-B73E-F99384C3F010/ubersrvprj2013-kb3101369-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3101369-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/8/5/1/85135C95-AE79-479F-B73E-F99384C3F010/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/8/5/1/85135C95-AE79-479F-B73E-F99384C3F010/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
   <Product Name="SP2016">
     <Prerequisites>
       <Prerequisite Name="Microsoft .NET Framework 4.5.2" Url="http://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkID=523848" />
-      <Prerequisite Name="Microsoft SQL Server 2012 Native Client" Url="http://download.microsoft.com/download/F/E/D/FEDB200F-DE2A-46D8-B661-D019DFE9D470/ENU/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=239648" />
+      <Prerequisite Name="Microsoft SQL Server 2012 Native Client" Url="http://download.microsoft.com/download/4/B/1/4B1E9B0E-A4F3-4715-B417-31C82302A70A/ENU/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=622997" />
       <Prerequisite Name="Microsoft ODBC Driver 11 for SQL Server" Url="http://download.microsoft.com/download/5/7/2/57249A3A-19D6-4901-ACCE-80924ABEB267/1033/x64/msodbcsql.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=517835" />
       <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=224449" />
       <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=252368" />
-      <Prerequisite Name="Microsoft Information Protection and Control Client 2.1" Url="http://download.microsoft.com/download/3/C/F/3CF781F5-7D29-4035-9265-C34FF2369FA2/setup_msipc_x64.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=219568" />
+      <Prerequisite Name="Microsoft Information Protection and Control Client 2.1" Url="http://download.microsoft.com/download/3/C/F/3CF781F5-7D29-4035-9265-C34FF2369FA2/setup_msipc_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkID=544913" />
       <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320724" />
       <Prerequisite Name="Windows Server AppFabric" Url="http://download.microsoft.com/download/A/6/7/A678AB47-496B-4907-B3D4-0A2D280A13C0/WindowsServerAppFabricSetup_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=235496" />
       <Prerequisite Name="CU Package 1 for Microsoft AppFabric 1.1 for Windows Server (KB2671763)" Url="http://download.microsoft.com/download/7/B/5/7B51D8D1-20FD-4BF0-87C7-4714F5A1C313/AppFabric1.1-RTM-KB2671763-x64-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=251471" />
-      <!-- Item below is not really a Prerequisite; it's a cumulative update to AppFabric -->
-      <Prerequisite Name="Windows Server AppFabric Cumulative Update Package 5" Url="http://download.microsoft.com/download/E/D/9/ED9591F8-8720-4EE7-97D0-B6FD29C6D339/AppFabric1.1-KB2932678-x64-ENU.exe" Permalink="http://support.microsoft.com/hotfix/KBHotfix.aspx?kbnum=2800726" />
+      <Prerequisite Name="CU Package 7 for Microsoft AppFabric 1.1 for Windows Server (KB3092423)" Url="https://download.microsoft.com/download/F/1/0/F1093AF6-E797-4CA8-A9F6-FC50024B385C/AppFabric-KB3092423-x64-ENU.exe" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=49171&amp;6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1" />
       <Prerequisite Name="Update for Microsoft .NET Framework to disable RC4 in Transport Layer Security (KB2898850)" Url="http://download.microsoft.com/download/C/6/9/C690CC33-18F7-405D-B18A-0A8E199E531C/Windows8.1-KB2898850-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=523853" />
+      <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2012" Url="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=627156"/>
       <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2013" Url="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320713&amp;clcid=0x409"/>
+      <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015" Url="http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=623013"/>
     </Prerequisites>
     <ServicePacks>
     </ServicePacks>

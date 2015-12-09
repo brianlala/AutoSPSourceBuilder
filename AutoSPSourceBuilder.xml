@@ -58,6 +58,7 @@
             <CumulativeUpdate Name="September 2015" Build="14.0.7157.5000" Url="http://download.microsoft.com/download/6/7/E/67E4870E-21A4-40B5-BB84-24A5E2E177C7/ubersrv2010-kb3085521-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3085521-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2015" Build="14.0.7160.5000" Url="https://download.microsoft.com/download/4/5/B/45BBF91E-F90F-4FD8-BB02-E3BE9DEE3022/ubersrv2010-kb3085603-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3085603-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2015" Build="14.0.7162.5000" Url="https://download.microsoft.com/download/1/3/6/136241F5-10B5-43A7-8D51-1809275969FD/ubersrv2010-kb3101534-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3101534-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2015" Build="14.0.7164.5000" Url="https://download.microsoft.com/download/4/2/8/4289F871-F86E-43E6-817A-17A61E6B2F11/ubersrv2010-kb3114408-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3114408-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -418,6 +419,9 @@
             <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/0/8/D/08D5D5EA-FFC0-43EA-A73C-BE557D2F5B37/ubersrv2013-kb3101373-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3101373-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/0/8/D/08D5D5EA-FFC0-43EA-A73C-BE557D2F5B37/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/0/8/D/08D5D5EA-FFC0-43EA-A73C-BE557D2F5B37/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/2/6/F/26F240F4-0163-47B5-8918-3EC979AD3C2E/ubersrv2013-kb3114345-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3114345-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/2/6/F/26F240F4-0163-47B5-8918-3EC979AD3C2E/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/2/6/F/26F240F4-0163-47B5-8918-3EC979AD3C2E/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -776,6 +780,9 @@
             <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/8/5/1/85135C95-AE79-479F-B73E-F99384C3F010/ubersrvprj2013-kb3101369-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3101369-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/8/5/1/85135C95-AE79-479F-B73E-F99384C3F010/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/8/5/1/85135C95-AE79-479F-B73E-F99384C3F010/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/3/F/F/3FF5BD88-63DC-457A-91F5-8385139EDA17/ubersrvprj2013-kb3114341-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3114341-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/3/F/F/3FF5BD88-63DC-457A-91F5-8385139EDA17/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/3/F/F/3FF5BD88-63DC-457A-91F5-8385139EDA17/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
   <Product Name="SP2016">

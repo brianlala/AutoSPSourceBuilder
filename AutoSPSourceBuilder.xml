@@ -59,6 +59,7 @@
             <CumulativeUpdate Name="October 2015" Build="14.0.7160.5000" Url="https://download.microsoft.com/download/4/5/B/45BBF91E-F90F-4FD8-BB02-E3BE9DEE3022/ubersrv2010-kb3085603-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3085603-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2015" Build="14.0.7162.5000" Url="https://download.microsoft.com/download/1/3/6/136241F5-10B5-43A7-8D51-1809275969FD/ubersrv2010-kb3101534-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3101534-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2015" Build="14.0.7164.5000" Url="https://download.microsoft.com/download/4/2/8/4289F871-F86E-43E6-817A-17A61E6B2F11/ubersrv2010-kb3114408-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3114408-fullfile-x64-glb.exe" />
+            <!-- There is no January 2016 CU for SharePoint 2010 - only Project Server 2010 -->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -422,6 +423,9 @@
             <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/2/6/F/26F240F4-0163-47B5-8918-3EC979AD3C2E/ubersrv2013-kb3114345-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3114345-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/2/6/F/26F240F4-0163-47B5-8918-3EC979AD3C2E/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/2/6/F/26F240F4-0163-47B5-8918-3EC979AD3C2E/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="January 2016" Build="15.0.4787.1000" Url="https://download.microsoft.com/download/1/B/5/1B52DB7B-7D45-4318-A86F-486A5FEFFFEC/ubersrv2013-kb3114497-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3114497-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2016" Build="15.0.4787.1000" Url="https://download.microsoft.com/download/1/B/5/1B52DB7B-7D45-4318-A86F-486A5FEFFFEC/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="January 2016" Build="15.0.4787.1000" Url="https://download.microsoft.com/download/1/B/5/1B52DB7B-7D45-4318-A86F-486A5FEFFFEC/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -783,6 +787,9 @@
             <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/3/F/F/3FF5BD88-63DC-457A-91F5-8385139EDA17/ubersrvprj2013-kb3114341-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3114341-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/3/F/F/3FF5BD88-63DC-457A-91F5-8385139EDA17/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="December 2015" Build="15.0.4779.1000" Url="https://download.microsoft.com/download/3/F/F/3FF5BD88-63DC-457A-91F5-8385139EDA17/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="January 2016" Build="15.0.4787.1000" Url="https://download.microsoft.com/download/C/3/9/C39DD487-9BA0-447B-B645-B54D23350ABD/ubersrvprj2013-kb3114493-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3114493-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2016" Build="15.0.4787.1000" Url="https://download.microsoft.com/download/C/3/9/C39DD487-9BA0-447B-B645-B54D23350ABD/ubersrvprj_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="January 2016" Build="15.0.4787.1000" Url="https://download.microsoft.com/download/C/3/9/C39DD487-9BA0-447B-B645-B54D23350ABD/ubersrvprj_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
     </Product>
   <Product Name="SP2016">
@@ -799,7 +806,7 @@
       <Prerequisite Name="CU Package 7 for Microsoft AppFabric 1.1 for Windows Server (KB3092423)" Url="https://download.microsoft.com/download/F/1/0/F1093AF6-E797-4CA8-A9F6-FC50024B385C/AppFabric-KB3092423-x64-ENU.exe" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=49171&amp;6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1" />
       <Prerequisite Name="Update for Microsoft .NET Framework to disable RC4 in Transport Layer Security (KB2898850)" Url="http://download.microsoft.com/download/C/6/9/C690CC33-18F7-405D-B18A-0A8E199E531C/Windows8.1-KB2898850-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=523853" />
       <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2012" Url="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=627156"/>
-      <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2013" Url="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320713&amp;clcid=0x409"/>
+      <!--<Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2013" Url="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320713&amp;clcid=0x409"/>-->
       <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015" Url="http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=623013"/>
     </Prerequisites>
     <ServicePacks>

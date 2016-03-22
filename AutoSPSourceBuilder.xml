@@ -830,175 +830,199 @@
     <CumulativeUpdates>
     </CumulativeUpdates>
     <LanguagePacks>
-      <LanguagePack Name="pl-pl" Url="">
+      <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="pt-pt" Url="">
+      <LanguagePack Name="bs-ba" Url="https://download.microsoft.com/download/A/6/F/A6FF6F31-D76D-43F1-BD31-DF594EAE0B53/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="nb-no" Url="">
+      <LanguagePack Name="pl-pl" Url="https://download.microsoft.com/download/8/1/5/815F32DD-D203-49FE-882B-11AA29A60321/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="hu-hu" Url="">
+      <LanguagePack Name="pt-br" Url="https://download.microsoft.com/download/D/B/2/DB291472-AA7D-4897-A51D-DF5199EDEDD3/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="hr-hr" Url="">
+      <LanguagePack Name="pt-pt" Url="https://download.microsoft.com/download/8/D/9/8D9D8B6E-57D8-4557-B19E-C90E88A98B5A/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="ar-sa" Url="">
+      <LanguagePack Name="ga-ie" Url="https://download.microsoft.com/download/3/5/3/353265F6-6212-408F-8166-7FF0645A17B4/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="bg-bg" Url="">
+      <LanguagePack Name="nb-no" Url="https://download.microsoft.com/download/3/5/4/354FBC6F-BAF4-4720-BE15-16515B7C3DC2/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="ro-ro" Url="">
+      <LanguagePack Name="hu-hu" Url="https://download.microsoft.com/download/3/E/5/3E502880-774A-45B5-9947-9DE2A9C0BBE8/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="sl-si" Url="">
+      <LanguagePack Name="id-id" Url="https://download.microsoft.com/download/4/B/A/4BA8D681-5BD8-48D6-AC7D-A3A83C64096F/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="sr-latn-cs" Url="">
+      <LanguagePack Name="hr-hr" Url="https://download.microsoft.com/download/F/5/6/F567DF67-D26F-4A8E-B309-B79954B10D11/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="sr-cyrl-cs" Url="">
+      <LanguagePack Name="cy-gb" Url="https://download.microsoft.com/download/E/3/9/E39F0CC2-6AB2-4761-9E38-28AE4ACA8D4D/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="uk-ua" Url="">
+      <LanguagePack Name="bg-bg" Url="https://download.microsoft.com/download/2/7/8/278D3306-5E23-4336-BF18-158B5F31BAE9/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="hi-in" Url="">
+      <LanguagePack Name="ro-ro" Url="https://download.microsoft.com/download/2/A/6/2A6FAF0D-65C3-4217-AD43-40DBC06437FC/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="th-th" Url="">
+      <LanguagePack Name="sl-SI" Url="https://download.microsoft.com/download/8/B/8/8B88B12B-BE08-4151-BF2A-D52F7CB48A83/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="kk-kz" Url="">
+      <LanguagePack Name="sr-latn-rs" Url="https://download.microsoft.com/download/4/3/A/43AD5822-545F-4494-B7B5-4EC19C751B65/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="ca-es" Url="">
+      <LanguagePack Name="sr-Cyrl-RS" Url="https://download.microsoft.com/download/E/B/E/EBE3F635-70FE-409A-845E-573D106D4D11/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="el-gr" Url="">
+      <LanguagePack Name="uk-ua" Url="https://download.microsoft.com/download/5/D/8/5D87B3FC-1438-4F2B-85EE-398F485A836A/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="et-ee" Url="">
+      <LanguagePack Name="hi-in" Url="https://download.microsoft.com/download/4/6/D/46D0EFE6-142A-45EB-B078-3937763E64E4/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="eu-es" Url="">
+      <LanguagePack Name="th-th" Url="https://download.microsoft.com/download/2/6/1/2611DB20-DE54-4BC1-A7A4-58336CD2A55B/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="lt-lt" Url="">
+      <LanguagePack Name="kk-kz" Url="https://download.microsoft.com/download/9/D/6/9D68A9BB-015E-4D77-A797-896BBDA445BD/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="lv-lv" Url="">
+      <LanguagePack Name="ca-es" Url="https://download.microsoft.com/download/A/D/0/AD0932FD-DC4D-47DE-9AC4-6D8337563108/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="gl-es" Url="">
+      <LanguagePack Name="el-gr" Url="https://download.microsoft.com/download/6/5/9/65996356-4F1A-4979-BC72-D8F95D4D7823/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="he-il" Url="">
+      <LanguagePack Name="et-ee" Url="https://download.microsoft.com/download/E/E/9/EE90AF53-135A-433C-8ECC-5622A34AA4C7/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="fi-fi" Url="">
+      <LanguagePack Name="eu-es" Url="https://download.microsoft.com/download/4/9/6/496F88E0-5864-4112-9357-0FD44078BE04/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="sv-se" Url="">
+      <LanguagePack Name="lt-lt" Url="https://download.microsoft.com/download/D/A/8/DA8C6182-44F4-4B18-B0CF-CD25C8CC43DD/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="sk-sk" Url="">
+      <LanguagePack Name="mk-mk" Url="https://download.microsoft.com/download/8/5/0/8507D442-820C-4CE0-8E85-1023E38171A6/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="tr-tr" Url="">
+      <LanguagePack Name="lv-lv" Url="https://download.microsoft.com/download/D/C/7/DC789F8F-E7A0-4B98-BD16-46210AF153FD/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="cs-cz" Url="">
+      <LanguagePack Name="gl-es" Url="https://download.microsoft.com/download/F/3/0/F304B0BA-2F5E-4BD7-8647-74BF9AB35674/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="da-dk" Url="">
+      <LanguagePack Name="he-il" Url="https://download.microsoft.com/download/6/E/5/6E58A30C-AC89-41C1-88A9-8CF31501D28E/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="de-de" Url="">
+      <LanguagePack Name="fi-fi" Url="https://download.microsoft.com/download/A/6/4/A64BA4CE-F646-400D-963E-BFD5C575EB35/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="en-us" Url="">
+      <LanguagePack Name="sv-se" Url="https://download.microsoft.com/download/B/4/F/B4FAAB83-EA58-4400-ACE9-D05EFEAE6427/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="es-es" Url="http://download.microsoft.com/download/C/E/D/CED8F73F-A371-4666-9DD6-750D8ADB944A/SharePoint%20Server%202016%20IT%20Preview%20Spanish%20Language%20Pack.iso">
+      <LanguagePack Name="sk-sk" Url="https://download.microsoft.com/download/9/F/E/9FEAEC75-7130-4CEE-8AA1-89AF8F643CE1/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="fr-fr" Url="">
+      <LanguagePack Name="tr-tr" Url="https://download.microsoft.com/download/9/4/4/944C61C9-1D77-4783-8ED9-2EF7E872089F/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="it-it" Url="">
+      <LanguagePack Name="cs-cz" Url="https://download.microsoft.com/download/D/2/7/D27C63AC-DF54-45D4-8DB3-267E93BA28C3/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="ja-jp" Url="http://download.microsoft.com/download/C/E/D/CED8F73F-A371-4666-9DD6-750D8ADB944A/SharePoint%20Server%202016%20IT%20Preview%20Japanese%20Language%20Pack.iso">
+      <LanguagePack Name="da-dk" Url="https://download.microsoft.com/download/E/A/5/EA599F2F-93A1-4311-B189-3F35870D886B/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="ms-my" Url="">
+      <LanguagePack Name="de-de" Url="https://download.microsoft.com/download/6/6/C/66C2575A-E8B0-461E-A7A7-48C7100EAF7F/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="ko-kr" Url="">
+      <LanguagePack Name="PRS-af" Url="https://download.microsoft.com/download/2/7/7/277DCF64-E71D-4809-8A2E-5DDD2532096E/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="nl-nl" Url="">
+      <LanguagePack Name="en-us" Url="https://download.microsoft.com/download/9/F/8/9F86F455-3912-4873-A891-8C007CDBB66A/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="pt-br" Url="">
+      <LanguagePack Name="es-es" Url="https://download.microsoft.com/download/3/A/F/3AF9783E-5CA7-45EA-8CF8-1958D3F5C4FC/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="ru-ru" Url="">
+      <LanguagePack Name="fr-fr" Url="https://download.microsoft.com/download/9/A/D/9ADBFA1E-C83D-4833-AD35-32970A981A83/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="vi-vn" Url="">
+      <LanguagePack Name="it-it" Url="https://download.microsoft.com/download/8/9/1/891F0DDA-578F-4181-ADDA-F5F71B90CCB2/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="zh-cn" Url="">
+      <LanguagePack Name="ja-jp" Url="https://download.microsoft.com/download/5/4/1/54160F97-2890-4BEE-8B1C-9FCD14B1E69C/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>
-      <LanguagePack Name="zh-tw" Url="">
+      <LanguagePack Name="ms-my" Url="https://download.microsoft.com/download/9/8/2/982EEA97-C44A-49F7-A3E9-4EB322C7C383/serverlanguagepack.exe">
+        <ServicePacks>
+        </ServicePacks>
+      </LanguagePack>
+      <LanguagePack Name="ko-kr" Url="https://download.microsoft.com/download/3/5/F/35F3654D-DAF7-4E06-A5EA-3C803CFA3CDB/serverlanguagepack.exe">
+        <ServicePacks>
+        </ServicePacks>
+      </LanguagePack>
+      <LanguagePack Name="nl-nl" Url="https://download.microsoft.com/download/0/1/E/01EE44A5-45FC-4FA5-9A97-BCDCDB483CC2/serverlanguagepack.exe">
+        <ServicePacks>
+        </ServicePacks>
+      </LanguagePack>
+      <LanguagePack Name="ru-ru" Url="https://download.microsoft.com/download/B/8/3/B83B335A-9E02-4F7F-8DE6-1B47F0700579/serverlanguagepack.exe">
+        <ServicePacks>
+        </ServicePacks>
+      </LanguagePack>
+      <LanguagePack Name="vi-vn" Url="https://download.microsoft.com/download/A/F/1/AF126D6C-D258-42C9-81FB-44931CAD6517/serverlanguagepack.exe">
+        <ServicePacks>
+        </ServicePacks>
+      </LanguagePack>
+      <LanguagePack Name="zh-cn" Url="https://download.microsoft.com/download/5/A/B/5AB31ED6-E638-4C5C-AB0D-ADD7235DC0E2/serverlanguagepack.exe">
+        <ServicePacks>
+        </ServicePacks>
+      </LanguagePack>
+      <LanguagePack Name="zh-tw" Url="https://download.microsoft.com/download/8/A/F/8AF83102-6635-4DDE-997B-7850D171962D/serverlanguagepack.exe">
         <ServicePacks>
         </ServicePacks>
       </LanguagePack>

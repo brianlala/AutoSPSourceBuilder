@@ -353,6 +353,7 @@
             <Prerequisite Name="KB2567680 - MS11-063: Vulnerability in Windows Client/Server Run-time subsystem could allow elevation of privilege: August 9, 2011" Url="http://download.microsoft.com/download/C/D/A/CDAF5DD8-3B9A-4F8D-A48F-BEFE53C5B249/Windows6.1-KB2567680-x64.msu" Permalink="http://www.microsoft.com/en-us/download/details.aspx?id=27039" />
             <Prerequisite Name="KB2759112 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in... Windows Server 2008 R2, Windows Server 2008 R2 SP1..." Url="http://download.microsoft.com/download/5/6/3/5631B753-A009-48AF-826C-2D2C29B94172/NDP45-KB2759112-x64.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=267536" />
             <Prerequisite Name="KB2765317 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in Windows 8, Windows RT, and Windows Server 2012" Url="http://download.microsoft.com/download/0/2/E/02E9E569-5462-48EB-AF57-8DCCF852E6F4/Windows8-RT-KB2765317-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=268725" />
+            <Prerequisite Name="KB3087184 - SharePoint 2013 or Project Server 2013 Setup error if the .NET Framework 4.6 is installed" Url="https://download.microsoft.com/download/3/6/2/362C4A9C-4AFE-425E-825F-369D34D64F4E/svrsetup_15-0-4709-1000_x64.zip" Permalink="https://download.microsoft.com/download/3/6/2/362C4A9C-4AFE-425E-825F-369D34D64F4E/svrsetup_15-0-4709-1000_x64.zip" />
         </Prerequisites>
         <ServicePacks>
             <ServicePack Name="SP1" Build="15.0.4571.1502" Url="http://download.microsoft.com/download/7/A/8/7A84E002-6512-4506-A812-CA66FF6766D9/officeserversp2013-kb2880552-fullfile-x64-en-us.exe" />
@@ -450,6 +451,12 @@
             <CumulativeUpdate Name="July 2016" Build="15.0.4841.1000" Url="https://download.microsoft.com/download/D/0/7/D0733071-82E3-475B-83E9-8008387E02EB/ubersrv2013-kb3115293-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3115293-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="July 2016" Build="15.0.4841.1000" Url="https://download.microsoft.com/download/D/0/7/D0733071-82E3-475B-83E9-8008387E02EB/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="July 2016" Build="15.0.4841.1000" Url="https://download.microsoft.com/download/D/0/7/D0733071-82E3-475B-83E9-8008387E02EB/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="August 2016" Build="15.0.4849.1000" Url="https://download.microsoft.com/download/B/A/1/BA1F7D75-9347-4248-AC13-BB53B2274B44/ubersrv2013-kb3115450-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3115450-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2016" Build="15.0.4849.1000" Url="https://download.microsoft.com/download/B/A/1/BA1F7D75-9347-4248-AC13-BB53B2274B44/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="August 2016" Build="15.0.4849.1000" Url="https://download.microsoft.com/download/B/A/1/BA1F7D75-9347-4248-AC13-BB53B2274B44/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="September 2016" Build="15.0.4859.1003" Url="https://download.microsoft.com/download/B/4/8/B48516BD-6B52-4F7D-8F5B-BA3A35987A37/ubersrv2013-kb3118279-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3118279-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2016" Build="15.0.4859.1003" Url="https://download.microsoft.com/download/B/4/8/B48516BD-6B52-4F7D-8F5B-BA3A35987A37/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="September 2016" Build="15.0.4859.1003" Url="https://download.microsoft.com/download/B/4/8/B48516BD-6B52-4F7D-8F5B-BA3A35987A37/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -701,12 +708,14 @@
             <CumulativeUpdate Name="September 2015" Build="15.0.4753.1000" Url="http://download.microsoft.com/download/F/F/D/FFD01831-5356-41AB-9FCB-43DD5220FAC4/wacserver2013-kb3085487-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3085487-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2015" Build="15.0.4763.1000" Url="https://download.microsoft.com/download/0/5/9/0594BDA4-9995-4093-8182-29A694282303/wacserver2013-kb3085571-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3085571-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2015" Build="15.0.4771.1000" Url="https://download.microsoft.com/download/5/9/5/5956B062-3497-42D0-85B7-D487CB547BFD/wacserver2013-kb3101367-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3101367-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="February 2016" Build="10.0.4797.1000" Url="https://download.microsoft.com/download/C/D/0/CD047F7C-6CB8-467D-A8A1-AAB6825BE9DD/wacserver2013-kb3114338-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3114338-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="March 2016" Build="10.0.4805.1000" Url="https://download.microsoft.com/download/6/7/8/678A11ED-19EF-4192-8DE2-F1F891C26B4E/wacserver2013-kb3114821-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3114821-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="April 2016" Build="10.0.4815.1000" Url="https://download.microsoft.com/download/A/A/D/AAD6945A-3564-4969-926C-D8C163473C7B/wacserver2013-kb3114934-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3114934-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="May 2016" Build="10.0.4823.1000" Url="https://download.microsoft.com/download/8/9/D/89D6C70F-79D2-4BD9-9851-391EACE1739D/wacserver2013-kb3115022-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3115022-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="June 2016" Build="10.0.4833.1000" Url="https://download.microsoft.com/download/E/7/A/E7A84AAD-A798-4B4D-9458-2174A35A7C87/wacserver2013-kb3115170-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3115170-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="July 2016" Build="10.0.4841.1000" Url="https://download.microsoft.com/download/B/3/7/B3779308-223B-4A03-8B6B-C99DB7D72295/wacserver2013-kb3115289-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3115289-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2016" Build="15.0.4797.1000" Url="https://download.microsoft.com/download/C/D/0/CD047F7C-6CB8-467D-A8A1-AAB6825BE9DD/wacserver2013-kb3114338-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3114338-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2016" Build="15.0.4805.1000" Url="https://download.microsoft.com/download/6/7/8/678A11ED-19EF-4192-8DE2-F1F891C26B4E/wacserver2013-kb3114821-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3114821-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2016" Build="15.0.4815.1000" Url="https://download.microsoft.com/download/A/A/D/AAD6945A-3564-4969-926C-D8C163473C7B/wacserver2013-kb3114934-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3114934-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2016" Build="15.0.4823.1000" Url="https://download.microsoft.com/download/8/9/D/89D6C70F-79D2-4BD9-9851-391EACE1739D/wacserver2013-kb3115022-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3115022-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2016" Build="15.0.4833.1000" Url="https://download.microsoft.com/download/E/7/A/E7A84AAD-A798-4B4D-9458-2174A35A7C87/wacserver2013-kb3115170-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3115170-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2016" Build="15.0.4841.1000" Url="https://download.microsoft.com/download/B/3/7/B3779308-223B-4A03-8B6B-C99DB7D72295/wacserver2013-kb3115289-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3115289-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2016" Build="15.0.4849.1000" Url="https://download.microsoft.com/download/D/A/6/DA6E859E-29CF-4762-A2FE-F884F3CAC049/wacserver2013-kb3115446-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3115446-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2016" Build="15.0.4859.1000" Url="https://download.microsoft.com/download/F/A/E/FAE7DAEA-31E4-4DE0-889D-93CCFC7D30D7/wacserver2013-kb3118270-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3118270-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -835,6 +844,12 @@
             <CumulativeUpdate Name="July 2016" Build="15.0.4841.1000" Url="https://download.microsoft.com/download/3/3/C/33CE29B6-43B3-494A-A1DA-E7340624E0FF/ubersrvprj2013-kb3115291-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3115291-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="July 2016" Build="15.0.4841.1000" Url="https://download.microsoft.com/download/3/3/C/33CE29B6-43B3-494A-A1DA-E7340624E0FF/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="July 2016" Build="15.0.4841.1000" Url="https://download.microsoft.com/download/3/3/C/33CE29B6-43B3-494A-A1DA-E7340624E0FF/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="August 2016" Build="15.0.4849.1000" Url="https://download.microsoft.com/download/9/F/0/9F054756-9095-40B7-9714-2225C8A222DB/ubersrvprj2013-kb3115448-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3115448-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2016" Build="15.0.4849.1000" Url="https://download.microsoft.com/download/9/F/0/9F054756-9095-40B7-9714-2225C8A222DB/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="August 2016" Build="15.0.4849.1000" Url="https://download.microsoft.com/download/9/F/0/9F054756-9095-40B7-9714-2225C8A222DB/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="September 2016" Build="15.0.4859.1003" Url="https://download.microsoft.com/download/D/3/2/D326FA85-5128-4830-BA0D-DD2CB4709AE3/ubersrvprj2013-kb3118274-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3118274-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2016" Build="15.0.4859.1003" Url="https://download.microsoft.com/download/D/3/2/D326FA85-5128-4830-BA0D-DD2CB4709AE3/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="September 2016" Build="15.0.4859.1003" Url="https://download.microsoft.com/download/D/3/2/D326FA85-5128-4830-BA0D-DD2CB4709AE3/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
   <Product Name="SP2016">
@@ -861,6 +876,8 @@
         <CumulativeUpdate Name="May 2016" Build="16.0.4378.1000" Url="https://download.microsoft.com/download/1/D/2/1D2C38A0-4AE7-47B3-9365-F603CBF1F154/sts2016-kb3115088-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115088-fullfile-x64-glb.exe" />
         <CumulativeUpdate Name="June 2016" Build="16.0.4393.1000" Url="https://download.microsoft.com/download/0/5/1/0513ABEE-BBD8-4D2F-985B-6E9A89D1C544/sts2016-kb3115181-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115181-fullfile-x64-glb.exe" />
         <CumulativeUpdate Name="July 2016" Build="16.0.4405.1000" Url="https://download.microsoft.com/download/2/6/A/26A556BB-81B8-4946-98E7-60E3AEDEB841/sts2016-kb3115299-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115299-fullfile-x64-glb.exe" />
+        <CumulativeUpdate Name="August 2016" Build="16.0.4417.1002" Url="https://download.microsoft.com/download/8/3/B/83BC75DB-CF74-45CF-B9BD-72888A0ED3F1/sts2016-kb3115437-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115437-fullfile-x64-glb.exe" />
+        <CumulativeUpdate Name="September 2016" Build="16.0.4432.1003" Url="https://download.microsoft.com/download/E/C/7/EC7986A3-4292-4B77-820C-473639468DC0/sts2016-kb3118289-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3118289-fullfile-x64-glb.exe" />
     </CumulativeUpdates>
     <LanguagePacks>
       <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1071,6 +1088,8 @@
         <CumulativeUpdates>
             <CumulativeUpdate Name="June 2016" Build="16.0.6228.3005" Url="https://download.microsoft.com/download/8/5/4/85454438-1CC8-44C6-9613-A9E8AEEC7C9B/wacserver2016-kb3115134-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb3115134-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="July 2016" Build="16.0.4405.1000" Url="https://download.microsoft.com/download/C/3/B/C3B0A6A0-688F-4454-8E2F-10B814BBFAD9/wacserver2016-kb3115386-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb3115386-fullfile-x64-glb.exe" />
+            <!--There is no Update for Office Online Server 2016 in August 2016-->
+            <CumulativeUpdate Name="September 2016" Build="16.0.4432.1003" Url="https://download.microsoft.com/download/0/F/2/0F2916EA-0DD5-4A82-A950-09E34DFB383B/wacserver2016-kb3118299-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb3118299-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="">

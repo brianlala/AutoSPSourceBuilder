@@ -1104,7 +1104,7 @@
       </LanguagePack>
     </LanguagePacks>
   </Product>
-    <Product Name="OfficeOnlineServer2016">
+    <Product Name="OfficeWebApps2016">
         <Prerequisites>
             <Prerequisite Name="Microsoft .NET Framework 4.5.2" Url="https://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=397706" />
             <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015" Url="https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=623013"/>

@@ -904,6 +904,7 @@
         <!--The November 2016 PU for SharePoint 2016 is also known as "Feature Pack 1"-->
         <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/9/0/F/90F0F093-8B7B-44F8-986D-5E9971CBED8B/sts2016-kb3127940-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3127940-fullfile-x64-glb.exe" />
         <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/4/F/6/4F675DC1-3F45-4C3B-8261-84F3CFE9BDF4/wssloc2016-kb3127942-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3127942-fullfile-x64-glb.exe" />
+        <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/1/7/3/17339FD2-2BE9-4A6D-8566-92D32157606C/svrproofloc2016-kb2910950-fullfile-x64-glb.exe" ExpandedFile="svrproofloc2016-kb2910950-fullfile-x64-glb.exe" />
     </CumulativeUpdates>
     <LanguagePacks>
       <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1117,6 +1118,7 @@
             <!--There is no Update for Office Online Server 2016 in August 2016-->
             <CumulativeUpdate Name="September 2016" Build="16.0.4432.1003" Url="https://download.microsoft.com/download/0/F/2/0F2916EA-0DD5-4A82-A950-09E34DFB383B/wacserver2016-kb3118299-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb3118299-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2016" Build="16.0.4444.1004" Url="https://download.microsoft.com/download/A/1/3/A13919C9-DC57-43A0-8EC8-6D654120ECE0/wacserver2016-kb3127897-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb3127897-fullfile-x64-glb.exe" />
+            <!--There is no Update for Office Online Server 2016 in November 2016-->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="">

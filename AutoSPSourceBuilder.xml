@@ -69,6 +69,7 @@
             <CumulativeUpdate Name="October 2016" Build="14.0.7174.5001" Url="https://download.microsoft.com/download/2/C/0/2C07833D-9C93-4E68-A542-C45FB7A06175/ubersrv2010-kb3118387-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3118387-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2016" Build="14.0.7176.5000" Url="https://download.microsoft.com/download/9/F/E/9FE1253C-09DD-417B-96A2-D71303A80EEC/ubersrv2010-kb3127957-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3127957-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2016" Build="14.0.7177.5000" Url="https://download.microsoft.com/download/C/D/C/CDCDF126-33AF-4691-8EAC-65DE192370C3/ubersrv2010-kb3128036-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb3128036-fullfile-x64-glb.exe" />
+            <!--There is no Update for SharePoint 2010 in January 2017-->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -329,6 +330,7 @@
             <CumulativeUpdate Name="June 2014" Build="14.0.7125.5000" Url="http://download.microsoft.com/download/E/4/1/E41CD805-285F-4F25-A4BD-B8C9B0A4B033/wac2010-kb2881027-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb2881027-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2014" Build="14.0.7130.5000" Url="http://hotfixv4.microsoft.com/Microsoft Web  Access Controls  2010/sp2/wacmuiwacwfewdsrv2010kb2883011fullfilex6/14.0.7130.5000/free/477568_intl_x64_zip.exe" ExpandedFile="wacmuiwacwfewdsrv2010-kb2883011-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2016" Build="14.0.7177.5000" Url="https://download.microsoft.com/download/9/1/1/9116F12E-B3E0-4B87-ADFA-9961EC15FDD3/wac2010-kb3128035-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb3128035-fullfile-x64-glb.exe" />
+            <!--There is no Update for Office Web Apps 2010 in January 2017-->
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">
@@ -470,6 +472,9 @@
             <CumulativeUpdate Name="December 2016" Build="15.0.4885.1000" Url="https://download.microsoft.com/download/6/B/5/6B5E9845-916B-45F0-AAF0-43CBE7EDF9AB/ubersrv2013-kb3128005-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3128005-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2016" Build="15.0.4885.1000" Url="https://download.microsoft.com/download/6/B/5/6B5E9845-916B-45F0-AAF0-43CBE7EDF9AB/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="December 2016" Build="15.0.4885.1000" Url="https://download.microsoft.com/download/6/B/5/6B5E9845-916B-45F0-AAF0-43CBE7EDF9AB/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="January 2017" Build="15.0.4893.1000" Url="https://download.microsoft.com/download/A/E/B/AEBBF76F-823F-4A0A-A398-183641466737/ubersrv2013-kb3141481-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb3141481-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2017" Build="15.0.4893.1000" Url="https://download.microsoft.com/download/A/E/B/AEBBF76F-823F-4A0A-A398-183641466737/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="January 2017" Build="15.0.4893.1000" Url="https://download.microsoft.com/download/A/E/B/AEBBF76F-823F-4A0A-A398-183641466737/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -732,6 +737,7 @@
             <CumulativeUpdate Name="October 2016" Build="15.0.4867.1000" Url="https://download.microsoft.com/download/3/6/D/36DC9E64-5A5B-4C89-88F6-BEB4410BBC3B/wacserver2013-kb3118360-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3118360-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2016" Build="15.0.4875.1000" Url="https://download.microsoft.com/download/1/F/3/1F3E83C2-6428-46F4-B96D-77BC0C7EF097/wacserver2013-kb3127929-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb3127929-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2013 in December 2016-->
+            <!--There is no Update for Office Web Apps 2013 in January 2017-->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -875,247 +881,252 @@
             <CumulativeUpdate Name="December 2016" Build="15.0.4885.1000" Url="https://download.microsoft.com/download/1/E/3/1E34F9A2-9985-4E58-9253-D74EF9F3EED1/ubersrvprj2013-kb3128003-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3128003-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2016" Build="15.0.4885.1000" Url="https://download.microsoft.com/download/1/E/3/1E34F9A2-9985-4E58-9253-D74EF9F3EED1/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="December 2016" Build="15.0.4885.1000" Url="https://download.microsoft.com/download/1/E/3/1E34F9A2-9985-4E58-9253-D74EF9F3EED1/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="January 2017" Build="15.0.4893.1000" Url="https://download.microsoft.com/download/7/4/C/74C008E0-F5A6-41D9-BD58-9D2273A73257/ubersrvprj2013-kb3141480-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3141480-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2017" Build="15.0.4893.1000" Url="https://download.microsoft.com/download/7/4/C/74C008E0-F5A6-41D9-BD58-9D2273A73257/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="January 2017" Build="15.0.4893.1000" Url="https://download.microsoft.com/download/7/4/C/74C008E0-F5A6-41D9-BD58-9D2273A73257/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
-  <Product Name="SP2016">
-    <Prerequisites>
-      <Prerequisite Name="Microsoft .NET Framework 4.6" Url="https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=528233" />
-      <Prerequisite Name="Microsoft SQL Server 2012 Native Client" Url="http://download.microsoft.com/download/4/B/1/4B1E9B0E-A4F3-4715-B417-31C82302A70A/ENU/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=622997" />
-      <Prerequisite Name="Microsoft ODBC Driver 11 for SQL Server" Url="https://download.microsoft.com/download/5/7/2/57249A3A-19D6-4901-ACCE-80924ABEB267/1033/amd64/msodbcsql.msi" Permalink="https://www.microsoft.com/en-us/download/details.aspx?id=36434" />
-      <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=224449" />
-      <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=252368" />
-      <Prerequisite Name="Microsoft Information Protection and Control Client 2.1" Url="http://download.microsoft.com/download/3/C/F/3CF781F5-7D29-4035-9265-C34FF2369FA2/setup_msipc_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkID=544913" />
-      <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320724" />
-      <Prerequisite Name="Windows Server AppFabric" Url="http://download.microsoft.com/download/A/6/7/A678AB47-496B-4907-B3D4-0A2D280A13C0/WindowsServerAppFabricSetup_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=235496" />
-      <Prerequisite Name="CU Package 1 for Microsoft AppFabric 1.1 for Windows Server (KB2671763)" Url="http://download.microsoft.com/download/7/B/5/7B51D8D1-20FD-4BF0-87C7-4714F5A1C313/AppFabric1.1-RTM-KB2671763-x64-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=251471" />
-      <Prerequisite Name="CU Package 7 for Microsoft AppFabric 1.1 for Windows Server (KB3092423)" Url="https://download.microsoft.com/download/F/1/0/F1093AF6-E797-4CA8-A9F6-FC50024B385C/AppFabric-KB3092423-x64-ENU.exe" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=49171&amp;6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1" />
-      <Prerequisite Name="Update for Microsoft .NET Framework to disable RC4 in Transport Layer Security (KB2898850)" Url="http://download.microsoft.com/download/C/6/9/C690CC33-18F7-405D-B18A-0A8E199E531C/Windows8.1-KB2898850-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=523853" />
-      <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2012" Url="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=627156"/>
-      <!--<Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2013" Url="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320713&amp;clcid=0x409"/>-->
-      <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015" Url="http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=623013"/>
-    </Prerequisites>
-    <ServicePacks>
-    </ServicePacks>
-    <CumulativeUpdates>
-        <CumulativeUpdate Name="April 2016" Build="16.0.4366.1000" Url="https://download.microsoft.com/download/8/D/5/8D589BA9-3EA3-4AF8-A5D6-7BC4DE028531/sts2016-kb2920721-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb2920721-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="May 2016" Build="16.0.4378.1000" Url="https://download.microsoft.com/download/1/D/2/1D2C38A0-4AE7-47B3-9365-F603CBF1F154/sts2016-kb3115088-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115088-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="May 2016" Build="16.0.4378.1000" Url="https://download.microsoft.com/download/7/D/A/7DA2A7E4-1903-45DA-A1AF-1DF8E79CBABB/wssloc2016-kb2920690-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb2920690-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="June 2016" Build="16.0.4393.1000" Url="https://download.microsoft.com/download/0/5/1/0513ABEE-BBD8-4D2F-985B-6E9A89D1C544/sts2016-kb3115181-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115181-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="June 2016" Build="16.0.4393.1000" Url="https://download.microsoft.com/download/9/8/B/98B7A6ED-63C2-461C-A61B-9960B665D428/wssloc2016-kb3115184-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3115184-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="July 2016" Build="16.0.4405.1000" Url="https://download.microsoft.com/download/2/6/A/26A556BB-81B8-4946-98E7-60E3AEDEB841/sts2016-kb3115299-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115299-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="July 2016" Build="16.0.4405.1000" Url="https://download.microsoft.com/download/6/B/F/6BF1076F-607F-422C-8048-0A6EA6D8E0D9/wssloc2016-kb3115304-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3115304-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="August 2016" Build="16.0.4417.1002" Url="https://download.microsoft.com/download/8/3/B/83BC75DB-CF74-45CF-B9BD-72888A0ED3F1/sts2016-kb3115437-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115437-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="August 2016" Build="16.0.4417.1002" Url="https://download.microsoft.com/download/C/3/D/C3DB63B9-5A95-48F1-BDC4-6C57DAF93901/wssloc2016-kb3115441-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3115441-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="September 2016" Build="16.0.4432.1003" Url="https://download.microsoft.com/download/E/C/7/EC7986A3-4292-4B77-820C-473639468DC0/sts2016-kb3118289-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3118289-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="September 2016" Build="16.0.4432.1003" Url="https://download.microsoft.com/download/2/2/C/22CB2861-5D06-403C-A20C-5F490DC8919B/wssloc2016-kb3118295-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3118295-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="October 2016" Build="16.0.4444.1004" Url="https://download.microsoft.com/download/A/4/6/A464472A-68B0-41FB-A2EA-17F0F215142A/sts2016-kb3118372-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3118372-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="October 2016" Build="16.0.4444.1004" Url="https://download.microsoft.com/download/2/6/1/2615E33D-2266-449B-B0EB-E6265343D099/wssloc2016-kb3118376-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3118376-fullfile-x64-glb.exe" />
-        <!--The November 2016 PU for SharePoint 2016 is also known as "Feature Pack 1"-->
-        <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/9/0/F/90F0F093-8B7B-44F8-986D-5E9971CBED8B/sts2016-kb3127940-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3127940-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/4/F/6/4F675DC1-3F45-4C3B-8261-84F3CFE9BDF4/wssloc2016-kb3127942-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3127942-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/1/7/3/17339FD2-2BE9-4A6D-8566-92D32157606C/svrproofloc2016-kb2910950-fullfile-x64-glb.exe" ExpandedFile="svrproofloc2016-kb2910950-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="December 2016" Build="16.0.4471.1000" Url="https://download.microsoft.com/download/D/0/4/D04FD356-E140-433E-94F6-472CF45FD591/sts2016-kb3128014-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3128014-fullfile-x64-glb.exe" />
-        <CumulativeUpdate Name="December 2016" Build="16.0.4471.1000" Url="https://download.microsoft.com/download/6/5/B/65B840E6-A1C3-4C15-8E1A-988D491EB9AA/wssloc2016-kb3128017-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3128017-fullfile-x64-glb.exe" />
-    </CumulativeUpdates>
-    <LanguagePacks>
-      <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
+    <Product Name="SP2016">
+        <Prerequisites>
+          <Prerequisite Name="Microsoft .NET Framework 4.6" Url="https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=528233" />
+          <Prerequisite Name="Microsoft SQL Server 2012 Native Client" Url="http://download.microsoft.com/download/4/B/1/4B1E9B0E-A4F3-4715-B417-31C82302A70A/ENU/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=622997" />
+          <Prerequisite Name="Microsoft ODBC Driver 11 for SQL Server" Url="https://download.microsoft.com/download/5/7/2/57249A3A-19D6-4901-ACCE-80924ABEB267/ENU/x64/msodbcsql.msi" Permalink="https://www.microsoft.com/en-us/download/details.aspx?id=36434" />
+          <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=224449" />
+          <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=252368" />
+          <Prerequisite Name="Microsoft Information Protection and Control Client 2.1" Url="http://download.microsoft.com/download/3/C/F/3CF781F5-7D29-4035-9265-C34FF2369FA2/setup_msipc_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkID=544913" />
+          <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320724" />
+          <Prerequisite Name="Windows Server AppFabric" Url="http://download.microsoft.com/download/A/6/7/A678AB47-496B-4907-B3D4-0A2D280A13C0/WindowsServerAppFabricSetup_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=235496" />
+          <Prerequisite Name="CU Package 1 for Microsoft AppFabric 1.1 for Windows Server (KB2671763)" Url="http://download.microsoft.com/download/7/B/5/7B51D8D1-20FD-4BF0-87C7-4714F5A1C313/AppFabric1.1-RTM-KB2671763-x64-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=251471" />
+          <Prerequisite Name="CU Package 7 for Microsoft AppFabric 1.1 for Windows Server (KB3092423)" Url="https://download.microsoft.com/download/F/1/0/F1093AF6-E797-4CA8-A9F6-FC50024B385C/AppFabric-KB3092423-x64-ENU.exe" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=49171&amp;6B49FDFB-8E5B-4B07-BC31-15695C5A2143=1" />
+          <Prerequisite Name="Update for Microsoft .NET Framework to disable RC4 in Transport Layer Security (KB2898850)" Url="http://download.microsoft.com/download/C/6/9/C690CC33-18F7-405D-B18A-0A8E199E531C/Windows8.1-KB2898850-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=523853" />
+          <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2012" Url="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=627156"/>
+          <!--<Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2013" Url="http://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320713&amp;clcid=0x409"/>-->
+          <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015" Url="http://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=623013"/>
+        </Prerequisites>
         <ServicePacks>
         </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="bs-ba" Url="https://download.microsoft.com/download/A/6/F/A6FF6F31-D76D-43F1-BD31-DF594EAE0B53/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="pl-pl" Url="https://download.microsoft.com/download/8/1/5/815F32DD-D203-49FE-882B-11AA29A60321/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="pt-br" Url="https://download.microsoft.com/download/D/B/2/DB291472-AA7D-4897-A51D-DF5199EDEDD3/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="pt-pt" Url="https://download.microsoft.com/download/8/D/9/8D9D8B6E-57D8-4557-B19E-C90E88A98B5A/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="ga-ie" Url="https://download.microsoft.com/download/3/5/3/353265F6-6212-408F-8166-7FF0645A17B4/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="nb-no" Url="https://download.microsoft.com/download/3/5/4/354FBC6F-BAF4-4720-BE15-16515B7C3DC2/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="hu-hu" Url="https://download.microsoft.com/download/3/E/5/3E502880-774A-45B5-9947-9DE2A9C0BBE8/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="id-id" Url="https://download.microsoft.com/download/4/B/A/4BA8D681-5BD8-48D6-AC7D-A3A83C64096F/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="hr-hr" Url="https://download.microsoft.com/download/F/5/6/F567DF67-D26F-4A8E-B309-B79954B10D11/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="cy-gb" Url="https://download.microsoft.com/download/E/3/9/E39F0CC2-6AB2-4761-9E38-28AE4ACA8D4D/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="bg-bg" Url="https://download.microsoft.com/download/2/7/8/278D3306-5E23-4336-BF18-158B5F31BAE9/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="ro-ro" Url="https://download.microsoft.com/download/2/A/6/2A6FAF0D-65C3-4217-AD43-40DBC06437FC/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="sl-SI" Url="https://download.microsoft.com/download/8/B/8/8B88B12B-BE08-4151-BF2A-D52F7CB48A83/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="sr-latn-rs" Url="https://download.microsoft.com/download/4/3/A/43AD5822-545F-4494-B7B5-4EC19C751B65/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="sr-Cyrl-RS" Url="https://download.microsoft.com/download/E/B/E/EBE3F635-70FE-409A-845E-573D106D4D11/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="uk-ua" Url="https://download.microsoft.com/download/5/D/8/5D87B3FC-1438-4F2B-85EE-398F485A836A/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="hi-in" Url="https://download.microsoft.com/download/4/6/D/46D0EFE6-142A-45EB-B078-3937763E64E4/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="th-th" Url="https://download.microsoft.com/download/2/6/1/2611DB20-DE54-4BC1-A7A4-58336CD2A55B/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="kk-kz" Url="https://download.microsoft.com/download/9/D/6/9D68A9BB-015E-4D77-A797-896BBDA445BD/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="ca-es" Url="https://download.microsoft.com/download/A/D/0/AD0932FD-DC4D-47DE-9AC4-6D8337563108/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="el-gr" Url="https://download.microsoft.com/download/6/5/9/65996356-4F1A-4979-BC72-D8F95D4D7823/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="et-ee" Url="https://download.microsoft.com/download/E/E/9/EE90AF53-135A-433C-8ECC-5622A34AA4C7/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="eu-es" Url="https://download.microsoft.com/download/4/9/6/496F88E0-5864-4112-9357-0FD44078BE04/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="lt-lt" Url="https://download.microsoft.com/download/D/A/8/DA8C6182-44F4-4B18-B0CF-CD25C8CC43DD/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="mk-mk" Url="https://download.microsoft.com/download/8/5/0/8507D442-820C-4CE0-8E85-1023E38171A6/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="lv-lv" Url="https://download.microsoft.com/download/D/C/7/DC789F8F-E7A0-4B98-BD16-46210AF153FD/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="gl-es" Url="https://download.microsoft.com/download/F/3/0/F304B0BA-2F5E-4BD7-8647-74BF9AB35674/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="he-il" Url="https://download.microsoft.com/download/6/E/5/6E58A30C-AC89-41C1-88A9-8CF31501D28E/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="fi-fi" Url="https://download.microsoft.com/download/A/6/4/A64BA4CE-F646-400D-963E-BFD5C575EB35/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="sv-se" Url="https://download.microsoft.com/download/B/4/F/B4FAAB83-EA58-4400-ACE9-D05EFEAE6427/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="sk-sk" Url="https://download.microsoft.com/download/9/F/E/9FEAEC75-7130-4CEE-8AA1-89AF8F643CE1/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="tr-tr" Url="https://download.microsoft.com/download/9/4/4/944C61C9-1D77-4783-8ED9-2EF7E872089F/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="cs-cz" Url="https://download.microsoft.com/download/D/2/7/D27C63AC-DF54-45D4-8DB3-267E93BA28C3/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="da-dk" Url="https://download.microsoft.com/download/E/A/5/EA599F2F-93A1-4311-B189-3F35870D886B/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="de-de" Url="https://download.microsoft.com/download/6/6/C/66C2575A-E8B0-461E-A7A7-48C7100EAF7F/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="PRS-af" Url="https://download.microsoft.com/download/2/7/7/277DCF64-E71D-4809-8A2E-5DDD2532096E/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="en-us" Url="https://download.microsoft.com/download/9/F/8/9F86F455-3912-4873-A891-8C007CDBB66A/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="es-es" Url="https://download.microsoft.com/download/3/A/F/3AF9783E-5CA7-45EA-8CF8-1958D3F5C4FC/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="fr-fr" Url="https://download.microsoft.com/download/9/A/D/9ADBFA1E-C83D-4833-AD35-32970A981A83/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="it-it" Url="https://download.microsoft.com/download/8/9/1/891F0DDA-578F-4181-ADDA-F5F71B90CCB2/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="ja-jp" Url="https://download.microsoft.com/download/5/4/1/54160F97-2890-4BEE-8B1C-9FCD14B1E69C/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="ms-my" Url="https://download.microsoft.com/download/9/8/2/982EEA97-C44A-49F7-A3E9-4EB322C7C383/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="ko-kr" Url="https://download.microsoft.com/download/3/5/F/35F3654D-DAF7-4E06-A5EA-3C803CFA3CDB/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="nl-nl" Url="https://download.microsoft.com/download/0/1/E/01EE44A5-45FC-4FA5-9A97-BCDCDB483CC2/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="ru-ru" Url="https://download.microsoft.com/download/B/8/3/B83B335A-9E02-4F7F-8DE6-1B47F0700579/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="vi-vn" Url="https://download.microsoft.com/download/A/F/1/AF126D6C-D258-42C9-81FB-44931CAD6517/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="zh-cn" Url="https://download.microsoft.com/download/5/A/B/5AB31ED6-E638-4C5C-AB0D-ADD7235DC0E2/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-      <LanguagePack Name="zh-tw" Url="https://download.microsoft.com/download/8/A/F/8AF83102-6635-4DDE-997B-7850D171962D/serverlanguagepack.exe">
-        <ServicePacks>
-        </ServicePacks>
-      </LanguagePack>
-    </LanguagePacks>
-  </Product>
+        <CumulativeUpdates>
+            <CumulativeUpdate Name="April 2016" Build="16.0.4366.1000" Url="https://download.microsoft.com/download/8/D/5/8D589BA9-3EA3-4AF8-A5D6-7BC4DE028531/sts2016-kb2920721-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb2920721-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2016" Build="16.0.4378.1000" Url="https://download.microsoft.com/download/1/D/2/1D2C38A0-4AE7-47B3-9365-F603CBF1F154/sts2016-kb3115088-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115088-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2016" Build="16.0.4378.1000" Url="https://download.microsoft.com/download/7/D/A/7DA2A7E4-1903-45DA-A1AF-1DF8E79CBABB/wssloc2016-kb2920690-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb2920690-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2016" Build="16.0.4393.1000" Url="https://download.microsoft.com/download/0/5/1/0513ABEE-BBD8-4D2F-985B-6E9A89D1C544/sts2016-kb3115181-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115181-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2016" Build="16.0.4393.1000" Url="https://download.microsoft.com/download/9/8/B/98B7A6ED-63C2-461C-A61B-9960B665D428/wssloc2016-kb3115184-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3115184-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2016" Build="16.0.4405.1000" Url="https://download.microsoft.com/download/2/6/A/26A556BB-81B8-4946-98E7-60E3AEDEB841/sts2016-kb3115299-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115299-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2016" Build="16.0.4405.1000" Url="https://download.microsoft.com/download/6/B/F/6BF1076F-607F-422C-8048-0A6EA6D8E0D9/wssloc2016-kb3115304-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3115304-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2016" Build="16.0.4417.1002" Url="https://download.microsoft.com/download/8/3/B/83BC75DB-CF74-45CF-B9BD-72888A0ED3F1/sts2016-kb3115437-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3115437-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2016" Build="16.0.4417.1002" Url="https://download.microsoft.com/download/C/3/D/C3DB63B9-5A95-48F1-BDC4-6C57DAF93901/wssloc2016-kb3115441-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3115441-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2016" Build="16.0.4432.1003" Url="https://download.microsoft.com/download/E/C/7/EC7986A3-4292-4B77-820C-473639468DC0/sts2016-kb3118289-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3118289-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2016" Build="16.0.4432.1003" Url="https://download.microsoft.com/download/2/2/C/22CB2861-5D06-403C-A20C-5F490DC8919B/wssloc2016-kb3118295-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3118295-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2016" Build="16.0.4444.1004" Url="https://download.microsoft.com/download/A/4/6/A464472A-68B0-41FB-A2EA-17F0F215142A/sts2016-kb3118372-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3118372-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2016" Build="16.0.4444.1004" Url="https://download.microsoft.com/download/2/6/1/2615E33D-2266-449B-B0EB-E6265343D099/wssloc2016-kb3118376-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3118376-fullfile-x64-glb.exe" />
+            <!--The November 2016 PU for SharePoint 2016 is also known as "Feature Pack 1"-->
+            <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/9/0/F/90F0F093-8B7B-44F8-986D-5E9971CBED8B/sts2016-kb3127940-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3127940-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/4/F/6/4F675DC1-3F45-4C3B-8261-84F3CFE9BDF4/wssloc2016-kb3127942-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3127942-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2016" Build="16.0.4456.1002" Url="https://download.microsoft.com/download/1/7/3/17339FD2-2BE9-4A6D-8566-92D32157606C/svrproofloc2016-kb2910950-fullfile-x64-glb.exe" ExpandedFile="svrproofloc2016-kb2910950-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2016" Build="16.0.4471.1000" Url="https://download.microsoft.com/download/D/0/4/D04FD356-E140-433E-94F6-472CF45FD591/sts2016-kb3128014-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3128014-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2016" Build="16.0.4471.1000" Url="https://download.microsoft.com/download/6/5/B/65B840E6-A1C3-4C15-8E1A-988D491EB9AA/wssloc2016-kb3128017-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3128017-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2017" Build="16.0.4483.1000" Url="https://download.microsoft.com/download/8/2/D/82D09070-1AF0-4484-B5F5-CA3F2C44EA56/sts2016-kb3141486-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3141486-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2017" Build="16.0.4483.1000" Url="https://download.microsoft.com/download/3/9/E/39E2AB18-BE25-4351-A916-A35780C0B3CA/wssloc2016-kb3141487-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3141487-fullfile-x64-glb.exe" />
+        </CumulativeUpdates>
+        <LanguagePacks>
+          <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="bs-ba" Url="https://download.microsoft.com/download/A/6/F/A6FF6F31-D76D-43F1-BD31-DF594EAE0B53/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pl-pl" Url="https://download.microsoft.com/download/8/1/5/815F32DD-D203-49FE-882B-11AA29A60321/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pt-br" Url="https://download.microsoft.com/download/D/B/2/DB291472-AA7D-4897-A51D-DF5199EDEDD3/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pt-pt" Url="https://download.microsoft.com/download/8/D/9/8D9D8B6E-57D8-4557-B19E-C90E88A98B5A/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ga-ie" Url="https://download.microsoft.com/download/3/5/3/353265F6-6212-408F-8166-7FF0645A17B4/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="nb-no" Url="https://download.microsoft.com/download/3/5/4/354FBC6F-BAF4-4720-BE15-16515B7C3DC2/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hu-hu" Url="https://download.microsoft.com/download/3/E/5/3E502880-774A-45B5-9947-9DE2A9C0BBE8/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="id-id" Url="https://download.microsoft.com/download/4/B/A/4BA8D681-5BD8-48D6-AC7D-A3A83C64096F/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hr-hr" Url="https://download.microsoft.com/download/F/5/6/F567DF67-D26F-4A8E-B309-B79954B10D11/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="cy-gb" Url="https://download.microsoft.com/download/E/3/9/E39F0CC2-6AB2-4761-9E38-28AE4ACA8D4D/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="bg-bg" Url="https://download.microsoft.com/download/2/7/8/278D3306-5E23-4336-BF18-158B5F31BAE9/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ro-ro" Url="https://download.microsoft.com/download/2/A/6/2A6FAF0D-65C3-4217-AD43-40DBC06437FC/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sl-SI" Url="https://download.microsoft.com/download/8/B/8/8B88B12B-BE08-4151-BF2A-D52F7CB48A83/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sr-latn-rs" Url="https://download.microsoft.com/download/4/3/A/43AD5822-545F-4494-B7B5-4EC19C751B65/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sr-Cyrl-RS" Url="https://download.microsoft.com/download/E/B/E/EBE3F635-70FE-409A-845E-573D106D4D11/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="uk-ua" Url="https://download.microsoft.com/download/5/D/8/5D87B3FC-1438-4F2B-85EE-398F485A836A/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hi-in" Url="https://download.microsoft.com/download/4/6/D/46D0EFE6-142A-45EB-B078-3937763E64E4/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="th-th" Url="https://download.microsoft.com/download/2/6/1/2611DB20-DE54-4BC1-A7A4-58336CD2A55B/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="kk-kz" Url="https://download.microsoft.com/download/9/D/6/9D68A9BB-015E-4D77-A797-896BBDA445BD/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ca-es" Url="https://download.microsoft.com/download/A/D/0/AD0932FD-DC4D-47DE-9AC4-6D8337563108/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="el-gr" Url="https://download.microsoft.com/download/6/5/9/65996356-4F1A-4979-BC72-D8F95D4D7823/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="et-ee" Url="https://download.microsoft.com/download/E/E/9/EE90AF53-135A-433C-8ECC-5622A34AA4C7/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="eu-es" Url="https://download.microsoft.com/download/4/9/6/496F88E0-5864-4112-9357-0FD44078BE04/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="lt-lt" Url="https://download.microsoft.com/download/D/A/8/DA8C6182-44F4-4B18-B0CF-CD25C8CC43DD/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="mk-mk" Url="https://download.microsoft.com/download/8/5/0/8507D442-820C-4CE0-8E85-1023E38171A6/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="lv-lv" Url="https://download.microsoft.com/download/D/C/7/DC789F8F-E7A0-4B98-BD16-46210AF153FD/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="gl-es" Url="https://download.microsoft.com/download/F/3/0/F304B0BA-2F5E-4BD7-8647-74BF9AB35674/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="he-il" Url="https://download.microsoft.com/download/6/E/5/6E58A30C-AC89-41C1-88A9-8CF31501D28E/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="fi-fi" Url="https://download.microsoft.com/download/A/6/4/A64BA4CE-F646-400D-963E-BFD5C575EB35/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sv-se" Url="https://download.microsoft.com/download/B/4/F/B4FAAB83-EA58-4400-ACE9-D05EFEAE6427/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sk-sk" Url="https://download.microsoft.com/download/9/F/E/9FEAEC75-7130-4CEE-8AA1-89AF8F643CE1/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="tr-tr" Url="https://download.microsoft.com/download/9/4/4/944C61C9-1D77-4783-8ED9-2EF7E872089F/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="cs-cz" Url="https://download.microsoft.com/download/D/2/7/D27C63AC-DF54-45D4-8DB3-267E93BA28C3/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="da-dk" Url="https://download.microsoft.com/download/E/A/5/EA599F2F-93A1-4311-B189-3F35870D886B/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="de-de" Url="https://download.microsoft.com/download/6/6/C/66C2575A-E8B0-461E-A7A7-48C7100EAF7F/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="PRS-af" Url="https://download.microsoft.com/download/2/7/7/277DCF64-E71D-4809-8A2E-5DDD2532096E/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="en-us" Url="https://download.microsoft.com/download/9/F/8/9F86F455-3912-4873-A891-8C007CDBB66A/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="es-es" Url="https://download.microsoft.com/download/3/A/F/3AF9783E-5CA7-45EA-8CF8-1958D3F5C4FC/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="fr-fr" Url="https://download.microsoft.com/download/9/A/D/9ADBFA1E-C83D-4833-AD35-32970A981A83/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="it-it" Url="https://download.microsoft.com/download/8/9/1/891F0DDA-578F-4181-ADDA-F5F71B90CCB2/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ja-jp" Url="https://download.microsoft.com/download/5/4/1/54160F97-2890-4BEE-8B1C-9FCD14B1E69C/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ms-my" Url="https://download.microsoft.com/download/9/8/2/982EEA97-C44A-49F7-A3E9-4EB322C7C383/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ko-kr" Url="https://download.microsoft.com/download/3/5/F/35F3654D-DAF7-4E06-A5EA-3C803CFA3CDB/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="nl-nl" Url="https://download.microsoft.com/download/0/1/E/01EE44A5-45FC-4FA5-9A97-BCDCDB483CC2/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ru-ru" Url="https://download.microsoft.com/download/B/8/3/B83B335A-9E02-4F7F-8DE6-1B47F0700579/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="vi-vn" Url="https://download.microsoft.com/download/A/F/1/AF126D6C-D258-42C9-81FB-44931CAD6517/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="zh-cn" Url="https://download.microsoft.com/download/5/A/B/5AB31ED6-E638-4C5C-AB0D-ADD7235DC0E2/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="zh-tw" Url="https://download.microsoft.com/download/8/A/F/8AF83102-6635-4DDE-997B-7850D171962D/serverlanguagepack.exe">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+        </LanguagePacks>
+    </Product>
     <Product Name="OfficeOnlineServer2016">
         <Prerequisites>
             <Prerequisite Name="Microsoft .NET Framework 4.5.2" Url="https://download.microsoft.com/download/E/2/1/E21644B5-2DF2-47C2-91BD-63C560427900/NDP452-KB2901907-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=397706" />

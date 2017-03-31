@@ -927,6 +927,8 @@
             <CumulativeUpdate Name="December 2016" Build="16.0.4471.1000" Url="https://download.microsoft.com/download/6/5/B/65B840E6-A1C3-4C15-8E1A-988D491EB9AA/wssloc2016-kb3128017-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3128017-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2017" Build="16.0.4483.1000" Url="https://download.microsoft.com/download/8/2/D/82D09070-1AF0-4484-B5F5-CA3F2C44EA56/sts2016-kb3141486-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3141486-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2017" Build="16.0.4483.1000" Url="https://download.microsoft.com/download/3/9/E/39E2AB18-BE25-4351-A916-A35780C0B3CA/wssloc2016-kb3141487-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3141487-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2017" Build="16.0.4510.1001" Url="https://download.microsoft.com/download/A/8/7/A87F28F5-8677-4760-8801-B82F38083DD3/sts2016-kb3178672-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb3178672-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2017" Build="16.0.4510.1001" Url="https://download.microsoft.com/download/A/F/8/AF817268-9A98-41E1-8905-BF612C95779A/wssloc2016-kb3178675-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb3178675-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">

@@ -336,6 +336,7 @@
             <!--There is no Update for Office Web Apps 2010 in January 2017-->
             <!--There is no Update for Office Web Apps 2010 in February 2017-->
             <CumulativeUpdate Name="March 2017" Build="14.0.7179.5000" Url="https://download.microsoft.com/download/3/4/5/34575DBB-E9B0-4C24-A75D-FCB8B033ED60/wac2010-kb3178689-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb3178689-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2017" Build="14.0.7180.5001" Url="https://download.microsoft.com/download/C/6/7/C6720001-3AC3-46C8-9663-89989E535148/wac2010-kb3191845-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb3191845-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">

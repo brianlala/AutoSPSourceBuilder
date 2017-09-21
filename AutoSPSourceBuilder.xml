@@ -344,6 +344,8 @@
             <CumulativeUpdate Name="April 2017" Build="14.0.7180.5001" Url="https://download.microsoft.com/download/C/6/7/C6720001-3AC3-46C8-9663-89989E535148/wac2010-kb3191845-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb3191845-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2010 in May 2017-->
             <!--There is no Update for Office Web Apps 2010 in June 2017-->
+            <CumulativeUpdate Name="July 2017" Build="14.0.7183.5000" Url="https://download.microsoft.com/download/2/5/9/2592653F-B13D-41A6-85BD-1E7EA7B95836/wacproofloc2010-kb3203469-fullfile-x64-glb.exe" ExpandedFile="wacproofloc2010-kb3203469-fullfile-x64-glb.exe" />
+            <!--There is no Update for Office Web Apps 2010 in August 2017-->
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">

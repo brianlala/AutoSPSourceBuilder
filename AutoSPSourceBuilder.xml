@@ -81,6 +81,7 @@
             <CumulativeUpdate Name="October 2017" Build="14.0.7189.5001" Url="https://download.microsoft.com/download/B/D/A/BDA03FB4-B38A-4DB1-86F2-F0478EF1AF84/ubersrv2010-kb4011195-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4011195-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2017" Build="14.0.7190.5000" Url="https://download.microsoft.com/download/2/B/2/2B2D1B45-FE7E-4F5F-A6A0-4940946D6A8A/ubersrv2010-kb4011272-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4011272-fullfile-x64-glb.exe" />
             <!--There is no Update for SharePoint 2010 in December 2017-->
+            <CumulativeUpdate Name="January 2018" Build="14.0.7192.5000" Url="https://download.microsoft.com/download/9/2/A/92A3B2B4-2BC9-41DF-B854-6A7D0C26B040/ubersrv2010-kb4011616-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4011616-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -348,7 +349,7 @@
             <!--There is no Update for Office Web Apps 2010 in May 2017-->
             <!--There is no Update for Office Web Apps 2010 in June 2017-->
             <CumulativeUpdate Name="July 2017" Build="14.0.7183.5000" Url="https://download.microsoft.com/download/2/5/9/2592653F-B13D-41A6-85BD-1E7EA7B95836/wacproofloc2010-kb3203469-fullfile-x64-glb.exe" ExpandedFile="wacproofloc2010-kb3203469-fullfile-x64-glb.exe" />
-            <!--There is no Update for Office Web Apps 2010 for August-December 2017-->
+            <!--There is no Update for Office Web Apps 2010 for August 2017-January 2018-->
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">
@@ -524,6 +525,9 @@
             <CumulativeUpdate Name="December 2017" Build="15.0.4989.1001" Url="https://download.microsoft.com/download/F/C/4/FC4A6C78-B4AB-41D9-863D-027B3992D53F/ubersrv2013-kb4011593-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4011593-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2017" Build="15.0.4989.1001" Url="https://download.microsoft.com/download/F/C/4/FC4A6C78-B4AB-41D9-863D-027B3992D53F/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="December 2017" Build="15.0.4989.1001" Url="https://download.microsoft.com/download/F/C/4/FC4A6C78-B4AB-41D9-863D-027B3992D53F/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="January 2018" Build="15.0.4997.1000" Url="https://download.microsoft.com/download/8/2/6/82604701-1983-4A8B-AEA2-EE3907FDB7CE/ubersrv2013-kb4011652-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4011652-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2018" Build="15.0.4997.1000" Url="https://download.microsoft.com/download/8/2/6/82604701-1983-4A8B-AEA2-EE3907FDB7CE/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="January 2018" Build="15.0.4997.1000" Url="https://download.microsoft.com/download/8/2/6/82604701-1983-4A8B-AEA2-EE3907FDB7CE/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -795,6 +799,7 @@
             <CumulativeUpdate Name="October 2017" Build="15.0.4971.1002" Url="https://download.microsoft.com/download/5/D/0/5D0EC7BE-F414-4991-985D-7B44050D2AFC/wacserver2013-kb4011231-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4011231-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2017" Build="15.0.4981.1002" Url="https://download.microsoft.com/download/0/8/C/08C8BF0F-A23B-499E-B36C-050A84825010/wacserver2013-kb4011247-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4011247-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2017" Build="15.0.4989.1001" Url="https://download.microsoft.com/download/F/1/B/F1B61F37-5F96-4356-A022-D0A6EC6AAFE6/wacserver2013-kb4011587-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4011587-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2018" Build="15.0.4997.1000" Url="https://download.microsoft.com/download/A/B/B/ABB51C10-975F-40F0-AE48-D99DCCDA758C/wacserver2013-kb4011648-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4011648-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -1019,6 +1024,8 @@
             <CumulativeUpdate Name="November 2017" Build="16.0.4615.1000" Url="https://download.microsoft.com/download/E/9/F/E9F76AFA-FE76-4D39-BA64-1C7AEB097726/wssloc2016-kb4011243-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4011243-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2017" Build="16.0.4627.1000" Url="https://download.microsoft.com/download/6/3/E/63E94C0D-9D70-4213-B1D8-1F2FF70477B6/sts2016-kb4011576-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4011576-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2017" Build="16.0.4627.1000" Url="https://download.microsoft.com/download/7/4/A/74A1E48F-0B66-4383-AD6E-0BC6DBD38DD5/wssloc2016-kb4011578-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4011578-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2018" Build="16.0.4639.1000" Url="https://download.microsoft.com/download/A/8/6/A8676455-B2DC-4E01-B853-2D12F754747F/sts2016-kb4011642-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4011642-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2018" Build="16.0.4639.1000" Url="https://download.microsoft.com/download/2/2/4/224F4887-5A9C-449B-A1CD-2F27297E3F5E/wssloc2016-kb4011645-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4011645-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1242,6 +1249,7 @@
             <CumulativeUpdate Name="October 2017" Build="16.0.4600.1000" Url="https://download.microsoft.com/download/2/4/9/249F4BAF-547D-408E-B5C3-7E7D9B8D203F/wacserver2016-kb3213659-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb3213659-fullfile-x64-glb.exe" />
             <!--There is no separate Update for Office Online Server 2016 for November 2017-->
             <CumulativeUpdate Name="December 2017" Build="16.0.4627.1000" Url="https://download.microsoft.com/download/F/0/B/F0BA928E-F309-4F65-91DB-48D00ACF3616/wacserver2016-kb4011020-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb4011020-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2018" Build="16.0.4639.1000" Url="https://download.microsoft.com/download/B/A/2/BA2E7285-AEB0-4278-A9DD-AA03E83B8052/wacserver2016-kb4011021-fullfile-x64-glb.exe" ExpandedFile="wacserver2016-kb4011021-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="">

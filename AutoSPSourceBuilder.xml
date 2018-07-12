@@ -543,6 +543,9 @@
             <CumulativeUpdate Name="June 2018" Build="15.0.5041.1000" Url="https://download.microsoft.com/download/2/F/3/2F326BF9-BAD3-4528-BF65-FDC02B0501A5/ubersrv2013-kb4022187-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4022187-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2018" Build="15.0.5041.1000" Url="https://download.microsoft.com/download/2/F/3/2F326BF9-BAD3-4528-BF65-FDC02B0501A5/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="June 2018" Build="15.0.5041.1000" Url="https://download.microsoft.com/download/2/F/3/2F326BF9-BAD3-4528-BF65-FDC02B0501A5/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="July 2018" Build="15.0.5049.1000" Url="https://download.microsoft.com/download/F/8/A/F8A10B02-E384-41BA-A24F-9212A7EB0B8A/ubersrv2013-kb4022241-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4022241-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2018" Build="15.0.5049.1000" Url="https://download.microsoft.com/download/F/8/A/F8A10B02-E384-41BA-A24F-9212A7EB0B8A/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="July 2018" Build="15.0.5049.1000" Url="https://download.microsoft.com/download/F/8/A/F8A10B02-E384-41BA-A24F-9212A7EB0B8A/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />            
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -820,6 +823,7 @@
             <CumulativeUpdate Name="April 2018" Build="15.0.5023.1000" Url="https://download.microsoft.com/download/C/1/3/C13213AD-FD55-4D73-B218-15FB6FDF8828/wacserver2013-kb4018344-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4018344-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2013 for May 2018-->
             <CumulativeUpdate Name="June 2018" Build="15.0.5041.1000" Url="https://download.microsoft.com/download/5/3/6/53666FE6-65C9-4572-8D8F-678299D88A4E/wacserver2013-kb4022183-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4022183-fullfile-x64-glb.exe" />
+            <!--There is no Update for Office Web Apps 2013 for July 2018-->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -1056,6 +1060,8 @@
             <CumulativeUpdate Name="May 2018" Build="16.0.4690.1000" Url="https://download.microsoft.com/download/1/2/C/12CFD45C-2217-41B1-9B55-9CED742A4A42/wssloc2016-kb4018386-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4018386-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2018" Build="16.0.4705.1000" Url="https://download.microsoft.com/download/B/2/7/B27FA473-F0E4-4514-9522-F9E19D84C7B9/sts2016-kb4022173-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4022173-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2018" Build="16.0.4705.1000" Url="https://download.microsoft.com/download/9/8/2/982D4441-2963-4668-800D-250AD598D48E/wssloc2016-kb4022178-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4022178-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2018" Build="16.0.4717.1000" Url="https://download.microsoft.com/download/2/6/5/2655418E-09E8-434D-8D07-5BA36D6FABF5/sts2016-kb4022228-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4022228-fullfile-x64-glb.exe" />
+            <!--There was no language dependent fix released for SharePoint 2016 in July 2018.-->
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">

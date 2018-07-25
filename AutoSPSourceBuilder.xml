@@ -1501,6 +1501,7 @@
           <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320724" />
           <Prerequisite Name="Windows Server AppFabric" Url="http://download.microsoft.com/download/A/6/7/A678AB47-496B-4907-B3D4-0A2D280A13C0/WindowsServerAppFabricSetup_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=235496" />
           <Prerequisite Name="CU Package 7 for Microsoft AppFabric 1.1 for Windows Server (KB3092423)" Url="https://download.microsoft.com/download/F/1/0/F1093AF6-E797-4CA8-A9F6-FC50024B385C/AppFabric-KB3092423-x64-ENU.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=627257" />
+          <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2012" Url="http://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=627156" />
           <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2017" Url="https://download.visualstudio.microsoft.com/download/pr/11687625/2cd2dba5748dc95950a5c42c2d2d78e4/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=848299"/>
         </Prerequisites>
         <ServicePacks>

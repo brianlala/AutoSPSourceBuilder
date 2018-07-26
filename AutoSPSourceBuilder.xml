@@ -1493,7 +1493,7 @@
     </Product>
     <Product Name="SP2019">
         <Prerequisites>
-          <Prerequisite Name="Microsoft .NET Framework 4.7.2" Url="https://download.microsoft.com/download/3/D/7/3D72C5C2-4CCB-4EEF-925D-B5FA33EAC25A/NDP472-KB4054530-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?linkid=863265" />
+          <Prerequisite Name="Microsoft .NET Framework 4.7.2" Url="https://download.microsoft.com/download/6/E/4/6E48E8AB-DC00-419E-9704-06DD46E5F81D/NDP472-KB4054530-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?linkid=863265" />
           <Prerequisite Name="Microsoft SQL Server 2012 SP4 Native Client" Url="http://download.microsoft.com/download/4/B/1/4B1E9B0E-A4F3-4715-B417-31C82302A70A/ENU/x64/sqlncli.msi" Permalink="https://go.microsoft.com/fwlink/?LinkId=867003" />
           <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=224449" />
           <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=252368" />

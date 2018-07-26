@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
 .DESCRIPTION
@@ -51,23 +51,23 @@
 [CmdletBinding()]
 param
 (
-    [Parameter(Mandatory=$true)][ValidateSet("2010","2013","2016","2019")]
+    [Parameter(Mandatory = $true)][ValidateSet("2010", "2013", "2016", "2019")]
     [String]$SharePointVersion,
-    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [String]$SourceLocation,
-    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()]
-    [String]$Destination = $env:SystemDrive+"\SP\$SharePointVersion",
-    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
+    [String]$Destination = $env:SystemDrive + "\SP\$SharePointVersion",
+    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [String]$UpdateLocation,
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory = $false)]
     [Switch]$GetPrerequisites,
-    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [String]$CumulativeUpdate,
-    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [String]$WACSourceLocation,
-    [Parameter(Mandatory=$false)][ValidateNotNullOrEmpty()]
+    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [Array]$Languages,
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory = $false)]
     [Switch]$PromptForLanguages
 )
 
@@ -100,7 +100,7 @@ Function WriteLine
 
 Function DownloadPackage ($url, $ExpandedFile, $DestinationFolder, $destinationFile)
 {
-    $ExpandedFileExists = $false
+    ##$expandedFileExists = $false
     $file = $url.Split('/')[-1]
     If (!$destinationFile) {$destinationFile = $file}
     If (!$expandedFile) {$expandedFile = $file}
@@ -110,12 +110,12 @@ Function DownloadPackage ($url, $ExpandedFile, $DestinationFolder, $destinationF
         If (Test-Path "$DestinationFolder\$expandedFile") # Check if the expanded file is already there
         {
             Write-Host -ForegroundColor DarkGray "  - File $expandedFile exists, skipping download."
-            $expandedFileExists = $true
+            ##$expandedFileExists = $true
         }
         ElseIf ((($file -eq $destinationFile) -or ("$file.zip" -eq $destinationFile)) -and ((Test-Path "$DestinationFolder\$file") -or (Test-Path "$DestinationFolder\$file.zip")) -and !((Get-Item $file -ErrorAction SilentlyContinue).Mode -eq "d----")) # Check if the packed downloaded file is already there (in case of a CU or Prerequisite)
         {
             Write-Host -ForegroundColor DarkGray "  - File $file exists, skipping download."
-            If (!($file –like "*.zip"))
+            If (!($file -like "*.zip"))
             {
                 # Give the CU package a .zip extension so we can work with it like a compressed folder
                 Rename-Item -Path "$DestinationFolder\$file" -NewName ($file+".zip") -Force -ErrorAction SilentlyContinue
@@ -218,20 +218,20 @@ Function Remove-ReadOnlyAttribute ($Path)
 # ====================================================================================
 Function EnsureFolder ($Path)
 {
-        If (!(Test-Path -Path $Path -PathType Container))
+    If (!(Test-Path -Path $Path -PathType Container))
+    {
+        Write-Host -ForegroundColor White " - $Path doesn't exist; creating..."
+        Try
         {
-            Write-Host -ForegroundColor White " - $Path doesn't exist; creating..."
-            Try
-            {
-                New-Item -Path $Path -ItemType Directory | Out-Null
-            }
-            Catch
-            {
-                Write-Warning " - $($_.Exception.Message)"
-                Throw " - Could not create folder $Path!"
-                $global:errorWarning = $true
-            }
+            New-Item -Path $Path -ItemType Directory | Out-Null
         }
+        Catch
+        {
+            Write-Warning " - $($_.Exception.Message)"
+            Throw " - Could not create folder $Path!"
+            $global:errorWarning = $true
+        }
+    }
 }
 #endregion
 
@@ -376,7 +376,7 @@ else
         while ([string]::IsNullOrEmpty($spYear))
         {
             Start-Sleep -Seconds 1
-            $spYear =  $spAvailableVersionNumbers | Sort-Object | Out-GridView -Title "Please select the version of SharePoint to download updates for:" -PassThru
+            $spYear = $spAvailableVersionNumbers | Sort-Object | Out-GridView -Title "Please select the version of SharePoint to download updates for:" -PassThru
             if ($spYear.Count -gt 1)
             {
                 Write-Warning "Please only select ONE version. Re-prompting..."
@@ -407,7 +407,7 @@ if ((!([string]::IsNullOrEmpty($CumulativeUpdate))) -and !($spNode.CumulativeUpd
     Write-Warning " - Invalid entry for update: `"$CumulativeUpdate`""
     Remove-Variable -Name CumulativeUpdate -ErrorAction SilentlyContinue
 }
- # Only prompt for an update if there are actually any to choose from, and if we haven't already specified one on the command line
+# Only prompt for an update if there are actually any to choose from, and if we haven't already specified one on the command line
 if (($spCuNodes).Count -ge 1 -and ([string]::IsNullOrEmpty($CumulativeUpdate)))
 {
     Start-Sleep -Seconds 1
@@ -750,7 +750,7 @@ if ($WACSourceLocation)
         {
             Write-Host -ForegroundColor Cyan " - Please select another available $wacProductName update..."
             Start-Sleep -Seconds 1
-            $wacCUName =  $wacNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select another available $wacProductName update:" -PassThru
+            $wacCUName = $wacNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select another available $wacProductName update:" -PassThru
             if ($wacCUName.Count -gt 1)
             {
                 Write-Warning "Please only select ONE update. Re-prompting..."
@@ -1068,7 +1068,7 @@ If (!([string]::IsNullOrEmpty($WACSourceLocation)))
 }
 Add-Content -Path "$Destination\$textFileName" -Value `n -Force
 Add-Content -Path "$Destination\$textFileName" -Value "Using AutoSPSourceBuilder (https://github.com/brianlala/autospsourcebuilder)." -Force
-If ($global:errorWarning)
+If ($errorWarning)
 {
     Write-Host -ForegroundColor Yellow " - At least one non-trivial error was encountered."
     if (!([string]::IsNullOrEmpty($SourceLocation)))

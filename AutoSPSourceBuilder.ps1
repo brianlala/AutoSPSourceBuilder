@@ -415,7 +415,7 @@ if (($spCuNodes).Count -ge 1 -and ([string]::IsNullOrEmpty($CumulativeUpdate)))
     while ([string]::IsNullOrEmpty($selectedCumulativeUpdate))
     {
         Start-Sleep -Seconds 1
-        $selectedCumulativeUpdate = $spNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select an available $(if ($spYear -eq "2016") {"Public"} else {"Cumulative"}) Update for SharePoint $spYear`:" -PassThru
+        $selectedCumulativeUpdate = $spNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select an available $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update for SharePoint $spYear`:" -PassThru
         if ($selectedCumulativeUpdate.Count -gt 1)
         {
             Write-Warning "Please only select ONE update. Re-prompting..."

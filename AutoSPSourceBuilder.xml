@@ -90,6 +90,8 @@
             <!--There is no Update for SharePoint 2010 in July 2018-->
             <CumulativeUpdate Name="August 2018" Build="14.0.7212.5000" Url="https://download.microsoft.com/download/9/F/9/9F9300D9-AEEC-4201-AC5E-9C8F08968D5B/ubersrv2010-kb4032221-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4032221-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2018" Build="14.0.7213.5000" Url="https://download.microsoft.com/download/3/6/4/364980E7-5779-4DAA-918D-1468E44DF8B1/ubersrv2010-kb4227169-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4227169-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2018" Build="14.0.7214.5000" Url="https://download.microsoft.com/download/F/B/2/FB2064B4-5977-4494-8AE8-27A077E738B4/ubersrv2010-kb4461464-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4461464-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2018" Build="14.0.7224.5000" Url="https://download.microsoft.com/download/D/8/8/D883013C-E6D3-48B5-A822-AC8481CA48B4/ubersrv2010-kb4461528-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4461528-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -555,6 +557,12 @@
             <CumulativeUpdate Name="September 2018" Build="15.0.5067.1000" Url="https://download.microsoft.com/download/6/1/6/616BD018-CD14-4CE1-908C-B5EDE2446D30/ubersrv2013-kb4092476-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4092476-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2018" Build="15.0.5067.1000" Url="https://download.microsoft.com/download/6/1/6/616BD018-CD14-4CE1-908C-B5EDE2446D30/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="September 2018" Build="15.0.5067.1000" Url="https://download.microsoft.com/download/6/1/6/616BD018-CD14-4CE1-908C-B5EDE2446D30/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="October 2018" Build="15.0.5075.1000" Url="https://download.microsoft.com/download/3/0/D/30D2A93A-B88D-4507-B71F-6A6A2D1ABCFF/ubersrv2013-kb4461458-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4461458-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2018" Build="15.0.5075.1000" Url="https://download.microsoft.com/download/3/0/D/30D2A93A-B88D-4507-B71F-6A6A2D1ABCFF/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="October 2018" Build="15.0.5075.1000" Url="https://download.microsoft.com/download/3/0/D/30D2A93A-B88D-4507-B71F-6A6A2D1ABCFF/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="November 2018" Build="15.0.5085.1000" Url="https://download.microsoft.com/download/3/F/E/3FE8DE2D-ADD9-42A3-BD8F-531E01A7222B/ubersrv2013-kb4461510-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4461510-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2018" Build="15.0.5085.1000" Url="https://download.microsoft.com/download/3/F/E/3FE8DE2D-ADD9-42A3-BD8F-531E01A7222B/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="November 2018" Build="15.0.5085.1000" Url="https://download.microsoft.com/download/3/F/E/3FE8DE2D-ADD9-42A3-BD8F-531E01A7222B/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -1074,6 +1082,9 @@
             <CumulativeUpdate Name="August 2018" Build="16.0.4732.1000" Url="https://download.microsoft.com/download/4/D/5/4D51E797-35F0-4F8E-9EAF-9B6325BA45FD/sts2016-kb4032256-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4032256-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2018" Build="16.0.4732.1000" Url="https://download.microsoft.com/download/5/E/A/5EADC4E3-A66B-4C2F-96E5-CA744ABE945E/wssloc2016-kb4022231-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4022231-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2018" Build="16.0.4744.1000" Url="https://download.microsoft.com/download/B/A/0/BA07CD33-9A5D-4C06-ADF3-BF604D6B9716/sts2016-kb4092459-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4092459-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2018" Build="16.0.4756.1001" Url="https://download.microsoft.com/download/F/6/6/F6678C2C-E7C7-48DA-BF1F-9D5EB41C03E0/sts2016-kb4461447-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4461447-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2018" Build="16.0.4756.1001" Url="https://download.microsoft.com/download/C/5/A/C5A5728E-BBA7-4FFB-B81E-0C6DB0D9CB4D/wssloc2016-kb4092463-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4092463-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2018" Build="16.0.4771.1000" Url="https://download.microsoft.com/download/4/7/C/47C41202-5616-4A85-AB9B-9700B255820F/sts2016-kb4461501-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4461501-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1520,6 +1531,7 @@
         <ServicePacks>
         </ServicePacks>
         <CumulativeUpdates>
+            <CumulativeUpdate Name="November 2018" Build="16.0.10338.12107" Url="https://download.microsoft.com/download/E/1/C/E1CD03D2-DA33-47C9-B2DC-51BEC6EEFCD2/sts2019-kb4461513-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4461513-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="">

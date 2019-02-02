@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<!--This file is used in conjunction with AutoSPSourceBuilder.ps1.
-    It will be updated regularly as new language packs, cumulative updates and service packs are released, so there is normally no need for you to edit it.
-    For updates to this file and the associated script, please visit https://autospsourcebuilder.codeplex.com-->
+<!-- This file is used in conjunction with AutoSPSourceBuilder.ps1.
+     It will be updated regularly as new language packs, cumulative updates and service packs are released, so there is normally no need for you to edit it.
+     For updates to this file and the associated script, please visit https://github.com/brianlala/AutoSPSourceBuilder/ -->
 <Products>
     <Product Name="SP2010">
         <Prerequisites>

@@ -1,7 +1,26 @@
-﻿<#
+﻿
+<#PSScriptInfo
+.VERSION 2.0.0.0
+.GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
+.AUTHOR Brian Lalancette (@brianlala)
+.COMPANYNAME
+.COPYRIGHT 2019 Brian Lalancette
+.DESCRIPTION Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
+.TAGS SharePoint
+.LICENSEURI
+.PROJECTURI https://github.com/brianlala/AutoSPSourceBuilder
+.ICONURI
+.EXTERNALMODULEDEPENDENCIES
+.REQUIREDSCRIPTS
+.EXTERNALSCRIPTDEPENDENCIES
+.RELEASENOTES
+.PRIVATEDATA
+#> 
+
+<# 
 .SYNOPSIS
     Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
-.DESCRIPTION
+.DESCRIPTION 
     Starting from existing (user-provided) SharePoint 2010/2013/2016/2019 installation media/files (and optionally Office Web Apps / Online Server media/files),
     the script can download the prerequisites, specified Service Pack and CU/PU packages for SharePoint/WAC, along with specified (optional) language packs, then extract them to a destination path structure.
     Uses the AutoSPSourceBuilder.XML file as the source of product information (URLs, builds, naming, etc.) and requires it to be present in the same location as the AutoSPSourceBuilder.ps1 script.
@@ -10,7 +29,7 @@
 .EXAMPLE
     AutoSPSourceBuilder.ps1 -SourceLocation E: -Destination "C:\Source\SP\2010" -CumulativeUpdate "December 2011" -Languages fr-fr,es-es
 .EXAMPLE
-    AutoSPSourceBuilder.ps1 -SharePointVersion 2013 -Destination "C:\SP" -Verbose
+    AutoSPSourceBuilder.ps1 -SharePointVersion 2013 -Destination "C:\SP" -Verbose -UseExistingLocalXML
 .PARAMETER SharePointVersion
     The version of SharePoint for which to download updates. Valid options are 2010, 2013, 2016 and 2019.
     This parameter is mandatory.
@@ -41,6 +60,8 @@
 .PARAMETER PromptForLanguages
     This switch indicates that the script should prompt the user for which languages to download updates (and language packs) for.
     If this switch is omitted, and no languages have been specified on the command line, languages are skipped entirely.
+.PARAMETER UseExistingLocalXML
+    If you want to use a custom or pre-existing AutoSPSourceBuilder.XML file, or simply want to skip downloading the official one on-the-fly, use this switch parameter.
 .LINK
     https://github.com/brianlala/autospsourcebuilder
     https://github.com/brianlala/autospinstaller
@@ -68,7 +89,9 @@ param
     [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [Array]$Languages,
     [Parameter(Mandatory = $false)]
-    [Switch]$PromptForLanguages
+    [switch]$PromptForLanguages,
+    [Parameter(Mandatory = $false)]
+    [switch]$UseExistingLocalXML = $false
 )
 
 #region Functions
@@ -98,36 +121,47 @@ Function WriteLine
     Write-Host -ForegroundColor White "--------------------------------------------------------------"
 }
 
-Function DownloadPackage ($url, $ExpandedFile, $DestinationFolder, $destinationFile)
+Function DownloadPackage
 {
+Param
+(
+    [Parameter()][string]$url,
+    [Parameter()][string]$ExpandedFile,
+    [Parameter()][string]$DestinationFolder,
+    [Parameter()][string]$destinationFile
+)
     ##$expandedFileExists = $false
     $file = $url.Split('/')[-1]
     If (!$destinationFile) {$destinationFile = $file}
     If (!$expandedFile) {$expandedFile = $file}
     Try
     {
-        # Check if destination file or its expanded version already exists
-        If (Test-Path "$DestinationFolder\$expandedFile") # Check if the expanded file is already there
+        # Check if destination file or its expanded version already exists if it's not our AutoSPSourceBuilder.xml file, which we always want to overwrite with the latest available version
+        if ($file -notlike "AutoSPSourceBuilder.xml")
         {
-            Write-Host -ForegroundColor DarkGray "  - File $expandedFile exists, skipping download."
-            ##$expandedFileExists = $true
-        }
-        ElseIf ((($file -eq $destinationFile) -or ("$file.zip" -eq $destinationFile)) -and ((Test-Path "$DestinationFolder\$file") -or (Test-Path "$DestinationFolder\$file.zip")) -and !((Get-Item $file -ErrorAction SilentlyContinue).Mode -eq "d----")) # Check if the packed downloaded file is already there (in case of a CU or Prerequisite)
-        {
-            Write-Host -ForegroundColor DarkGray "  - File $file exists, skipping download."
-            If (!($file -like "*.zip"))
+            If (Test-Path "$DestinationFolder\$expandedFile") # Check if the expanded file is already there
             {
-                # Give the CU package a .zip extension so we can work with it like a compressed folder
-                Rename-Item -Path "$DestinationFolder\$file" -NewName ($file+".zip") -Force -ErrorAction SilentlyContinue
+                Write-Host -ForegroundColor DarkGray "  - File $expandedFile exists, skipping download."
+                ##$expandedFileExists = $true
             }
-        }
-        ElseIf (Test-Path "$DestinationFolder\$destinationFile") # Check if the packed downloaded file is already there (in case of a CU)
-        {
-            Write-Host -ForegroundColor DarkGray "  - File $destinationFile exists, skipping download."
+            ElseIf ((($file -eq $destinationFile) -or ("$file.zip" -eq $destinationFile)) -and ((Test-Path "$DestinationFolder\$file") -or (Test-Path "$DestinationFolder\$file.zip")) -and !((Get-Item $file -ErrorAction SilentlyContinue).Mode -eq "d----")) # Check if the packed downloaded file is already there (in case of a CU or Prerequisite)
+            {
+                Write-Host -ForegroundColor DarkGray "  - File $file exists, skipping download."
+                If (!($file -like "*.zip"))
+                {
+                    # Give the CU package a .zip extension so we can work with it like a compressed folder
+                    Rename-Item -Path "$DestinationFolder\$file" -NewName ($file+".zip") -Force -ErrorAction SilentlyContinue
+                }
+            }
+            ElseIf (Test-Path "$DestinationFolder\$destinationFile") # Check if the packed downloaded file is already there (in case of a CU)
+            {
+                Write-Host -ForegroundColor DarkGray "  - File $destinationFile exists, skipping download."
+            }
         }
         Else # Go ahead and download the missing package
         {
             # Begin download
+            Write-Verbose -Message " - Attempting to download from $url..."
             Import-Module BitsTransfer
             $job = Start-BitsTransfer -Asynchronous -Source $url -Destination "$DestinationFolder\$destinationFile" -DisplayName "Downloading `'$file`' to $DestinationFolder\$destinationFile" -Priority Foreground -Description "From $url..." -RetryInterval 60 -RetryTimeout 3600 -ErrorVariable err
             # When proxy is enabled
@@ -162,6 +196,7 @@ Function DownloadPackage ($url, $ExpandedFile, $DestinationFolder, $destinationF
     Catch
     {
         Write-Output $err
+        Write-Debug $_
         Write-Warning " - An error occurred downloading `'$file`'"
         $global:errorWarning = $true
         break
@@ -266,7 +301,23 @@ $dp0 = [System.IO.Path]::GetDirectoryName($0)
 
 Write-Host -ForegroundColor Green " -- AutoSPSourceBuilder SharePoint Update Download/Integration Utility --"
 
-[xml]$xml = (Get-Content -Path "$dp0\AutoSPSourceBuilder.xml")
+if ($UseExistingLocalXML)
+{
+    Write-Warning "'UseExistingLocalXML' specified; skipping download of AutoSPSourceBuilder.xml, and attempting to use local copy."
+    Write-Warning "This could mean you won't have the latest updates in your local copy."
+    Write-Warning "To use the latest online AutoSPSourceBuilder.xml inventory file, omit the -UseExistingLocalXML switch."
+}
+else
+{
+    # Get latest official XML file from the master GitHub repo
+    Write-Output " - Grabbing latest AutoSPSourceBuilder.xml patch inventory file..."
+    DownloadPackage -url "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/AutoSPSourceBuilder.xml" -DestinationFolder "$dp0"
+}
+[xml]$xml = (Get-Content -Path "$dp0\AutoSPSourceBuilder.xml" -ErrorAction SilentlyContinue)
+if ([string]::IsNullOrEmpty($xml))
+{
+    throw "Required AutoSPSourceBuilder.xml file not found! Please ensure it's located in the same folder as the AutoSPSourceBuilder.ps1 script ('$dp0')."
+}
 $spAvailableVersions = $xml.Products.Product.Name | Where-Object {$_ -like "SP*"}
 $spAvailableVersionNumbers = $spAvailableVersions -replace "SP",""
 #endregion

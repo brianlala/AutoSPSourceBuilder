@@ -1,16 +1,15 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.0.0
+.VERSION 2.0.0.2
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME
 .COPYRIGHT 2019 Brian Lalancette
-.DESCRIPTION Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
 .TAGS SharePoint
 .LICENSEURI
 .PROJECTURI https://github.com/brianlala/AutoSPSourceBuilder
 .ICONURI
-.EXTERNALMODULEDEPENDENCIES
+.EXTERNALMODULEDEPENDENCIES BitsTransfer
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
@@ -21,9 +20,10 @@
 .SYNOPSIS
     Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
 .DESCRIPTION 
-    Starting from existing (user-provided) SharePoint 2010/2013/2016/2019 installation media/files (and optionally Office Web Apps / Online Server media/files),
-    the script can download the prerequisites, specified Service Pack and CU/PU packages for SharePoint/WAC, along with specified (optional) language packs, then extract them to a destination path structure.
-    Uses the AutoSPSourceBuilder.XML file as the source of product information (URLs, builds, naming, etc.) and requires it to be present in the same location as the AutoSPSourceBuilder.ps1 script.
+    Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally, slipstreamed) installation source. 
+    Starting from existing (user-provided) SharePoint 2010/2013/2016/2019 installation media/files (and optional Office Web Apps / Online Server media/files),
+    the script can download prerequisites, the specified Service Pack, and CU/PU packages for SharePoint/WAC, along with specified (optional) language packs, then extract them to a destination path structure.
+    By default, automatically downloads the latest AutoSPSourceBuilder.xml inventory file as the source of product information (URLs, builds, naming, etc.) to the same local path as the AutoSPSourceBuilder.ps1 script.
 .EXAMPLE
     AutoSPSourceBuilder.ps1 -UpdateLocation "C:\Users\brianl\Downloads\SP" -Destination "D:\SP\2010"
 .EXAMPLE
@@ -124,38 +124,33 @@ Function WriteLine
 Function DownloadPackage
 {
 Param
-(
-    [Parameter()][string]$url,
-    [Parameter()][string]$ExpandedFile,
-    [Parameter()][string]$DestinationFolder,
-    [Parameter()][string]$destinationFile
-)
-    ##$expandedFileExists = $false
+    (
+        [Parameter()][string]$url,
+        [Parameter()][string]$ExpandedFile,
+        [Parameter()][string]$DestinationFolder,
+        [Parameter()][string]$destinationFile
+    )
     $file = $url.Split('/')[-1]
     If (!$destinationFile) {$destinationFile = $file}
     If (!$expandedFile) {$expandedFile = $file}
     Try
     {
-        # Check if destination file or its expanded version already exists if it's not our AutoSPSourceBuilder.xml file, which we always want to overwrite with the latest available version
-        if ($file -notlike "AutoSPSourceBuilder.xml")
+        # Check if destination file or its expanded version already exists
+        If (Test-Path "$DestinationFolder\$expandedFile") # Check if the expanded file is already there
         {
-            If (Test-Path "$DestinationFolder\$expandedFile") # Check if the expanded file is already there
+            Write-Host -ForegroundColor DarkGray "  - File $expandedFile exists, skipping download."
+        }
+        ElseIf (Test-Path "$DestinationFolder\$destinationFile") # Check if the packed downloaded file is already there (in case of a CU)
+        {
+            Write-Host -ForegroundColor DarkGray "  - File $destinationFile exists, skipping download."
+        }
+        ElseIf ((($file -eq $destinationFile) -or ("$file.zip" -eq $destinationFile)) -and ((Test-Path "$DestinationFolder\$file") -or (Test-Path "$DestinationFolder\$file.zip")) -and !((Get-Item $file -ErrorAction SilentlyContinue).Mode -eq "d----")) # Check if the packed downloaded file is already there (in case of a CU or Prerequisite)
+        {
+            Write-Host -ForegroundColor DarkGray "  - File $file exists, skipping download."
+            If (!($file -like "*.zip"))
             {
-                Write-Host -ForegroundColor DarkGray "  - File $expandedFile exists, skipping download."
-                ##$expandedFileExists = $true
-            }
-            ElseIf ((($file -eq $destinationFile) -or ("$file.zip" -eq $destinationFile)) -and ((Test-Path "$DestinationFolder\$file") -or (Test-Path "$DestinationFolder\$file.zip")) -and !((Get-Item $file -ErrorAction SilentlyContinue).Mode -eq "d----")) # Check if the packed downloaded file is already there (in case of a CU or Prerequisite)
-            {
-                Write-Host -ForegroundColor DarkGray "  - File $file exists, skipping download."
-                If (!($file -like "*.zip"))
-                {
-                    # Give the CU package a .zip extension so we can work with it like a compressed folder
-                    Rename-Item -Path "$DestinationFolder\$file" -NewName ($file+".zip") -Force -ErrorAction SilentlyContinue
-                }
-            }
-            ElseIf (Test-Path "$DestinationFolder\$destinationFile") # Check if the packed downloaded file is already there (in case of a CU)
-            {
-                Write-Host -ForegroundColor DarkGray "  - File $destinationFile exists, skipping download."
+                # Give the CU package a .zip extension so we can work with it like a compressed folder
+                Rename-Item -Path "$DestinationFolder\$file" -NewName ($file+".zip") -Force -ErrorAction SilentlyContinue
             }
         }
         Else # Go ahead and download the missing package
@@ -311,7 +306,11 @@ else
 {
     # Get latest official XML file from the master GitHub repo
     Write-Output " - Grabbing latest AutoSPSourceBuilder.xml patch inventory file..."
-    DownloadPackage -url "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/AutoSPSourceBuilder.xml" -DestinationFolder "$dp0"
+    Start-BitsTransfer -DisplayName "Downloading AutoSPSourceBuilder.xml patch inventory file" -Description "From 'https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/'..." -Destination "$dp0\AutoSPSourceBuilder.xml" -Priority Foreground -Source "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/AutoSPSourceBuilder.xml" -RetryInterval 60 -RetryTimeout 3600
+    if (!$?)
+    {
+        throw "Could not download AutoSPSourceBuilder.xml file!"
+    }
 }
 [xml]$xml = (Get-Content -Path "$dp0\AutoSPSourceBuilder.xml" -ErrorAction SilentlyContinue)
 if ([string]::IsNullOrEmpty($xml))
@@ -610,8 +609,9 @@ If ($spServicePack -and ($spYear -ne "2013") -and (!([string]::IsNullOrEmpty($So
         DownloadPackage -Url $($spServicePack.Url) -DestinationFolder "$UpdateLocation\$spServicePackSubfolder"
         Remove-ReadOnlyAttribute -Path "$Destination\SharePoint\Updates"
         # Extract SharePoint service pack patch files
-        Write-Host " - Extracting SharePoint $($spServicePack.Name) patch files..." -NoNewline
         $spServicePackExpandedFile = $($spServicePack.Url).Split('/')[-1]
+        Write-Verbose -Message " - Extracting from '$UpdateLocation\$spServicePackSubfolder\$spServicePackExpandedFile'"
+        Write-Host " - Extracting SharePoint $($spServicePack.Name) patch files..." -NoNewline
         Start-Process -FilePath "$UpdateLocation\$spServicePackSubfolder\$spServicePackExpandedFile" -ArgumentList "/extract:`"$Destination\SharePoint\Updates`" /passive" -Wait -NoNewWindow
         Read-Log
         Write-Host "done!"
@@ -665,6 +665,7 @@ If ($spCU.Count -ge 1 -and $spCU[0].Name -ne "December 2012" -and $spYear -eq "2
         $existingItem | Remove-Item -Force -Confirm:$false
     }
     # Extract SharePoint PU files to $march2013PUTempFolder
+    Write-Verbose -Message " - Extracting from '$UpdateLocation\$updateSubfolder\$($march2013PU.ExpandedFile)'"
     Write-Host " - Extracting $($march2013PU.Name) Public Update patch files..." -NoNewline
     Start-Process -FilePath "$UpdateLocation\$updateSubfolder\$($march2013PU.ExpandedFile)" -ArgumentList "/extract:`"$march2013PUTempFolder`" /passive" -Wait -NoNewWindow
     Read-Log
@@ -754,6 +755,7 @@ If ($spCU.Count -ge 1)
                     Write-Host " - Extracting $($spCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..."
                     foreach ($spCULauncher in $spCULaunchers)
                     {
+                        Write-Verbose -Message "  - Extracting from '$UpdateLocation\$updateSubfolder\$spCULauncher'"
                         Write-Host "  - $spCULauncher..." -NoNewline
                         Start-Process -FilePath "$UpdateLocation\$updateSubfolder\$spCULauncher" -ArgumentList "/extract:`"$Destination\SharePoint\Updates`" /passive" -Wait -NoNewWindow
                         Write-Host "done!"
@@ -828,7 +830,6 @@ if ($WACSourceLocation)
         WriteLine
         $wacPrerequisiteNode = $wacNode.Prerequisites
         EnsureFolder -Path "$Destination\$wacNodeName\PrerequisiteInstallerFiles"
-        ##New-Item -ItemType Directory -Name "PrerequisiteInstallerFiles" -Path "$Destination\$wacNodeName" -ErrorAction SilentlyContinue | Out-Null
         foreach ($prerequisite in $wacPrerequisiteNode.Prerequisite)
         {
             Write-Host " - Getting $wacProductName prerequisite `"$($prerequisite.Name)`"..."
@@ -877,8 +878,9 @@ if ($WACSourceLocation)
             DownloadPackage -Url $($wacServicePack.Url) -DestinationFolder "$UpdateLocation\$wacServicePackSubfolder"
             Remove-ReadOnlyAttribute -Path "$Destination\$wacNodeName\Updates"
             # Extract Office Web Apps / Online Server service pack files to $Destination\$wacNodeName\Updates
-            Write-Host " - Extracting $wacProductName $($wacServicePack.Name) patch files..." -NoNewline
             $wacServicePackExpandedFile = $($wacServicePack.Url).Split('/')[-1]
+            Write-Verbose -Message " - Extracting from '$$UpdateLocation\$wacServicePackSubfolder\$wacServicePackExpandedFile'"
+            Write-Host " - Extracting $wacProductName $($wacServicePack.Name) patch files..." -NoNewline
             Start-Process -FilePath "$UpdateLocation\$wacServicePackSubfolder\$wacServicePackExpandedFile" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
             Read-Log
             Write-Host "done!"
@@ -917,6 +919,7 @@ if ($WACSourceLocation)
             }
             Remove-ReadOnlyAttribute -Path "$Destination\$wacNodeName\Updates"
             # Extract Office Web Apps / Online Server CU files to $Destination\$wacNodeName\Updates
+            Write-Verbose -Message " - Extracting from '$UpdateLocation\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)'"
             Write-Host " - Extracting $wacProductName $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..." -NoNewline
             Start-Process -FilePath "$UpdateLocation\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
             Write-Host "done!"
@@ -995,6 +998,7 @@ if ($Languages.Count -gt 0)
             }
             else
             {
+                Write-Verbose -Message " - Extracting from '$UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile'"
                 Write-Host " - Extracting Language Pack files ($language)..." -NoNewline
                 Start-Process -FilePath "$UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile" -ArgumentList "/extract:`"$Destination\LanguagePacks\$language`" /quiet" -Wait -NoNewWindow
                 Write-Host "done!"
@@ -1027,6 +1031,7 @@ if ($Languages.Count -gt 0)
                 }
                 else
                 {
+                    Write-Verbose -Message " - Extracting from '$UpdateLocation\$spLanguagePackSubfolder\$lpServicePackDestinationFile'"
                     Write-Host " - Extracting Language Pack $($lpServicePack.Name) files ($language)..." -NoNewline
                     Start-Process -FilePath "$UpdateLocation\$spLanguagePackSubfolder\$lpServicePackDestinationFile" -ArgumentList "/extract:`"$Destination\LanguagePacks\$language\Updates`" /quiet" -Wait -NoNewWindow
                     Write-Host "done!"

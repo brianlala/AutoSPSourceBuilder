@@ -269,8 +269,9 @@ Function EnsureFolder ($Path)
 # First check if we are running this under an elevated session. Pulled from the script at http://gallery.technet.microsoft.com/scriptcenter/1b5df952-9e10-470f-ad7c-dc2bdc2ac946
 If (!([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
 {
-    Write-Warning " - You must run this script under an elevated PowerShell prompt. Launch an elevated PowerShell prompt by right-clicking the PowerShell shortcut and selecting `"Run as Administrator`"."
-    break
+    Write-Warning " - You should run this script under an elevated PowerShell prompt. Launch an elevated PowerShell prompt by right-clicking the PowerShell shortcut and selecting `"Run as Administrator`"."
+    Write-Warning " - Running without elevation may cause certain things to fail, e.g. file extraction."
+    Pause -action "proceed if you are sure this is OK, or Ctrl-C to exit" -key "y"
 }
 #endregion
 
@@ -298,7 +299,7 @@ Write-Host -ForegroundColor Green " -- AutoSPSourceBuilder SharePoint Update Dow
 
 if ($UseExistingLocalXML)
 {
-    Write-Warning "'UseExistingLocalXML' specified; skipping download of AutoSPSourceBuilder.xml, and attempting to use local copy."
+    Write-Warning "'UseExistingLocalXML' specified; skipping download of AutoSPSourceBuilder.xml, and attempting to use local copy at '$dp0\AutoSPSourceBuilder.xml'."
     Write-Warning "This could mean you won't have the latest updates in your local copy."
     Write-Warning "To use the latest online AutoSPSourceBuilder.xml inventory file, omit the -UseExistingLocalXML switch."
 }

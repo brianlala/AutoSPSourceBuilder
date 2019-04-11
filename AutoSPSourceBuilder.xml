@@ -1576,6 +1576,8 @@
             <CumulativeUpdate Name="March 2019" Build="16.0.10342.12113" Url="https://download.microsoft.com/download/6/C/2/6C261226-E3B1-47AC-B3CC-1286AE232422/sts2019-kb4462199-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4462199-fullfile-x64-glb.exe" />
             <!--There was no language dependent fix released for SharePoint 2019 in March 2019, so the link below is actually for the last-released language-dependent fix (February 2019)-->
             <CumulativeUpdate Name="March 2019" Build="16.0.10342.12113" Url="https://download.microsoft.com/download/D/6/A/D6AF937F-1C36-4465-AA70-B06107E07910/wssloc2019-kb4462170-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4462170-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2019" Build="16.0.10343.20000" Url="https://download.microsoft.com/download/2/1/F/21F5F73E-82B5-4800-A97F-91BAF66ADA63/sts2019-kb4464518-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4464518-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2019" Build="16.0.10343.20000" Url="https://download.microsoft.com/download/F/1/5/F15D04DD-6A78-4BFB-8E36-060870824D93/wssloc2019-kb4462221-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4462221-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">

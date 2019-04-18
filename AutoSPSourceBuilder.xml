@@ -388,14 +388,16 @@
             <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=320724" />
             <!-- (Alternate Permalink) <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=321928" />-->
             <Prerequisite Name="CU Package 1 for Microsoft AppFabric 1.1 for Windows Server (KB2671763)" Url="http://download.microsoft.com/download/7/B/5/7B51D8D1-20FD-4BF0-87C7-4714F5A1C313/AppFabric1.1-RTM-KB2671763-x64-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=251471" />
-          
+
+            <!-- The hotfix KB2708075 below is not available -->
             <!--<Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes" Url="https://hotfixv4.trafficmanager.net/Windows 7/Windows Server2008 R2 SP1/sp2/Fix402568/7600/free/447698_intl_x64_zip.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=258851" />-->
-            <Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes"  Url="https://download.microsoft.com/download/E/F/1/EF1C71E4-DF9B-4BFE-87A7-A8EA548EE2C0/Windows6.1-KB2708075-x64.msu" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=30235" />            
+            <!--<Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes"  Url="https://download.microsoft.com/download/E/F/1/EF1C71E4-DF9B-4BFE-87A7-A8EA548EE2C0/Windows6.1-KB2708075-x64.msu" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=30235" />-->            
+          
             <!-- The hotfix below is no longer required or applicable and therefore has been commented out (https://github.com/brianlala/AutoSPSourceBuilder/issues/41) -->
             <!-- <Prerequisite Name="KB2554876 - The SharePoint parsing process crashes in Windows Server 2008 R2" Url="https://hotfixv4.trafficmanager.net/Windows 7/Windows Server2008 R2 SP1/sp2/Fix368051/7600/free/433385_intl_x64_zip.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=258850" /> -->
-            
-            <Prerequisite Name="KB2472264 - You cannot customize some TCP configurations by using the netsh command in Windows Server 2008 R2" Url="https://hotfixv4.trafficmanager.net/Windows 7/Windows Server2008 R2 SP1/sp2/Fix354400/7600/free/427087_intl_x64_zip.exe" Permalink="https://support.microsoft.com/hotfix/kbhotfix.aspx?kbnum=2472264"/>
-          
+
+            <!-- The hotfix KB2472264 below is not available -->
+            <!--<Prerequisite Name="KB2472264 - You cannot customize some TCP configurations by using the netsh command in Windows Server 2008 R2" Url="https://hotfixv4.trafficmanager.net/Windows 7/Windows Server2008 R2 SP1/sp2/Fix354400/7600/free/427087_intl_x64_zip.exe" Permalink="https://support.microsoft.com/hotfix/kbhotfix.aspx?kbnum=2472264"/>-->
           
             <Prerequisite Name="KB2567680 - MS11-063: Vulnerability in Windows Client/Server Run-time subsystem could allow elevation of privilege: August 9, 2011" Url="http://download.microsoft.com/download/C/D/A/CDAF5DD8-3B9A-4F8D-A48F-BEFE53C5B249/Windows6.1-KB2567680-x64.msu" Permalink="http://www.microsoft.com/en-us/download/details.aspx?id=27039" />
             <Prerequisite Name="KB2759112 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in... Windows Server 2008 R2, Windows Server 2008 R2 SP1..." Url="http://download.microsoft.com/download/5/6/3/5631B753-A009-48AF-826C-2D2C29B94172/NDP45-KB2759112-x64.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=267536" />

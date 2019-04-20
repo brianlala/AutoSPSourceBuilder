@@ -1,6 +1,6 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.0.2
+.VERSION 2.0.1.0
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME
@@ -1066,15 +1066,24 @@ else
 WriteLine
 if (!([string]::IsNullOrEmpty($SourceLocation)))
 {
-    $textFileName = "_SLIPSTREAMED.txt"
+    $textFileName = "_SLIPSTREAM_HISTORY.txt"
 }
 else
 {
-    $textFileName = "_UPDATES.txt"
+    $textFileName = "_UPDATE_HISTORY.txt"
 }
-Write-Host " - Adding a label file `"$textFileName`"..."
-Set-Content -Path "$Destination\$textFileName" -Value "This media source directory has been prepared with:" -Force
-Add-Content -Path "$Destination\$textFileName" -Value `n -Force
+# Append the history file if it already exists
+if (Get-item -Path "$Destination\$textFileName" -ErrorAction SilentlyContinue)
+{
+    Write-Output " - Appending version history file `"$textFileName`"..."
+}
+else
+{
+    Write-Output " - Adding a version history file `"$textFileName`"..."
+    Set-Content -Path "$Destination\$textFileName" -Value "This media source directory has been prepared with:" -Force
+}
+Add-Content -Path "$Destination\$textFileName" -Value "-------------------------------------------------------------------------------------------------------------------------------------" -Force
+Add-Content -Path "$Destination\$textFileName" -Value "$(Get-Date):" -Force
 if (!([string]::IsNullOrEmpty($SourceLocation)))
 {
     Add-Content -Path "$Destination\$textFileName" -Value "- SharePoint $spYear" -Force
@@ -1123,8 +1132,8 @@ If (!([string]::IsNullOrEmpty($WACSourceLocation)))
         Add-Content -Path "$Destination\$textFileName" -Value " - $($wacCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update for $wacProductName $spYear" -Force
     }
 }
-Add-Content -Path "$Destination\$textFileName" -Value `n -Force
 Add-Content -Path "$Destination\$textFileName" -Value "Using AutoSPSourceBuilder (https://github.com/brianlala/autospsourcebuilder)." -Force
+Add-Content -Path "$Destination\$textFileName" -Value "-------------------------------------------------------------------------------------------------------------------------------------" -Force
 If ($errorWarning)
 {
     Write-Host -ForegroundColor Yellow " - At least one non-trivial error was encountered."
@@ -1134,8 +1143,8 @@ If ($errorWarning)
     }
     Write-Host -ForegroundColor Yellow " - You should re-run this script until there are no more errors."
 }
-Write-Host " - Done!"
-Write-Host " - Review the output and check your source/update file integrity carefully."
+Write-Output " - Done!"
+Write-Output " - Review the output and check your source/update file integrity carefully."
 Start-Sleep -Seconds 3
 Invoke-Item -Path $Destination
 WriteLine

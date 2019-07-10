@@ -99,6 +99,7 @@
             <CumulativeUpdate Name="April 2019" Build="14.0.7232.5000" Url="https://download.microsoft.com/download/8/C/3/8C305B02-D72D-47B6-87B4-54F181407FEB/ubersrv2010-kb4464523-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4464523-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2019" Build="14.0.7233.5000" Url="https://download.microsoft.com/download/A/8/2/A8228B1D-AFF0-4CE3-A482-4A95029244B7/ubersrv2010-kb4464569-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4464569-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2019" Build="14.0.7234.5000" Url="https://download.microsoft.com/download/E/B/2/EB2AEB40-DDA6-4CD6-8099-29CE8419A2CC/ubersrv2010-kb4475508-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475508-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2019" Build="14.0.7235.5000" Url="https://download.microsoft.com/download/C/3/A/C3A4ED11-4B8D-48DC-92F2-459213DCF67A/ubersrv2010-kb4475535-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475535-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -599,6 +600,9 @@
             <CumulativeUpdate Name="June 2019" Build="15.0.5145.1000" Url="https://download.microsoft.com/download/3/5/B/35BAE580-53F0-4CE1-97AD-282F4117C5EF/ubersrv2013-kb4464601-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4464601-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2019" Build="15.0.5145.1000" Url="https://download.microsoft.com/download/3/5/B/35BAE580-53F0-4CE1-97AD-282F4117C5EF/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="June 2019" Build="15.0.5145.1000" Url="https://download.microsoft.com/download/3/5/B/35BAE580-53F0-4CE1-97AD-282F4117C5EF/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="July 2019" Build="15.0.5153.1000" Url="https://download.microsoft.com/download/4/2/5/425EF8AB-36A3-4B3A-AEB6-933E01A66414/ubersrv2013-kb4475526-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4475526-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2019" Build="15.0.5153.1000" Url="https://download.microsoft.com/download/4/2/5/425EF8AB-36A3-4B3A-AEB6-933E01A66414/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="July 2019" Build="15.0.5153.1000" Url="https://download.microsoft.com/download/4/2/5/425EF8AB-36A3-4B3A-AEB6-933E01A66414/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -1148,6 +1152,9 @@
             <CumulativeUpdate Name="June 2019" Build="16.0.4861.1000" Url="https://download.microsoft.com/download/B/A/0/BA0C8DB5-144C-44CD-BB92-7DCCBD5BA869/sts2016-kb4464594-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4464594-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in June 2019, so the link below is actually for the last-released language-dependent fix (April 2019)-->
             <CumulativeUpdate Name="June 2019" Build="16.0.4861.1000" Url="https://download.microsoft.com/download/0/D/E/0DEA1C2B-E3BD-4364-B3CA-03972312C695/wssloc2016-kb4461507-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4461507-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2019" Build="16.0.4873.1000" Url="https://download.microsoft.com/download/1/D/B/1DB1DAF8-B3B6-49F5-8FEC-09F623B9D108/sts2016-kb4475520-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4475520-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2016 in July 2019, so the link below is actually for the last-released language-dependent fix (April 2019)-->
+            <CumulativeUpdate Name="July 2019" Build="16.0.4873.1000" Url="https://download.microsoft.com/download/0/D/E/0DEA1C2B-E3BD-4364-B3CA-03972312C695/wssloc2016-kb4461507-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4461507-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1611,6 +1618,9 @@
             <CumulativeUpdate Name="June 2019" Build="16.0.10346.20001" Url="https://download.microsoft.com/download/8/B/4/8B4FB426-6DDD-458E-9727-640C3811082B/sts2019-kb4475512-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4475512-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2019 in June 2019, so the link below is actually for the last-released language-dependent fix (April 2019)-->
             <CumulativeUpdate Name="June 2019" Build="16.0.10346.20001" Url="https://download.microsoft.com/download/F/1/5/F15D04DD-6A78-4BFB-8E36-060870824D93/wssloc2019-kb4462221-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4462221-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2019" Build="16.0.10348.12104" Url="https://download.microsoft.com/download/A/5/C/A5C7196F-BEBD-4137-9350-4FD3ABC7E646/sts2019-kb4475529-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4475529-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2019 in July 2019, so the link below is actually for the last-released language-dependent fix (April 2019)-->
+            <CumulativeUpdate Name="July 2019" Build="16.0.10348.12104" Url="https://download.microsoft.com/download/F/1/5/F15D04DD-6A78-4BFB-8E36-060870824D93/wssloc2019-kb4462221-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4462221-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -1823,6 +1833,8 @@
             <CumulativeUpdate Name="January 2019" Build="16.0.10340.12101" Url="https://download.microsoft.com/download/7/3/2/7324AA5E-767C-402C-A88F-0EB8D5667E50/wacserver2019-kb4461633-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4461633-fullfile-x64-glb.exe" />
             <!--There was no fix released for Office Online Server 2019 in February - April 2019-->
             <CumulativeUpdate Name="May 2019" Build="16.0.10345.12101" Url="https://download.microsoft.com/download/8/3/A/83A89A4F-1F76-46D3-87CE-F05D7509F2F2/wacserver2019-kb4462169-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4462169-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2019" Build="16.0.10346.20001" Url="https://download.microsoft.com/download/E/7/3/E73C596E-4A6A-4396-B353-BD62F16ECF5B/wacserver2019-kb4475511-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4475511-fullfile-x64-glb.exe" />
+            <!-- There was no fix for Office Online Server released this month. -->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="">

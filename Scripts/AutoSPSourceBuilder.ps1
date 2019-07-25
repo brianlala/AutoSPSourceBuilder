@@ -307,7 +307,7 @@ else
 {
     # Get latest official XML file from the master GitHub repo
     Write-Output " - Grabbing latest AutoSPSourceBuilder.xml patch inventory file..."
-    Start-BitsTransfer -DisplayName "Downloading AutoSPSourceBuilder.xml patch inventory file" -Description "From 'https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/'..." -Destination "$dp0\AutoSPSourceBuilder.xml" -Priority Foreground -Source "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/AutoSPSourceBuilder.xml" -RetryInterval 60 -RetryTimeout 3600
+    Start-BitsTransfer -DisplayName "Downloading AutoSPSourceBuilder.xml patch inventory file" -Description "From 'https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts'..." -Destination "$dp0\AutoSPSourceBuilder.xml" -Priority Foreground -Source "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts/AutoSPSourceBuilder.xml" -RetryInterval 60 -RetryTimeout 3600
     if (!$?)
     {
         throw "Could not download AutoSPSourceBuilder.xml file!"

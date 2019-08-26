@@ -100,6 +100,7 @@
             <CumulativeUpdate Name="May 2019" Build="14.0.7233.5000" Url="https://download.microsoft.com/download/A/8/2/A8228B1D-AFF0-4CE3-A482-4A95029244B7/ubersrv2010-kb4464569-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4464569-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2019" Build="14.0.7234.5000" Url="https://download.microsoft.com/download/E/B/2/EB2AEB40-DDA6-4CD6-8099-29CE8419A2CC/ubersrv2010-kb4475508-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475508-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="July 2019" Build="14.0.7235.5000" Url="https://download.microsoft.com/download/C/3/A/C3A4ED11-4B8D-48DC-92F2-459213DCF67A/ubersrv2010-kb4475535-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475535-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2019" Build="14.0.7236.5000" Url="https://download.microsoft.com/download/8/4/7/847C5711-3C12-4EE4-AE74-CAF07C4D1DA8/ubersrv2010-kb4475572-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475572-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -394,14 +395,14 @@
 
             <!-- The hotfix KB2708075 below is no longer available -->
             <!--<Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes" Url="https://hotfixv4.trafficmanager.net/Windows 7/Windows Server2008 R2 SP1/sp2/Fix402568/7600/free/447698_intl_x64_zip.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=258851" />-->
-            <!--<Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes"  Url="https://download.microsoft.com/download/E/F/1/EF1C71E4-DF9B-4BFE-87A7-A8EA548EE2C0/Windows6.1-KB2708075-x64.msu" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=30235" />-->            
-          
+            <!--<Prerequisite Name="KB2708075 - FIX: IIS 7.5 configurations are not updated when you use the ServerManager class to commit configuration changes"  Url="https://download.microsoft.com/download/E/F/1/EF1C71E4-DF9B-4BFE-87A7-A8EA548EE2C0/Windows6.1-KB2708075-x64.msu" Permalink="https://www.microsoft.com/en-us/download/confirmation.aspx?id=30235" />-->
+
             <!-- The hotfix below is no longer required or applicable and therefore has been commented out (https://github.com/brianlala/AutoSPSourceBuilder/issues/41) -->
             <!-- <Prerequisite Name="KB2554876 - The SharePoint parsing process crashes in Windows Server 2008 R2" Url="https://hotfixv4.trafficmanager.net/Windows 7/Windows Server2008 R2 SP1/sp2/Fix368051/7600/free/433385_intl_x64_zip.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=258850" /> -->
 
             <!-- The hotfix KB2472264 below is no longer available -->
             <!--<Prerequisite Name="KB2472264 - You cannot customize some TCP configurations by using the netsh command in Windows Server 2008 R2" Url="https://hotfixv4.trafficmanager.net/Windows 7/Windows Server2008 R2 SP1/sp2/Fix354400/7600/free/427087_intl_x64_zip.exe" Permalink="https://support.microsoft.com/hotfix/kbhotfix.aspx?kbnum=2472264"/>-->
-          
+
             <Prerequisite Name="KB2567680 - MS11-063: Vulnerability in Windows Client/Server Run-time subsystem could allow elevation of privilege: August 9, 2011" Url="http://download.microsoft.com/download/C/D/A/CDAF5DD8-3B9A-4F8D-A48F-BEFE53C5B249/Windows6.1-KB2567680-x64.msu" Permalink="http://www.microsoft.com/en-us/download/details.aspx?id=27039" />
             <Prerequisite Name="KB2759112 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in... Windows Server 2008 R2, Windows Server 2008 R2 SP1..." Url="http://download.microsoft.com/download/5/6/3/5631B753-A009-48AF-826C-2D2C29B94172/NDP45-KB2759112-x64.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=267536" />
             <Prerequisite Name="KB2765317 - FIX: A hotfix is available for the .NET Framework 4.5 that resolves an ASP.NET race condition issue in Windows 8, Windows RT, and Windows Server 2012" Url="http://download.microsoft.com/download/0/2/E/02E9E569-5462-48EB-AF57-8DCCF852E6F4/Windows8-RT-KB2765317-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=268725" />
@@ -603,6 +604,9 @@
             <CumulativeUpdate Name="July 2019" Build="15.0.5153.1000" Url="https://download.microsoft.com/download/4/2/5/425EF8AB-36A3-4B3A-AEB6-933E01A66414/ubersrv2013-kb4475526-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4475526-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="July 2019" Build="15.0.5153.1000" Url="https://download.microsoft.com/download/4/2/5/425EF8AB-36A3-4B3A-AEB6-933E01A66414/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="July 2019" Build="15.0.5153.1000" Url="https://download.microsoft.com/download/4/2/5/425EF8AB-36A3-4B3A-AEB6-933E01A66414/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/D/9/1/D913A2DC-BD7D-4968-AB8F-3948FB7513D1/ubersrv2013-kb4475561-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4475561-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/D/9/1/D913A2DC-BD7D-4968-AB8F-3948FB7513D1/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/D/9/1/D913A2DC-BD7D-4968-AB8F-3948FB7513D1/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -1155,6 +1159,8 @@
             <CumulativeUpdate Name="July 2019" Build="16.0.4873.1000" Url="https://download.microsoft.com/download/1/D/B/1DB1DAF8-B3B6-49F5-8FEC-09F623B9D108/sts2016-kb4475520-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4475520-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in July 2019, so the link below is actually for the last-released language-dependent fix (April 2019)-->
             <CumulativeUpdate Name="July 2019" Build="16.0.4873.1000" Url="https://download.microsoft.com/download/0/D/E/0DEA1C2B-E3BD-4364-B3CA-03972312C695/wssloc2016-kb4461507-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4461507-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2019" Build="16.0.4888.1000" Url="https://download.microsoft.com/download/C/7/4/C748A41B-4D89-44AF-9E27-BC9758DF2FEF/sts2016-kb4475549-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4475549-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2019" Build="16.0.4888.1000" Url="https://download.microsoft.com/download/4/A/8/4A89B420-E88C-4A90-B915-642CEFB2E3EA/wssloc2016-kb4464553-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4464553-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1621,6 +1627,9 @@
             <CumulativeUpdate Name="July 2019" Build="16.0.10348.12104" Url="https://download.microsoft.com/download/A/5/C/A5C7196F-BEBD-4137-9350-4FD3ABC7E646/sts2019-kb4475529-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4475529-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2019 in July 2019, so the link below is actually for the last-released language-dependent fix (April 2019)-->
             <CumulativeUpdate Name="July 2019" Build="16.0.10348.12104" Url="https://download.microsoft.com/download/F/1/5/F15D04DD-6A78-4BFB-8E36-060870824D93/wssloc2019-kb4462221-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4462221-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2019" Build="16.0.10349.20000" Url="https://download.microsoft.com/download/9/2/B/92B33E94-2D07-430F-9004-0C6AFB88ECBD/sts2019-kb4475555-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4475555-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2019 in July 2019, so the link below is actually for the last-released language-dependent fix (April 2019)-->
+            <CumulativeUpdate Name="August 2019" Build="16.0.10349.20000" Url="https://download.microsoft.com/download/F/1/5/F15D04DD-6A78-4BFB-8E36-060870824D93/wssloc2019-kb4462221-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4462221-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">

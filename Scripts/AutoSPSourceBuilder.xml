@@ -102,6 +102,7 @@
             <CumulativeUpdate Name="July 2019" Build="14.0.7235.5000" Url="https://download.microsoft.com/download/C/3/A/C3A4ED11-4B8D-48DC-92F2-459213DCF67A/ubersrv2010-kb4475535-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475535-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2019" Build="14.0.7236.5000" Url="https://download.microsoft.com/download/8/4/7/847C5711-3C12-4EE4-AE74-CAF07C4D1DA8/ubersrv2010-kb4475572-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475572-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2019" Build="14.0.7237.5000" Url="https://download.microsoft.com/download/d/4/a/d4ab8a64-f636-4231-9da6-ed3e87ac210b/ubersrv2010-kb4475603-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4475603-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2019" Build="14.0.7239.5000" Url="https://download.microsoft.com/download/8/f/a/8fa1320f-4e8b-4824-8721-026c0efac092/ubersrv2010-kb4484129-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484129-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -611,6 +612,9 @@
             <CumulativeUpdate Name="September 2019" Build="15.0.5172.1000" Url="https://download.microsoft.com/download/2/f/b/2fb0b12a-643b-43c9-b190-4fda776aa585/ubersrv2013-kb4484095-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484095-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2019" Build="15.0.5172.1000" Url="https://download.microsoft.com/download/2/f/b/2fb0b12a-643b-43c9-b190-4fda776aa585/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="September 2019" Build="15.0.5172.1000" Url="https://download.microsoft.com/download/2/f/b/2fb0b12a-643b-43c9-b190-4fda776aa585/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="October 2019" Build="15.0.5179.1000" Url="https://download.microsoft.com/download/f/7/5/f75268a8-a928-4d38-b023-6e8569acf5e9/ubersrv2013-kb4484121-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484121-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2019" Build="15.0.5179.1000" Url="https://download.microsoft.com/download/f/7/5/f75268a8-a928-4d38-b023-6e8569acf5e9/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="October 2019" Build="15.0.5179.1000" Url="https://download.microsoft.com/download/f/7/5/f75268a8-a928-4d38-b023-6e8569acf5e9/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -1167,6 +1171,8 @@
             <CumulativeUpdate Name="August 2019" Build="16.0.4888.1000" Url="https://download.microsoft.com/download/4/A/8/4A89B420-E88C-4A90-B915-642CEFB2E3EA/wssloc2016-kb4464553-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4464553-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2019" Build="16.0.4900.1000" Url="https://download.microsoft.com/download/5/5/5/5554dc20-b98d-479a-b514-dbe2b336a713/sts2016-kb4475590-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4475590-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2019" Build="16.0.4900.1000" Url="https://download.microsoft.com/download/0/d/2/0d2bf30c-e521-46aa-904a-7ecd522b8d05/wssloc2016-kb4475594-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4475594-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2019" Build="16.0.4912.1000" Url="https://download.microsoft.com/download/4/d/f/4dffb03e-32ab-41e5-853d-8b818668b254/sts2016-kb4484111-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484111-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2019" Build="16.0.4912.1000" Url="https://download.microsoft.com/download/c/6/4/c64fb6ec-c21e-47b2-8cdf-0f35564db92b/wssloc2016-kb4484115-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484115-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1638,6 +1644,8 @@
             <CumulativeUpdate Name="August 2019" Build="16.0.10349.20000" Url="https://download.microsoft.com/download/F/1/5/F15D04DD-6A78-4BFB-8E36-060870824D93/wssloc2019-kb4462221-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4462221-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2019" Build="16.0.10350.20000" Url="https://download.microsoft.com/download/a/4/3/a432cef9-cd2d-4014-9048-0f90688724f1/sts2019-kb4475596-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4475596-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2019" Build="16.0.10350.20000" Url="https://download.microsoft.com/download/7/b/1/7b115bab-79d8-40e3-8180-ecd920e82941/wssloc2019-kb4464557-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4464557-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2019" Build="16.0.10351.20000" Url="https://download.microsoft.com/download/5/1/e/51eb42fb-906f-4098-a99c-6ec96331615d/sts2019-kb4484110-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484110-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2019" Build="16.0.10351.20000" Url="https://download.microsoft.com/download/f/8/a/f8a2abce-3501-4a38-b0fc-3d1fc7c6df21/wssloc2019-kb4484109-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484109-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -1851,7 +1859,7 @@
             <!--There was no fix released for Office Online Server 2019 in February - April 2019-->
             <CumulativeUpdate Name="May 2019" Build="16.0.10345.12101" Url="https://download.microsoft.com/download/8/3/A/83A89A4F-1F76-46D3-87CE-F05D7509F2F2/wacserver2019-kb4462169-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4462169-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2019" Build="16.0.10346.20001" Url="https://download.microsoft.com/download/E/7/3/E73C596E-4A6A-4396-B353-BD62F16ECF5B/wacserver2019-kb4475511-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4475511-fullfile-x64-glb.exe" />
-            <!-- There was no fix for Office Online Server released this month. -->
+            <CumulativeUpdate Name="October 2019" Build="16.0.10351.20000" Url="https://download.microsoft.com/download/c/a/d/cad30a02-ee5e-4a83-b455-a201f40ea7a0/wacserver2019-kb4475595-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4475595-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="">

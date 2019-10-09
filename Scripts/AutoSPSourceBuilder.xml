@@ -135,7 +135,7 @@
                     <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/7/3/8/738597D9-2817-46D7-8F70-7FBBEE73ABCF/ServerLanguagePack.exe">
+            <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/7/3/8/738597D9-2817-46D7-8F70-7FBBEE73ABCF/ServerLanguagePack_SP2_de-de.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/5/3/1/5313817C-ACCB-4DE4-9D06-9ED51249D93B/serverlanguagepack2010sp1-kb2460056-x64-fullfile-de-de.exe" />
                     <ServicePack Name="SP2" Url="http://download.microsoft.com/download/9/6/7/967CE0A7-DBFD-432C-9161-1FA120D1652E/oslpksp2010-kb2687462-fullfile-x64-de-de.exe" />
@@ -147,7 +147,7 @@
                     <ServicePack Name="SP2" Url="" />
                 </ServicePacks>
             </LanguagePack>
-            <LanguagePack Name="en" Url="http://download.microsoft.com/download/1/7/F/17F6BB3B-662F-4555-9760-DB44D3B3F6A4/ServerLanguagePack.exe">
+            <LanguagePack Name="en" Url="http://download.microsoft.com/download/1/7/F/17F6BB3B-662F-4555-9760-DB44D3B3F6A4/ServerLanguagePack_SP2_en-us.exe">
                 <ServicePacks>
                     <ServicePack Name="SP1" Url="http://download.microsoft.com/download/1/5/5/1557809F-1DBF-4679-BB37-4305FB847EF8/serverlanguagepack2010sp1-kb2460056-x64-fullfile-en-us.exe" />
                     <ServicePack Name="SP2" Url="" />
@@ -372,6 +372,7 @@
             <CumulativeUpdate Name="July 2017" Build="14.0.7183.5000" Url="https://download.microsoft.com/download/2/5/9/2592653F-B13D-41A6-85BD-1E7EA7B95836/wacproofloc2010-kb3203469-fullfile-x64-glb.exe" ExpandedFile="wacproofloc2010-kb3203469-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2010 for August 2017-March 2018-->
             <CumulativeUpdate Name="April 2018" Build="14.0.7197.5000" Url="https://download.microsoft.com/download/E/4/3/E43C3D9C-075F-4AED-B97C-85344838E963/wac2010-kb4018360-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb4018360-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2019" Build="14.0.7236.5000" Url="https://download.microsoft.com/download/D/C/9/DC94F93A-B6F1-4BA5-8168-0CDB3A39D512/wac2010-kb4475534-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb4475534-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">
@@ -894,6 +895,7 @@
             <CumulativeUpdate Name="June 2018" Build="15.0.5041.1000" Url="https://download.microsoft.com/download/5/3/6/53666FE6-65C9-4572-8D8F-678299D88A4E/wacserver2013-kb4022183-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4022183-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2018" Build="14.0.7212.5000" Url="https://download.microsoft.com/download/9/5/5/955677C4-939E-4719-A21E-5D66180F6A32/wacserver2013-kb4022238-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4022238-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2013 for September 2018-->
+            <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/D/3/4/D34E0601-B129-428A-9361-6A1797A0F1AB/wacserver2013-kb4462216-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4462216-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -1053,6 +1055,15 @@
             <CumulativeUpdate Name="June 2017" Build="15.0.4937.1000" Url="https://download.microsoft.com/download/F/7/A/F7A09DD7-4279-48E6-9875-B60232017D2D/ubersrvprj2013-kb3203429-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb3203429-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2017" Build="15.0.4937.1000" Url="https://download.microsoft.com/download/F/7/A/F7A09DD7-4279-48E6-9875-B60232017D2D/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="June 2017" Build="15.0.4937.1000" Url="https://download.microsoft.com/download/F/7/A/F7A09DD7-4279-48E6-9875-B60232017D2D/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/E/3/B/E3B6704C-7E28-4FFE-85C4-C0DD39F43F25/ubersrvprj2013-kb4475560-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4475560-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/E/3/B/E3B6704C-7E28-4FFE-85C4-C0DD39F43F25/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/E/3/B/E3B6704C-7E28-4FFE-85C4-C0DD39F43F25/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="September 2019" Build="15.0.5172.1000" Url="https://download.microsoft.com/download/d/5/e/d5e53c92-9fbc-48b0-a0e3-07e10f14a8bf/ubersrvprj2013-kb4484093-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4484093-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2019" Build="15.0.5172.1000" Url="https://download.microsoft.com/download/d/5/e/d5e53c92-9fbc-48b0-a0e3-07e10f14a8bf/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="September 2019" Build="15.0.5172.1000" Url="https://download.microsoft.com/download/d/5/e/d5e53c92-9fbc-48b0-a0e3-07e10f14a8bf/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="October 2019" Build="15.0.5179.1000" Url="https://download.microsoft.com/download/3/2/7/3271436e-0371-4b46-9048-c5cc701581e5/ubersrvprj2013-kb4484120-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4484120-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2019" Build="15.0.5179.1000" Url="https://download.microsoft.com/download/3/2/7/3271436e-0371-4b46-9048-c5cc701581e5/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="October 2019" Build="15.0.5179.1000" Url="https://download.microsoft.com/download/3/2/7/3271436e-0371-4b46-9048-c5cc701581e5/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2016">
@@ -1859,6 +1870,7 @@
             <!--There was no fix released for Office Online Server 2019 in February - April 2019-->
             <CumulativeUpdate Name="May 2019" Build="16.0.10345.12101" Url="https://download.microsoft.com/download/8/3/A/83A89A4F-1F76-46D3-87CE-F05D7509F2F2/wacserver2019-kb4462169-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4462169-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2019" Build="16.0.10346.20001" Url="https://download.microsoft.com/download/E/7/3/E73C596E-4A6A-4396-B353-BD62F16ECF5B/wacserver2019-kb4475511-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4475511-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2019" Build="16.0.10346.20001" Url="https://download.microsoft.com/download/B/8/5/B852516B-A87A-46FC-BEC6-77E879AFD492/wacserver2019-kb4475528-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4475528-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2019" Build="16.0.10351.20000" Url="https://download.microsoft.com/download/c/a/d/cad30a02-ee5e-4a83-b455-a201f40ea7a0/wacserver2019-kb4475595-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4475595-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>

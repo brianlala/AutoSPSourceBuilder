@@ -105,6 +105,7 @@
             <CumulativeUpdate Name="October 2019" Build="14.0.7239.5000" Url="https://download.microsoft.com/download/8/f/a/8fa1320f-4e8b-4824-8721-026c0efac092/ubersrv2010-kb4484129-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484129-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2019" Build="14.0.7241.5000" Url="https://download.microsoft.com/download/6/3/6/636eabec-fdb6-47ab-8bc0-6ba4f417a54a/ubersrv2010-kb4484162-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484162-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2019" Build="14.0.7225.5000" Url="https://download.microsoft.com/download/8/a/3/8a3d6571-6cee-4805-b6a1-74b50e6ae06b/ubersrv2010-kb4484195-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484195-fullfile-x64-glb.exe" />
+            <!--There is no Update for SharePoint 2010 in January 2020-->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -624,6 +625,9 @@
             <CumulativeUpdate Name="December 2019" Build="15.0.5197.1000" Url="https://download.microsoft.com/download/1/8/7/1870dbfb-43c6-40c8-abe5-9f9dbd158dbf/ubersrv2013-kb4484188-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484188-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2019" Build="15.0.5197.1000" Url="https://download.microsoft.com/download/1/8/7/1870dbfb-43c6-40c8-abe5-9f9dbd158dbf/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="December 2019" Build="15.0.5197.1000" Url="https://download.microsoft.com/download/1/8/7/1870dbfb-43c6-40c8-abe5-9f9dbd158dbf/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="January 2020" Build="15.0.5207.1000" Url="https://download.microsoft.com/download/7/e/1/7e12db89-b69e-4cb1-8837-bf33ef25b799/ubersrv2013-kb4484232-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484232-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2020" Build="15.0.5207.1000" Url="https://download.microsoft.com/download/7/e/1/7e12db89-b69e-4cb1-8837-bf33ef25b799/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="January 2020" Build="15.0.5207.1000" Url="https://download.microsoft.com/download/7/e/1/7e12db89-b69e-4cb1-8837-bf33ef25b799/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -1199,6 +1203,8 @@
             <CumulativeUpdate Name="November 2019" Build="16.0.4927.1000" Url="https://download.microsoft.com/download/8/3/3/833ae29f-436f-477c-bd2c-a04eb681649c/wssloc2016-kb4484147-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484147-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2019" Build="16.0.4939.1000" Url="https://download.microsoft.com/download/1/4/a/14a5d704-4b5e-4789-bd02-d1a090334e4e/sts2016-kb4484178-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484178-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2019" Build="16.0.4939.1000" Url="https://download.microsoft.com/download/2/b/5/2b55cb8e-895b-4fb9-9b67-a59b7312ed10/wssloc2016-kb4484181-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484181-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2020" Build="16.0.4954.1000" Url="https://download.microsoft.com/download/a/e/2/ae236329-3bf8-4e61-90ee-89f4e5db7551/sts2016-kb4484215-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484215-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2020" Build="16.0.4954.1000" Url="https://download.microsoft.com/download/b/7/7/b7784c25-dc3a-477c-af43-ae59e01e90c3/wssloc2016-kb4484220-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484220-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1674,8 +1680,9 @@
             <CumulativeUpdate Name="October 2019" Build="16.0.10351.20000" Url="https://download.microsoft.com/download/f/8/a/f8a2abce-3501-4a38-b0fc-3d1fc7c6df21/wssloc2019-kb4484109-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484109-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2019" Build="16.0.10352.20000" Url="https://download.microsoft.com/download/7/2/5/7251b635-8289-4a7c-9992-90beb2ef2c1f/sts2019-kb4484142-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484142-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2019" Build="16.0.10352.20000" Url="https://download.microsoft.com/download/1/9/e/19ec4483-f612-4a72-bc9c-cd7fff82d4b6/wssloc2019-kb4484149-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484149-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="December 2019" Build="16.0.10353.20001" Url="https://download.microsoft.com/download/6/7/6/67692942-1acb-4f0e-a335-b0960141937f/sts2019-kb4484177-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484177-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="December 2019" Build="16.0.10353.20001" Url="https://download.microsoft.com/download/d/6/a/d6a29223-913d-4bf8-88ae-f7fa0fb951fb/wssloc2019-kb4484176-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484176-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2019" Build="16.0.10354.20001" Url="https://download.microsoft.com/download/c/5/e/c5e7a12c-12a9-4d54-8c17-f9c8213ba026/sts2019-kb4484224-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484224-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2019 in January 2020, so the link below is actually for the last-released language-dependent fix (December 2019)-->
+            <CumulativeUpdate Name="December 2019" Build="16.0.10354.20001" Url="https://download.microsoft.com/download/1/9/e/19ec4483-f612-4a72-bc9c-cd7fff82d4b6/wssloc2019-kb4484149-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484149-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -1893,6 +1900,7 @@
             <CumulativeUpdate Name="October 2019" Build="16.0.10351.20000" Url="https://download.microsoft.com/download/c/a/d/cad30a02-ee5e-4a83-b455-a201f40ea7a0/wacserver2019-kb4475595-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4475595-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2019" Build="16.0.10352.20000" Url="https://download.microsoft.com/download/c/f/6/cf6a1062-46c1-4fa0-bbfb-1ade0aa9a213/wacserver2019-kb4484141-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484141-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2019" Build="16.0.10353.20001" Url="https://download.microsoft.com/download/c/d/7/cd7eb8bd-a4df-4553-bb86-771d8dbbe643/wacserver2019-kb4484175-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484175-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2020" Build="16.0.10354.20001" Url="https://download.microsoft.com/download/6/1/8/618da5c2-77b2-44c5-93f2-2631b756e426/wacserver2019-kb4484223-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484223-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="">

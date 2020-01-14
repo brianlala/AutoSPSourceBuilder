@@ -14,13 +14,13 @@
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
 .PRIVATEDATA
-#> 
+#>
 
-<# 
+<#
 .SYNOPSIS
     Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
-.DESCRIPTION 
-    Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally, slipstreamed) installation source. 
+.DESCRIPTION
+    Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally, slipstreamed) installation source.
     Starting from existing (user-provided) SharePoint 2010/2013/2016/2019 installation media/files (and optional Office Web Apps / Online Server media/files),
     the script can download prerequisites, the specified Service Pack, and CU/PU packages for SharePoint/WAC, along with specified (optional) language packs, then extract them to a destination path structure.
     By default, automatically downloads the latest AutoSPSourceBuilder.xml inventory file as the source of product information (URLs, builds, naming, etc.) to the same local path as the AutoSPSourceBuilder.ps1 script.
@@ -123,7 +123,7 @@ Function WriteLine
 
 Function DownloadPackage
 {
-Param
+    Param
     (
         [Parameter()][string]$url,
         [Parameter()][string]$ExpandedFile,
@@ -306,8 +306,8 @@ if ($UseExistingLocalXML)
 else
 {
     # Get latest official XML file from the master GitHub repo
-    Write-Output " - Grabbing latest AutoSPSourceBuilder.xml patch inventory file..."
-    Start-BitsTransfer -DisplayName "Downloading AutoSPSourceBuilder.xml patch inventory file" -Description "From 'https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts'..." -Destination "$dp0\AutoSPSourceBuilder.xml" -Priority Foreground -Source "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts/AutoSPSourceBuilder.xml" -RetryInterval 60 -RetryTimeout 3600
+    Write-Output " - Grabbing latest AutoSPSourceBuilder.xml update inventory file..."
+    Start-BitsTransfer -DisplayName "Downloading AutoSPSourceBuilder.xml update inventory file" -Description "From 'https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts'..." -Destination "$dp0\AutoSPSourceBuilder.xml" -Priority Foreground -Source "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts/AutoSPSourceBuilder.xml" -RetryInterval 60 -RetryTimeout 3600
     if (!$?)
     {
         throw "Could not download AutoSPSourceBuilder.xml file!"
@@ -630,7 +630,7 @@ else
 #endregion
 
 #region March PU for SharePoint 2013
-# Since the March 2013 PU for SharePoint 2013 is considered the baseline build for all patches going forward (prior to SP1), we need to download and extract it if we are looking for a SP2013 CU dated March 2013 or later
+# Since the March 2013 PU for SharePoint 2013 is considered the baseline build for all updates going forward (prior to SP1), we need to download and extract it if we are looking for a SP2013 CU dated March 2013 or later
 If ($spCU.Count -ge 1 -and $spCU[0].Name -ne "December 2012" -and $spYear -eq "2013" -and !$sp2013SP1 -and !([string]::IsNullOrEmpty($SourceLocation)))
 {
     WriteLine

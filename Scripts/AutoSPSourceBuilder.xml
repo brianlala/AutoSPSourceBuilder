@@ -629,8 +629,8 @@
             <CumulativeUpdate Name="January 2020" Build="15.0.5207.1000" Url="https://download.microsoft.com/download/7/e/1/7e12db89-b69e-4cb1-8837-bf33ef25b799/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="January 2020" Build="15.0.5207.1000" Url="https://download.microsoft.com/download/7/e/1/7e12db89-b69e-4cb1-8837-bf33ef25b799/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
             <CumulativeUpdate Name="February 2020" Build="15.0.5215.1000" Url="https://download.microsoft.com/download/6/f/1/6f11be47-7fcb-4880-926e-9d437f1f556b/ubersrv2013-kb4484263-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484263-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="February 2020" Build="15.0.5207.1000" Url="https://download.microsoft.com/download/6/f/1/6f11be47-7fcb-4880-926e-9d437f1f556b/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
-            <CumulativeUpdate Name="February 2020" Build="15.0.5207.1000" Url="https://download.microsoft.com/download/6/f/1/6f11be47-7fcb-4880-926e-9d437f1f556b/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="February 2020" Build="15.0.5215.1000" Url="https://download.microsoft.com/download/6/f/1/6f11be47-7fcb-4880-926e-9d437f1f556b/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="February 2020" Build="15.0.5215.1000" Url="https://download.microsoft.com/download/6/f/1/6f11be47-7fcb-4880-926e-9d437f1f556b/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">

@@ -292,6 +292,9 @@ $Host.UI.RawUI.WindowTitle = "--AutoSPSourceBuilder--"
 $0 = $myInvocation.MyCommand.Definition
 $dp0 = [System.IO.Path]::GetDirectoryName($0)
 
+# Clear out any old $errorWarning variable
+Remove-Variable -Name errorWarning -ErrorAction SilentlyContinue
+
 # Only needed if proxy is enabled
 # $proxyCredentials = (Get-Credential -Message "Enter credentials for proxy server:" -UserName "$env:USERDOMAIN\$env:USERNAME")
 

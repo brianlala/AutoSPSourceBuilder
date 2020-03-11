@@ -1,6 +1,6 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.1.1
+.VERSION 2.0.1.5
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME
@@ -277,7 +277,7 @@ If (!([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]
 
 #region OS Check
 # Then check if we are running Server 2012, Windows 8 or newer (e.g. Windows 10)
-$windowsMajorVersion,$windowsMinorVersion,$null = (Get-WmiObject Win32_OperatingSystem).Version -split "\."
+$windowsMajorVersion,$windowsMinorVersion,$null = (Get-CimInstance -ClassName Win32_OperatingSystem).Version -split "\."
 if (($windowsMajorVersion -lt 6 -or (($windowsMajorVersion -eq 6) -and ($windowsMinorVersion -lt 2)) -and $windowsMajorVersion -ne 10) -and ($Languages.Count -gt 0))
 {
     Write-Warning "You should be running Windows Server 2012 or Windows 8 (minimum) to get the full functionality of this script."
@@ -1137,7 +1137,7 @@ If (!([string]::IsNullOrEmpty($WACSourceLocation)))
 }
 Add-Content -Path "$Destination\$textFileName" -Value "Using AutoSPSourceBuilder (https://github.com/brianlala/autospsourcebuilder)." -Force
 Add-Content -Path "$Destination\$textFileName" -Value "-------------------------------------------------------------------------------------------------------------------------------------" -Force
-If ($errorWarning)
+If ($global:errorWarning)
 {
     Write-Host -ForegroundColor Yellow " - At least one non-trivial error was encountered."
     if (!([string]::IsNullOrEmpty($SourceLocation)))

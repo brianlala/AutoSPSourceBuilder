@@ -1930,203 +1930,207 @@
             <CumulativeUpdate Name="February 2020" Build="16.0.10355.20000" Url="https://download.microsoft.com/download/e/e/9/ee9f5c2e-cc5b-483b-b321-c25f8442d0e3/wacserver2019-kb4484254-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484254-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2020" Build="16.0.10357.20002" Url="https://download.microsoft.com/download/f/3/1/f31474f9-ded4-437d-9d69-1b3485c970f4/wacserver2019-kb4484270-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484270-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
-        <LanguagePacks>
-            <LanguagePack Name="az-Latn-AZ" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="bs-ba" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="pl-pl" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="pt-br" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="pt-pt" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="ga-ie" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="nb-no" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="hu-hu" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="id-id" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="hr-hr" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="cy-gb" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="bg-bg" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="ro-ro" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="sl-SI" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="sr-latn-rs" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="sr-Cyrl-RS" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="uk-ua" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="hi-in" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="th-th" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="kk-kz" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="ca-es" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="el-gr" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="et-ee" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="eu-es" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="lt-lt" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="mk-mk" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="lv-lv" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="gl-es" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="he-il" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="fi-fi" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="sv-se" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="sk-sk" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="tr-tr" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="cs-cz" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="da-dk" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="de-de" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="PRS-af" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="en-us" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="es-es" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="fr-fr" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="it-it" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="ja-jp" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="ms-my" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="ko-kr" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="nl-nl" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="ru-ru" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="vi-vn" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="zh-cn" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-            <LanguagePack Name="zh-tw" Url="">
-                <ServicePacks>
-                </ServicePacks>
-            </LanguagePack>
-        </LanguagePacks>
+      <LanguagePacks>        
+        <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/A/0/3/A03B732F-512B-4D29-A2FD-49873FEA60C3/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="bs-ba" Url="https://download.microsoft.com/download/B/1/2/B120CA9D-DD39-4A48-8D05-F397D488D6AA/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="pl-pl" Url="https://download.microsoft.com/download/5/E/7/5E719FC6-E016-468F-9E5E-8E8749F50D36/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="pt-br" Url="https://download.microsoft.com/download/F/C/6/FC6B7A0E-B388-42D5-9171-E3DD991C621F/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="pt-pt" Url="https://download.microsoft.com/download/1/8/1/1817AA4D-B0D5-45EF-9746-52381C450FCE/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ga-ie" Url="https://download.microsoft.com/download/8/0/0/80027761-3075-4DC7-A4D4-5565AB7258CA/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="nb-no" Url="https://download.microsoft.com/download/0/3/5/035851F6-4DF1-4358-81F7-86222FD976FB/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="hu-hu" Url="https://download.microsoft.com/download/2/1/6/216469AF-3BE1-4273-89BE-94EF8906C74E/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="id-id" Url="https://download.microsoft.com/download/4/2/3/4236A4FB-B7BE-4185-9D3D-1FC024FA80B6/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="hr-hr" Url="https://download.microsoft.com/download/D/5/7/D57C2874-67D7-475D-9B96-5009BFC5AE8A/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="cy-gb" Url="https://download.microsoft.com/download/D/A/3/DA3B8193-E845-4A18-A7F1-381B7DC618BA/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="bg-bg" Url="https://download.microsoft.com/download/0/A/7/0A779139-6A69-40C0-AB64-D5C2E0837CCA/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ro-ro" Url="https://download.microsoft.com/download/6/3/0/63016EC4-B27F-42E8-ADE4-62D0A5EB093E/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="sl-SI" Url="https://download.microsoft.com/download/F/F/1/FF16B81E-B23D-4944-ADCF-CB91D2970970/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="sr-latn-rs" Url="https://download.microsoft.com/download/F/3/C/F3C6DF01-F1CB-467F-8EB3-68DF095B2771/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="sr-Cyrl-RS" Url="https://download.microsoft.com/download/1/F/E/1FE050BF-EA8A-4663-8B48-4BC0FA252E30/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="uk-ua" Url="https://download.microsoft.com/download/4/2/F/42F9B464-20E6-4128-8B46-166D3774FF54/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="hi-in" Url="https://download.microsoft.com/download/2/E/A/2EA68392-9AAC-4F25-88A8-C98E4AA5D70B/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="th-th" Url="https://download.microsoft.com/download/4/E/3/4E37723B-975D-4A66-B8C2-2AE40F329E60/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="kk-kz" Url="https://download.microsoft.com/download/3/C/3/3C3DC06D-FBB0-48A9-BBDB-A7F914F574FF/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ca-es" Url="https://download.microsoft.com/download/E/4/2/E4246AA3-5B6B-4FBE-83DA-981D6CBB2F23/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="el-gr" Url="https://download.microsoft.com/download/F/9/8/F986F9A4-AA95-4F00-9569-9DF4980FC605/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="et-ee" Url="https://download.microsoft.com/download/B/3/D/B3D149A4-DA8A-4826-841E-072817AD15DE/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="eu-es" Url="https://download.microsoft.com/download/4/D/E/4DEB86A3-8CF7-432A-A207-BF01D6069A09/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="lt-lt" Url="https://download.microsoft.com/download/3/1/F/31F6F77F-A9A7-4FC0-ADE0-138DDF94CD2B/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="mk-mk" Url="https://download.microsoft.com/download/A/B/8/AB85211C-E242-4001-863B-74EB6A40ED2C/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="lv-lv" Url="https://download.microsoft.com/download/6/3/D/63DFF75E-46BE-4566-B555-FC4BC48837FB/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="gl-es" Url="https://download.microsoft.com/download/7/E/B/7EB81832-D2A9-4672-9143-3579DE8BC183/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="he-il" Url="https://download.microsoft.com/download/3/D/D/3DD64A32-E38F-4E29-BCBA-23EEC05B3F61/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="fi-fi" Url="https://download.microsoft.com/download/0/4/7/0476FDF1-B292-4CE0-BBB3-4F4C517A733E/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="sv-se" Url="https://download.microsoft.com/download/5/B/7/5B7D1B87-2619-4DF6-AA2C-F2EB707E2231/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="sk-sk" Url="https://download.microsoft.com/download/2/D/8/2D845846-5ED4-4157-B17F-A3C969D31FE1/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="tr-tr" Url="https://download.microsoft.com/download/E/9/F/E9F9A4CE-0FDF-4C16-9703-33CF22C6FC3D/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="cs-cz" Url="https://download.microsoft.com/download/C/8/8/C88C9762-A87B-4EBE-9A84-9A67168C7D3B/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="da-dk" Url="https://download.microsoft.com/download/F/5/0/F50243C2-3EB4-47B8-9CB2-CF02E47731BC/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="de-de" Url="https://download.microsoft.com/download/D/3/7/D378B006-CA25-462C-97F3-0A4A4501F2B4/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="PRS-af" Url="https://download.microsoft.com/download/5/B/5/5B561EAF-6BDE-4F1D-A99B-872F4ED90140/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="en-us" Url="https://download.microsoft.com/download/6/D/7/6D75C9CB-FFEE-48B0-9AA6-D03C74E3939E/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="es-es" Url="https://download.microsoft.com/download/E/3/D/E3D356CD-1E49-4DC2-B699-7348ACA6B09E/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="fr-fr" Url="https://download.microsoft.com/download/C/A/9/CA9F6B25-786D-49A7-B176-D3376C147D34/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="it-it" Url="https://download.microsoft.com/download/7/D/F/7DF07234-EF32-4981-9E5A-2F287441B4EB/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ja-jp" Url="https://download.microsoft.com/download/2/C/E/2CEB4AAA-3117-4C1F-8847-41CF564B3FAB/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ms-my" Url="https://download.microsoft.com/download/9/8/6/9861A05B-8B36-45DC-9629-48886C551CD8/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ko-kr" Url="https://download.microsoft.com/download/D/F/6/DF66A391-EA97-42C6-A552-49D49FCDFD88/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="nl-nl" Url="https://download.microsoft.com/download/D/E/9/DE9E0892-CFD4-4811-9A3F-3E65E59396BA/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ru-ru" Url="https://download.microsoft.com/download/6/5/3/65326021-E804-4504-B607-85BF1200E211/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="vi-vn" Url="https://download.microsoft.com/download/7/F/9/7F979020-DDD8-4059-B9FE-3BDBC1ADF28C/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="zh-cn" Url="https://download.microsoft.com/download/E/7/9/E79A0228-D082-4A22-B7EB-32300F4A4172/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="zh-tw" Url="https://download.microsoft.com/download/D/C/2/DC2AB1DB-D155-48D3-A3D0-3CEBDC09D4AF/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+        <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/D/7/F/D7F0911C-59CD-461D-8223-C8BACE5E0BE7/wacserverlanguagepack.exe">
+          <ServicePacks>
+          </ServicePacks>
+        </LanguagePack>
+      </LanguagePacks>
     </Product>
 </Products>

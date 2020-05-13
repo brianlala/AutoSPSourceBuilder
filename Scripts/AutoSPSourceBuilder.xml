@@ -108,6 +108,7 @@
             <!--There is no Update for SharePoint 2010 in January-February 2020-->
             <CumulativeUpdate Name="March 2020" Build="14.0.7246.5000" Url="https://download.microsoft.com/download/b/e/3/be322fc7-f91a-42db-8c7c-30e429acfce6/ubersrv2010-kb4484241-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484241-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2020" Build="14.0.7248.5000" Url="https://download.microsoft.com/download/0/4/8/048f1abc-6e07-4c36-8ba1-84640c92a1e1/ubersrv2010-kb4484324-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484324-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2020" Build="14.0.7248.5000" Url="https://download.microsoft.com/download/2/c/7/2c714ea2-d802-475d-ab9c-13a371d9cd49/wssloc2010-kb4484386-fullfile-x64-glb.exe" ExpandedFile="wssloc2010-kb4484386-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">

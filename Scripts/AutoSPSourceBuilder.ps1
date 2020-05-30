@@ -1177,7 +1177,9 @@ If ($global:errorWarning)
 Write-Output " - Done!"
 Write-Output " - Review the output and check your source/update file integrity carefully."
 Start-Sleep -Seconds 3
-Invoke-Item -Path $Destination
+if ( !$Unattend ) {
+    Invoke-Item -Path $Destination
+}
 WriteLine
 if ( !$Unattend ) {
     $Host.UI.RawUI.WindowTitle = $oldTitle

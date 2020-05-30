@@ -62,6 +62,8 @@
     If this switch is omitted, and no languages have been specified on the command line, languages are skipped entirely.
 .PARAMETER UseExistingLocalXML
     If you want to use a custom or pre-existing AutoSPSourceBuilder.XML file, or simply want to skip downloading the official one on-the-fly, use this switch parameter.
+.PARAMETER Unattend
+    Disables additional user interation so that command can be run in CI/CD pipelines
 .LINK
     https://github.com/brianlala/autospsourcebuilder
     https://github.com/brianlala/autospinstaller
@@ -91,7 +93,9 @@ param
     [Parameter(Mandatory = $false)]
     [switch]$PromptForLanguages,
     [Parameter(Mandatory = $false)]
-    [switch]$UseExistingLocalXML = $false
+    [switch]$UseExistingLocalXML = $false,
+    [Parameter(Mandatory = $false)]
+    [switch]$Unattend = $false
 )
 
 #region Functions
@@ -278,7 +282,9 @@ If (!([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]
 {
     Write-Warning " - You should run this script under an elevated PowerShell prompt. Launch an elevated PowerShell prompt by right-clicking the PowerShell shortcut and selecting `"Run as Administrator`"."
     Write-Warning " - Running without elevation may cause certain things to fail, e.g. file extraction."
-    Pause -action "proceed if you are sure this is OK, or Ctrl-C to exit" -key "y"
+    if ( !$Unattend ) {
+        Pause -action "proceed if you are sure this is OK, or Ctrl-C to exit" -key "y"
+    }
 }
 #endregion
 
@@ -289,13 +295,17 @@ if (($windowsMajorVersion -lt 6 -or (($windowsMajorVersion -eq 6) -and ($windows
 {
     Write-Warning "You should be running Windows Server 2012 or Windows 8 (minimum) to get the full functionality of this script."
     Write-Host -ForegroundColor Yellow " - Some features (e.g. image extraction) may not work otherwise."
-    Pause "proceed if you are sure this is OK, or Ctrl-C to exit" "y"
+    if ( !$Unattend ) {
+        Pause "proceed if you are sure this is OK, or Ctrl-C to exit" "y"
+    }
 }
 #endregion
 
 #region Start
-$oldTitle = $Host.UI.RawUI.WindowTitle
-$Host.UI.RawUI.WindowTitle = "--AutoSPSourceBuilder--"
+if ( !$Unattend ) {
+    $oldTitle = $Host.UI.RawUI.WindowTitle
+    $Host.UI.RawUI.WindowTitle = "--AutoSPSourceBuilder--"
+}
 $0 = $myInvocation.MyCommand.Definition
 $dp0 = [System.IO.Path]::GetDirectoryName($0)
 
@@ -382,7 +392,9 @@ if ($SourceLocation)
         Write-Warning " - Please insert/mount the correct media, or specify a valid path."
         $global:errorWarning = $true
         break
-        Pause "exit"
+        if ( !$Unattend ) {
+            Pause "exit"
+        }
         exit
     }
     else
@@ -402,7 +414,9 @@ if ($SourceLocation)
             Write-Warning " - Cannot determine version of SharePoint setup binaries, and SharePointVersion was not specified."
             $global:errorWarning = $true
             break
-            Pause "exit"
+            if ( !$Unattend ) {
+                Pause "exit"
+            }
             exit
         }
         Write-Host " - SharePoint $spYear detected."
@@ -866,7 +880,9 @@ if ($WACSourceLocation)
         Write-Warning " - Please specify a valid path."
         $global:errorWarning = $true
         break
-        Pause "exit"
+        if ( !$Unattend ) {
+            Pause "exit"
+        }
         exit
     }
     else
@@ -1163,6 +1179,8 @@ Write-Output " - Review the output and check your source/update file integrity c
 Start-Sleep -Seconds 3
 Invoke-Item -Path $Destination
 WriteLine
-$Host.UI.RawUI.WindowTitle = $oldTitle
-Pause "exit"
+if ( !$Unattend ) {
+    $Host.UI.RawUI.WindowTitle = $oldTitle
+    Pause "exit"
+}
 #endregion

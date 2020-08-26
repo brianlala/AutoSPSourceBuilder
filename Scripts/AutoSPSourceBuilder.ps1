@@ -1,6 +1,6 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.1.5
+.VERSION 2.0.1.7
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME
@@ -192,35 +192,71 @@ Function DownloadPackage
         {
             # Begin download
             Write-Verbose -Message " - Attempting to download from $url..."
-            Import-Module BitsTransfer
-            $job = Start-BitsTransfer -Asynchronous -Source $url -Destination "$DestinationFolder\$destinationFile" -DisplayName "Downloading `'$file`' to $DestinationFolder\$destinationFile" -Priority Foreground -Description "From $url..." -RetryInterval 60 -RetryTimeout 3600 -ErrorVariable err
-            # When proxy is enabled
-            # $job = Start-BitsTransfer -Asynchronous -Source $url -Destination "$DestinationFolder\$destinationFile" -DisplayName "Downloading `'$file`' to $DestinationFolder\$destinationFile" -Priority Foreground -Description "From $url..." -RetryInterval 60 -RetryTimeout 3600 -ProxyList canatsrv06:80 -ProxyUsage Override -ProxyAuthentication Ntlm -ProxyCredential $proxyCredentials -ErrorVariable err
-            Write-Host "  - Connecting..." -NoNewline
-            while ($job.JobState -eq "Connecting")
+            # Quick fix for wonky BitsTransfer support in PowerShell Core
+            if ($host.Version.Major -gt 5)
             {
-                Write-Host "." -NoNewline
-                Start-Sleep -Milliseconds 500
+                Invoke-WebRequest -Uri $url -TimeoutSec 3600 -MaximumRetryCount 60 -OutFile "$DestinationFolder\$destinationFile" -Method Get
             }
-            Write-Host "."
-            If ($err) {Throw}
-            Write-Host "  - Downloading $file..."
-            while ($job.JobState -ne "Transferred")
+            else
             {
-                $percentDone = "{0:N2}" -f $($job.BytesTransferred / $job.BytesTotal * 100) + "% - $($job.JobState)"
-                Write-Host $percentDone -NoNewline
-                Start-Sleep -Milliseconds 500
-                $backspaceCount = (($percentDone).ToString()).Length
-                for ($count = 1; $count -le $backspaceCount; $count++) {Write-Host "`b `b" -NoNewline}
-                if ($job.JobState -like "*Error")
+                $job = Start-BitsTransfer -Asynchronous -Source $url -Destination "$DestinationFolder\$destinationFile" -DisplayName "Downloading `'$file`' to $DestinationFolder\$destinationFile" -Priority Foreground -Description "From $url..." -RetryInterval 60 -RetryTimeout 3600 -ErrorVariable err
+                # When proxy is enabled
+                # $job = Start-BitsTransfer -Asynchronous -Source $url -Destination "$DestinationFolder\$destinationFile" -DisplayName "Downloading `'$file`' to $DestinationFolder\$destinationFile" -Priority Foreground -Description "From $url..." -RetryInterval 60 -RetryTimeout 3600 -ProxyList canatsrv06:80 -ProxyUsage Override -ProxyAuthentication Ntlm -ProxyCredential $proxyCredentials -ErrorVariable err
+                Write-Host "  - Connecting..." -NoNewline
+                while ($job.JobState -eq "Connecting")
                 {
-                    Write-Host -ForegroundColor Yellow "  - An error occurred downloading $file, retrying..."
-                    Resume-BitsTransfer -BitsJob $job -Asynchronous | Out-Null
+                    Write-Host "." -NoNewline
+                    Start-Sleep -Milliseconds 500
                 }
+                Write-Host "."
+                If ($err) {Throw}
+                Write-Host "  - Downloading $file..."
+                while ($job.JobState -ne "Transferred")
+                {
+                    $percentDone = "{0:N2}" -f $($job.BytesTransferred / $job.BytesTotal * 100) + "% - $($job.JobState)"
+                    if(Test-IsISE -eq $true)
+                    {
+                        Write-Progress -Activity "Downloading $file..." -Status $percentDone -PercentComplete $($job.BytesTransferred / $job.BytesTotal * 100)
+                    }
+                    else
+                    {
+                        Write-Host $percentDone -NoNewline
+                    }
+                    Start-Sleep -Milliseconds 500
+
+                    if(Test-IsISE -eq $true)
+                    {
+                        
+                    }
+                    else
+                    {
+                        $backspaceCount = (($percentDone).ToString()).Length
+                        for ($count = 1; $count -le $backspaceCount; $count++) 
+                        {
+                            Write-Host "`b `b" -NoNewline
+                        }
+                    }
+                    if ($job.JobState -like "*Error")
+                    {
+                        if(Test-IsISE -eq $true)
+                        {
+                            Write-Progress -Activity "Downloading $file..." -Status "Error" -Completed
+                        }
+
+                        Write-Host -ForegroundColor Yellow "  - An error occurred downloading $file, retrying..."
+                        Resume-BitsTransfer -BitsJob $job -Asynchronous | Out-Null
+                    }
+                }
+                Write-Host "  - Completing transfer..."
+                Complete-BitsTransfer -BitsJob $job
+
+                if(Test-IsISE -eq $true)
+                {
+                    Write-Progress -Activity "Downloading $file..." -Status "Ready" -Completed
+                }
+
+                Write-Host " - Done!"
             }
-            Write-Host "  - Completing transfer..."
-            Complete-BitsTransfer -BitsJob $job
-            Write-Host " - Done!"
         }
     }
     Catch
@@ -328,7 +364,7 @@ $0 = $myInvocation.MyCommand.Definition
 $dp0 = [System.IO.Path]::GetDirectoryName($0)
 
 # Clear out any old $errorWarning variable
-Remove-Variable -Name errorWarning -ErrorAction SilentlyContinue
+Remove-Variable -Name errorWarning -ErrorAction SilentlyContinue -Scope Global
 
 # Only needed if proxy is enabled
 # $proxyCredentials = (Get-Credential -Message "Enter credentials for proxy server:" -UserName "$env:USERDOMAIN\$env:USERNAME")
@@ -348,7 +384,12 @@ else
     Start-BitsTransfer -DisplayName "Downloading AutoSPSourceBuilder.xml update inventory file" -Description "From 'https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts'..." -Destination "$dp0\AutoSPSourceBuilder.xml" -Priority Foreground -Source "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts/AutoSPSourceBuilder.xml" -RetryInterval 60 -RetryTimeout 3600
     if (!$?)
     {
-        throw "Could not download AutoSPSourceBuilder.xml file!"
+        # Try alternate method
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts/AutoSPSourceBuilder.xml" -TimeoutSec 3600 -MaximumRetryCount 60 -OutFile "$dp0\AutoSPSourceBuilder.xml" -Method Get
+        if (!$?)
+        {
+            throw "Could not download AutoSPSourceBuilder.xml file!"
+        }
     }
 }
 [xml]$xml = (Get-Content -Path "$dp0\AutoSPSourceBuilder.xml" -ErrorAction SilentlyContinue)

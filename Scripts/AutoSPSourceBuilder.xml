@@ -1778,7 +1778,7 @@
             <CumulativeUpdate Name="July 2020" Build="16.0.10363.12107" Url="https://download.microsoft.com/download/7/4/1/74129e52-6807-46a1-b78c-0ca836fa1167/wssloc2019-kb4484452-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484452-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2020" Build="16.0.10364.20001" Url="https://download.microsoft.com/download/5/c/6/5c696fd2-36a5-4d1a-a045-125ad5b5b7b6/sts2019-kb4484472-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484472-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2020" Build="16.0.10364.20001" Url="https://download.microsoft.com/download/4/a/4/4a41f078-532e-4679-97e3-ace76f49b3ce/wssloc2019-kb4484471-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484471-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="September 2020" Build="16.0.10366.12106" Url="https://download.microsoft.com/download/f/9/f/f9ff104a-1f46-46d7-96c7-7a7ea49c8801/sts2019-kb4484505-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484505-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="16.0.10366.12106" Url="https://download.microsoft.com/download/5/6/4/564eddf4-6009-47a4-89be-a7b123cc4d5a/sts2019-kb4461512-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4461512-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2020" Build="16.0.10366.12106" Url="https://download.microsoft.com/download/d/f/4/df47c1ae-a4d2-436e-b47c-09aecc70de1d/wssloc2019-kb4484504-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484504-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>

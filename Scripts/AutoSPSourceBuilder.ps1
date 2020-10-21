@@ -25,7 +25,7 @@
     the script can download prerequisites, the specified Service Pack, and CU/PU packages for SharePoint/WAC, along with specified (optional) language packs, then extract them to a destination path structure.
     By default, automatically downloads the latest AutoSPSourceBuilder.xml inventory file as the source of product information (URLs, builds, naming, etc.) to the same local path as the AutoSPSourceBuilder.ps1 script.
 .EXAMPLE
-    AutoSPSourceBuilder.ps1 -UpdateLocation "C:\Users\brianl\Downloads\SP" -Destination "D:\SP\2010"
+    AutoSPSourceBuilder.ps1 -LocationForUpdates "C:\Users\brianl\Downloads\SP" -Destination "D:\SP\2010"
 .EXAMPLE
     AutoSPSourceBuilder.ps1 -SourceLocation E: -Destination "C:\Source\SP\2010" -CumulativeUpdate "December 2011" -Languages fr-fr,es-es
 .EXAMPLE
@@ -40,7 +40,7 @@
 .PARAMETER Destination
     The file path for the final slipstreamed SP2010/SP2013/2016/2019 installation files.
     The default value is $env:SystemDrive\SP\201x (where 201x is the version of SharePoint we want to download/integrate updates from).
-.PARAMETER UpdateLocation
+.PARAMETER LocationForUpdates
     The optional file path where the downloaded service pack and cumulative update files are located, or where they should be placed in case they need to be downloaded.
     It's recommended to omit this parameter in order to use the default value <Destination>\Updates (so, typically C:\SP\201x\Updates).
 .PARAMETER GetPrerequisites
@@ -77,9 +77,9 @@ param
     [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [String]$SourceLocation,
     [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
-    [String]$Destination = $env:SystemDrive + "\SP\$SharePointVersion",
-    [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
-    [String]$UpdateLocation,
+    [String]$Destination = (Split-Path -Path $LocationForUpdates -Parent),
+    [Parameter(Mandatory = $true)][ValidateNotNullOrEmpty()][Alias('UpdateLocation')]
+    [String]$LocationForUpdates,
     [Parameter(Mandatory = $false)]
     [Switch]$GetPrerequisites,
     [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
@@ -352,11 +352,7 @@ if (!($Destination -like "*$spYear"))
     $Destination = $Destination+"\"+$spYear
 }
 Write-Verbose -Message "Destination is `"$Destination`""
-if ([string]::IsNullOrEmpty($UpdateLocation))
-{
-    $UpdateLocation = $Destination+"\Updates"
-}
-Write-Verbose -Message "Update location is `"$UpdateLocation`""
+Write-Verbose -Message "Update location is `"$LocationForUpdates`""
 
 if ($SourceLocation)
 {
@@ -621,21 +617,21 @@ If ($spServicePack -and ($spYear -ne "2013") -and (!([string]::IsNullOrEmpty($So
         Write-Host " - $($spServicePack.Name) seems to be missing, or incomplete in $sourceDir\; downloading..."
         # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
         $spServicePackSubfolder = $spServicePack.Build+" ("+$spServicePack.Name+")"
-        EnsureFolder -Path "$UpdateLocation\$spServicePackSubfolder"
-        DownloadPackage -Url $($spServicePack.Url) -DestinationFolder "$UpdateLocation\$spServicePackSubfolder"
+        EnsureFolder -Path "$LocationForUpdates\$spServicePackSubfolder"
+        DownloadPackage -Url $($spServicePack.Url) -DestinationFolder "$LocationForUpdates\$spServicePackSubfolder"
         Remove-ReadOnlyAttribute -Path "$Destination\SharePoint\Updates"
         # Extract SharePoint service pack patch files
         $spServicePackExpandedFile = $($spServicePack.Url).Split('/')[-1]
-        Write-Verbose -Message " - Extracting from '$UpdateLocation\$spServicePackSubfolder\$spServicePackExpandedFile'"
+        Write-Verbose -Message " - Extracting from '$LocationForUpdates\$spServicePackSubfolder\$spServicePackExpandedFile'"
         Write-Host " - Extracting SharePoint $($spServicePack.Name) patch files..." -NoNewline
-        Start-Process -FilePath "$UpdateLocation\$spServicePackSubfolder\$spServicePackExpandedFile" -ArgumentList "/extract:`"$Destination\SharePoint\Updates`" /passive" -Wait -NoNewWindow
+        Start-Process -FilePath "$LocationForUpdates\$spServicePackSubfolder\$spServicePackExpandedFile" -ArgumentList "/extract:`"$Destination\SharePoint\Updates`" /passive" -Wait -NoNewWindow
         Read-Log
         Write-Host "done!"
     }
     Else {Write-Host " - $($spServicePack.Name) appears to be already slipstreamed into the SharePoint binary source location."}
 
     ## Extract SharePoint w/SP1 files (future functionality?)
-    ## Start-Process -FilePath "$UpdateLocation\en_sharepoint_server_2010_with_service_pack_1_x64_759775.exe" -ArgumentList "/extract:$Destination\SharePoint /passive" -NoNewWindow -Wait -NoNewWindow
+    ## Start-Process -FilePath "$LocationForUpdates\en_sharepoint_server_2010_with_service_pack_1_x64_759775.exe" -ArgumentList "/extract:$Destination\SharePoint /passive" -NoNewWindow -Wait -NoNewWindow
     WriteLine
 }
 else
@@ -659,19 +655,19 @@ If ($spCU.Count -ge 1 -and $spCU[0].Name -ne "December 2012" -and $spYear -eq "2
     }
     # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
     $updateSubfolder = $march2013PU.Build+" ("+$march2013PU.Name+")"
-    EnsureFolder -Path "$UpdateLocation\$updateSubfolder"
-    DownloadPackage -Url $($march2013PU.Url) -ExpandedFile $($march2013PU.ExpandedFile) -DestinationFolder "$UpdateLocation\$updateSubfolder" -destinationFile $march2013PUFile
-    # Expand PU executable to $UpdateLocation\$updateSubfolder
-    If (!(Test-Path "$UpdateLocation\$updateSubfolder\$($march2013PU.ExpandedFile)") -and $march2013PUFileIsZip) # Ensure the expanded file isn't already there, and the PU is a zip
+    EnsureFolder -Path "$LocationForUpdates\$updateSubfolder"
+    DownloadPackage -Url $($march2013PU.Url) -ExpandedFile $($march2013PU.ExpandedFile) -DestinationFolder "$LocationForUpdates\$updateSubfolder" -destinationFile $march2013PUFile
+    # Expand PU executable to $LocationForUpdates\$updateSubfolder
+    If (!(Test-Path "$LocationForUpdates\$updateSubfolder\$($march2013PU.ExpandedFile)") -and $march2013PUFileIsZip) # Ensure the expanded file isn't already there, and the PU is a zip
     {
-        $march2013PUFileZipPath = Join-Path -Path "$UpdateLocation\$updateSubfolder" -ChildPath $march2013PUFile
+        $march2013PUFileZipPath = Join-Path -Path "$LocationForUpdates\$updateSubfolder" -ChildPath $march2013PUFile
         Write-Host " - Expanding $($march2013PU.Name) Public Update (single file)..."
         # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
-        if (Test-Path -Path "$UpdateLocation\$updateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
+        if (Test-Path -Path "$LocationForUpdates\$updateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
         {
-            Remove-Item -Path "$UpdateLocation\$updateSubfolder\hotfix.txt" -Confirm:$false -ErrorAction SilentlyContinue
+            Remove-Item -Path "$LocationForUpdates\$updateSubfolder\hotfix.txt" -Confirm:$false -ErrorAction SilentlyContinue
         }
-        Expand-Zip -InputFile $march2013PUFileZipPath -DestinationFolder "$UpdateLocation\$updateSubfolder"
+        Expand-Zip -InputFile $march2013PUFileZipPath -DestinationFolder "$LocationForUpdates\$updateSubfolder"
     }
     Remove-ReadOnlyAttribute -Path "$Destination\SharePoint\Updates"
     $march2013PUTempFolder = "$Destination\SharePoint\Updates\March2013PU_TEMP"
@@ -681,9 +677,9 @@ If ($spCU.Count -ge 1 -and $spCU[0].Name -ne "December 2012" -and $spYear -eq "2
         $existingItem | Remove-Item -Force -Confirm:$false
     }
     # Extract SharePoint PU files to $march2013PUTempFolder
-    Write-Verbose -Message " - Extracting from '$UpdateLocation\$updateSubfolder\$($march2013PU.ExpandedFile)'"
+    Write-Verbose -Message " - Extracting from '$LocationForUpdates\$updateSubfolder\$($march2013PU.ExpandedFile)'"
     Write-Host " - Extracting $($march2013PU.Name) Public Update patch files..." -NoNewline
-    Start-Process -FilePath "$UpdateLocation\$updateSubfolder\$($march2013PU.ExpandedFile)" -ArgumentList "/extract:`"$march2013PUTempFolder`" /passive" -Wait -NoNewWindow
+    Start-Process -FilePath "$LocationForUpdates\$updateSubfolder\$($march2013PU.ExpandedFile)" -ArgumentList "/extract:`"$march2013PUTempFolder`" /passive" -Wait -NoNewWindow
     Read-Log
     Write-Host "done!"
     # Now that we have a supported way to slispstream BOTH the March 2013 PU as well as a subsequent CU (per http://blogs.technet.com/b/acasilla/archive/2014/03/09/slipstream-sharepoint-2013-with-march-pu-cu.aspx), let's make it happen.
@@ -738,22 +734,22 @@ If ($spCU.Count -ge 1)
             }
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $updateSubfolder = $spCUPackageBuild+" ("+$spCUPackageName+")"
-            EnsureFolder -Path "$UpdateLocation\$updateSubfolder"
-            DownloadPackage -Url $($spCUPackage.Url) -ExpandedFile $($spCUPackage.ExpandedFile) -DestinationFolder "$UpdateLocation\$updateSubfolder" -destinationFile $spCuFile
+            EnsureFolder -Path "$LocationForUpdates\$updateSubfolder"
+            DownloadPackage -Url $($spCUPackage.Url) -ExpandedFile $($spCUPackage.ExpandedFile) -DestinationFolder "$LocationForUpdates\$updateSubfolder" -destinationFile $spCuFile
             # Only do this if we are interested in slipstreaming, e.g. if we have a $SourceLocation
             if (!([string]::IsNullOrEmpty($SourceLocation)))
             {
-                # Expand CU executable to $UpdateLocation\$updateSubfolder
-                if (!(Test-Path "$UpdateLocation\$updateSubfolder\$($spCUPackage.ExpandedFile)") -and $spCuFileIsZip) # Ensure the expanded file isn't already there, and the CU is a zip
+                # Expand CU executable to $LocationForUpdates\$updateSubfolder
+                if (!(Test-Path "$LocationForUpdates\$updateSubfolder\$($spCUPackage.ExpandedFile)") -and $spCuFileIsZip) # Ensure the expanded file isn't already there, and the CU is a zip
                 {
-                    $spCuFileZipPath = Join-Path -Path "$UpdateLocation\$updateSubfolder" -ChildPath $spCuFile
+                    $spCuFileZipPath = Join-Path -Path "$LocationForUpdates\$updateSubfolder" -ChildPath $spCuFile
                     Write-Host " - Expanding $spCuFile $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
                     # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
-                    if (Test-Path -Path "$UpdateLocation\$updateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
+                    if (Test-Path -Path "$LocationForUpdates\$updateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
                     {
-                        Remove-Item -Path "$UpdateLocation\$updateSubfolder\hotfix.txt" -Confirm:$false -ErrorAction SilentlyContinue
+                        Remove-Item -Path "$LocationForUpdates\$updateSubfolder\hotfix.txt" -Confirm:$false -ErrorAction SilentlyContinue
                     }
-                    Expand-Zip -InputFile $spCuFileZipPath -DestinationFolder "$UpdateLocation\$updateSubfolder"
+                    Expand-Zip -InputFile $spCuFileZipPath -DestinationFolder "$LocationForUpdates\$updateSubfolder"
                 }
                 Remove-ReadOnlyAttribute -Path "$Destination\SharePoint\Updates"
                 # Extract SharePoint CU files to $Destination\SharePoint\Updates (but only if the source file is an .exe)
@@ -771,9 +767,9 @@ If ($spCU.Count -ge 1)
                     Write-Host " - Extracting $($spCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..."
                     foreach ($spCULauncher in $spCULaunchers)
                     {
-                        Write-Verbose -Message "  - Extracting from '$UpdateLocation\$updateSubfolder\$spCULauncher'"
+                        Write-Verbose -Message "  - Extracting from '$LocationForUpdates\$updateSubfolder\$spCULauncher'"
                         Write-Host "  - $spCULauncher..." -NoNewline
-                        Start-Process -FilePath "$UpdateLocation\$updateSubfolder\$spCULauncher" -ArgumentList "/extract:`"$Destination\SharePoint\Updates`" /passive" -Wait -NoNewWindow
+                        Start-Process -FilePath "$LocationForUpdates\$updateSubfolder\$spCULauncher" -ArgumentList "/extract:`"$Destination\SharePoint\Updates`" /passive" -Wait -NoNewWindow
                         Write-Host "done!"
                         Read-Log
                     }
@@ -890,14 +886,14 @@ if ($WACSourceLocation)
             Write-Host " - Getting $wacProductName $($wacServicePack.Name):"
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $wacServicePackSubfolder = $wacServicePack.Build+" ("+$wacServicePack.Name+")"
-            EnsureFolder -Path "$UpdateLocation\$wacServicePackSubfolder"
-            DownloadPackage -Url $($wacServicePack.Url) -DestinationFolder "$UpdateLocation\$wacServicePackSubfolder"
+            EnsureFolder -Path "$LocationForUpdates\$wacServicePackSubfolder"
+            DownloadPackage -Url $($wacServicePack.Url) -DestinationFolder "$LocationForUpdates\$wacServicePackSubfolder"
             Remove-ReadOnlyAttribute -Path "$Destination\$wacNodeName\Updates"
             # Extract Office Web Apps / Online Server service pack files to $Destination\$wacNodeName\Updates
             $wacServicePackExpandedFile = $($wacServicePack.Url).Split('/')[-1]
-            Write-Verbose -Message " - Extracting from '$$UpdateLocation\$wacServicePackSubfolder\$wacServicePackExpandedFile'"
+            Write-Verbose -Message " - Extracting from '$$LocationForUpdates\$wacServicePackSubfolder\$wacServicePackExpandedFile'"
             Write-Host " - Extracting $wacProductName $($wacServicePack.Name) patch files..." -NoNewline
-            Start-Process -FilePath "$UpdateLocation\$wacServicePackSubfolder\$wacServicePackExpandedFile" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
+            Start-Process -FilePath "$LocationForUpdates\$wacServicePackSubfolder\$wacServicePackExpandedFile" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
             Read-Log
             Write-Host "done!"
         }
@@ -917,27 +913,27 @@ if ($WACSourceLocation)
             $wacCuFileZip = $($wacCUPackage.Url).Split('/')[-1] +".zip"
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $wacUpdateSubfolder = $wacCUBuild+" ("+$wacCUName+")"
-            EnsureFolder -Path "$UpdateLocation\$wacUpdateSubfolder"
-            DownloadPackage -Url $($wacCUPackage.Url) -ExpandedFile $($wacCUPackage.ExpandedFile) -DestinationFolder "$UpdateLocation\$wacUpdateSubfolder" -destinationFile $wacCuFileZip
+            EnsureFolder -Path "$LocationForUpdates\$wacUpdateSubfolder"
+            DownloadPackage -Url $($wacCUPackage.Url) -ExpandedFile $($wacCUPackage.ExpandedFile) -DestinationFolder "$LocationForUpdates\$wacUpdateSubfolder" -destinationFile $wacCuFileZip
 
-            # Expand Office Web Apps / Online Server CU executable to $UpdateLocation\$wacUpdateSubfolder
-            If (!(Test-Path "$UpdateLocation\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)")) # Check if the expanded file is already there
+            # Expand Office Web Apps / Online Server CU executable to $LocationForUpdates\$wacUpdateSubfolder
+            If (!(Test-Path "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)")) # Check if the expanded file is already there
             {
-                $wacCuFileZipPath = Join-Path -Path "$UpdateLocation\$wacUpdateSubfolder" -ChildPath $wacCuFileZip
+                $wacCuFileZipPath = Join-Path -Path "$LocationForUpdates\$wacUpdateSubfolder" -ChildPath $wacCuFileZip
                 Write-Host " - Expanding $wacProductName $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
-                EnsureFolder -Path "$UpdateLocation\$wacUpdateSubfolder"
+                EnsureFolder -Path "$LocationForUpdates\$wacUpdateSubfolder"
                 # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
-                if (Test-Path -Path "$UpdateLocation\$wacUpdateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
+                if (Test-Path -Path "$LocationForUpdates\$wacUpdateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
                 {
-                    Remove-Item -Path "$UpdateLocation\$wacUpdateSubfolder\hotfix.txt" -Confirm:$false -ErrorAction SilentlyContinue
+                    Remove-Item -Path "$LocationForUpdates\$wacUpdateSubfolder\hotfix.txt" -Confirm:$false -ErrorAction SilentlyContinue
                 }
-                Expand-Zip -InputFile $wacCuFileZipPath -DestinationFolder "$UpdateLocation\$wacUpdateSubfolder"
+                Expand-Zip -InputFile $wacCuFileZipPath -DestinationFolder "$LocationForUpdates\$wacUpdateSubfolder"
             }
             Remove-ReadOnlyAttribute -Path "$Destination\$wacNodeName\Updates"
             # Extract Office Web Apps / Online Server CU files to $Destination\$wacNodeName\Updates
-            Write-Verbose -Message " - Extracting from '$UpdateLocation\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)'"
+            Write-Verbose -Message " - Extracting from '$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)'"
             Write-Host " - Extracting $wacProductName $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..." -NoNewline
-            Start-Process -FilePath "$UpdateLocation\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
+            Start-Process -FilePath "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
             Write-Host "done!"
         }
     }
@@ -993,16 +989,16 @@ if ($Languages.Count -gt 0)
             Write-Host " - Getting SharePoint $spYear Language Pack ($language):"
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $spLanguagePackSubfolder = $spLanguagePack.Name
-            EnsureFolder -Path "$UpdateLocation\$spLanguagePackSubfolder"
-            DownloadPackage -Url $($spLanguagePack.Url) -DestinationFolder "$UpdateLocation\$spLanguagePackSubfolder" -DestinationFile $lpDestinationFile
+            EnsureFolder -Path "$LocationForUpdates\$spLanguagePackSubfolder"
+            DownloadPackage -Url $($spLanguagePack.Url) -DestinationFolder "$LocationForUpdates\$spLanguagePackSubfolder" -DestinationFile $lpDestinationFile
             Remove-ReadOnlyAttribute -Path "$Destination\LanguagePacks\$language"
             # Extract the language pack to $Destination\LanguagePacks\xx-xx (where xx-xx is the culture ID of the language pack, for example fr-fr)
             if ($lpDestinationFile -match ".img$" -or $lpDestinationFile -match ".iso$")
             {
-                # Mount the ISO/IMG file ($UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile) and robo-copy the files to $Destination\LanguagePacks\$language
+                # Mount the ISO/IMG file ($LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile) and robo-copy the files to $Destination\LanguagePacks\$language
                 Write-Host " - Mounting language pack disk image..." -NoNewline
-                Mount-DiskImage -ImagePath "$UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile" -StorageType ISO
-                $isoDrive = (Get-DiskImage -ImagePath "$UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile" | Get-Volume).DriveLetter + ":"
+                Mount-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile" -StorageType ISO
+                $isoDrive = (Get-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile" | Get-Volume).DriveLetter + ":"
                 Write-Host "Done."
 
                 # Copy files
@@ -1010,13 +1006,13 @@ if ($Languages.Count -gt 0)
                 Start-Process -FilePath robocopy.exe -ArgumentList "`"$isoDrive`" `"$Destination\LanguagePacks\$language`" /E /Z /ETA /NDL /NFL /NJH /XO /A-:R" -Wait -NoNewWindow
                 Write-Host " - Done copying language pack files to $Destination\LanguagePacks\$language."
                 # Dismount the ISO/IMG
-                Dismount-DiskImage -ImagePath "$UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile"
+                Dismount-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile"
             }
             else
             {
-                Write-Verbose -Message " - Extracting from '$UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile'"
+                Write-Verbose -Message " - Extracting from '$LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile'"
                 Write-Host " - Extracting Language Pack files ($language)..." -NoNewline
-                Start-Process -FilePath "$UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile" -ArgumentList "/extract:`"$Destination\LanguagePacks\$language`" /quiet" -Wait -NoNewWindow
+                Start-Process -FilePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile" -ArgumentList "/extract:`"$Destination\LanguagePacks\$language`" /quiet" -Wait -NoNewWindow
                 Write-Host "done!"
             }
             [array]$lpSpNodes = $splanguagePack.ServicePacks.ChildNodes | Where-Object {$_.NodeType -ne "Comment"}
@@ -1026,16 +1022,16 @@ if ($Languages.Count -gt 0)
                 $lpServicePack = $spLanguagePack.ServicePacks.ServicePack | Where-Object {$_.Name -eq $spServicePack.Name} # To match the chosen SharePoint service pack
                 $lpServicePackDestinationFile = $($lpServicePack.Url).Split('/')[-1]
                 Write-Host " - Getting SharePoint $spYear Language Pack $($lpServicePack.Name) ($language):"
-                EnsureFolder -Path "$UpdateLocation\$spLanguagePackSubfolder"
-                DownloadPackage -Url $($lpServicePack.Url) -DestinationFolder "$UpdateLocation\$spLanguagePackSubfolder" -DestinationFile $lpServicePackDestinationFile
+                EnsureFolder -Path "$LocationForUpdates\$spLanguagePackSubfolder"
+                DownloadPackage -Url $($lpServicePack.Url) -DestinationFolder "$LocationForUpdates\$spLanguagePackSubfolder" -DestinationFile $lpServicePackDestinationFile
                 if (Test-Path -Path "$Destination\LanguagePacks\$language\Updates") {Remove-ReadOnlyAttribute -Path "$Destination\LanguagePacks\$language\Updates"}
                 # Extract each language pack to $Destination\LanguagePacks\xx-xx (where xx-xx is the culture ID of the language pack, for example fr-fr)
                 if ($lpServicePackDestinationFile -match ".img$")
                 {
-                    # Mount the ISO/IMG file ($UpdateLocation\$spLanguagePackSubfolder\$lpDestinationFile) and robo-copy the files to $Destination\LanguagePacks\$language
+                    # Mount the ISO/IMG file ($LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile) and robo-copy the files to $Destination\LanguagePacks\$language
                     Write-Host " - Mounting language pack service pack disk image..." -NoNewline
-                    Mount-DiskImage -ImagePath "$UpdateLocation\$spLanguagePackSubfolder\$lpServicePackDestinationFile" -StorageType ISO
-                    $isoDrive = (Get-DiskImage -ImagePath "$UpdateLocation\$spLanguagePackSubfolder\$lpServicePackDestinationFile" | Get-Volume).DriveLetter + ":"
+                    Mount-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpServicePackDestinationFile" -StorageType ISO
+                    $isoDrive = (Get-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpServicePackDestinationFile" | Get-Volume).DriveLetter + ":"
                     Write-Host "Done."
 
                     # Copy files
@@ -1043,13 +1039,13 @@ if ($Languages.Count -gt 0)
                     Start-Process -FilePath robocopy.exe -ArgumentList "`"$isoDrive`" `"$Destination\LanguagePacks\$language`" /E /Z /ETA /NDL /NFL /NJH /XO /A-:R" -Wait -NoNewWindow
                     Write-Host " - Done copying language pack service pack files to $Destination\LanguagePacks\$language."
                     # Dismount the ISO/IMG
-                    Dismount-DiskImage -ImagePath "$UpdateLocation\$spLanguagePackSubfolder\$lpServicePackDestinationFile"
+                    Dismount-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpServicePackDestinationFile"
                 }
                 else
                 {
-                    Write-Verbose -Message " - Extracting from '$UpdateLocation\$spLanguagePackSubfolder\$lpServicePackDestinationFile'"
+                    Write-Verbose -Message " - Extracting from '$LocationForUpdates\$spLanguagePackSubfolder\$lpServicePackDestinationFile'"
                     Write-Host " - Extracting Language Pack $($lpServicePack.Name) files ($language)..." -NoNewline
-                    Start-Process -FilePath "$UpdateLocation\$spLanguagePackSubfolder\$lpServicePackDestinationFile" -ArgumentList "/extract:`"$Destination\LanguagePacks\$language\Updates`" /quiet" -Wait -NoNewWindow
+                    Start-Process -FilePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpServicePackDestinationFile" -ArgumentList "/extract:`"$Destination\LanguagePacks\$language\Updates`" /quiet" -Wait -NoNewWindow
                     Write-Host "done!"
                 }
             }

@@ -1,6 +1,6 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.1.7
+.VERSION 2.0.1.8
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME

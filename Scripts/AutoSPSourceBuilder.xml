@@ -952,6 +952,7 @@
             <CumulativeUpdate Name="August 2018" Build="14.0.7212.5000" Url="https://download.microsoft.com/download/9/5/5/955677C4-939E-4719-A21E-5D66180F6A32/wacserver2013-kb4022238-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4022238-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2013 for September 2018-->
             <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/D/3/4/D34E0601-B129-428A-9361-6A1797A0F1AB/wacserver2013-kb4462216-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4462216-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/b/6/1/b61a98be-d92d-4902-976e-2d02d2cf40d5/wacserver2013-kb4486760-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4486760-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">

@@ -121,10 +121,10 @@
             <CumulativeUpdate Name="February 2021" Build="14.0.7265.5000" Url="https://download.microsoft.com/download/3/5/3/3538712a-5a73-47ea-9cf1-fc617d015926/ubersrv2010-kb4493220-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4493220-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2021" Build="14.0.7267.5000" Url="https://download.microsoft.com/download/5/5/4/5547ae80-1533-4c7d-b8d6-a967574f5e19/ubersrv2010-kb4504706-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4504706-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2021" Build="14.0.7268.5000" Url="https://download.microsoft.com/download/2/5/c/25cb7c1f-a071-4eab-bb57-cdba5176cd87/ubersrv2010-kb4504742-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4504742-fullfile-x64-glb.exe" />
-            <!-- 
-            SharePoint 2010 has reached end of extended support (https://docs.microsoft.com/en-us/lifecycle/products/microsoft-sharepoint-server-2010).            
-            This means that no further fixes and more important no further security fixes will be released for this version of the product.
-            It is recommended that customers still using SharePoint 2010 upgrade to a fully supported version of SharePoint. 
+            <!--
+            SharePoint 2010 has reached end of extended support (https://docs.microsoft.com/en-us/lifecycle/products/microsoft-sharepoint-server-2010).
+            This means that no further fixes, and more importantly, no further security fixes will be released for this version of the product.
+            It is recommended that customers still using SharePoint 2010 upgrade to a fully supported version of SharePoint.
             -->
         </CumulativeUpdates>
         <LanguagePacks>
@@ -405,7 +405,7 @@
             <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/B/A/4/BA4A7E71-2906-4B2D-A0E1-80CF16844F5F/dotNetFx45_Full_setup.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=250950" />
             <Prerequisite Name="Windows Management Framework 3.0" Url="http://download.microsoft.com/download/E/7/6/E76850B8-DA6E-4FF5-8CCE-A24FC513FD16/Windows6.1-KB2506143-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=233187" />
             <!-- <Prerequisite Name="Microsoft SQL Server 2008 R2 Native Client" Url="http://download.microsoft.com/download/B/6/3/B63CAC7F-44BB-41FA-92A3-CBF71360F022/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=188401" /> -->
-            <Prerequisite Name="Microsoft SQL Server 2008 R2 SP1 Native Client" Url="http://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=228086" />
+            <Prerequisite Name="Microsoft SQL Server 2008 R2 SP1 Native Client" Url="https://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=228086" />
             <Prerequisite Name="Microsoft SQL Server 2008 R2 SP2 Native Client" Url="http://download.microsoft.com/download/F/7/B/F7B7A246-6B35-40E9-8509-72D2F8D63B80/sqlncli_amd64.msi" Permalink="http://www.microsoft.com/en-us/download/details.aspx?id=30440" />
             <Prerequisite Name="Windows Identity Foundation (KB974405)" Url="http://download.microsoft.com/download/D/7/2/D72FD747-69B6-40B7-875B-C2B40A6B2BDD/Windows6.1-KB974405-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=226830" />
             <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=224449" />
@@ -1206,7 +1206,7 @@
             <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/4/3/b/43b35cba-862b-410b-8a59-7324987bb968/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
             <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj2013-kb5001930-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5001930-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
-            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />    
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2016">

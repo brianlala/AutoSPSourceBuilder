@@ -189,9 +189,9 @@ Function DownloadPackage
                         Resume-BitsTransfer -BitsJob $job -Asynchronous | Out-Null
                     }
                 }
-                Write-Host "  - Completing transfer..."
+                Write-Output "  - Completing transfer..."
                 Complete-BitsTransfer -BitsJob $job
-                Write-Host " - Done!"
+                Write-Output " - Done!"
             }
         }
     }
@@ -242,7 +242,7 @@ Function Remove-ReadOnlyAttribute ($Path)
         If ($attributes -match "ReadOnly")
         {
             # Set the file to just have the 'Archive' attribute
-            Write-Host "  - Removing Read-Only attribute from file: $item"
+            Write-Output "  - Removing Read-Only attribute from file: $item"
             Set-ItemProperty -Path $item.FullName -Name Attributes -Value "Archive"
         }
     }
@@ -341,7 +341,7 @@ $spAvailableVersionNumbers = $spAvailableVersions -replace "SP",""
 
 if (!([string]::IsNullOrEmpty($SharePointVersion)))
 {
-    Write-Host " - SharePoint $SharePointVersion specified on the command line."
+    Write-Output " - SharePoint $SharePointVersion specified on the command line."
     $spYear = $SharePointVersion
 }
 
@@ -357,7 +357,7 @@ Write-Verbose -Message "Update location is `"$LocationForUpdates`""
 if ($SourceLocation)
 {
     $sourceDir = $SourceLocation.TrimEnd("\")
-    Write-Host " - Checking for $sourceDir\Setup.exe and $sourceDir\PrerequisiteInstaller.exe..."
+    Write-Output " - Checking for $sourceDir\Setup.exe and $sourceDir\PrerequisiteInstaller.exe..."
     $sourceFound = ((Test-Path -Path "$sourceDir\Setup.exe") -and (Test-Path -Path "$sourceDir\PrerequisiteInstaller.exe"))
     # Inspired by http://vnucleus.com/2011/08/alphabet-range-sequences-in-powershell-and-a-usage-example/
     while (!$sourceFound)
@@ -366,7 +366,7 @@ if ($SourceLocation)
         {
             # Check for the SharePoint DVD in all possible drive letters
             $sourceDir = "$([char]$driveLetter):"
-            Write-Host " - Checking for $sourceDir\Setup.exe and $sourceDir\PrerequisiteInstaller.exe..."
+            Write-Output " - Checking for $sourceDir\Setup.exe and $sourceDir\PrerequisiteInstaller.exe..."
             $sourceFound = ((Test-Path -Path "$sourceDir\Setup.exe") -and (Test-Path -Path "$sourceDir\PrerequisiteInstaller.exe"))
             If ($sourceFound -or $driveLetter -ge 90) {break}
         }
@@ -383,7 +383,7 @@ if ($SourceLocation)
     }
     else
     {
-        Write-Host " - Source found in $sourceDir."
+        Write-Output " - Source found in $sourceDir."
         $spVer, $null, $spBuild, $null = (Get-Item -Path "$sourceDir\setup.exe").VersionInfo.ProductVersion -split "\."
         # Create a hash table with 'wave' to product year mappings
         $spYears = @{"14" = "2010"; "15" = "2013"; "16" = "2016"} # Can't use this hashtable to map SharePoint 2019 versions because it uses version 16 as well
@@ -401,7 +401,7 @@ if ($SourceLocation)
             Pause "exit"
             exit
         }
-        Write-Host " - SharePoint $spYear detected."
+        Write-Output " - SharePoint $spYear detected."
         if ($spYear -eq "2013")
         {
             $installerVer = (Get-Command "$sourceDir\setup.dll").FileVersionInfo.ProductVersion
@@ -409,25 +409,25 @@ if ($SourceLocation)
             If ($build -ge 4569) # SP2013 SP1
             {
                 $sp2013SP1 = $true
-                Write-Host "  - Service Pack 1 detected."
+                Write-Output "  - Service Pack 1 detected."
             }
         }
     }
     if (!($sourceDir -eq "$Destination\SharePoint"))
     {
         WriteLine
-        Write-Host " - (Robo-)copying files from $sourceDir to $Destination\SharePoint..."
+        Write-Output " - (Robo-)copying files from $sourceDir to $Destination\SharePoint..."
         Start-Process -FilePath robocopy.exe -ArgumentList "`"$sourceDir`" `"$Destination\SharePoint`" /E /Z /ETA /NDL /NFL /NJH /XO /A-:R" -Wait -NoNewWindow
-        Write-Host " - Done copying original files to $Destination\SharePoint."
+        Write-Output " - Done copying original files to $Destination\SharePoint."
         WriteLine
     }
 }
 else
 {
-    Write-Host " - No source location specified; updates will be downloaded but slipstreaming will be skipped."
+    Write-Output " - No source location specified; updates will be downloaded but slipstreaming will be skipped."
     if ($SharePointVersion)
     {
-        Write-Host " - SharePoint $SharePointVersion specified on the command line."
+        Write-Output " - SharePoint $SharePointVersion specified on the command line."
         $spYear = $SharePointVersion
     }
     else
@@ -445,7 +445,7 @@ else
                 Remove-Variable -Name spYear -Force -ErrorAction SilentlyContinue
             }
         }
-        Write-Host " - SharePoint $spYear selected."
+        Write-Output " - SharePoint $spYear selected."
     }
 }
 if ($Languages.Count -lt 1)
@@ -485,7 +485,7 @@ if (($spCuNodes).Count -ge 1 -and ([string]::IsNullOrEmpty($CumulativeUpdate)))
         }
     }
     $CumulativeUpdate = $selectedCumulativeUpdate
-    Write-Host " - SharePoint $spYear $CumulativeUpdate $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update selected."
+    Write-Output " - SharePoint $spYear $CumulativeUpdate $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update selected."
 }
 [array]$spCU = $spNode.CumulativeUpdates.CumulativeUpdate | Where-Object {$_.Name -eq $CumulativeUpdate}
 if ($spCU.Count -ge 1) # Only do this stuff if we actually have requested a CU
@@ -515,7 +515,7 @@ if ($spCU.Count -ge 1) # Only do this stuff if we actually have requested a CU
     # Check if we are requesting the August 2014 CU, which sure enough, isn't cumulative and requires SP1 + July 2014 CU
     if ($CumulativeUpdate -eq "August 2014")
     {
-        Write-Host " - The $CumulativeUpdate CU requires the July 2014 CU to be present first; will now attempt to integrate both."
+        Write-Output " - The $CumulativeUpdate CU requires the July 2014 CU to be present first; will now attempt to integrate both."
         [array]$spCU = ($spNode.CumulativeUpdates.CumulativeUpdate | Where-Object {$_.Name -eq "July 2014"}), $spCU
     }
 }
@@ -529,7 +529,7 @@ if ($GetPrerequisites)## -and (!([string]::IsNullOrEmpty($SourceLocation))))
     EnsureFolder -Path "$Destination\SharePoint\PrerequisiteInstallerFiles"
     foreach ($prerequisite in $spPrerequisiteNode.Prerequisite)
     {
-        Write-Host " - Getting prerequisite `"$($prerequisite.Name)`"..."
+        Write-Output " - Getting prerequisite `"$($prerequisite.Name)`"..."
         # Because MS added a newer WcfDataServices.exe (yes, with the same filename) to the prerequisites list with SP2013 SP1, we need a special case here to ensure it's downloaded with a different name
         if ($prerequisite.Name -eq "Microsoft WCF Data Services 5.6" -and $spYear -eq "2013")
         {
@@ -545,7 +545,7 @@ if ($GetPrerequisites)## -and (!([string]::IsNullOrEmpty($SourceLocation))))
     # Per https://support.microsoft.com/en-us/help/3087184/sharepoint-2013-or-project-server-2013-setup-error-if-the-net-framewor
     If ($spYear -eq "2013")
     {
-        Write-Host " - Checking version of '$Destination\SharePoint\updates\svrsetup.dll'..."
+        Write-Output " - Checking version of '$Destination\SharePoint\updates\svrsetup.dll'..."
         # Check to see if we have already patched/replaced svrsetup.dll
         $svrSetupDll = Get-Item -Path "$Destination\SharePoint\updates\svrsetup.dll" -ErrorAction SilentlyContinue
         # Check for presence and version of svrsetup.dll
@@ -555,18 +555,18 @@ if ($GetPrerequisites)## -and (!([string]::IsNullOrEmpty($SourceLocation))))
         }
         else
         {
-            Write-Host " - '$Destination\SharePoint\updates\svrsetup.dll' was not found (or version could not be determined); attempting to update..."
+            Write-Output " - '$Destination\SharePoint\updates\svrsetup.dll' was not found (or version could not be determined); attempting to update..."
         }
         if ($null -eq $svrSetupDllBuild -or ($svrSetupDllBuild -lt 4709)) # 4709 is the version substring/build of the patched svrsetup.dll
         {
             if (Test-Path -Path "$Destination\SharePoint\PrerequisiteInstallerFiles\svrsetup_15-0-4709-1000_x64.zip" -ErrorAction SilentlyContinue)
             {
-                Write-Host "  - Attempting to patch SharePoint 2013 installation source with updated svrsetup.dll from KB3087184..."
-                Write-Host "  - Per https://support.microsoft.com/en-us/help/3087184/sharepoint-2013-or-project-server-2013-setup-error-if-the-net-framewor"
+                Write-Output "  - Attempting to patch SharePoint 2013 installation source with updated svrsetup.dll from KB3087184..."
+                Write-Output "  - Per https://support.microsoft.com/en-us/help/3087184/sharepoint-2013-or-project-server-2013-setup-error-if-the-net-framewor"
                 # Rename the original file
-                Write-Host "   - Copying patched version of svrsetup.dll to '$Destination\SharePoint\updates'..."
+                Write-Output "   - Copying patched version of svrsetup.dll to '$Destination\SharePoint\updates'..."
                 Expand-Zip -InputFile "$Destination\SharePoint\PrerequisiteInstallerFiles\svrsetup_15-0-4709-1000_x64.zip" -DestinationFolder "$Destination\SharePoint\updates"
-                Write-Host " - Done."
+                Write-Output " - Done."
                 $patchedForKB3087184 = $true
             }
             else
@@ -599,7 +599,7 @@ if (($PromptForLanguages))
     [array]$Languages = $availableLanguageNames.Name | Out-GridView -Title "Please select one or more available language pack(s). Hold down Ctrl to select multiple, or click Cancel to skip:" -PassThru
     if ($Languages.Count -eq 0)
     {
-        Write-Host " - No languages selected."
+        Write-Output " - No languages selected."
     }
 }
 #endregion
@@ -614,7 +614,7 @@ If ($spServicePack -and ($spYear -ne "2013") -and (!([string]::IsNullOrEmpty($So
     # Check if a SharePoint service pack already appears to be included in the source
     If ((Get-ChildItem "$sourceDir\Updates" -Filter *.msp).Count -lt $spMspCount) # Checking for specific number of MSP patch files in the \Updates folder
     {
-        Write-Host " - $($spServicePack.Name) seems to be missing, or incomplete in $sourceDir\; downloading..."
+        Write-Output " - $($spServicePack.Name) seems to be missing, or incomplete in $sourceDir\; downloading..."
         # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
         $spServicePackSubfolder = $spServicePack.Build+" ("+$spServicePack.Name+")"
         EnsureFolder -Path "$LocationForUpdates\$spServicePackSubfolder"
@@ -628,7 +628,7 @@ If ($spServicePack -and ($spYear -ne "2013") -and (!([string]::IsNullOrEmpty($So
         Read-Log
         Write-Host "done!"
     }
-    Else {Write-Host " - $($spServicePack.Name) appears to be already slipstreamed into the SharePoint binary source location."}
+    Else {Write-Output " - $($spServicePack.Name) appears to be already slipstreamed into the SharePoint binary source location."}
 
     ## Extract SharePoint w/SP1 files (future functionality?)
     ## Start-Process -FilePath "$LocationForUpdates\en_sharepoint_server_2010_with_service_pack_1_x64_759775.exe" -ArgumentList "/extract:$Destination\SharePoint /passive" -NoNewWindow -Wait -NoNewWindow
@@ -646,7 +646,7 @@ If ($spCU.Count -ge 1 -and $spCU[0].Name -ne "December 2012" -and $spYear -eq "2
 {
     WriteLine
     $march2013PU = $spNode.CumulativeUpdates.CumulativeUpdate | Where-Object {$_.Name -eq "March 2013"}
-    Write-Host " - Getting SharePoint $spYear baseline update $($march2013PU.Name) PU:"
+    Write-Output " - Getting SharePoint $spYear baseline update $($march2013PU.Name) PU:"
     $march2013PUFile = $($march2013PU.Url).Split('/')[-1]
     if ($march2013PU.Url -like "*zip.exe")
     {
@@ -661,7 +661,7 @@ If ($spCU.Count -ge 1 -and $spCU[0].Name -ne "December 2012" -and $spYear -eq "2
     If (!(Test-Path "$LocationForUpdates\$updateSubfolder\$($march2013PU.ExpandedFile)") -and $march2013PUFileIsZip) # Ensure the expanded file isn't already there, and the PU is a zip
     {
         $march2013PUFileZipPath = Join-Path -Path "$LocationForUpdates\$updateSubfolder" -ChildPath $march2013PUFile
-        Write-Host " - Expanding $($march2013PU.Name) Public Update (single file)..."
+        Write-Output " - Expanding $($march2013PU.Name) Public Update (single file)..."
         # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
         if (Test-Path -Path "$LocationForUpdates\$updateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
         {
@@ -726,7 +726,7 @@ If ($spCU.Count -ge 1)
             $spCUPackageName = $spCUpackage.Name
             $spCUPackageBuild = $spCUpackage.Build
             $spCUFile = $($spCUPackage.Url).Split('/')[-1]
-            Write-Host " - Getting SharePoint $spYear $($spCUPackageName) update file ($spCUFile):"
+            Write-Output " - Getting SharePoint $spYear $($spCUPackageName) update file ($spCUFile):"
             if ($spCUPackage.Url -like "*zip.exe")
             {
                 $spCuFileIsZip = $true
@@ -743,7 +743,7 @@ If ($spCU.Count -ge 1)
                 if (!(Test-Path "$LocationForUpdates\$updateSubfolder\$($spCUPackage.ExpandedFile)") -and $spCuFileIsZip) # Ensure the expanded file isn't already there, and the CU is a zip
                 {
                     $spCuFileZipPath = Join-Path -Path "$LocationForUpdates\$updateSubfolder" -ChildPath $spCuFile
-                    Write-Host " - Expanding $spCuFile $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
+                    Write-Output " - Expanding $spCuFile $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
                     # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
                     if (Test-Path -Path "$LocationForUpdates\$updateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
                     {
@@ -764,7 +764,7 @@ If ($spCU.Count -ge 1)
                     {
                         Write-Host -ForegroundColor Cyan " - NOTE: SP2013 updates can take a VERY long time to extract, so please be patient!"
                     }
-                    Write-Host " - Extracting $($spCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..."
+                    Write-Output " - Extracting $($spCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..."
                     foreach ($spCULauncher in $spCULaunchers)
                     {
                         Write-Verbose -Message "  - Extracting from '$LocationForUpdates\$updateSubfolder\$spCULauncher'"
@@ -773,7 +773,7 @@ If ($spCU.Count -ge 1)
                         Write-Host "done!"
                         Read-Log
                     }
-                    Write-Host " - Extracting update patch files done!"
+                    Write-Output " - Extracting update patch files done!"
                 }
             }
             else
@@ -809,7 +809,7 @@ if ($WACSourceLocation)
     [array]$wacCUNodes = $wacNode.CumulativeUpdates.ChildNodes | Where-Object {$_.NodeType -ne "Comment"}
     if ([string]::IsNullOrEmpty($wacCU))
     {
-        Write-Host " - There is no $($spCUName) update for $wacProductName available."
+        Write-Output " - There is no $($spCUName) update for $wacProductName available."
         Start-Sleep -Seconds 1
         while ([string]::IsNullOrEmpty($wacCUName) -and (($wacCUNodes).Count -ge 1))
         {
@@ -826,7 +826,7 @@ if ($WACSourceLocation)
     }
     else
     {
-        Write-Host " - $($wacCU[0].Name) update found for $wacProductName."
+        Write-Output " - $($wacCU[0].Name) update found for $wacProductName."
     }
     if ($wacCU.Count -ge 1)
     {
@@ -844,7 +844,7 @@ if ($WACSourceLocation)
         EnsureFolder -Path "$Destination\$wacNodeName\PrerequisiteInstallerFiles"
         foreach ($prerequisite in $wacPrerequisiteNode.Prerequisite)
         {
-            Write-Host " - Getting $wacProductName prerequisite `"$($prerequisite.Name)`"..."
+            Write-Output " - Getting $wacProductName prerequisite `"$($prerequisite.Name)`"..."
             DownloadPackage -Url $($prerequisite.Url) -DestinationFolder "$Destination\$wacNodeName\PrerequisiteInstallerFiles"
         }
         WriteLine
@@ -854,7 +854,7 @@ if ($WACSourceLocation)
     }
     # Extract Office Web Apps / Online Server files to $Destination\$wacNodeName
     $sourceDirWAC = $WACSourceLocation.TrimEnd("\")
-    Write-Host " - Checking for $sourceDirWAC\$($wacTestDirs.$spYear)\..."
+    Write-Output " - Checking for $sourceDirWAC\$($wacTestDirs.$spYear)\..."
     $sourceFoundWAC = (Test-Path -Path "$sourceDirWAC\$($wacTestDirs.$spYear)" -ErrorAction SilentlyContinue)
     if (!$sourceFoundWAC)
     {
@@ -867,13 +867,13 @@ if ($WACSourceLocation)
     }
     else
     {
-        Write-Host " - Source found in $sourceDirWAC."
+        Write-Output " - Source found in $sourceDirWAC."
     }
     if (!($sourceDirWAC -eq "$Destination\$wacNodeName"))
     {
-        Write-Host " - (Robo-)copying files from $sourceDirWAC to $Destination\$wacNodeName..."
+        Write-Output " - (Robo-)copying files from $sourceDirWAC to $Destination\$wacNodeName..."
         Start-Process -FilePath robocopy.exe -ArgumentList "`"$sourceDirWAC`" `"$Destination\$wacNodeName`" /E /Z /ETA /NDL /NFL /NJH /XO /A-:R" -Wait -NoNewWindow
-        Write-Host " - Done copying original files to $Destination\$wacNodeName."
+        Write-Output " - Done copying original files to $Destination\$wacNodeName."
     }
 
     if (!([string]::IsNullOrEmpty($wacServicePack.Name)))
@@ -881,9 +881,9 @@ if ($WACSourceLocation)
         # Check if WAC SP already appears to be included in the source
         if ((Get-ChildItem "$sourceDirWAC\Updates" -Filter *.msp).Count -lt $wacMspCount) # Checking for ($wacMspCount) MSP patch files in the \Updates folder
         {
-            Write-Host " - WAC $($wacServicePack.Name) seems to be missing or incomplete in $sourceDirWAC; downloading..."
+            Write-Output " - WAC $($wacServicePack.Name) seems to be missing or incomplete in $sourceDirWAC; downloading..."
             # Download Office Web Apps / Online Server service pack
-            Write-Host " - Getting $wacProductName $($wacServicePack.Name):"
+            Write-Output " - Getting $wacProductName $($wacServicePack.Name):"
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $wacServicePackSubfolder = $wacServicePack.Build+" ("+$wacServicePack.Name+")"
             EnsureFolder -Path "$LocationForUpdates\$wacServicePackSubfolder"
@@ -897,9 +897,9 @@ if ($WACSourceLocation)
             Read-Log
             Write-Host "done!"
         }
-        else {Write-Host " - WAC $($wacServicePack.Name) appears to be already slipstreamed into the SharePoint binary source location."}
+        else {Write-Output " - WAC $($wacServicePack.Name) appears to be already slipstreamed into the SharePoint binary source location."}
     }
-    else {Write-Host " - No WAC service packs are available or applicable for this version."}
+    else {Write-Output " - No WAC service packs are available or applicable for this version."}
 
     if ($spCU.Count -ge 1 -and [string]::IsNullOrEmpty($wacCU))
     {
@@ -909,7 +909,7 @@ if ($WACSourceLocation)
         # Download Office Web Apps / Online Server CU
         foreach ($wacCUPackage in $wacCU)
         {
-            Write-Host " - Getting $wacProductName $wacCUName update:"
+            Write-Output " - Getting $wacProductName $wacCUName update:"
             $wacCuFileZip = $($wacCUPackage.Url).Split('/')[-1] +".zip"
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $wacUpdateSubfolder = $wacCUBuild+" ("+$wacCUName+")"
@@ -920,7 +920,7 @@ if ($WACSourceLocation)
             If (!(Test-Path "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)")) # Check if the expanded file is already there
             {
                 $wacCuFileZipPath = Join-Path -Path "$LocationForUpdates\$wacUpdateSubfolder" -ChildPath $wacCuFileZip
-                Write-Host " - Expanding $wacProductName $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
+                Write-Output " - Expanding $wacProductName $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
                 EnsureFolder -Path "$LocationForUpdates\$wacUpdateSubfolder"
                 # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
                 if (Test-Path -Path "$LocationForUpdates\$wacUpdateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
@@ -937,7 +937,7 @@ if ($WACSourceLocation)
             Write-Host "done!"
         }
     }
-    else {Write-Host " - No $wacProductName updates are available or applicable for this version."}
+    else {Write-Output " - No $wacProductName updates are available or applicable for this version."}
     WriteLine
 }
 else
@@ -951,10 +951,10 @@ if ($Languages.Count -gt 0)
 {
     # Remove any spaces or quotes and ensure each one is split out
     [array]$languages = $Languages -replace ' ','' -split ","
-    Write-Host " - Languages requested:"
+    Write-Output " - Languages requested:"
     foreach ($language in $Languages)
     {
-        Write-Host "  - $language"
+        Write-Output "  - $language"
     }
     $lpNode = $spNode.LanguagePacks
     ForEach ($language in $Languages)
@@ -986,7 +986,7 @@ if ($Languages.Count -gt 0)
                     $lpDestinationFile = $lpDestinationFile -replace ".img","_$language.img"
                 }
             }
-            Write-Host " - Getting SharePoint $spYear Language Pack ($language):"
+            Write-Output " - Getting SharePoint $spYear Language Pack ($language):"
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $spLanguagePackSubfolder = $spLanguagePack.Name
             EnsureFolder -Path "$LocationForUpdates\$spLanguagePackSubfolder"
@@ -1002,9 +1002,9 @@ if ($Languages.Count -gt 0)
                 Write-Host "Done."
 
                 # Copy files
-                Write-Host " - (Robo-)copying language pack files from $isoDrive to $Destination\LanguagePacks\$language"
+                Write-Output " - (Robo-)copying language pack files from $isoDrive to $Destination\LanguagePacks\$language"
                 Start-Process -FilePath robocopy.exe -ArgumentList "`"$isoDrive`" `"$Destination\LanguagePacks\$language`" /E /Z /ETA /NDL /NFL /NJH /XO /A-:R" -Wait -NoNewWindow
-                Write-Host " - Done copying language pack files to $Destination\LanguagePacks\$language."
+                Write-Output " - Done copying language pack files to $Destination\LanguagePacks\$language."
                 # Dismount the ISO/IMG
                 Dismount-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpDestinationFile"
             }
@@ -1021,7 +1021,7 @@ if ($Languages.Count -gt 0)
                 # Download service pack for the language pack
                 $lpServicePack = $spLanguagePack.ServicePacks.ServicePack | Where-Object {$_.Name -eq $spServicePack.Name} # To match the chosen SharePoint service pack
                 $lpServicePackDestinationFile = $($lpServicePack.Url).Split('/')[-1]
-                Write-Host " - Getting SharePoint $spYear Language Pack $($lpServicePack.Name) ($language):"
+                Write-Output " - Getting SharePoint $spYear Language Pack $($lpServicePack.Name) ($language):"
                 EnsureFolder -Path "$LocationForUpdates\$spLanguagePackSubfolder"
                 DownloadPackage -Url $($lpServicePack.Url) -DestinationFolder "$LocationForUpdates\$spLanguagePackSubfolder" -DestinationFile $lpServicePackDestinationFile
                 if (Test-Path -Path "$Destination\LanguagePacks\$language\Updates") {Remove-ReadOnlyAttribute -Path "$Destination\LanguagePacks\$language\Updates"}
@@ -1035,9 +1035,9 @@ if ($Languages.Count -gt 0)
                     Write-Host "Done."
 
                     # Copy files
-                    Write-Host " - (Robo-)copying language pack service pack files from $isoDrive to $Destination\LanguagePacks\$language"
+                    Write-Output " - (Robo-)copying language pack service pack files from $isoDrive to $Destination\LanguagePacks\$language"
                     Start-Process -FilePath robocopy.exe -ArgumentList "`"$isoDrive`" `"$Destination\LanguagePacks\$language`" /E /Z /ETA /NDL /NFL /NJH /XO /A-:R" -Wait -NoNewWindow
-                    Write-Host " - Done copying language pack service pack files to $Destination\LanguagePacks\$language."
+                    Write-Output " - Done copying language pack service pack files to $Destination\LanguagePacks\$language."
                     # Dismount the ISO/IMG
                     Dismount-DiskImage -ImagePath "$LocationForUpdates\$spLanguagePackSubfolder\$lpServicePackDestinationFile"
                 }
@@ -1053,7 +1053,7 @@ if ($Languages.Count -gt 0)
         If ($spCU.Count -ge 1 -and (Test-Path -Path "$Destination\LanguagePacks\$language\Updates") -and (!([string]::IsNullOrEmpty($SourceLocation))))
         {
             # Copy matching culture files from $Destination\SharePoint\Updates folder (e.g. spsmui-fr-fr.msp) to $Destination\LanguagePacks\$language\Updates
-            Write-Host " - Updating $Destination\LanguagePacks\$language with the $($spCUName) SharePoint update..."
+            Write-Output " - Updating $Destination\LanguagePacks\$language with the $($spCUName) SharePoint update..."
             ForEach ($patch in (Get-ChildItem -Path $Destination\SharePoint\Updates -Filter *$language*))
             {
                 Copy-Item -Path $patch.FullName -Destination "$Destination\LanguagePacks\$language\Updates" -Force

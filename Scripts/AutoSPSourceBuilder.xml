@@ -396,6 +396,7 @@
             <!--There is no Update for Office Web Apps 2010 for August 2017-March 2018-->
             <CumulativeUpdate Name="April 2018" Build="14.0.7197.5000" Url="https://download.microsoft.com/download/E/4/3/E43C3D9C-075F-4AED-B97C-85344838E963/wac2010-kb4018360-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb4018360-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2019" Build="14.0.7236.5000" Url="https://download.microsoft.com/download/D/C/9/DC94F93A-B6F1-4BA5-8168-0CDB3A39D512/wac2010-kb4475534-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb4475534-fullfile-x64-glb.exe" />
+		    <CumulativeUpdate Name="April 2021" Build="14.0.7268.5000" Url="https://download.microsoft.com/download/b/e/b/beb00373-c1e2-4ad0-800e-4446cb3bbca3/wac2010-kb4504705-fullfile-x64-glb.exe" ExpandedFile="wac2010-kb4504705-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2013">
@@ -985,6 +986,7 @@
             <CumulativeUpdate Name="March 2021" Build="15.0.5327.1000" Url="https://download.microsoft.com/download/3/6/6/3668fd15-1c68-432a-889c-d4bb9bad074a/wacserver2013-kb4493234-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4493234-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/c/a/9/ca9c656c-4de1-462b-951c-37b6eda9b97f/wacserver2013-kb4504729-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4504729-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/c/b/b/cbb3e441-694f-408c-9eb2-30f5ea4a7657/wacserver2013-kb5001928-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5001928-fullfile-x64-glb.exe" />
+		    <CumulativeUpdate Name="June 2021" Build="15.0.5353.1000" Url="https://download.microsoft.com/download/8/c/8/8c825c4d-d2b6-4268-b05d-7fae339efb89/wacserver2013-kb5001956-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5001956-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -1210,6 +1212,9 @@
             <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj2013-kb5001930-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5001930-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+		    <CumulativeUpdate Name="June 2021" Build="15.0.5353.1000" Url="https://download.microsoft.com/download/f/2/8/f28d2c6e-b5f6-4447-9c31-89619840987d/ubersrvprj2013-kb5001959-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5001959-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="15.0.5353.1000" Url="https://download.microsoft.com/download/f/2/8/f28d2c6e-b5f6-4447-9c31-89619840987d/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="June 2021" Build="15.0.5353.1000" Url="https://download.microsoft.com/download/f/2/8/f28d2c6e-b5f6-4447-9c31-89619840987d/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2016">

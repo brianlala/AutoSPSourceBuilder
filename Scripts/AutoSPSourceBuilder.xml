@@ -2327,4 +2327,215 @@
         </LanguagePack>
       </LanguagePacks>
     </Product>
+    <Product Name="SPSE">
+        <Prerequisites>
+          <Prerequisite Name="Microsoft .NET Framework 4.8" Url="https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=2085155" />
+          <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="https://go.microsoft.com/fwlink/?LinkID=224449" />
+          <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="https://go.microsoft.com/fwlink/?LinkID=252368" />
+          <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=320724" />
+          <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2019" Url="https://download.visualstudio.microsoft.com/download/pr/f1998402-3cc0-466f-bd67-d9fb6cd2379b/A1592D3DA2B27230C087A3B069409C1E82C2664B0D4C3B511701624702B2E2A3/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?linkid=2130438" />
+        </Prerequisites>
+        <ServicePacks>
+        </ServicePacks>
+        <CumulativeUpdates>
+        </CumulativeUpdates>
+        <LanguagePacks>
+          <LanguagePack Name="az-Latn-AZ" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="bs-ba" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pl-pl" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pt-br" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pt-pt" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ga-ie" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="nb-no" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hu-hu" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="id-id" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hr-hr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="cy-gb" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="bg-bg" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ro-ro" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sl-SI" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sr-latn-rs" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sr-Cyrl-RS" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="uk-ua" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hi-in" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="th-th" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="kk-kz" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ca-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="el-gr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="et-ee" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="eu-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="lt-lt" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="mk-mk" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="lv-lv" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="gl-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="he-il" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="fi-fi" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sv-se" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sk-sk" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="tr-tr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="cs-cz" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="da-dk" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="de-de" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="PRS-af" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="en-us" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="es-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="fr-fr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="it-it" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ja-jp" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ms-my" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ko-kr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="nl-nl" Url="">
+            <ServicePacks>
+            </ServicePacks>
+            </LanguagePack>
+          <LanguagePack Name="ru-ru" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="vi-vn" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="zh-cn" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="zh-tw" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+        </LanguagePacks>
+    </Product>
 </Products>

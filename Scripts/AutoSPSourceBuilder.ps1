@@ -1,10 +1,10 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.1.8
+.VERSION 2.0.2.5
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME
-.COPYRIGHT 2019 Brian Lalancette
+.COPYRIGHT 2021 Brian Lalancette
 .TAGS SharePoint
 .LICENSEURI
 .PROJECTURI https://github.com/brianlala/AutoSPSourceBuilder
@@ -18,10 +18,10 @@
 
 <#
 .SYNOPSIS
-    Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
+    Builds a SharePoint 2010/2013/2016/2019/SE Service Pack + Cumulative/Public Update (and optionally slipstreamed) installation source.
 .DESCRIPTION
-    Builds a SharePoint 2010/2013/2016/2019 Service Pack + Cumulative/Public Update (and optionally, slipstreamed) installation source.
-    Starting from existing (user-provided) SharePoint 2010/2013/2016/2019 installation media/files (and optional Office Web Apps / Online Server media/files),
+    Builds a SharePoint 2010/2013/2016/2019/SE Service Pack + Cumulative/Public Update (and optionally, slipstreamed) installation source.
+    Starting from existing (user-provided) SharePoint 2010/2013/2016/2019/SE installation media/files (and optional Office Web Apps / Online Server media/files),
     the script can download prerequisites, the specified Service Pack, and CU/PU packages for SharePoint/WAC, along with specified (optional) language packs, then extract them to a destination path structure.
     By default, automatically downloads the latest AutoSPSourceBuilder.xml inventory file as the source of product information (URLs, builds, naming, etc.) to the same local path as the AutoSPSourceBuilder.ps1 script.
 .EXAMPLE
@@ -31,18 +31,18 @@
 .EXAMPLE
     AutoSPSourceBuilder.ps1 -SharePointVersion 2013 -Destination "C:\SP" -Verbose -UseExistingLocalXML
 .PARAMETER SharePointVersion
-    The version of SharePoint for which to download updates. Valid options are 2010, 2013, 2016 and 2019.
+    The version of SharePoint for which to download updates. Valid options are 2010, 2013, 2016, 2019 and SE (Subscription Edition).
     This parameter is mandatory.
 .PARAMETER SourceLocation
     The location (path, drive letter, etc.) where the SharePoint binary files are located.
     You can specify a UNC path (\\server\share\SP\2010), a drive letter (E:) or a local/mapped folder (Z:\SP\2010).
     If you don't provide a value, the script will not attempt to do any slipstreaming and will only download updates (and build out some of the folder structure).
 .PARAMETER Destination
-    The file path for the final slipstreamed SP2010/SP2013/2016/2019 installation files.
-    The default value is $env:SystemDrive\SP\201x (where 201x is the version of SharePoint we want to download/integrate updates from).
+    The file path for the final slipstreamed SP2010/SP2013/2016/2019/SE installation files.
+    The default value is the parent folder of the value specified for LocationForUpdates
 .PARAMETER LocationForUpdates
-    The optional file path where the downloaded service pack and cumulative update files are located, or where they should be placed in case they need to be downloaded.
-    It's recommended to omit this parameter in order to use the default value <Destination>\Updates (so, typically C:\SP\201x\Updates).
+    The file path where the downloaded service pack and cumulative update files are located, or where they should be placed in case they need to be downloaded.
+    This parameter is now mandatory as we'll use it to infer the default Destination.
 .PARAMETER GetPrerequisites
     Switch that specifies whether to attempt to download all prerequisite files for the selected product, which can be subsequently used to perform an offline installation.
     By default prerequisites are not downloaded.
@@ -72,7 +72,7 @@
 [CmdletBinding()]
 param
 (
-    [Parameter(Mandatory = $true)][ValidateSet("2010", "2013", "2016", "2019")]
+    [Parameter(Mandatory = $true)][ValidateSet("2010", "2013", "2016", "2019","SE")]
     [String]$SharePointVersion,
     [Parameter(Mandatory = $false)][ValidateNotNullOrEmpty()]
     [String]$SourceLocation,
@@ -386,12 +386,20 @@ if ($SourceLocation)
         Write-Output " - Source found in $sourceDir."
         $spVer, $null, $spBuild, $null = (Get-Item -Path "$sourceDir\setup.exe").VersionInfo.ProductVersion -split "\."
         # Create a hash table with 'wave' to product year mappings
-        $spYears = @{"14" = "2010"; "15" = "2013"; "16" = "2016"} # Can't use this hashtable to map SharePoint 2019 versions because it uses version 16 as well
+        $spYears = @{"14" = "2010"; "15" = "2013"; "16" = "2016"} # Can't use this hashtable to map SharePoint 2019 or SE versions because they use major version 16 as well
         $spYear = $spYears.$spVer
         # Accomodate SharePoint 2019 (uses the same major version number, but 5-digit build numbers)
         if ($spBuild.Length -eq 5)
         {
-            $spYear = "2019"
+            # Accomodate for SP Subscription Edition (2021)
+            if ($spBuild -ge 13116)
+            {
+                $spYear = "SE"
+            }
+            else
+            {
+                $spYear = "2019"
+            }
         }
         If (!$sourceDir -and ([string]::IsNullOrEmpty($SharePointVersion)))
         {
@@ -477,7 +485,7 @@ if (($spCuNodes).Count -ge 1 -and ([string]::IsNullOrEmpty($CumulativeUpdate)))
     while ([string]::IsNullOrEmpty($selectedCumulativeUpdate))
     {
         Start-Sleep -Seconds 1
-        $selectedCumulativeUpdate = $spNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select an available $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update for SharePoint $spYear`:" -PassThru
+        $selectedCumulativeUpdate = $spNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select an available $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update for SharePoint $spYear`:" -PassThru
         if ($selectedCumulativeUpdate.Count -gt 1)
         {
             Write-Warning "Please only select ONE update. Re-prompting..."
@@ -485,7 +493,7 @@ if (($spCuNodes).Count -ge 1 -and ([string]::IsNullOrEmpty($CumulativeUpdate)))
         }
     }
     $CumulativeUpdate = $selectedCumulativeUpdate
-    Write-Output " - SharePoint $spYear $CumulativeUpdate $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update selected."
+    Write-Output " - SharePoint $spYear $CumulativeUpdate $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update selected."
 }
 [array]$spCU = $spNode.CumulativeUpdates.CumulativeUpdate | Where-Object {$_.Name -eq $CumulativeUpdate}
 if ($spCU.Count -ge 1) # Only do this stuff if we actually have requested a CU
@@ -743,7 +751,7 @@ If ($spCU.Count -ge 1)
                 if (!(Test-Path "$LocationForUpdates\$updateSubfolder\$($spCUPackage.ExpandedFile)") -and $spCuFileIsZip) # Ensure the expanded file isn't already there, and the CU is a zip
                 {
                     $spCuFileZipPath = Join-Path -Path "$LocationForUpdates\$updateSubfolder" -ChildPath $spCuFile
-                    Write-Output " - Expanding $spCuFile $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
+                    Write-Output " - Expanding $spCuFile $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update (single file)..."
                     # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
                     if (Test-Path -Path "$LocationForUpdates\$updateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
                     {
@@ -764,7 +772,7 @@ If ($spCU.Count -ge 1)
                     {
                         Write-Host -ForegroundColor Cyan " - NOTE: SP2013 updates can take a VERY long time to extract, so please be patient!"
                     }
-                    Write-Output " - Extracting $($spCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..."
+                    Write-Output " - Extracting $($spCUName) $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update patch files..."
                     foreach ($spCULauncher in $spCULaunchers)
                     {
                         Write-Verbose -Message "  - Extracting from '$LocationForUpdates\$updateSubfolder\$spCULauncher'"
@@ -792,7 +800,7 @@ else
 
 #region Office Web Apps / Online Server
 if ($spYear -le 2013) {$wacProductName = "Office Web Apps"; $wacNodeName = "OfficeWebApps"}
-elseif ($spYear -ge 2016) {$wacProductName = "Office Online Server"; $wacNodeName = "OfficeOnlineServer"}
+elseif ($spYear -ge 2016 -or $spYear -eq "SE") {$wacProductName = "Office Online Server"; $wacNodeName = "OfficeOnlineServer"}
 if ($WACSourceLocation)
 {
     $wacNode = $xml.Products.Product | Where-Object {$_.Name -eq "$wacNodeName$spYear"}
@@ -920,7 +928,7 @@ if ($WACSourceLocation)
             If (!(Test-Path "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)")) # Check if the expanded file is already there
             {
                 $wacCuFileZipPath = Join-Path -Path "$LocationForUpdates\$wacUpdateSubfolder" -ChildPath $wacCuFileZip
-                Write-Output " - Expanding $wacProductName $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update (single file)..."
+                Write-Output " - Expanding $wacProductName $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update (single file)..."
                 EnsureFolder -Path "$LocationForUpdates\$wacUpdateSubfolder"
                 # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
                 if (Test-Path -Path "$LocationForUpdates\$wacUpdateSubfolder\hotfix.txt" -ErrorAction SilentlyContinue)
@@ -932,7 +940,7 @@ if ($WACSourceLocation)
             Remove-ReadOnlyAttribute -Path "$Destination\$wacNodeName\Updates"
             # Extract Office Web Apps / Online Server CU files to $Destination\$wacNodeName\Updates
             Write-Verbose -Message " - Extracting from '$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)'"
-            Write-Host " - Extracting $wacProductName $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update patch files..." -NoNewline
+            Write-Host " - Extracting $wacProductName $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update patch files..." -NoNewline
             Start-Process -FilePath "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
             Write-Host "done!"
         }
@@ -1109,7 +1117,7 @@ If (!([string]::IsNullOrEmpty($march2013PU)))
 }
 If (($spCU.Count -ge 1) -and !$spCUSkipped)
 {
-    Add-Content -Path "$Destination\$textFileName" -Value " - $($spCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update for SharePoint $spYear" -Force
+    Add-Content -Path "$Destination\$textFileName" -Value " - $($spCUName) $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update for SharePoint $spYear" -Force
 }
 If ($GetPrerequisites -and !([string]::IsNullOrEmpty($SourceLocation)))
 {
@@ -1140,7 +1148,7 @@ If (!([string]::IsNullOrEmpty($WACSourceLocation)))
     }
     if (!([string]::IsNullOrEmpty($wacCU)))
     {
-        Add-Content -Path "$Destination\$textFileName" -Value " - $($wacCUName) $(if ($spYear -ge 2016) {"Public"} else {"Cumulative"}) Update for $wacProductName $spYear" -Force
+        Add-Content -Path "$Destination\$textFileName" -Value " - $($wacCUName) $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update for $wacProductName $spYear" -Force
     }
 }
 Add-Content -Path "$Destination\$textFileName" -Value "Using AutoSPSourceBuilder (https://github.com/brianlala/autospsourcebuilder)." -Force

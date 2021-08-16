@@ -110,6 +110,22 @@
             <CumulativeUpdate Name="April 2020" Build="14.0.7248.5000" Url="https://download.microsoft.com/download/0/4/8/048f1abc-6e07-4c36-8ba1-84640c92a1e1/ubersrv2010-kb4484324-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484324-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2020" Build="14.0.7248.5000" Url="https://download.microsoft.com/download/2/c/7/2c714ea2-d802-475d-ab9c-13a371d9cd49/wssloc2010-kb4484386-fullfile-x64-glb.exe" ExpandedFile="wssloc2010-kb4484386-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2020" Build="14.0.7250.5000" Url="https://download.microsoft.com/download/0/3/0/03056875-99ac-4599-b131-4d2e37b86c5a/ubersrv2010-kb4484389-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484389-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2020" Build="14.0.7253.5000" Url="https://download.microsoft.com/download/d/0/8/d0814387-9107-4de7-8645-698b86409ce1/ubersrv2010-kb4484413-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484413-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="14.0.7255.5000" Url="https://download.microsoft.com/download/a/c/1/ac1091a7-8893-4af9-a803-60689a411a9c/ubersrv2010-kb4484459-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484459-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="14.0.7256.5000" Url="https://download.microsoft.com/download/5/8/e/58e9329d-b779-4921-9fc2-c30179d0d966/ubersrv2010-kb4484496-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4484496-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="14.0.7260.5000" Url="https://download.microsoft.com/download/1/6/5/165c53de-aa1f-4e9d-888e-5fb6aadf47a2/ubersrv2010-kb4486662-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4486662-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="14.0.7261.5000" Url="https://download.microsoft.com/download/8/e/8/8e88e522-416a-483f-828e-5c2ca5a6597e/ubersrv2010-kb4486705-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4486705-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2020" Build="14.0.7262.5000" Url="https://download.microsoft.com/download/e/7/3/e736eeaf-7b0e-474e-88c8-f05e4b693369/ubersrv2010-kb4486741-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4486741-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="14.0.7263.5000" Url="https://download.microsoft.com/download/0/4/b/04bc54f3-1bd3-4498-80ee-d176fe2faa05/ubersrv2010-kb4493146-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4493146-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="14.0.7264.5000" Url="https://download.microsoft.com/download/b/a/c/bac20a7e-b4d3-4c6e-83e9-d977de2ae6e4/ubersrv2010-kb4493184-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4493184-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="14.0.7265.5000" Url="https://download.microsoft.com/download/3/5/3/3538712a-5a73-47ea-9cf1-fc617d015926/ubersrv2010-kb4493220-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4493220-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="14.0.7267.5000" Url="https://download.microsoft.com/download/5/5/4/5547ae80-1533-4c7d-b8d6-a967574f5e19/ubersrv2010-kb4504706-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4504706-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="14.0.7268.5000" Url="https://download.microsoft.com/download/2/5/c/25cb7c1f-a071-4eab-bb57-cdba5176cd87/ubersrv2010-kb4504742-fullfile-x64-glb.exe" ExpandedFile="ubersrv2010-kb4504742-fullfile-x64-glb.exe" />
+            <!--
+            SharePoint 2010 has reached end of extended support (https://docs.microsoft.com/en-us/lifecycle/products/microsoft-sharepoint-server-2010).
+            This means that no further fixes, and more importantly, no further security fixes will be released for this version of the product.
+            It is recommended that customers still using SharePoint 2010 upgrade to a fully supported version of SharePoint.
+            -->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar" Url="http://download.microsoft.com/download/A/6/C/A6C2FAE9-58A4-410D-81E0-682E8CBF3D18/ServerLanguagePack.exe">
@@ -389,7 +405,7 @@
             <Prerequisite Name="Microsoft .NET Framework 4.5" Url="http://download.microsoft.com/download/B/A/4/BA4A7E71-2906-4B2D-A0E1-80CF16844F5F/dotNetFx45_Full_setup.exe" Permalink="http://go.microsoft.com/fwlink/p/?LinkId=250950" />
             <Prerequisite Name="Windows Management Framework 3.0" Url="http://download.microsoft.com/download/E/7/6/E76850B8-DA6E-4FF5-8CCE-A24FC513FD16/Windows6.1-KB2506143-x64.msu" Permalink="http://go.microsoft.com/fwlink/?LinkID=233187" />
             <!-- <Prerequisite Name="Microsoft SQL Server 2008 R2 Native Client" Url="http://download.microsoft.com/download/B/6/3/B63CAC7F-44BB-41FA-92A3-CBF71360F022/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=188401" /> -->
-            <Prerequisite Name="Microsoft SQL Server 2008 R2 SP1 Native Client" Url="http://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=228086" />
+            <Prerequisite Name="Microsoft SQL Server 2008 R2 SP1 Native Client" Url="https://download.microsoft.com/download/9/1/3/9138773A-505D-43E2-AC08-9A77E1E0490B/1033/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=228086" />
             <Prerequisite Name="Microsoft SQL Server 2008 R2 SP2 Native Client" Url="http://download.microsoft.com/download/F/7/B/F7B7A246-6B35-40E9-8509-72D2F8D63B80/sqlncli_amd64.msi" Permalink="http://www.microsoft.com/en-us/download/details.aspx?id=30440" />
             <Prerequisite Name="Windows Identity Foundation (KB974405)" Url="http://download.microsoft.com/download/D/7/2/D72FD747-69B6-40B7-875B-C2B40A6B2BDD/Windows6.1-KB974405-x64.msu" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=226830" />
             <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/p/?LinkID=224449" />
@@ -644,6 +660,45 @@
             <CumulativeUpdate Name="May 2020" Build="15.0.5241.1000" Url="https://download.microsoft.com/download/e/d/6/ed6352cd-90e1-489c-83e1-4210084e0e36/ubersrv2013-kb4484362-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484362-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2020" Build="15.0.5241.1000" Url="https://download.microsoft.com/download/e/d/6/ed6352cd-90e1-489c-83e1-4210084e0e36/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="May 2020" Build="15.0.5241.1000" Url="https://download.microsoft.com/download/e/d/6/ed6352cd-90e1-489c-83e1-4210084e0e36/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="June 2020" Build="15.0.5249.1001" Url="https://download.microsoft.com/download/5/2/5/5258d109-cdea-41e4-a6ef-b2d652a0f2b6/ubersrv2013-kb4484408-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484408-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2020" Build="15.0.5249.1001" Url="https://download.microsoft.com/download/5/2/5/5258d109-cdea-41e4-a6ef-b2d652a0f2b6/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="June 2020" Build="15.0.5249.1001" Url="https://download.microsoft.com/download/5/2/5/5258d109-cdea-41e4-a6ef-b2d652a0f2b6/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="July 2020" Build="15.0.5259.1001" Url="https://download.microsoft.com/download/2/d/b/2db874a7-6c28-4db8-957f-dcb721e53fc1/ubersrv2013-kb4484447-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484447-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="15.0.5259.1001" Url="https://download.microsoft.com/download/2/d/b/2db874a7-6c28-4db8-957f-dcb721e53fc1/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="July 2020" Build="15.0.5259.1001" Url="https://download.microsoft.com/download/2/d/b/2db874a7-6c28-4db8-957f-dcb721e53fc1/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="August 2020" Build="15.0.5267.1000" Url="https://download.microsoft.com/download/e/2/a/e2ad9ec1-ec3f-4b87-8c67-2dc50992e6b9/ubersrv2013-kb4484485-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484485-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="15.0.5267.1000" Url="https://download.microsoft.com/download/e/2/a/e2ad9ec1-ec3f-4b87-8c67-2dc50992e6b9/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="August 2020" Build="15.0.5267.1000" Url="https://download.microsoft.com/download/e/2/a/e2ad9ec1-ec3f-4b87-8c67-2dc50992e6b9/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="September 2020" Build="15.0.5275.1001" Url="https://download.microsoft.com/download/4/5/e/45e1f87c-bf41-4720-8114-c78c121a2c0a/ubersrv2013-kb4484523-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4484523-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="15.0.5275.1001" Url="https://download.microsoft.com/download/4/5/e/45e1f87c-bf41-4720-8114-c78c121a2c0a/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="September 2020" Build="15.0.5275.1001" Url="https://download.microsoft.com/download/4/5/e/45e1f87c-bf41-4720-8114-c78c121a2c0a/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="October 2020" Build="15.0.5285.1000" Url="https://download.microsoft.com/download/6/5/7/6574b40f-7b46-48fa-abee-aeeca8fbb15f/ubersrv2013-kb4486693-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4486693-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="15.0.5285.1000" Url="https://download.microsoft.com/download/6/5/7/6574b40f-7b46-48fa-abee-aeeca8fbb15f/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="October 2020" Build="15.0.5285.1000" Url="https://download.microsoft.com/download/6/5/7/6574b40f-7b46-48fa-abee-aeeca8fbb15f/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="November 2020" Build="15.0.5293.1000" Url="https://download.microsoft.com/download/8/8/9/88983adb-67fc-488d-9276-3d9f90524c14/ubersrv2013-kb4486731-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4486731-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2020" Build="15.0.5293.1000" Url="https://download.microsoft.com/download/8/8/9/88983adb-67fc-488d-9276-3d9f90524c14/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="November 2020" Build="15.0.5293.1000" Url="https://download.microsoft.com/download/8/8/9/88983adb-67fc-488d-9276-3d9f90524c14/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5301.1000" Url="https://download.microsoft.com/download/9/5/1/951699a5-5310-46a2-a33b-007967c44dc2/ubersrv2013-kb4493137-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4493137-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5301.1000" Url="https://download.microsoft.com/download/9/5/1/951699a5-5310-46a2-a33b-007967c44dc2/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5301.1000" Url="https://download.microsoft.com/download/9/5/1/951699a5-5310-46a2-a33b-007967c44dc2/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="January 2021" Build="15.0.5311.1000" Url="https://download.microsoft.com/download/9/6/f/96ff7c11-04e3-434f-b7ac-a43e0d82193a/ubersrv2013-kb4493150-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4493150-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="15.0.5311.1000" Url="https://download.microsoft.com/download/9/6/f/96ff7c11-04e3-434f-b7ac-a43e0d82193a/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="January 2021" Build="15.0.5311.1000" Url="https://download.microsoft.com/download/9/6/f/96ff7c11-04e3-434f-b7ac-a43e0d82193a/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="February 2021" Build="15.0.5319.1000" Url="https://download.microsoft.com/download/a/0/6/a06b66c1-c4eb-4ae0-93e3-80fc3188a815/ubersrv2013-kb4493209-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4493209-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="15.0.5319.1000" Url="https://download.microsoft.com/download/a/0/6/a06b66c1-c4eb-4ae0-93e3-80fc3188a815/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="February 2021" Build="15.0.5319.1000" Url="https://download.microsoft.com/download/a/0/6/a06b66c1-c4eb-4ae0-93e3-80fc3188a815/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="March 2021" Build="15.0.5327.1001" Url="https://download.microsoft.com/download/5/3/0/53018668-1bb5-4f0c-990e-2f1cee53b51a/ubersrv2013-kb4493237-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4493237-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="15.0.5327.1001" Url="https://download.microsoft.com/download/5/3/0/53018668-1bb5-4f0c-990e-2f1cee53b51a/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="March 2021" Build="15.0.5327.1001" Url="https://download.microsoft.com/download/5/3/0/53018668-1bb5-4f0c-990e-2f1cee53b51a/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/6/c/c/6ccff8c9-f587-4cd6-a9bf-d6d63da9f70e/ubersrv2013-kb4504732-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb4504732-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/6/c/c/6ccff8c9-f587-4cd6-a9bf-d6d63da9f70e/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/6/c/c/6ccff8c9-f587-4cd6-a9bf-d6d63da9f70e/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/9/f/c/9fc8dd9c-e236-414a-96a0-ee72f8dddbdf/ubersrv2013-kb5001933-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5001933-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/9/f/c/9fc8dd9c-e236-414a-96a0-ee72f8dddbdf/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/9/f/c/9fc8dd9c-e236-414a-96a0-ee72f8dddbdf/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="June 2021" Build="15.0.5353.1000" Url="https://download.microsoft.com/download/b/f/5/bf529458-3da6-4352-9ee9-fbb552113838/ubersrv2013-kb5001961-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5001961-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="15.0.5353.1000" Url="https://download.microsoft.com/download/b/f/5/bf529458-3da6-4352-9ee9-fbb552113838/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="June 2021" Build="15.0.5353.1000" Url="https://download.microsoft.com/download/b/f/5/bf529458-3da6-4352-9ee9-fbb552113838/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -924,6 +979,12 @@
             <CumulativeUpdate Name="August 2018" Build="14.0.7212.5000" Url="https://download.microsoft.com/download/9/5/5/955677C4-939E-4719-A21E-5D66180F6A32/wacserver2013-kb4022238-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4022238-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2013 for September 2018-->
             <CumulativeUpdate Name="August 2019" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/D/3/4/D34E0601-B129-428A-9361-6A1797A0F1AB/wacserver2013-kb4462216-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4462216-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5163.1000" Url="https://download.microsoft.com/download/b/6/1/b61a98be-d92d-4902-976e-2d02d2cf40d5/wacserver2013-kb4486760-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4486760-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="15.0.5311.1000" Url="https://download.microsoft.com/download/4/b/2/4b24a46f-ebaa-41b3-ba66-feb43d163362/wacserver2013-kb4493171-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4493171-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="15.0.5319.1000" Url="https://download.microsoft.com/download/7/2/d/72d8a65c-9379-48d8-8d45-663dc5a653ca/wacserver2013-kb4493204-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4493204-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="15.0.5327.1000" Url="https://download.microsoft.com/download/3/6/6/3668fd15-1c68-432a-889c-d4bb9bad074a/wacserver2013-kb4493234-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4493234-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/c/a/9/ca9c656c-4de1-462b-951c-37b6eda9b97f/wacserver2013-kb4504729-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb4504729-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/c/b/b/cbb3e441-694f-408c-9eb2-30f5ea4a7657/wacserver2013-kb5001928-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5001928-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -1113,12 +1174,48 @@
             <CumulativeUpdate Name="May 2020" Build="15.0.5241.1000" Url="https://download.microsoft.com/download/0/1/1/011cb996-3728-41a1-b6dd-d0d0e4050410/ubersrvprj2013-kb4484360-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4484360-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2020" Build="15.0.5241.1000" Url="https://download.microsoft.com/download/0/1/1/011cb996-3728-41a1-b6dd-d0d0e4050410/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="May 2020" Build="15.0.5241.1000" Url="https://download.microsoft.com/download/0/1/1/011cb996-3728-41a1-b6dd-d0d0e4050410/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="June 2020" Build="15.0.5249.1001" Url="https://download.microsoft.com/download/6/3/f/63fd79d7-c3cd-483c-8984-6f1e6245425d/ubersrvprj2013-kb4484407-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4484407-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2020" Build="15.0.5249.1001" Url="https://download.microsoft.com/download/6/3/f/63fd79d7-c3cd-483c-8984-6f1e6245425d/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="June 2020" Build="15.0.5249.1001" Url="https://download.microsoft.com/download/6/3/f/63fd79d7-c3cd-483c-8984-6f1e6245425d/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="July 2020" Build="15.0.5259.1001" Url="https://download.microsoft.com/download/5/6/0/560a1cfd-f43e-4383-b90c-1984daf10789/ubersrvprj2013-kb4484445-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4484445-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="15.0.5259.1001" Url="https://download.microsoft.com/download/5/6/0/560a1cfd-f43e-4383-b90c-1984daf10789/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="July 2020" Build="15.0.5259.1001" Url="https://download.microsoft.com/download/5/6/0/560a1cfd-f43e-4383-b90c-1984daf10789/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="August 2020" Build="15.0.5267.1000" Url="https://download.microsoft.com/download/d/c/a/dcaaebf4-3f5b-417a-822e-3c3adc94c0b2/ubersrvprj2013-kb4484483-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4484483-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="15.0.5267.1000" Url="https://download.microsoft.com/download/d/c/a/dcaaebf4-3f5b-417a-822e-3c3adc94c0b2/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="August 2020" Build="15.0.5267.1000" Url="https://download.microsoft.com/download/d/c/a/dcaaebf4-3f5b-417a-822e-3c3adc94c0b2/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="September 2020" Build="15.0.5275.1001" Url="https://download.microsoft.com/download/1/0/9/109c7393-2ee2-419e-8074-ed41b3ae44d6/ubersrvprj2013-kb4484521-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4484521-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="15.0.5275.1001" Url="https://download.microsoft.com/download/1/0/9/109c7393-2ee2-419e-8074-ed41b3ae44d6/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="September 2020" Build="15.0.5275.1001" Url="https://download.microsoft.com/download/1/0/9/109c7393-2ee2-419e-8074-ed41b3ae44d6/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="October 2020" Build="15.0.5285.1000" Url="https://download.microsoft.com/download/0/7/f/07f1f1a9-1599-4f4c-ba10-aeea6814f4f0/ubersrvprj2013-kb4486691-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4486691-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="15.0.5285.1000" Url="https://download.microsoft.com/download/0/7/f/07f1f1a9-1599-4f4c-ba10-aeea6814f4f0/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="October 2020" Build="15.0.5285.1000" Url="https://download.microsoft.com/download/0/7/f/07f1f1a9-1599-4f4c-ba10-aeea6814f4f0/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="November 2020" Build="15.0.5293.1000" Url="https://download.microsoft.com/download/4/7/4/474eb0b2-6147-44c3-a4c7-a2930e30314a/ubersrvprj2013-kb4486729-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4486729-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2020" Build="15.0.5293.1000" Url="https://download.microsoft.com/download/4/7/4/474eb0b2-6147-44c3-a4c7-a2930e30314a/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="November 2020" Build="15.0.5293.1000" Url="https://download.microsoft.com/download/4/7/4/474eb0b2-6147-44c3-a4c7-a2930e30314a/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5301.1000" Url="https://download.microsoft.com/download/1/9/e/19ed2b15-89fc-43de-a951-c5c510c79450/ubersrvprj2013-kb4486763-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4486763-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5301.1000" Url="https://download.microsoft.com/download/1/9/e/19ed2b15-89fc-43de-a951-c5c510c79450/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="December 2020" Build="15.0.5301.1000" Url="https://download.microsoft.com/download/1/9/e/19ed2b15-89fc-43de-a951-c5c510c79450/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="January 2021" Build="15.0.5311.1000" Url="https://download.microsoft.com/download/d/6/0/d60c9b12-1dbe-42ea-9597-aa679dd7164f/ubersrvprj2013-kb4493173-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4493173-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="15.0.5311.1000" Url="https://download.microsoft.com/download/d/6/0/d60c9b12-1dbe-42ea-9597-aa679dd7164f/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="January 2021" Build="15.0.5311.1000" Url="https://download.microsoft.com/download/d/6/0/d60c9b12-1dbe-42ea-9597-aa679dd7164f/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="February 2021" Build="15.0.5319.1000" Url="https://download.microsoft.com/download/9/e/0/9e0daf60-4599-458b-b7d7-9a7689690d69/ubersrvprj2013-kb4493207-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4493207-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="15.0.5319.1000" Url="https://download.microsoft.com/download/9/e/0/9e0daf60-4599-458b-b7d7-9a7689690d69/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="February 2021" Build="15.0.5319.1000" Url="https://download.microsoft.com/download/9/e/0/9e0daf60-4599-458b-b7d7-9a7689690d69/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="March 2021" Build="15.0.5327.1001" Url="https://download.microsoft.com/download/7/8/f/78f4a8ed-bfb5-4de7-b121-070ba99bc76f/ubersrvprj2013-kb4493236-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4493236-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="15.0.5327.1001" Url="https://download.microsoft.com/download/7/8/f/78f4a8ed-bfb5-4de7-b121-070ba99bc76f/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="March 2021" Build="15.0.5327.1001" Url="https://download.microsoft.com/download/7/8/f/78f4a8ed-bfb5-4de7-b121-070ba99bc76f/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/4/3/b/43b35cba-862b-410b-8a59-7324987bb968/ubersrvprj2013-kb4504731-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb4504731-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/4/3/b/43b35cba-862b-410b-8a59-7324987bb968/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="April 2021" Build="15.0.5337.1000" Url="https://download.microsoft.com/download/4/3/b/43b35cba-862b-410b-8a59-7324987bb968/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj2013-kb5001930-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5001930-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="May 2021" Build="15.0.5345.1000" Url="https://download.microsoft.com/download/6/0/6/606e5437-8554-4daa-8b0b-0f2dd63684d3/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2016">
         <Prerequisites>
           <Prerequisite Name="Microsoft .NET Framework 4.6" Url="https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?LinkId=528233" />
-          <Prerequisite Name="Microsoft SQL Server 2012 Native Client" Url="http://download.microsoft.com/download/4/B/1/4B1E9B0E-A4F3-4715-B417-31C82302A70A/ENU/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=622997" />
+          <Prerequisite Name="Microsoft SQL Server 2012 Native Client" Url="https://download.microsoft.com/download/F/3/C/F3C64941-22A0-47E9-BC9B-1A19B4CA3E88/ENU/x64/sqlncli.msi" Permalink="http://go.microsoft.com/fwlink/?LinkId=622997" />
           <Prerequisite Name="Microsoft ODBC Driver 11 for SQL Server" Url="https://download.microsoft.com/download/5/7/2/57249A3A-19D6-4901-ACCE-80924ABEB267/ENU/x64/msodbcsql.msi" Permalink="https://www.microsoft.com/en-us/download/details.aspx?id=36434" />
           <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=224449" />
           <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=252368" />
@@ -1244,10 +1341,39 @@
             <CumulativeUpdate Name="March 2020" Build="16.0.4978.1000" Url="https://download.microsoft.com/download/6/c/5/6c504679-edbf-42ec-be33-a32a6b0e82fd/sts2016-kb4484272-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484272-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2020" Build="16.0.4978.1000" Url="https://download.microsoft.com/download/4/e/2/4e2e357b-787c-408e-b174-410d20ccec2d/wssloc2016-kb4484275-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484275-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2020" Build="16.0.4993.1000" Url="https://download.microsoft.com/download/8/c/1/8c19f306-1981-46a4-8785-5935925566cd/sts2016-kb4484299-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484299-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="April 2020" Build="16.0.4993.1000" Url="https://download.microsoft.com/download/2/1/1/2111aa4e-f394-401c-b542-9a7fa814b6c3/wssloc2016-kb4484301-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484301-fullfile-x64-glb.exe" />        
+            <CumulativeUpdate Name="April 2020" Build="16.0.4993.1000" Url="https://download.microsoft.com/download/2/1/1/2111aa4e-f394-401c-b542-9a7fa814b6c3/wssloc2016-kb4484301-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484301-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2020" Build="16.0.5005.1000" Url="https://download.microsoft.com/download/b/2/a/b2aa0d23-983f-40e9-9cc1-a4b102c35344/sts2016-kb4484336-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484336-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in May 2020, so the link below is actually for the last-released language-dependent fix (April 2020)-->
             <CumulativeUpdate Name="May 2020" Build="16.0.5005.1000" Url="https://download.microsoft.com/download/2/1/1/2111aa4e-f394-401c-b542-9a7fa814b6c3/wssloc2016-kb4484301-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484301-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2020" Build="16.0.5017.1001" Url="https://download.microsoft.com/download/6/5/7/65738916-a2aa-4915-94a5-4436bccaebd3/sts2016-kb4484402-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484402-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2020" Build="16.0.5017.1001" Url="https://download.microsoft.com/download/7/5/d/75d62b66-d07a-48ec-8661-fd8305470b40/wssloc2016-kb4484344-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484344-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="16.0.5032.1002" Url="https://download.microsoft.com/download/5/f/8/5f8059f6-327a-46c0-996b-868cb91fea78/sts2016-kb4484436-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484436-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="16.0.5032.1002" Url="https://download.microsoft.com/download/a/0/5/a05a48bb-d856-40b2-b8aa-4dc4e7d79777/wssloc2016-kb4484440-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484440-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="16.0.5044.1000" Url="https://download.microsoft.com/download/e/6/4/e649742d-2e1c-4175-9c30-cc5adb10049e/sts2016-kb4484473-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484473-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="16.0.5044.1000" Url="https://download.microsoft.com/download/d/d/3/dd37fedb-cb53-42a1-9e3d-79c5c8ff1c1a/wssloc2016-kb4484476-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484476-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="16.0.5056.1001" Url="https://download.microsoft.com/download/7/a/e/7ae72724-fa95-46e4-a6b7-254b22099f45/sts2016-kb4484506-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4484506-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="16.0.5056.1001" Url="https://download.microsoft.com/download/9/c/d/9cd859af-aa7c-4810-b38a-393e208a436f/wssloc2016-kb4484512-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4484512-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="16.0.5071.1000" Url="https://download.microsoft.com/download/d/1/8/d184b284-db57-43f9-b2ba-61626f17e65f/sts2016-kb4486677-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4486677-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="16.0.5071.1000" Url="https://download.microsoft.com/download/4/0/7/407093c8-d09e-4fae-9ee9-d0dd979efd63/wssloc2016-kb4486681-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4486681-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2020" Build="16.0.5083.1000" Url="https://download.microsoft.com/download/b/1/2/b1230649-565d-4495-8040-c1c531ac98e9/sts2016-kb4486717-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4486717-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2016 in November 2020, so the link below is actually for the last-released language-dependent fix (October 2020)-->
+            <CumulativeUpdate Name="November 2020" Build="16.0.5083.1000" Url="https://download.microsoft.com/download/4/0/7/407093c8-d09e-4fae-9ee9-d0dd979efd63/wssloc2016-kb4486681-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4486681-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="16.0.5095.1000" Url="https://download.microsoft.com/download/d/4/7/d4785d45-0f73-4e94-8522-136fa1fee390/sts2016-kb4486753-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4486753-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="16.0.5095.1000" Url="https://download.microsoft.com/download/4/d/9/4d94a4ca-e171-4a89-ad44-937179183986/wssloc2016-kb4486721-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4486721-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="16.0.5110.1000" Url="https://download.microsoft.com/download/c/e/0/ce09f720-23bb-49c7-b8e2-e27ff6f85a6e/sts2016-kb4493163-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4493163-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="16.0.5110.1000" Url="https://download.microsoft.com/download/6/7/b/67bfd095-a6c0-46b0-8613-f896648f7d51/wssloc2016-kb4493167-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4493167-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="16.0.5122.1000" Url="https://download.microsoft.com/download/8/1/4/81492d90-9d6d-4b24-b428-860e7674a63f/sts2016-kb4493195-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4493195-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2016 in February 2021, so the link below is actually for the last-released language-dependent fix (January 2021)-->
+            <CumulativeUpdate Name="February 2021" Build="16.0.5122.1000" Url="https://download.microsoft.com/download/6/7/b/67bfd095-a6c0-46b0-8613-f896648f7d51/wssloc2016-kb4493167-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4493167-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="16.0.5134.1001" Url="https://download.microsoft.com/download/3/2/d/32df4dd6-3119-4c4a-b1db-d5e46afd313f/sts2016-kb4493232-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4493232-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="16.0.5134.1001" Url="https://download.microsoft.com/download/7/5/7/757a7284-9a5a-4b1d-b063-73a43e5fe147/wssloc2016-kb4493199-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4493199-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="16.0.5149.1000" Url="https://download.microsoft.com/download/1/5/5/155f3685-106c-45d3-850c-b560b4bf83f1/sts2016-kb4504719-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb4504719-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="16.0.5149.1000" Url="https://download.microsoft.com/download/3/b/8/3b8aa4c6-1323-45e5-b571-9af2f7b9dbc9/wssloc2016-kb4504723-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4504723-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2021" Build="16.0.5161.1000" Url="https://download.microsoft.com/download/1/b/0/1b069201-9d7d-4476-8ea3-bdfa67ba3164/sts2016-kb5001917-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5001917-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2016 in May 2021, so the link below is actually for the last-released language-dependent fix (April 2021)-->
+            <CumulativeUpdate Name="May 2021" Build="16.0.5161.1000" Url="https://download.microsoft.com/download/3/b/8/3b8aa4c6-1323-45e5-b571-9af2f7b9dbc9/wssloc2016-kb4504723-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4504723-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="16.0.5173.1000" Url="https://download.microsoft.com/download/d/2/c/d2c6d67e-7a8a-418d-92a4-99a03b3e647e/sts2016-kb5001946-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5001946-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="16.0.5173.1000" Url="https://download.microsoft.com/download/c/3/3/c339c3be-4c4a-47b1-abc9-8cc05b40b539/wssloc2016-kb5001922-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5001922-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1681,7 +1807,7 @@
     <Product Name="SP2019">
         <Prerequisites>
           <Prerequisite Name="Microsoft .NET Framework 4.7.2" Url="https://download.microsoft.com/download/6/E/4/6E48E8AB-DC00-419E-9704-06DD46E5F81D/NDP472-KB4054530-x86-x64-AllOS-ENU.exe" Permalink="http://go.microsoft.com/fwlink/?linkid=863265" />
-          <Prerequisite Name="Microsoft SQL Server 2012 SP4 Native Client" Url="http://download.microsoft.com/download/4/B/1/4B1E9B0E-A4F3-4715-B417-31C82302A70A/ENU/x64/sqlncli.msi" Permalink="https://go.microsoft.com/fwlink/?LinkId=867003" />
+          <Prerequisite Name="Microsoft SQL Server 2012 SP4 Native Client" Url="https://download.microsoft.com/download/F/3/C/F3C64941-22A0-47E9-BC9B-1A19B4CA3E88/ENU/x64/sqlncli.msi" Permalink="https://go.microsoft.com/fwlink/?LinkId=867003" />
           <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=224449" />
           <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="http://go.microsoft.com/fwlink/?LinkID=252368" />
           <Prerequisite Name="Microsoft Information Protection and Control Client 2.1" Url="http://download.microsoft.com/download/3/C/F/3CF781F5-7D29-4035-9265-C34FF2369FA2/setup_msipc_x64.exe" Permalink="http://go.microsoft.com/fwlink/?LinkID=544913" />
@@ -1736,6 +1862,32 @@
             <CumulativeUpdate Name="April 2020" Build="16.0.10358.20000" Url="https://download.microsoft.com/download/c/c/2/cc2144cd-2dff-4372-8b54-ec91ce082178/wssloc2019-kb4484291-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484291-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2020" Build="16.0.10359.20000" Url="https://download.microsoft.com/download/9/5/1/95181932-573a-4cee-837d-1fe59ad19c5d/sts2019-kb4484332-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484332-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2020" Build="16.0.10359.20000" Url="https://download.microsoft.com/download/d/8/d/d8ddb775-4ab5-4037-8420-971799c7b7cd/wssloc2019-kb4484331-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484331-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2020" Build="16.0.10361.12114" Url="https://download.microsoft.com/download/7/1/d/71d1b151-71d3-4e1c-b5f0-57576eda538f/sts2019-kb4484400-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484400-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2020" Build="16.0.10361.12114" Url="https://download.microsoft.com/download/d/6/2/d626e96c-daad-429a-8c42-5d534e4859b7/wssloc2019-kb4484404-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484404-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="16.0.10363.12107" Url="https://download.microsoft.com/download/4/d/8/4d88183a-3eea-43a6-a33e-423c879f879b/sts2019-kb4484453-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484453-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="16.0.10363.12107" Url="https://download.microsoft.com/download/7/4/1/74129e52-6807-46a1-b78c-0ca836fa1167/wssloc2019-kb4484452-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484452-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="16.0.10364.20001" Url="https://download.microsoft.com/download/5/c/6/5c696fd2-36a5-4d1a-a045-125ad5b5b7b6/sts2019-kb4484472-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4484472-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="16.0.10364.20001" Url="https://download.microsoft.com/download/4/a/4/4a41f078-532e-4679-97e3-ace76f49b3ce/wssloc2019-kb4484471-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484471-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="16.0.10366.12106" Url="https://download.microsoft.com/download/5/6/4/564eddf4-6009-47a4-89be-a7b123cc4d5a/sts2019-kb4461512-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4461512-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="16.0.10366.12106" Url="https://download.microsoft.com/download/d/f/4/df47c1ae-a4d2-436e-b47c-09aecc70de1d/wssloc2019-kb4484504-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4484504-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="16.0.10367.20000" Url="https://download.microsoft.com/download/6/2/8/62875c6c-afde-4ca2-b656-33f9a3b70341/sts2019-kb4486676-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4486676-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="16.0.10367.20000" Url="https://download.microsoft.com/download/8/b/3/8b33b7ca-0ac1-4c21-9bb3-dcabf785993b/wssloc2019-kb4486675-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4486675-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2020" Build="16.0.10368.20022" Url="https://download.microsoft.com/download/0/7/8/078c7a99-edb8-4e64-b3d1-fc9b31bd1fd0/sts2019-kb4486714-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4486714-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2020" Build="16.0.10368.20022" Url="https://download.microsoft.com/download/a/c/f/acfefe5a-a1b8-4c24-b515-110c4e7d3645/wssloc2019-kb4486715-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4486715-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="16.0.10369.20000" Url="https://download.microsoft.com/download/9/7/e/97e94f26-8a70-4e74-91df-67c3e8827b14/sts2019-kb4486751-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4486751-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="16.0.10369.20000" Url="https://download.microsoft.com/download/1/5/3/1533f0f6-3627-446f-a17e-f55c0699e6a9/wssloc2019-kb4486752-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4486752-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="16.0.10370.20001" Url="https://download.microsoft.com/download/3/1/a/31a075c3-228f-4f22-8670-308f1d5ed42b/sts2019-kb4493162-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4493162-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="16.0.10370.20001" Url="https://download.microsoft.com/download/d/d/5/dd5e17fc-1356-49bc-a030-c80fcda62124/wssloc2019-kb4493161-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4493161-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="16.0.10371.20043" Url="https://download.microsoft.com/download/6/8/9/689ddb53-13b9-45fc-b705-b0bab12d513d/sts2019-kb4493194-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4493194-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="16.0.10371.20043" Url="https://download.microsoft.com/download/8/3/8/83875bb1-f31d-4080-bd8e-dd0b3ec68612/wssloc2019-kb4493193-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4493193-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="16.0.10372.20060" Url="https://download.microsoft.com/download/6/a/6/6a609f66-c884-44c3-aa43-c0d4df09393f/sts2019-kb4493230-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4493230-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="16.0.10372.20060" Url="https://download.microsoft.com/download/f/8/1/f819c038-fb2e-4d4b-b1c4-e61d1e99f926/wssloc2019-kb4493231-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4493231-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="16.0.10373.20000" Url="https://download.microsoft.com/download/3/1/0/310b542d-1514-44ae-8168-a72f057bef38/sts2019-kb4504716-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4504716-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="16.0.10373.20000" Url="https://download.microsoft.com/download/f/0/5/f0576b07-3cae-404b-87d5-35ff8012b0a8/wssloc2019-kb4504715-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb4504715-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2021" Build="16.0.10374.20000" Url="https://download.microsoft.com/download/4/d/6/4d62428a-527b-42e8-a9c7-8f5087f3cd73/sts2019-kb5001916-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5001916-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2021" Build="16.0.10374.20000" Url="https://download.microsoft.com/download/f/1/4/f1405ad2-9c84-4aa8-a4d9-f36f523d2d1c/wssloc2019-kb5001915-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5001915-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="16.0.10375.20000" Url="https://download.microsoft.com/download/a/e/4/ae4dd4ac-5f2d-4960-b896-846e89440fd7/sts2019-kb5001944-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5001944-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="16.0.10375.20000" Url="https://download.microsoft.com/download/8/4/d/84db1431-df03-474d-a1c7-9c4624b86a95/wssloc2019-kb5001945-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5001945-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -1958,8 +2110,21 @@
             <CumulativeUpdate Name="March 2020" Build="16.0.10357.20002" Url="https://download.microsoft.com/download/f/3/1/f31474f9-ded4-437d-9d69-1b3485c970f4/wacserver2019-kb4484270-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484270-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2020" Build="16.0.10358.20000" Url="https://download.microsoft.com/download/a/b/8/ab8eb484-bd39-46fd-b8cf-9cca87c93a8f/wacserver2019-kb4484290-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484290-fullfile-x64-glb.exe" />
             <!--There was no fix released for Office Online Server 2019 in May 2020-->
+            <CumulativeUpdate Name="June 2020" Build="16.0.10360.20000" Url="https://download.microsoft.com/download/2/7/e/27eb8bcf-a61b-4430-97d6-c0b23f60136a/wacserver2019-kb4484330-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484330-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2020" Build="16.0.10362.20000" Url="https://download.microsoft.com/download/f/9/1/f9113149-fd98-45cd-9559-e6a4bc65601f/wacserver2019-kb4484451-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484451-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2020" Build="16.0.10364.20001" Url="https://download.microsoft.com/download/d/c/4/dc49bf03-73d8-4e26-858e-bfd57fb98655/wacserver2019-kb4484470-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484470-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2020" Build="16.0.10366.12106" Url="https://download.microsoft.com/download/1/5/f/15f86f27-ac29-4b37-93e7-f95f2f42efe9/wacserver2019-kb4484503-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4484503-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2020" Build="16.0.10367.20000" Url="https://download.microsoft.com/download/1/d/c/1dcd08ca-55a9-4cb7-9c93-165a0fce1d1b/wacserver2019-kb4486674-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4486674-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="November 2020" Build="16.0.10368.20022" Url="https://download.microsoft.com/download/2/6/9/2690f028-10ab-420a-be18-5e787288b7b7/wacserver2019-kb4486713-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4486713-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2020" Build="16.0.10369.20000" Url="https://download.microsoft.com/download/8/4/a/84ac1fc0-2f82-4490-bacf-dd33392309c4/wacserver2019-kb4486750-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4486750-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2021" Build="16.0.10370.20001" Url="https://download.microsoft.com/download/0/6/7/067a70ab-428b-4278-a478-837e04db68ab/wacserver2019-kb4493160-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4493160-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2021" Build="16.0.10371.20000" Url="https://download.microsoft.com/download/9/8/8/98833133-c7d5-4b3b-9969-6353172da439/wacserver2019-kb4493192-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4493192-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="March 2021" Build="16.0.10372.20000" Url="https://download.microsoft.com/download/2/5/1/25184187-6985-48f8-adfe-34b59287869b/wacserver2019-kb4493229-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4493229-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2021" Build="16.0.10373.20000" Url="https://download.microsoft.com/download/8/6/5/8653a64e-f003-4833-9626-b95301fd89b2/wacserver2019-kb4504714-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb4504714-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="May 2021" Build="16.0.10374.20000" Url="https://download.microsoft.com/download/0/8/d/08d2056e-0fea-4542-a5c6-cf2aad342a71/wacserver2019-kb5001914-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5001914-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="16.0.10375.20000" Url="https://download.microsoft.com/download/0/f/6/0f6e3545-9373-4c48-8465-de64dfdd4ef3/wacserver2019-kb5001943-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5001943-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
-      <LanguagePacks>        
+      <LanguagePacks>
         <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/A/0/3/A03B732F-512B-4D29-A2FD-49873FEA60C3/wacserverlanguagepack.exe">
           <ServicePacks>
           </ServicePacks>
@@ -2161,5 +2326,216 @@
           </ServicePacks>
         </LanguagePack>
       </LanguagePacks>
+    </Product>
+    <Product Name="SPSE">
+        <Prerequisites>
+          <Prerequisite Name="Microsoft .NET Framework 4.8" Url="https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=2085155" />
+          <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="https://go.microsoft.com/fwlink/?LinkID=224449" />
+          <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="https://go.microsoft.com/fwlink/?LinkID=252368" />
+          <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=320724" />
+          <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2019" Url="https://download.visualstudio.microsoft.com/download/pr/f1998402-3cc0-466f-bd67-d9fb6cd2379b/A1592D3DA2B27230C087A3B069409C1E82C2664B0D4C3B511701624702B2E2A3/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?linkid=2130438" />
+        </Prerequisites>
+        <ServicePacks>
+        </ServicePacks>
+        <CumulativeUpdates>
+        </CumulativeUpdates>
+        <LanguagePacks>
+          <LanguagePack Name="az-Latn-AZ" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="bs-ba" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pl-pl" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pt-br" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="pt-pt" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ga-ie" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="nb-no" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hu-hu" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="id-id" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hr-hr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="cy-gb" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="bg-bg" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ro-ro" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sl-SI" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sr-latn-rs" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sr-Cyrl-RS" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="uk-ua" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="hi-in" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="th-th" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="kk-kz" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ca-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="el-gr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="et-ee" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="eu-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="lt-lt" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="mk-mk" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="lv-lv" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="gl-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="he-il" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="fi-fi" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sv-se" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="sk-sk" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="tr-tr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="cs-cz" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="da-dk" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="de-de" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="PRS-af" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="en-us" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="es-es" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="fr-fr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="it-it" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ja-jp" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ms-my" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="ko-kr" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="nl-nl" Url="">
+            <ServicePacks>
+            </ServicePacks>
+            </LanguagePack>
+          <LanguagePack Name="ru-ru" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="vi-vn" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="zh-cn" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+          <LanguagePack Name="zh-tw" Url="">
+            <ServicePacks>
+            </ServicePacks>
+          </LanguagePack>
+        </LanguagePacks>
     </Product>
 </Products>

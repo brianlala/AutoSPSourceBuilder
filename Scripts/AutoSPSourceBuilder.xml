@@ -1373,7 +1373,13 @@
             <!--There was no language-dependent fix released for SharePoint 2016 in May 2021, so the link below is actually for the last-released language-dependent fix (April 2021)-->
             <CumulativeUpdate Name="May 2021" Build="16.0.5161.1000" Url="https://download.microsoft.com/download/3/b/8/3b8aa4c6-1323-45e5-b571-9af2f7b9dbc9/wssloc2016-kb4504723-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb4504723-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2021" Build="16.0.5173.1000" Url="https://download.microsoft.com/download/d/2/c/d2c6d67e-7a8a-418d-92a4-99a03b3e647e/sts2016-kb5001946-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5001946-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="June 2021" Build="16.0.5173.1000" Url="https://download.microsoft.com/download/c/3/3/c339c3be-4c4a-47b1-abc9-8cc05b40b539/wssloc2016-kb5001922-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5001922-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2021" Build="16.0.5173.1000" Url="https://download.microsoft.com/download/a/8/4/a84f9194-7867-4ce9-b356-e10929b9c4b1/sts2016-kb5001976-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5001922-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2021" Build="16.0.5188.1000" Url="https://download.microsoft.com/download/d/2/c/d2c6d67e-7a8a-418d-92a4-99a03b3e647e/sts2016-kb5001946-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5001976-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2021" Build="16.0.5188.1000" Url="https://download.microsoft.com/download/f/5/1/f51a2968-79c0-4c49-a516-9dc67b62802b/wssloc2016-kb5001981-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5001981-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="August 2021" Build="16.0.5200.1000" Url="https://download.microsoft.com/download/2/5/7/2574c0a0-1805-4fb0-890b-ab51cac0d2b9/sts2016-kb5002002-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002002-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2016 in August 2021, so the link below is actually for the last-released language-dependent fix (July 2021)-->
+            <CumulativeUpdate Name="August 2021" Build="16.0.5200.1000" Url="https://download.microsoft.com/download/f/5/1/f51a2968-79c0-4c49-a516-9dc67b62802b/wssloc2016-kb5001981-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5001981-fullfile-x64-glb.exe" />
+             
         </CumulativeUpdates>
         <LanguagePacks>
           <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">

@@ -446,12 +446,7 @@ else
         while ([string]::IsNullOrEmpty($spYear))
         {
             Start-Sleep -Seconds 1
-            $spYear = $spAvailableVersionNumbers | Sort-Object | Out-GridView -Title "Please select the version of SharePoint to download updates for:" -PassThru
-            if ($spYear.Count -gt 1)
-            {
-                Write-Warning "Please only select ONE version. Re-prompting..."
-                Remove-Variable -Name spYear -Force -ErrorAction SilentlyContinue
-            }
+            $spYear = $spAvailableVersionNumbers | Sort-Object | Out-GridView -OutputMode Single -Title "Please select the version of SharePoint to download updates for:"
         }
         Write-Output " - SharePoint $spYear selected."
     }
@@ -481,16 +476,11 @@ if ((!([string]::IsNullOrEmpty($CumulativeUpdate))) -and !($spNode.CumulativeUpd
 if (($spCuNodes).Count -ge 1 -and ([string]::IsNullOrEmpty($CumulativeUpdate)))
 {
     Start-Sleep -Seconds 1
-    Write-Host -ForegroundColor Cyan " - Please select ONE available $(if ($spYear -eq "2016") {"Public"} else {"Cumulative"}) Update from the list that appears..."
+    Write-Host -ForegroundColor Cyan " - Please select an available $(if ($spYear -eq "2016") {"Public"} else {"Cumulative"}) Update from the list that appears..."
     while ([string]::IsNullOrEmpty($selectedCumulativeUpdate))
     {
         Start-Sleep -Seconds 1
-        $selectedCumulativeUpdate = $spNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select an available $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update for SharePoint $spYear`:" -PassThru
-        if ($selectedCumulativeUpdate.Count -gt 1)
-        {
-            Write-Warning "Please only select ONE update. Re-prompting..."
-            Remove-Variable -Name selectedCumulativeUpdate -Force -ErrorAction SilentlyContinue
-        }
+        $selectedCumulativeUpdate = $spNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -OutputMode Single -Title "Please select an available $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update for SharePoint $spYear`:"
     }
     $CumulativeUpdate = $selectedCumulativeUpdate
     Write-Output " - SharePoint $spYear $CumulativeUpdate $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update selected."
@@ -604,7 +594,7 @@ if (($PromptForLanguages))
     $availableLanguageNames = $lpNode.LanguagePack | Where-Object {$null -ne $_.Url} | Select-Object Name | Sort-Object Name
     Write-Host -ForegroundColor Cyan " - Please select one or more available language pack(s) from the list that appears..."
     Start-Sleep -Seconds 2
-    [array]$Languages = $availableLanguageNames.Name | Out-GridView -Title "Please select one or more available language pack(s). Hold down Ctrl to select multiple, or click Cancel to skip:" -PassThru
+    [array]$Languages = $availableLanguageNames.Name | Out-GridView -OutputMode Multiple -Title "Please select one or more available language pack(s). Hold down Ctrl to select multiple, or click Cancel to skip:"
     if ($Languages.Count -eq 0)
     {
         Write-Output " - No languages selected."
@@ -823,12 +813,7 @@ if ($WACSourceLocation)
         {
             Write-Host -ForegroundColor Cyan " - Please select another available $wacProductName update..."
             Start-Sleep -Seconds 1
-            $wacCUName = $wacNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -Title "Please select another available $wacProductName update:" -PassThru
-            if ($wacCUName.Count -gt 1)
-            {
-                Write-Warning "Please only select ONE update. Re-prompting..."
-                Remove-Variable -Name wacCUName -Force -ErrorAction SilentlyContinue
-            }
+            $wacCUName = $wacNode.CumulativeUpdates.CumulativeUpdate.Name | Select-Object -Unique | Out-GridView -OutputMode Single -Title "Please select another available $wacProductName update:"
         }
         [array]$wacCU = $wacNode.CumulativeUpdates.CumulativeUpdate | Where-Object {$_.Name -eq $wacCUName}
     }

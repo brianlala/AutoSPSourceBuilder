@@ -2384,11 +2384,8 @@
     </Product>
     <Product Name="SPSE">
         <Prerequisites>
-            <Prerequisite Name="Microsoft .NET Framework 4.8" Url="https://download.visualstudio.microsoft.com/download/pr/014120d7-d689-4305-befd-3cb711108212/1f81f3962f75eff5d83a60abd3a3ec7b/ndp48-web.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=2085155" />
-            <Prerequisite Name="Microsoft Sync Framework Runtime v1.0 SP1 (x64)" Url="http://download.microsoft.com/download/E/0/0/E0060D8F-2354-4871-9596-DC78538799CC/Synchronization.msi" Permalink="https://go.microsoft.com/fwlink/?LinkID=224449" />
-            <Prerequisite Name="Microsoft Identity Extensions" Url="http://download.microsoft.com/download/0/1/D/01D06854-CA0C-46F1-ADBA-EBF86010DCC6/rtm/MicrosoftIdentityExtensions-64.msi" Permalink="https://go.microsoft.com/fwlink/?LinkID=252368" />
-            <Prerequisite Name="Microsoft WCF Data Services 5.6" Url="http://download.microsoft.com/download/1/C/A/1CAA41C7-88B9-42D6-9E11-3C655656DAB1/WcfDataServices.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=320724" />
-            <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2019" Url="https://download.visualstudio.microsoft.com/download/pr/7239cdc3-bd73-4f27-9943-22de059a6267/003063723B2131DA23F40E2063FB79867BAE275F7B5C099DBD1792E25845872B/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?linkid=2130438" />
+            <Prerequisite Name="Microsoft .NET Framework 4.8" Url="https://download.visualstudio.microsoft.com/download/pr/2d6bb6b2-226a-4baa-bdec-798822606ff1/8494001c276a4b96804cde7829c04d7f/ndp48-x86-x64-allos-enu.exe" Permalink="https://go.microsoft.com/fwlink/?linkid=2088631" />
+            <Prerequisite Name="Visual C++ Redistributable Package for Visual Studio 2015-2019" Url="https://download.visualstudio.microsoft.com/download/pr/d3cbdace-2bb8-4dc5-a326-2c1c0f1ad5ae/9B9DD72C27AB1DB081DE56BB7B73BEE9A00F60D14ED8E6FDE45DAB3E619B5F04/VC_redist.x64.exe" Permalink="https://go.microsoft.com/fwlink/?LinkId=2130438" />
         </Prerequisites>
         <ServicePacks>
         </ServicePacks>

@@ -63,7 +63,7 @@
 .PARAMETER UseExistingLocalXML
     If you want to use a custom or pre-existing AutoSPSourceBuilder.XML file, or simply want to skip downloading the official one on-the-fly, use this switch parameter.
 .PARAMETER Unattended
-    Disables additional user interation so that command can be run in CI/CD pipelines
+    Disables additional user interaction so that command can be run in CI/CD pipelines
 .LINK
     https://github.com/brianlala/autospsourcebuilder
     https://github.com/brianlala/autospinstaller

@@ -62,7 +62,7 @@
     If this switch is omitted, and no languages have been specified on the command line, languages are skipped entirely.
 .PARAMETER UseExistingLocalXML
     If you want to use a custom or pre-existing AutoSPSourceBuilder.XML file, or simply want to skip downloading the official one on-the-fly, use this switch parameter.
-.PARAMETER Unattend
+.PARAMETER Unattended
     Disables additional user interation so that command can be run in CI/CD pipelines
 .LINK
     https://github.com/brianlala/autospsourcebuilder
@@ -95,7 +95,7 @@ param
     [Parameter(Mandatory = $false)]
     [switch]$UseExistingLocalXML = $false,
     [Parameter(Mandatory = $false)]
-    [switch]$Unattend = $false
+    [switch]$Unattended = $false
 )
 
 #region Functions
@@ -282,7 +282,8 @@ If (!([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]
 {
     Write-Warning " - You should run this script under an elevated PowerShell prompt. Launch an elevated PowerShell prompt by right-clicking the PowerShell shortcut and selecting `"Run as Administrator`"."
     Write-Warning " - Running without elevation may cause certain things to fail, e.g. file extraction."
-    if ( !$Unattend ) {
+    if (!$Unattended)
+    {
         Pause -action "proceed if you are sure this is OK, or Ctrl-C to exit" -key "y"
     }
 }
@@ -295,14 +296,16 @@ if (($windowsMajorVersion -lt 6 -or (($windowsMajorVersion -eq 6) -and ($windows
 {
     Write-Warning "You should be running Windows Server 2012 or Windows 8 (minimum) to get the full functionality of this script."
     Write-Host -ForegroundColor Yellow " - Some features (e.g. image extraction) may not work otherwise."
-    if ( !$Unattend ) {
+    if (!$Unattended)
+    {
         Pause "proceed if you are sure this is OK, or Ctrl-C to exit" "y"
     }
 }
 #endregion
 
 #region Start
-if ( !$Unattend ) {
+if (!$Unattended)
+{
     $oldTitle = $Host.UI.RawUI.WindowTitle
     $Host.UI.RawUI.WindowTitle = "--AutoSPSourceBuilder--"
 }
@@ -388,7 +391,8 @@ if ($SourceLocation)
         Write-Warning " - Please insert/mount the correct media, or specify a valid path."
         $global:errorWarning = $true
         break
-        if ( !$Unattend ) {
+        if (!$Unattended)
+        {
             Pause "exit"
         }
         exit
@@ -418,7 +422,8 @@ if ($SourceLocation)
             Write-Warning " - Cannot determine version of SharePoint setup binaries, and SharePointVersion was not specified."
             $global:errorWarning = $true
             break
-            if ( !$Unattend ) {
+            if (!$Unattended)
+            {
                 Pause "exit"
             }
             exit
@@ -884,7 +889,8 @@ if ($WACSourceLocation)
         Write-Warning " - Please specify a valid path."
         $global:errorWarning = $true
         break
-        if ( !$Unattend ) {
+        if (!$Unattended)
+        {
             Pause "exit"
         }
         exit
@@ -1181,11 +1187,13 @@ If ($global:errorWarning)
 Write-Output " - Done!"
 Write-Output " - Review the output and check your source/update file integrity carefully."
 Start-Sleep -Seconds 3
-if ( !$Unattend ) {
+if (!$Unattended)
+{
     Invoke-Item -Path $Destination
 }
 WriteLine
-if ( !$Unattend ) {
+if (!$Unattended)
+{
     $Host.UI.RawUI.WindowTitle = $oldTitle
     Pause "exit"
 }

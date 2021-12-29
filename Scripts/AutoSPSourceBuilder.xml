@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <!-- This file is used in conjunction with AutoSPSourceBuilder.ps1.
      It will be updated regularly as new language packs, cumulative updates and service packs are released, so there is normally no need for you to edit it.
      For updates to this file and the associated script, please visit https://github.com/brianlala/AutoSPSourceBuilder/ -->
@@ -713,6 +713,9 @@
             <CumulativeUpdate Name="October 2021" Build="15.0.5389.1000" Url="https://download.microsoft.com/download/7/b/d/7bdfda6f-48cc-48aa-bc3b-1e38922cd161/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="October 2021" Build="15.0.5389.1000" Url="https://download.microsoft.com/download/7/b/d/7bdfda6f-48cc-48aa-bc3b-1e38922cd161/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
             <!--There was no cummulative update released in November 2021-->
+			<CumulativeUpdate Name="December 2021" Build="15.0.5407.1000" Url="https://download.microsoft.com/download/e/7/0/e700d34b-b26b-48d6-8291-88bd8213e7e0/ubersrv2013-kb5002070-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5002070-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2021" Build="15.0.5407.1000" Url="https://download.microsoft.com/download/e/7/0/e700d34b-b26b-48d6-8291-88bd8213e7e0/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="December 2021" Build="15.0.5407.1000" Url="https://download.microsoft.com/download/e/7/0/e700d34b-b26b-48d6-8291-88bd8213e7e0/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -1005,6 +1008,7 @@
             <CumulativeUpdate Name="September 2021" Build="15.0.5381.1000" Url="https://download.microsoft.com/download/c/7/f/c7f476a1-e9da-431f-960e-aa659380c65c/wacserver2013-kb5002009-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5002009-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2021" Build="15.0.5389.1000" Url="https://download.microsoft.com/download/5/6/f/56f029a6-b283-4835-975b-cb6ab82374eb/wacserver2013-kb5002036-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5002036-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2021" Build="15.0.5397.1000" Url="https://download.microsoft.com/download/7/d/a/7daba04f-59dd-45fb-b063-86c595e2671c/wacserver2013-kb5002065-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5002065-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2021" Build="15.0.5407.1000" Url="https://download.microsoft.com/download/c/3/9/c3926141-9a9f-49c3-8af8-38aed12648a4/wacserver2013-kb5002103-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5002103-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -1246,6 +1250,9 @@
             <CumulativeUpdate Name="October 2021" Build="15.0.5389.1000" Url="https://download.microsoft.com/download/a/9/5/a955d98b-a465-4451-96d7-0f29ae56c59d/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="October 2021" Build="15.0.5389.1000" Url="https://download.microsoft.com/download/a/9/5/a955d98b-a465-4451-96d7-0f29ae56c59d/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
             <!--There was no cummulative update released in November 2021-->
+            <CumulativeUpdate Name="December 2021" Build="15.0.5407.1000" Url="https://download.microsoft.com/download/1/9/2/19255f1e-7f64-4570-8527-2b60664e85b0/ubersrvprj2013-kb5002067-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5002067-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2021" Build="15.0.5407.1000" Url="https://download.microsoft.com/download/1/9/2/19255f1e-7f64-4570-8527-2b60664e85b0/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="December 2021" Build="15.0.5407.1000" Url="https://download.microsoft.com/download/1/9/2/19255f1e-7f64-4570-8527-2b60664e85b0/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2016">
@@ -1421,6 +1428,8 @@
             <CumulativeUpdate Name="October 2021" Build="16.0.5227.1000" Url="https://download.microsoft.com/download/1/3/e/13e4fcb9-2c3d-48e1-8aa9-bbd98f408440/sts2016-kb5002029-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002029-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2021" Build="16.0.5227.1000" Url="https://download.microsoft.com/download/f/7/0/f7064ef0-836a-499f-99ed-125f560b0c65/wssloc2016-kb5002006-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002006-fullfile-x64-glb.exe" />
             <!--There was no cummulative update released in November 2021-->
+            <CumulativeUpdate Name="December 2021" Build="16.0.5254.1000" Url="https://download.microsoft.com/download/3/4/4/344be7a9-3d13-46f6-adca-aba6501cf4ec/sts2016-kb5002055-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002055-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2021" Build="16.0.5254.1000" Url="https://download.microsoft.com/download/0/a/3/0a3beafc-65b0-4708-ada4-832e0cf99ecc/wssloc2016-kb5002059-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002059-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1944,6 +1953,8 @@
             <CumulativeUpdate Name="October 2021" Build="16.0.10379.20000" Url="https://download.microsoft.com/download/8/5/5/8550cdeb-d803-44b4-b0a4-f245675adc40/sts2019-kb5002028-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002028-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2021" Build="16.0.10379.20000" Url="https://download.microsoft.com/download/6/4/f/64fcf517-f86d-4d5f-a8d3-16cc8b375991/wssloc2019-kb5002034-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002034-fullfile-x64-glb.exe" />
             <!--There was no cummulative update released in November 2021-->
+            <CumulativeUpdate Name="December 2021" Build="16.0.10381.20001" Url="https://download.microsoft.com/download/b/c/f/bcf198a9-d34e-452e-87e4-8d1e8fe410d8/sts2019-kb5002054-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002054-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2021" Build="16.0.10381.20001" Url="https://download.microsoft.com/download/3/f/3/3f3437e8-7a62-455c-b878-86b71a11cb39/wssloc2019-kb5002061-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002061-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -2184,6 +2195,7 @@
             <CumulativeUpdate Name="September 2021" Build="16.0.10378.20000" Url="https://download.microsoft.com/download/6/b/0/6b08933e-8118-4c7b-b55e-333fbe83174e/wacserver2019-kb5001999-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5001999-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2021" Build="16.0.10379.20000" Url="https://download.microsoft.com/download/e/8/2/e82da578-5ea2-40dd-a9a7-d307c4995e0c/wacserver2019-kb5002027-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002027-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2021" Build="16.0.10380.20000" Url="https://download.microsoft.com/download/9/f/2/9f2ac35e-e111-4bd6-af83-814b5062c62e/wacserver2019-kb5002053-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002053-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2021" Build="16.0.10381.20001" Url="https://download.microsoft.com/download/8/5/e/85e76ead-0b1e-434d-bb15-0d8ab36c3209/wacserver2019-kb5002097-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002097-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/A/0/3/A03B732F-512B-4D29-A2FD-49873FEA60C3/wacserverlanguagepack.exe">
@@ -2396,7 +2408,9 @@
         <ServicePacks>
         </ServicePacks>
         <CumulativeUpdates>
-            <!--There was no cummulative update released in November 2021-->
+            <!--There was no cummulative update released in November 2021-->		
+            <CumulativeUpdate Name="December 2021" Build="16.0.14326.20620" Url="https://download.microsoft.com/download/7/5/a/75a192ab-b21e-44ea-9212-f7046eb6abf0/sts-subscription-kb5002045-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002045-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2021" Build="16.0.14326.20620" Url="https://download.microsoft.com/download/d/9/a/d9adb306-4bc1-4530-919b-12a4f640220c/wssloc-subscription-kb5002047-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002047-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/d/e/7/de7aa90a-b01c-4123-84be-cdaf41a80bed/ServerLanguagePack.iso">

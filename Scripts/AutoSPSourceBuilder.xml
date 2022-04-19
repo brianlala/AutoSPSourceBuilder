@@ -725,6 +725,9 @@
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/4/8/5/485593ec-666f-4ca6-9c1e-d0b883f00bfe/ubersrv2013-kb5002172-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5002172-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/4/8/5/485593ec-666f-4ca6-9c1e-d0b883f00bfe/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/4/8/5/485593ec-666f-4ca6-9c1e-d0b883f00bfe/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="April 2022" Build="15.0.5441.1000" Url="https://download.microsoft.com/download/b/3/2/b328b2df-66a7-4474-aa7d-8f352d4235a1/ubersrv2013-kb5002188-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5002188-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2022" Build="15.0.5441.1000" Url="https://download.microsoft.com/download/b/3/2/b328b2df-66a7-4474-aa7d-8f352d4235a1/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="April 2022" Build="15.0.5441.1000" Url="https://download.microsoft.com/download/b/3/2/b328b2df-66a7-4474-aa7d-8f352d4235a1/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">
@@ -1021,6 +1024,7 @@
             <CumulativeUpdate Name="January 2022" Build="15.0.5415.1000" Url="https://download.microsoft.com/download/1/6/5/1658e215-6260-4c0d-857d-ac87a138b232/wacserver2013-kb5002122-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5002122-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="February 2022" Build="15.0.5423.1000" Url="https://download.microsoft.com/download/6/2/3/62350400-a52c-4d2d-b431-b80f3e77b846/wacserver2013-kb5002149-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5002149-fullfile-x64-glb.exe" />
             <!--There is no Update for Office Web Apps 2013 for March 2022-->
+			<CumulativeUpdate Name="April 2022" Build="15.0.5441.1000" Url="https://download.microsoft.com/download/9/9/f/99fb06e8-aa1e-4f1d-88ef-e43e082aa889/wacserver2013-kb5002169-fullfile-x64-glb.exe" ExpandedFile="wacserver2013-kb5002169-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="de-de" Url="http://download.microsoft.com/download/D/8/6/D8689A1C-A5FC-4279-A397-9CE9198C6FDB/wacserverlanguagepack.exe">
@@ -1274,6 +1278,9 @@
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/e/a/e/eae8c2d3-58bb-41a4-9e17-c1446946fbba/ubersrvprj2013-kb5002171-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5002171-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/e/a/e/eae8c2d3-58bb-41a4-9e17-c1446946fbba/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/e/a/e/eae8c2d3-58bb-41a4-9e17-c1446946fbba/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />            
+			<CumulativeUpdate Name="April 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/8/d/d/8dd1959a-9666-4ec7-8d73-ddf7de23827d/ubersrvprj2013-kb5002186-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5002186-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/8/d/d/8dd1959a-9666-4ec7-8d73-ddf7de23827d//ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
+            <CumulativeUpdate Name="April 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/8/d/d/8dd1959a-9666-4ec7-8d73-ddf7de23827d//ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />            
         </CumulativeUpdates>
     </Product>
     <Product Name="SP2016">
@@ -1459,6 +1466,9 @@
             <CumulativeUpdate Name="March 2022" Build="16.0.5290.1000" Url="https://download.microsoft.com/download/b/7/3/b737cfce-2647-49e2-b22b-7c48d9f14ee3/sts2016-kb5002176-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002176-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in March 2022, so the link below is actually for the last-released language-dependent fix (January 2022)-->
             <CumulativeUpdate Name="March 2022" Build="16.0.5290.1000" Url="https://download.microsoft.com/download/c/d/c/cdc66551-193f-4786-843f-c37e522c5025/wssloc2016-kb5002118-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002118-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2022" Build="16.0.5305.1000" Url="https://download.microsoft.com/download/c/c/1/cc1e71fd-16ea-4239-851e-8bae2ac2abc3/sts2016-kb5002183-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002183-fullfile-x64-glb.exe" />
+			<!--There was no language-dependent fix released for SharePoint 2016 in April 2022, so the link below is actually for the last-released language-dependent fix (January 2022)-->
+			<CumulativeUpdate Name="April 2022" Build="16.0.5305.1000" Url="https://download.microsoft.com/download/c/d/c/cdc66551-193f-4786-843f-c37e522c5025/wssloc2016-kb5002118-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002118-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -1991,7 +2001,9 @@
             <CumulativeUpdate Name="March 2022" Build="16.0.10384.20000" Url="https://download.microsoft.com/download/4/e/c/4ec1908a-66d0-4145-81fb-88b49d5a1b87/sts2019-kb5002163-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002163-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2019 in March 2022, so the link below is actually for the last-released language-dependent fix (February 2022)-->
             <CumulativeUpdate Name="March 2022" Build="16.0.10384.20000" Url="https://download.microsoft.com/download/c/0/8/c08a2f5f-8b80-4e42-ba5e-da2ee8c356bd/wssloc2019-kb5002134-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002134-fullfile-x64-glb.exe" />
-        </CumulativeUpdates>
+			<CumulativeUpdate Name="April 2022" Build="16.0.10385.20001" Url="https://download.microsoft.com/download/e/6/6/e666bc6a-8d6a-4fb0-94c6-f8932bad6907/sts2019-kb5002180-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002180-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2022" Build="16.0.10385.20001" Url="https://download.microsoft.com/download/b/2/7/b275f4c9-e3e6-48d5-bb55-bdfa5f61527b/wssloc2019-kb5002164-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002164-fullfile-x64-glb.exe" />
+            </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
                 <ServicePacks>
@@ -2235,6 +2247,7 @@
             <CumulativeUpdate Name="January 2022" Build="16.0.10382.20004" Url="https://download.microsoft.com/download/d/8/3/d83419f1-2fd4-4dd0-b671-a17511d9b274/wacserver2019-kb5002107-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002107-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="February 2022" Build="16.0.10383.20001" Url="https://download.microsoft.com/download/d/d/0/dd066fba-30f2-426d-a226-4d00928c0df0/wacserver2019-kb5002133-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002133-fullfile-x64-glb.exe" />
             <!--There was no fix released for Office Online Server 2019 in March 2022-->
+			<CumulativeUpdate Name="April 2022" Build="16.0.10385.20001" Url="-https://download.microsoft.com/download/9/b/d/9bd22d8f-5da3-46c8-9345-a468e8f3bdeb/wacserver2019-kb5002162-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002162-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/A/0/3/A03B732F-512B-4D29-A2FD-49873FEA60C3/wacserverlanguagepack.exe">
@@ -2458,6 +2471,9 @@
             <CumulativeUpdate Name="March 2022" Build="16.0.14326.20796" Url="https://download.microsoft.com/download/9/9/2/992f0b42-4fe9-447b-a1a8-5e96fc2dce41/sts-subscription-kb5002165-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002165-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint SE in March 2022, so the link below is actually for the last-released language-dependent fix (January 2022)-->
             <CumulativeUpdate Name="March 2022" Build="16.0.14326.20796" Url="https://download.microsoft.com/download/0/5/f/05fb589e-db35-480f-b7ed-0445f8dd2522/wssloc-subscription-kb5002110-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002110-fullfile-x64-glb.exe" />
+			<CumulativeUpdate Name="April 2022" Build="16.0.14931.20196" Url="https://download.microsoft.com/download/8/3/e/83ecb350-ee10-48a6-8266-f3aeccc89ec4/sts-subscription-kb5002191-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002191-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint SE in April 2022, so the link below is actually for the last-released language-dependent fix (January 2022)-->
+            <CumulativeUpdate Name="April 2022" Build="16.0.14931.20196" Url="https://download.microsoft.com/download/0/5/f/05fb589e-db35-480f-b7ed-0445f8dd2522/wssloc-subscription-kb5002110-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002110-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/d/e/7/de7aa90a-b01c-4123-84be-cdaf41a80bed/ServerLanguagePack.iso">

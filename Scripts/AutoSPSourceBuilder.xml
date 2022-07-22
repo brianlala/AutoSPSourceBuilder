@@ -1286,7 +1286,7 @@
             <CumulativeUpdate Name="February 2022" Build="15.0.5423.1000" Url="https://download.microsoft.com/download/2/0/7/207f8ab0-1c21-42be-8c4b-0c82ed2ef8da/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/e/a/e/eae8c2d3-58bb-41a4-9e17-c1446946fbba/ubersrvprj2013-kb5002171-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5002171-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/e/a/e/eae8c2d3-58bb-41a4-9e17-c1446946fbba/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
-            <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/e/a/e/eae8c2d3-58bb-41a4-9e17-c1446946fbba/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />            
+            <CumulativeUpdate Name="March 2022" Build="15.0.5431.1000" Url="https://download.microsoft.com/download/e/a/e/eae8c2d3-58bb-41a4-9e17-c1446946fbba/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
             <CumulativeUpdate Name="April 2022" Build="15.0.5441.1000" Url="https://download.microsoft.com/download/8/d/d/8dd1959a-9666-4ec7-8d73-ddf7de23827d/ubersrvprj2013-kb5002186-fullfile-x64-glb.exe" ExpandedFile="ubersrvprj2013-kb5002186-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2022" Build="15.0.5441.1000" Url="https://download.microsoft.com/download/8/d/d/8dd1959a-9666-4ec7-8d73-ddf7de23827d/ubersrvprj_1.cab" ExpandedFile="ubersrvprj_1.cab" />
             <CumulativeUpdate Name="April 2022" Build="15.0.5441.1000" Url="https://download.microsoft.com/download/8/d/d/8dd1959a-9666-4ec7-8d73-ddf7de23827d/ubersrvprj_2.cab" ExpandedFile="ubersrvprj_2.cab" />
@@ -2279,8 +2279,8 @@
             <CumulativeUpdate Name="February 2022" Build="16.0.10383.20001" Url="https://download.microsoft.com/download/d/d/0/dd066fba-30f2-426d-a226-4d00928c0df0/wacserver2019-kb5002133-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002133-fullfile-x64-glb.exe" />
             <!--There was no fix released for Office Online Server 2019 in March 2022-->
             <CumulativeUpdate Name="April 2022" Build="16.0.10385.20001" Url="https://download.microsoft.com/download/9/b/d/9bd22d8f-5da3-46c8-9345-a468e8f3bdeb/wacserver2019-kb5002162-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002162-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="May 2022" Build="16.0.10386.20015" Url="https://download.microsoft.com/download/1/a/2/1a2bdd73-948e-405b-b00e-f72ae25d4987/wacserver2019-kb5002205-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002205-fullfile-x64-glb.exe" />            
-            <CumulativeUpdate Name="June 2022" Build="16.0.10387.20000" Url="https://download.microsoft.com/download/a/f/6/af619ecf-7fcc-4f93-8778-dc28b0339fc9/wacserver2019-kb5002210-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002210-fullfile-x64-glb.exe" />            
+            <CumulativeUpdate Name="May 2022" Build="16.0.10386.20015" Url="https://download.microsoft.com/download/1/a/2/1a2bdd73-948e-405b-b00e-f72ae25d4987/wacserver2019-kb5002205-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002205-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="June 2022" Build="16.0.10387.20000" Url="https://download.microsoft.com/download/a/f/6/af619ecf-7fcc-4f93-8778-dc28b0339fc9/wacserver2019-kb5002210-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002210-fullfile-x64-glb.exe" />
             <!--There was no fix released for Office Online Server 2019 in July 2022-->
         </CumulativeUpdates>
         <LanguagePacks>
@@ -2494,7 +2494,7 @@
         <ServicePacks>
         </ServicePacks>
         <CumulativeUpdates>
-            <!--There was no cummulative update released in November 2021-->		
+            <!--There was no cummulative update released in November 2021-->
             <CumulativeUpdate Name="December 2021" Build="16.0.14326.20620" Url="https://download.microsoft.com/download/7/5/a/75a192ab-b21e-44ea-9212-f7046eb6abf0/sts-subscription-kb5002045-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002045-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2021" Build="16.0.14326.20620" Url="https://download.microsoft.com/download/d/9/a/d9adb306-4bc1-4530-919b-12a4f640220c/wssloc-subscription-kb5002047-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002047-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2022" Build="16.0.14326.20714" Url="https://download.microsoft.com/download/d/e/3/de3d7c9f-b5b0-4941-afde-aabb4a7c02be/sts-subscription-kb5002111-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002111-fullfile-x64-glb.exe" />
@@ -2508,11 +2508,11 @@
             <CumulativeUpdate Name="April 2022" Build="16.0.14931.20196" Url="https://download.microsoft.com/download/8/3/e/83ecb350-ee10-48a6-8266-f3aeccc89ec4/sts-subscription-kb5002191-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002191-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint SE in April 2022, so the link below is actually for the last-released language-dependent fix (January 2022)-->
             <CumulativeUpdate Name="April 2022" Build="16.0.14931.20196" Url="https://download.microsoft.com/download/0/5/f/05fb589e-db35-480f-b7ed-0445f8dd2522/wssloc-subscription-kb5002110-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002110-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="May 2022" Build="16.0.14931.20286" Url="https://download.microsoft.com/download/5/8/1/58159241-1dd7-4503-afd6-d08eb223f5ab/sts-subscription-kb5002194-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002194-fullfile-x64-glb.exe" />            
+            <CumulativeUpdate Name="May 2022" Build="16.0.14931.20286" Url="https://download.microsoft.com/download/5/8/1/58159241-1dd7-4503-afd6-d08eb223f5ab/sts-subscription-kb5002194-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002194-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2022" Build="16.0.14931.20286" Url="https://download.microsoft.com/download/3/5/5/355e69ef-43da-4d06-b7c1-fa658939b6cb/wssloc-subscription-kb5002144-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002144-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="June 2022" Build="16.0.14931.20418" Url="https://download.microsoft.com/download/3/3/5/335711e8-17be-4aab-ba82-54574db987d9/sts-subscription-kb5002224-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002224-fullfile-x64-glb.exe" />            
+            <CumulativeUpdate Name="June 2022" Build="16.0.14931.20418" Url="https://download.microsoft.com/download/3/3/5/335711e8-17be-4aab-ba82-54574db987d9/sts-subscription-kb5002224-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002224-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2022" Build="16.0.14931.20418" Url="https://download.microsoft.com/download/d/c/8/dc8bd05e-97db-4be2-9745-78712cffc584/wssloc-subscription-kb5002225-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002225-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="July 2022" Build="16.0.14931.20502" Url="https://download.microsoft.com/download/2/d/a/2dad7602-6194-4314-b615-7627fa07ac11/sts-subscription-kb5002234-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002234-fullfile-x64-glb.exe" />            
+            <CumulativeUpdate Name="July 2022" Build="16.0.14931.20502" Url="https://download.microsoft.com/download/2/d/a/2dad7602-6194-4314-b615-7627fa07ac11/sts-subscription-kb5002234-fullfile-x64-glb.exe" ExpandedFile="sts-subscription-kb5002234-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint SE in July 2022, so the link below is actually for the last-released language-dependent fix (June 2022)-->
             <CumulativeUpdate Name="July 2022" Build="16.0.14931.20502" Url="https://download.microsoft.com/download/d/c/8/dc8bd05e-97db-4be2-9745-78712cffc584/wssloc-subscription-kb5002225-fullfile-x64-glb.exe" ExpandedFile="wssloc-subscription-kb5002225-fullfile-x64-glb.exe" />
         </CumulativeUpdates>

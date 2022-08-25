@@ -1,6 +1,6 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.3.0
+.VERSION 2.0.3.1
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME
@@ -334,7 +334,7 @@ else
     if (!$?)
     {
         # Try alternate method
-        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts/AutoSPSourceBuilder.xml" -TimeoutSec 3600 -MaximumRetryCount 60 -OutFile "$dp0\AutoSPSourceBuilder.xml" -Method Get
+        Invoke-WebRequest -Uri "https://raw.githubusercontent.com/brianlala/AutoSPSourceBuilder/master/Scripts/AutoSPSourceBuilder.xml" -TimeoutSec 3600 -OutFile "$dp0\AutoSPSourceBuilder.xml" -Method Get
         if (!$?)
         {
             throw "Could not download AutoSPSourceBuilder.xml file!"

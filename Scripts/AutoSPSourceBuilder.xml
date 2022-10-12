@@ -741,9 +741,9 @@
             <CumulativeUpdate Name="September 2022" Build="15.0.5485.1000" Url="https://download.microsoft.com/download/b/6/b/b6bc89bf-266e-41f0-9ecf-fb41ad65ffcd/ubersrv2013-kb5002264-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5002264-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2022" Build="15.0.5485.1000" Url="https://download.microsoft.com/download/b/6/b/b6bc89bf-266e-41f0-9ecf-fb41ad65ffcd/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
             <CumulativeUpdate Name="September 2022" Build="15.0.5485.1000" Url="https://download.microsoft.com/download/b/6/b/b6bc89bf-266e-41f0-9ecf-fb41ad65ffcd/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
-            <CumulativeUpdate Name="Octoboer 2022" Build="15.0.5493.1000" Url="https://download.microsoft.com/download/0/9/a/09a18a51-3cba-45e9-a5d9-f53649e45f6b/ubersrv2013-kb5002283-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5002283-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="Octoboer 2022" Build="15.0.5493.1000" Url="https://download.microsoft.com/download/0/9/a/09a18a51-3cba-45e9-a5d9-f53649e45f6b/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
-            <CumulativeUpdate Name="Octoboer 2022" Build="15.0.5493.1000" Url="https://download.microsoft.com/download/0/9/a/09a18a51-3cba-45e9-a5d9-f53649e45f6b/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
+            <CumulativeUpdate Name="October 2022" Build="15.0.5493.1000" Url="https://download.microsoft.com/download/0/9/a/09a18a51-3cba-45e9-a5d9-f53649e45f6b/ubersrv2013-kb5002283-fullfile-x64-glb.exe" ExpandedFile="ubersrv2013-kb5002283-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="October 2022" Build="15.0.5493.1000" Url="https://download.microsoft.com/download/0/9/a/09a18a51-3cba-45e9-a5d9-f53649e45f6b/ubersrv_1.cab" ExpandedFile="ubersrv_1.cab" />
+            <CumulativeUpdate Name="October 2022" Build="15.0.5493.1000" Url="https://download.microsoft.com/download/0/9/a/09a18a51-3cba-45e9-a5d9-f53649e45f6b/ubersrv_2.cab" ExpandedFile="ubersrv_2.cab" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="pl-pl" Url="http://download.microsoft.com/download/3/3/3/3331D355-BBAA-4D86-A2AD-FEC7D45261FC/serverlanguagepack.img">

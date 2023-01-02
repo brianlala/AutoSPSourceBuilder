@@ -2070,7 +2070,7 @@
             <CumulativeUpdate Name="October 2022" Build="16.0.10391.20000" Url="https://download.microsoft.com/download/f/c/8/fc831a31-5aa8-4a1b-929e-530ba30f43a1/wssloc2019-kb5002277-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002277-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2022" Build="16.0.10392.20000" Url="https://download.microsoft.com/download/9/d/b/9dba3f28-2e0a-40c8-a926-ec569b9509cb/sts2019-kb5002294-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002294-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2022" Build="16.0.10392.20000" Url="https://download.microsoft.com/download/e/8/b/e8be84d9-aae9-4625-8bc3-391a891d39c1/wssloc2019-kb5002295-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002295-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="December 2022" Build="16.0.10393.20000" Url="https://download.microsoft.com/download/3/9/a/39adb64f-9482-4f52-a0dc-53028b69f470/sts2019-kb5002311-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002311-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2022" Build="16.0.10393.20000" Url="https://download.microsoft.com/download/5/6/4/564eddf4-6009-47a4-89be-a7b123cc4d5a/sts2019-kb4461512-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb4461512-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2022" Build="16.0.10393.20000" Url="https://download.microsoft.com/download/6/5/8/6582a321-a70d-4919-b8e7-beaf1209df61/wssloc2019-kb5002310-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002310-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>

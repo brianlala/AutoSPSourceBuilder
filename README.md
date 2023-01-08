@@ -1,7 +1,7 @@
 # AutoSPSourceBuilder
 AutoSPSourceBuilder: A utility for building SharePoint 2010 / 2013 / 2016 / 2019 / SE install sources w/ prerequisites, service packs, language packs and cumulative/public updates.
 
-Install it quickly and easily by running this PowerShell command: Install-Script -Name AutoSPSourceBuilder
+Install it quickly from the PowerShell Gallery by running this PowerShell command: Install-Script -Name AutoSPSourceBuilder
 
 See the Wiki for more info.
 

@@ -1524,7 +1524,7 @@
             <CumulativeUpdate Name="December 2022" Build="16.0.5374.1000" Url="https://download.microsoft.com/download/5/1/8/518938c5-b76f-4f53-ba48-dfadb89ff542/sts2016-kb5002321-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002321-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in December 2022, so the link below is actually for the last-released language-dependent fix (November 2022)-->
             <CumulativeUpdate Name="December 2022" Build="16.0.5374.1000" Url="https://download.microsoft.com/download/8/c/3/8c397b8d-06e6-49bb-b7aa-aeb9d7f39cbf/wssloc2016-kb5002289-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002289-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="January 2023" Build="16.0.5378.1000" Url="https://download.microsoft.com/download/5/b/a/5ba486d8-1d01-4733-b7da-55b60a0169fe/sts2016-kb5002338-fullfile-x64-glb.exee" ExpandedFile="sts2016-kb5002338-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="January 2023" Build="16.0.5378.1000" Url="https://download.microsoft.com/download/5/b/a/5ba486d8-1d01-4733-b7da-55b60a0169fe/sts2016-kb5002338-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002338-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in January 2023, so the link below is actually for the last-released language-dependent fix (November 2022)-->
             <CumulativeUpdate Name="January 2023" Build="16.0.5378.1000" Url="https://download.microsoft.com/download/8/c/3/8c397b8d-06e6-49bb-b7aa-aeb9d7f39cbf/wssloc2016-kb5002289-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002289-fullfile-x64-glb.exe" />
         </CumulativeUpdates>

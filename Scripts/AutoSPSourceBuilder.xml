@@ -1569,6 +1569,9 @@
             <CumulativeUpdate Name="June 2023" Build="16.0.5400.1001" Url="https://download.microsoft.com/download/5/a/7/5a75e07d-26b0-4b6a-9154-27e9a0224e1f/sts2016-kb5002404-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002404-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in June 2023, so the link below is actually for the last-released language-dependent fix (April 2023)-->
             <CumulativeUpdate Name="June 2023" Build="16.0.5400.1001" Url="https://download.microsoft.com/download/c/5/c/c5cc1b6d-4879-42ed-bf46-7830a40328b7/wssloc2016-kb5002370-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002370-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2023" Build="16.0.5404.1000" Url="https://download.microsoft.com/download/d/5/5/d559e3b7-8cbe-474c-8323-b80ddca90193/sts2016-kb5002425-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002425-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2016 in July 2023, so the link below is actually for the last-released language-dependent fix (April 2023)-->
+            <CumulativeUpdate Name="July 2023" Build="16.0.5404.1000" Url="https://download.microsoft.com/download/c/5/c/c5cc1b6d-4879-42ed-bf46-7830a40328b7/wssloc2016-kb5002370-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002370-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -2134,6 +2137,9 @@
             <CumulativeUpdate Name="May 2023" Build="16.0.10398.20000" Url="https://download.microsoft.com/download/f/5/b/f5b6c1bf-0f86-4e67-bad3-9c710f26345c/wssloc2019-kb5002374-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002374-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2023" Build="16.0.10399.20005" Url="https://download.microsoft.com/download/e/d/5/ed561085-9ac6-40fe-9c63-eb10f769d4c3/sts2019-kb5002402-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002402-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2023" Build="16.0.10399.20005" Url="https://download.microsoft.com/download/7/1/c/71cd047e-c25c-440c-989a-da2eb594be83/wssloc2019-kb5002403-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002403-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2023" Build="16.0.10400.20008" Url="https://download.microsoft.com/download/7/1/5/715174ce-f2bd-423c-af2a-27c7f213dc8f/sts2019-kb5002423-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002423-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2019 in July 2023, so the link below is actually for the last-released language-dependent fix (June 2023)-->
+            <CumulativeUpdate Name="July 2023" Build="16.0.10400.20008" Url="https://download.microsoft.com/download/7/1/c/71cd047e-c25c-440c-989a-da2eb594be83/wssloc2019-kb5002403-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002403-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -2393,6 +2399,7 @@
             <!--There was no fix released for Office Online Server 2019 in April 2023-->
             <CumulativeUpdate Name="May 2023" Build="16.0.10398.20000" Url="https://download.microsoft.com/download/d/2/e/d2efffe4-ec13-478d-adb5-de34e48ffbe6/wacserver2019-kb5002372-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002372-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2023" Build="16.0.10399.20000" Url="https://download.microsoft.com/download/6/a/c/6ac8232f-2d7c-4262-85c4-e15f93d67743/wacserver2019-kb5002401-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002401-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2023" Build="16.0.10400.20000" Url="https://download.microsoft.com/download/6/2/0/620911da-8afd-4cb0-8822-63bcac5fd103/wacserver2019-kb5002421-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002421-fullfile-x64-glb.exe" />        
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/A/0/3/A03B732F-512B-4D29-A2FD-49873FEA60C3/wacserverlanguagepack.exe">
@@ -2654,6 +2661,7 @@
             <CumulativeUpdate Name="April 2023" Build="16.0.16130.20314" Url="https://download.microsoft.com/download/2/5/1/25109af0-aa7d-4803-bb52-48a821b26c53/uber-subscription-kb5002375-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002375-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2023" Build="16.0.16130.20420" Url="https://download.microsoft.com/download/3/a/3/3a3a9292-3462-42c8-93de-9230cd6525f1/uber-subscription-kb5002390-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002390-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2023" Build="16.0.16130.20548" Url="https://download.microsoft.com/download/7/8/1/7815f490-772c-42a9-9751-e19f12fbb50c/uber-subscription-kb5002416-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002416-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2023" Build="16.0.16130.20642" Url="https://download.microsoft.com/download/f/7/6/f76a6f36-d17c-47cf-915e-22f211f17b97/uber-subscription-kb5002424-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002424-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/d/e/7/de7aa90a-b01c-4123-84be-cdaf41a80bed/ServerLanguagePack.iso">

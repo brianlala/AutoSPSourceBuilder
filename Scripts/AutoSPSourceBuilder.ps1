@@ -359,10 +359,14 @@ if (!([string]::IsNullOrEmpty($SharePointVersion)))
 }
 
 $Destination = $Destination.TrimEnd("\")
-# Ensure the Destination has the year at the end of the path, in case we forgot to type it in when/if prompted
+# Ensure the Destination and Location for Updates have the "year" within the path, in case we forgot to type it in when/if prompted
 if (!($Destination -like "*$spYear"))
 {
     $Destination = $Destination+"\"+$spYear
+}
+if (!($LocationForUpdates -like "*\$spYear\*"))
+{
+    $LocationForUpdates = (Split-Path $LocationForUpdates -Parent)+"\"+$spYear+"\"+(Split-Path $LocationForUpdates -Leaf)
 }
 Write-Verbose -Message "Destination is `"$Destination`""
 Write-Verbose -Message "Update location is `"$LocationForUpdates`""

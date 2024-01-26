@@ -822,7 +822,7 @@ if ($WACSourceLocation)
     if ($wacServicePack.Name -eq "SP2" -and $spYear -eq "2010") {$wacMspCount = 32}
     else {$wacMspCount = 0}
     # Create a hash table with some directories to look for to confirm the valid presence of the WAC binaries. Not perfect.
-    $wacTestDirs = @{"2010" = "XLSERVERWAC.en-us"; "2013" = "wacservermui.en-us"; "2016" = "wacserver.ww"}
+    $wacTestDirs = @{"2010" = "XLSERVERWAC.en-us"; "2013" = "wacservermui.en-us"; "2016" = "wacserver.ww"; "2019" = "Wacserver.WW"}
     ##if ($spYear -eq "2010") {$wacTestDir = "XLSERVERWAC.en-us"}
     ##elseif ($spYear -eq "2013") {$wacTestDir = "wacservermui.en-us"}
     # Try to find a OWA/OOS update that matches the current month for the SharePoint update
@@ -865,8 +865,9 @@ if ($WACSourceLocation)
         }
         WriteLine
     }
+    else
     {
-        Write-Verbose -Message "Skipping $wacProductName updates since GetPrerequisites wasn't specified or $wacProductName is older than 2013."
+        Write-Verbose -Message "Skipping $wacProductName prerequisites since GetPrerequisites wasn't specified or $wacProductName is older than 2013."
     }
     # Extract Office Web Apps / Online Server files to $Destination\$wacNodeName
     $sourceDirWAC = $WACSourceLocation.TrimEnd("\")
@@ -910,7 +911,7 @@ if ($WACSourceLocation)
             Remove-ReadOnlyAttribute -Path "$Destination\$wacNodeName\Updates"
             # Extract Office Web Apps / Online Server service pack files to $Destination\$wacNodeName\Updates
             $wacServicePackExpandedFile = $($wacServicePack.Url).Split('/')[-1]
-            Write-Verbose -Message " - Extracting from '$$LocationForUpdates\$wacServicePackSubfolder\$wacServicePackExpandedFile'"
+            Write-Verbose -Message "Extracting from '$$LocationForUpdates\$wacServicePackSubfolder\$wacServicePackExpandedFile'"
             Write-Host " - Extracting $wacProductName $($wacServicePack.Name) patch files..." -NoNewline
             Start-Process -FilePath "$LocationForUpdates\$wacServicePackSubfolder\$wacServicePackExpandedFile" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
             Read-Log
@@ -929,16 +930,24 @@ if ($WACSourceLocation)
         foreach ($wacCUPackage in $wacCU)
         {
             Write-Output " - Getting $wacProductName $wacCUName update:"
-            $wacCuFileZip = $($wacCUPackage.Url).Split('/')[-1] +".zip"
+            if ($wacCUPackage.Url -like "*zip.exe")
+            {
+                $wacCuFileIsZip = $true
+                $wacCuFile = $($wacCUPackage.Url).Split('/')[-1] +".zip"
+            }
+            else
+            {
+                $wacCuFile = $wacCUPackage.ExpandedFile
+            }
             # Set the subfolder name for easy update build & name identification, for example, "15.0.4481.1005 (March 2013)"
             $wacUpdateSubfolder = $wacCUBuild+" ("+$wacCUName+")"
             EnsureFolder -Path "$LocationForUpdates\$wacUpdateSubfolder"
-            DownloadPackage -Url $($wacCUPackage.Url) -ExpandedFile $($wacCUPackage.ExpandedFile) -DestinationFolder "$LocationForUpdates\$wacUpdateSubfolder" -destinationFile $wacCuFileZip
+            DownloadPackage -Url $($wacCUPackage.Url) -ExpandedFile $($wacCUPackage.ExpandedFile) -DestinationFolder "$LocationForUpdates\$wacUpdateSubfolder" -destinationFile $wacCuFile
 
             # Expand Office Web Apps / Online Server CU executable to $LocationForUpdates\$wacUpdateSubfolder
-            If (!(Test-Path "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)")) # Check if the expanded file is already there
+            If (!(Test-Path "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)") -and $wacCuFileIsZip) # Check if the expanded file is already there
             {
-                $wacCuFileZipPath = Join-Path -Path "$LocationForUpdates\$wacUpdateSubfolder" -ChildPath $wacCuFileZip
+                $wacCuFileZipPath = Join-Path -Path "$LocationForUpdates\$wacUpdateSubfolder" -ChildPath $wacCuFile
                 Write-Output " - Expanding $wacProductName $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update (single file)..."
                 EnsureFolder -Path "$LocationForUpdates\$wacUpdateSubfolder"
                 # Remove any pre-existing hotfix.txt file so we aren't prompted to replace it by Expand-Zip and cause our script to pause
@@ -950,7 +959,7 @@ if ($WACSourceLocation)
             }
             Remove-ReadOnlyAttribute -Path "$Destination\$wacNodeName\Updates"
             # Extract Office Web Apps / Online Server CU files to $Destination\$wacNodeName\Updates
-            Write-Verbose -Message " - Extracting from '$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)'"
+            Write-Verbose -Message "Extracting from '$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)'"
             Write-Host " - Extracting $wacProductName $(if ($spYear -ge 2016 -or $spYear -eq "SE") {"Public"} else {"Cumulative"}) Update patch files..." -NoNewline
             Start-Process -FilePath "$LocationForUpdates\$wacUpdateSubfolder\$($wacCUPackage.ExpandedFile)" -ArgumentList "/extract:`"$Destination\$wacNodeName\Updates`" /passive" -Wait -NoNewWindow
             Write-Host "done!"

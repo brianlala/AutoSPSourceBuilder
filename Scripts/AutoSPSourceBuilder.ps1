@@ -1,10 +1,10 @@
 ﻿
 <#PSScriptInfo
-.VERSION 2.0.3.1
+.VERSION 2.0.3.5
 .GUID 6ba84db4-f1a9-4079-bd19-39cd044c6b11
 .AUTHOR Brian Lalancette (@brianlala)
 .COMPANYNAME
-.COPYRIGHT 2021 Brian Lalancette
+.COPYRIGHT 2024 Brian Lalancette
 .TAGS SharePoint
 .LICENSEURI
 .PROJECTURI https://github.com/brianlala/AutoSPSourceBuilder
@@ -69,7 +69,7 @@
     https://github.com/brianlala/autospinstaller
     http://www.toddklindt.com/sp2010builds
 .NOTES
-    Created & maintained by Brian Lalancette (@brianlala), 2012-2018.
+    Created & maintained by Brian Lalancette (@brianlala), 2012-2024.
 #>
 [CmdletBinding()]
 param

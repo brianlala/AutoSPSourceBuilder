@@ -1601,6 +1601,10 @@
             <CumulativeUpdate Name="July 2024" Build="16.0.5456.1000" Url="https://download.microsoft.com/download/d/d/6/dd63db3f-c434-42dc-89c8-7f06d42fdf9f/sts2016-kb5002618-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002618-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in July 2024, so the link below is actually for the last-released language-dependent fix (December 2023)-->
             <CumulativeUpdate Name="July 2024" Build="16.0.5456.1000" Url="https://download.microsoft.com/download/0/2/9/029a76b8-aa40-42de-b689-9bca06bc2198/wssloc2016-kb5002524-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002524-fullfile-x64-glb.exe" />
+            <!--There was no CU in August 2024 -->
+            <CumulativeUpdate Name="September 2024" Build="16.0.5465.1001" Url="https://download.microsoft.com/download/e/3/8/e383383d-0c97-4f96-a8f7-6be51b0efbac/sts2016-kb5002624-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002624-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2016 in September 2024, so the link below is actually for the last-released language-dependent fix (December 2023)-->
+            <CumulativeUpdate Name="September 2024" Build="16.0.5465.1001" Url="https://download.microsoft.com/download/0/2/9/029a76b8-aa40-42de-b689-9bca06bc2198/wssloc2016-kb5002524-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002524-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -2202,6 +2206,9 @@
             <CumulativeUpdate Name="July 2024" Build="16.0.10412.20001" Url="https://download.microsoft.com/download/7/e/8/7e8afdd8-5b84-4543-87c2-bdb89858516a/wssloc2019-kb5002538-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002538-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2024" Build="16.0.10413.20000" Url="https://download.microsoft.com/download/2/d/7/2d77aff4-b800-4e65-b907-7d7e442e07e8/sts2019-kb5002630-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002630-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2024" Build="16.0.10413.20000" Url="https://download.microsoft.com/download/4/c/2/4c2d9fcb-b467-4486-bdb5-90d5f50a0165/wssloc2019-kb5002597-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002597-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2024" Build="16.0.10414.20002" Url="https://download.microsoft.com/download/a/d/3/ad385d3d-c6a2-4ba4-9d9e-f92effee0216/sts2019-kb5002639-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002639-fullfile-x64-glb.exe" />
+            <!--There was no language-dependent fix released for SharePoint 2019 in September 2024", so the link below is actually for the last-released language-dependent fix (August 2024)-->
+            <CumulativeUpdate Name="September 2024" Build="16.0.10414.20002" Url="https://download.microsoft.com/download/4/c/2/4c2d9fcb-b467-4486-bdb5-90d5f50a0165/wssloc2019-kb5002597-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002597-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -2465,6 +2472,7 @@
             <CumulativeUpdate Name="August 2023" Build="16.0.10401.20022" Url="https://download.microsoft.com/download/2/4/c/24cc6dda-b530-49d2-9632-917ffb42d611/wacserver2019-kb5002435-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002435-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="September 2023" Build="16.0.10402.20000" Url="https://download.microsoft.com/download/7/2/0/7202f280-d3f2-444d-9658-24aed2db6afd/wacserver2019-kb5002470-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002470-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2024" Build="16.0.10410.20003" Url="https://download.microsoft.com/download/2/7/4/27485255-e780-4fde-b4dd-5723addfbd7e/wacserver2019-kb5002503-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002503-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2024" Build="16.0.10414.20000" Url="https://download.microsoft.com/download/e/8/5/e8550803-2392-4bfc-9675-328cacc06745/wacserver2019-kb5002601-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002601-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/A/0/3/A03B732F-512B-4D29-A2FD-49873FEA60C3/wacserverlanguagepack.exe">
@@ -2740,6 +2748,7 @@
             <CumulativeUpdate Name="June 2024" Build="16.0.17328.20362" Url="https://download.microsoft.com/download/5/8/f/58fcfd0c-a364-4e96-a4f2-95c421279785/uber-subscription-kb5002603-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002603-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="July 2024" Build="16.0.17328.20424" Url="https://download.microsoft.com/download/c/2/0/c20b87cc-da05-4793-bd7b-c424a6a6df33/uber-subscription-kb5002606-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002606-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="August 2024" Build="16.0.17328.20478" Url="https://download.microsoft.com/download/9/0/b/90b9d2b0-0f76-408d-950f-b3b2f3c50c83/uber-subscription-kb5002629-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002629-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="September 2024" Build="16.0.17928.20086" Url="https://download.microsoft.com/download/6/6/a/66a0057f-79af-4307-8263-103ee75ef5c6/uber-subscription-kb5002640-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002640-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/d/e/7/de7aa90a-b01c-4123-84be-cdaf41a80bed/ServerLanguagePack.iso">

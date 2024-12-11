@@ -1611,6 +1611,8 @@
             <CumulativeUpdate Name="November 2024" Build="16.0.5474.1001" Url="https://download.microsoft.com/download/2/d/8/2d8102c2-e356-4ac7-b311-5a7de85abb28/sts2016-kb5002654-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002654-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2016 in November 2024, so the link below is actually for the last-released language-dependent fix (December 2023)-->
             <CumulativeUpdate Name="November 2024" Build="16.0.5474.1001" Url="https://download.microsoft.com/download/0/2/9/029a76b8-aa40-42de-b689-9bca06bc2198/wssloc2016-kb5002524-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002524-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2024" Build="16.0.5478.1000" Url="https://download.microsoft.com/download/8/5/6/85632c9b-b3ab-41e9-8ce3-2fb1c8ca0edf/sts2016-kb5002659-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002659-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2024" Build="16.0.5478.1000" Url="https://download.microsoft.com/download/8/b/2/8b28e988-35c9-438f-b018-b2d61f5d4dc2/wssloc2016-kb5002544-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002544-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -2221,6 +2223,8 @@
             <CumulativeUpdate Name="November 2024" Build="16.0.10416.20000" Url="https://download.microsoft.com/download/e/8/6/e86dadad-c8b4-4c32-831b-205e7254ce7a/sts2019-kb5002650-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002650-fullfile-x64-glb.exe" />
             <!--There was no language-dependent fix released for SharePoint 2019 in November 2024", so the link below is actually for the last-released language-dependent fix (August 2024)-->
             <CumulativeUpdate Name="November 2024" Build="16.0.10416.20000" Url="https://download.microsoft.com/download/4/c/2/4c2d9fcb-b467-4486-bdb5-90d5f50a0165/wssloc2019-kb5002597-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002597-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2024" Build="16.0.10416.20026" Url="https://download.microsoft.com/download/1/c/4/1c4a305e-d10b-40b9-bb07-5a643232b1b2/sts2019-kb5002657-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002657-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2024" Build="16.0.10416.20026" Url="https://download.microsoft.com/download/6/7/3/673283ae-d9f4-4e77-a0b3-db2bc3b1ecff/wssloc2019-kb5002664-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002664-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -2764,6 +2768,7 @@
             <CumulativeUpdate Name="September 2024" Build="16.0.17928.20086" Url="https://download.microsoft.com/download/6/6/a/66a0057f-79af-4307-8263-103ee75ef5c6/uber-subscription-kb5002640-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002640-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="October 2024" Build="16.0.17928.20162" Url="https://download.microsoft.com/download/b/c/d/bcd4b3cb-25d1-4946-b8fd-b99ee62848bb/uber-subscription-kb5002649-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002649-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="November 2024" Build="16.0.17928.20238" Url="https://download.microsoft.com/download/4/b/4/4b4d907f-2e25-4972-a7b1-dfe8d1c0fadb/uber-subscription-kb5002651-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002651-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="December 2024" Build="16.0.17928.20290" Url="https://download.microsoft.com/download/c/e/c/ceca0241-efca-4484-9d76-5661806f16c4/uber-subscription-kb5002658-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002658-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/d/e/7/de7aa90a-b01c-4123-84be-cdaf41a80bed/ServerLanguagePack.iso">

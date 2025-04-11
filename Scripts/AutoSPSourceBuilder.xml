@@ -1619,7 +1619,7 @@
             <!--There was no language-dependent fix released for SharePoint 2016 in February 2025, so the link below is actually for the last-released language-dependent fix (January 2023)-->
             <CumulativeUpdate Name="February 2025" Build="16.0.5487.1000" Url="https://download.microsoft.com/download/3/b/b/3bb3fc40-9ec2-4e14-a447-a05372facc8b/wssloc2016-kb5002671-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002671-fullfile-x64-glb.exe" />
             <!--There is no Update for SharePoint 2016 in March 2025-->
-            <!-- April 2025 (KB 5002692 is temporarily unavailable following some customer reports that the update can't be installed. We are currently investigating the issue and will post an update in this article when the issue is resolved.  )-->
+            <!-- April 2025 (KB 5002692 is temporarily unavailable following some customer reports that the update can't be installed. An incorrectly signed DLL is causing problems.  )-->
             <!--
             <CumulativeUpdate Name="April 2025" Build="16.0.5495.1002" Url="https://download.microsoft.com/download/a7868a73-952a-4b82-b725-e8d4ce0215b3/sts2016-kb5002692-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002692-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2025" Build="16.0.5495.1002" Url="https://download.microsoft.com/download/45e75012-292d-4a11-a25e-167f9a5e1018/wssloc2016-kb5002682-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002682-fullfile-x64-glb.exe" />

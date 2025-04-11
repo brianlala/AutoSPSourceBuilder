@@ -1619,8 +1619,11 @@
             <!--There was no language-dependent fix released for SharePoint 2016 in February 2025, so the link below is actually for the last-released language-dependent fix (January 2023)-->
             <CumulativeUpdate Name="February 2025" Build="16.0.5487.1000" Url="https://download.microsoft.com/download/3/b/b/3bb3fc40-9ec2-4e14-a447-a05372facc8b/wssloc2016-kb5002671-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002671-fullfile-x64-glb.exe" />
             <!--There is no Update for SharePoint 2016 in March 2025-->
+            <!-- April 2025 (KB 5002692 is temporarily unavailable following some customer reports that the update can't be installed. We are currently investigating the issue and will post an update in this article when the issue is resolved.  )-->
+            <!--
             <CumulativeUpdate Name="April 2025" Build="16.0.5495.1002" Url="https://download.microsoft.com/download/a7868a73-952a-4b82-b725-e8d4ce0215b3/sts2016-kb5002692-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002692-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="April 2025" Build="16.0.5495.1002" Url="https://download.microsoft.com/download/45e75012-292d-4a11-a25e-167f9a5e1018/wssloc2016-kb5002682-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002682-fullfile-x64-glb.exe" />
+            -->
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -2240,7 +2243,7 @@
             <CumulativeUpdate Name="February 2025" Build="16.0.10416.20050" Url="https://download.microsoft.com/download/8/7/9/879956c5-c42d-4777-a2a3-d25f5887547d/wssloc2019-kb5002667-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002667-fullfile-x64-glb.exe" />
             <!--There is no Update for SharePoint 2019 in March 2025-->
             <CumulativeUpdate Name="April 2025" Build="16.0.10417.20003" Url="https://download.microsoft.com/download/d84c808c-7bd8-4147-8f54-c0d9096cec6b/sts2019-kb5002691-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002691-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="April 2025" Build="16.0.10417.20003" Url="https://download.microsoft.com/download/86a94a4e-14bc-4e2d-8f91-e022ab30fc30/wssloc2019-kb5002680-fullfile-x64-glb%20(1).exe" ExpandedFile="wssloc2019-kb5002680-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2025" Build="16.0.10417.20003" Url="https://download.microsoft.com/download/86a94a4e-14bc-4e2d-8f91-e022ab30fc30/wssloc2019-kb5002680-fullfile-x64-glb%20(1).exe" ExpandedFile="wssloc2019-kb5002680-fullfile-x64-glb%20(1).exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">

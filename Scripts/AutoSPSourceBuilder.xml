@@ -1622,8 +1622,9 @@
             <!-- April 2025 (KB 5002692 is temporarily unavailable following some customer reports that the update can't be installed. An incorrectly signed DLL is causing problems.  )-->
             <!--
             <CumulativeUpdate Name="April 2025" Build="16.0.5495.1002" Url="https://download.microsoft.com/download/a7868a73-952a-4b82-b725-e8d4ce0215b3/sts2016-kb5002692-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002692-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="April 2025" Build="16.0.5495.1002" Url="https://download.microsoft.com/download/45e75012-292d-4a11-a25e-167f9a5e1018/wssloc2016-kb5002682-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002682-fullfile-x64-glb.exe" />
             -->
+            <CumulativeUpdate Name="April 2025" Build="16.0.5495.1003" Url="https://download.microsoft.com/download/d9aff69f-5117-4889-8af5-c1cf5cebe71a/sts2016-kb5002692-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002692-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="April 2025" Build="16.0.5495.1003" Url="https://download.microsoft.com/download/45e75012-292d-4a11-a25e-167f9a5e1018/wssloc2016-kb5002682-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002682-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">

@@ -2255,8 +2255,10 @@
             <CumulativeUpdate Name="May 2025" Build="16.0.10417.20010" Url="https://download.microsoft.com/download/1478b2e5-5421-44dd-aba3-8738c6168cc6/wssloc2019-kb5002706-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002706-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2025" Build="16.0.10417.20018" Url="https://download.microsoft.com/download/32736987-8572-4f58-8b18-f072399917b9/sts2019-kb5002729-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002729-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2025" Build="16.0.10417.20018" Url="https://download.microsoft.com/download/146b0447-b399-4cc1-9470-ca68d1596bc1/wssloc2019-kb5002727-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002727-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="July 2025" Build="16.0.10417.20027" Url="https://download.microsoft.com/download/ef2fe4ee-1be2-4c88-9aee-9ece6ba35a19/sts2019-kb5002741-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002741-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="July 2025" Build="16.0.10417.20027" Url="https://download.microsoft.com/download/c537c231-5fd1-4cad-845c-6af8333ff45f/wssloc2019-kb5002739-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002739-fullfile-x64-glb.exe" />
+            <!--<CumulativeUpdate Name="July 2025" Build="16.0.10417.20027" Url="https://download.microsoft.com/download/ef2fe4ee-1be2-4c88-9aee-9ece6ba35a19/sts2019-kb5002741-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002741-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2025" Build="16.0.10417.20027" Url="https://download.microsoft.com/download/c537c231-5fd1-4cad-845c-6af8333ff45f/wssloc2019-kb5002739-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002739-fullfile-x64-glb.exe" />-->
+            <CumulativeUpdate Name="July 2025" Build="16.0.10417.20037" Url="https://download.microsoft.com/download/831702e4-0c45-4c0e-b5ac-f5504b85c056/sts2019-kb5002754-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002754-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2025" Build="16.0.10417.20037" Url="https://download.microsoft.com/download/c537c231-5fd1-4cad-845c-6af8333ff45f/wssloc2019-kb5002739-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002739-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -2815,7 +2817,8 @@
             <CumulativeUpdate Name="April 2025" Build="16.0.18526.20172" Url="https://download.microsoft.com/download/8ae22e05-14eb-401b-b979-ab2d2853c1e5/uber-subscription-kb5002705-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002705-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="May 2025" Build="16.0.18526.20286" Url="https://download.microsoft.com/download/0d0fac81-9f1b-4f9f-9269-0798f9e0666c/uber-subscription-kb5002709-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002709-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2025" Build="16.0.18526.20396" Url="https://download.microsoft.com/download/159a5f7c-b1ac-46c1-83e8-5949090ddcb1/uber-subscription-kb5002736-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002736-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="July 2025" Build="16.0.18526.20424" Url="https://download.microsoft.com/download/45736d53-3c43-430b-b6ee-7f56c29afff6/uber-subscription-kb5002751-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002751-fullfile-x64-glb.exe" />
+            <!--<CumulativeUpdate Name="July 2025" Build="16.0.18526.20424" Url="https://download.microsoft.com/download/45736d53-3c43-430b-b6ee-7f56c29afff6/uber-subscription-kb5002751-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002751-fullfile-x64-glb.exe" />-->
+            <CumulativeUpdate Name="July 2025" Build="16.0.18526.20508" Url="https://download.microsoft.com/download/e1f1440c-1192-4096-b9c9-31970e79671c/uber-subscription-kb5002768-fullfile-x64-glb.exe" ExpandedFile="uberuber-subscription-kb5002768-fullfile-x64-glb.exe" />            
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/d/e/7/de7aa90a-b01c-4123-84be-cdaf41a80bed/ServerLanguagePack.iso">

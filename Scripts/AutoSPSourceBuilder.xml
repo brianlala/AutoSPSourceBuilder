@@ -1629,8 +1629,11 @@
             <CumulativeUpdate Name="May 2025" Build="16.0.5500.1001" Url="https://download.microsoft.com/download/ef62a2b2-913b-4c04-a58a-4dbdce756924/wssloc2016-kb5002712-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002712-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2025" Build="16.0.5504.1001" Url="https://download.microsoft.com/download/dd9a9649-8cf4-471f-b1d9-cef5e11ce181/sts2016-kb5002732-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002732-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="June 2025" Build="16.0.5504.1001" Url="https://download.microsoft.com/download/aeaa67b7-b5d3-4b39-8015-ba584cdbd115/wssloc2016-kb5002731-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002731-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="July 2025" Build="16.0.5508.1000" Url="https://download.microsoft.com/download/3beda9c6-ee92-4d35-891e-25eab622aea5/sts2016-kb5002744-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002744-fullfile-x64-glb.exe" />
-            <CumulativeUpdate Name="July 2025" Build="16.0.5508.1000" Url="https://download.microsoft.com/download/7b4d9c50-d0c7-4a33-9b1b-3927ff1c51c8/wssloc2016-kb5002743-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002743-fullfile-x64-glb.exe" />
+            <!--<CumulativeUpdate Name="July 2025" Build="16.0.5508.1000" Url="https://download.microsoft.com/download/3beda9c6-ee92-4d35-891e-25eab622aea5/sts2016-kb5002744-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002744-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2025" Build="16.0.5508.1000" Url="https://download.microsoft.com/download/7b4d9c50-d0c7-4a33-9b1b-3927ff1c51c8/wssloc2016-kb5002743-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002743-fullfile-x64-glb.exe" />-->
+            <CumulativeUpdate Name="July 2025" Build="16.0.5513.1001" Url="https://download.microsoft.com/download/6fab547a-d8ff-4152-a2b0-f65c4c9a27e4/sts2016-kb5002760-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002760-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="July 2025" Build="16.0.5513.1001" Url="https://download.microsoft.com/download/385fd5e7-e818-43b2-85db-1815d38145f7/wssloc2016-kb5002759-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002759-fullfile-x64-glb.exe" />
+            
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">

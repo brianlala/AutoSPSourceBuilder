@@ -1646,6 +1646,8 @@
             <CumulativeUpdate Name="December 2025" Build="16.0.5530.1000" Url="https://download.microsoft.com/download/264c2dc1-14e6-40f1-9433-3c6ebe99d173/wssloc2016-kb5002804-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002804-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2026" Build="16.0.5535.1001" Url="https://download.microsoft.com/download/c39b9cba-a21d-4052-8d41-647d7595b9ed/sts2016-kb5002828-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002828-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2026" Build="16.0.5535.1001" Url="https://download.microsoft.com/download/b0b1b6ad-c270-47e7-9e78-c2979066a80f/wssloc2016-kb5002827-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002827-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2026" Build="16.0.5539.1002" Url="https://download.microsoft.com/download/f24258b7-7d66-411c-95b5-e2f0d62844b1/sts2016-kb5002841-fullfile-x64-glb.exe" ExpandedFile="sts2016-kb5002841-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2026" Build="16.0.5539.1002" Url="https://download.microsoft.com/download/2a30ecc6-ea34-4622-94dd-d089b9163d18/wssloc2016-kb5002840-fullfile-x64-glb.exe" ExpandedFile="wssloc2016-kb5002840-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/4/1/7/41789DDA-ABDD-45D2-AAB9-79025E69166B/serverlanguagepack.exe">
@@ -2287,6 +2289,8 @@
             <CumulativeUpdate Name="December 2025" Build="16.0.10417.20075" Url="https://download.microsoft.com/download/090112f0-89e6-45a7-ad30-8c79bdc84f0d/wssloc2019-kb5002802-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002802-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2026" Build="16.0.10417.20083" Url="https://download.microsoft.com/download/10d8bed9-fce1-4c64-aa42-a3cb143ebd93/sts2019-kb5002825-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002825-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2026" Build="16.0.10417.20083" Url="https://download.microsoft.com/download/a05bb35e-0dae-4fc3-9b93-e2cea5971724/wssloc2019-kb5002823-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002823-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2026" Build="16.0.10417.20097" Url="https://download.microsoft.com/download/01388571-7e1d-4197-b21d-8ceb42b68961/sts2019-kb5002834-fullfile-x64-glb.exe" ExpandedFile="sts2019-kb5002834-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2026" Build="16.0.10417.20097" Url="https://download.microsoft.com/download/388ec05b-ce54-42e7-a046-702e0200ebfc/wssloc2019-kb5002836-fullfile-x64-glb.exe" ExpandedFile="wssloc2019-kb5002836-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/D/6/4/D64A6203-2BB1-43AA-9EA6-365EE5A37E2F/serverlanguagepack.exe">
@@ -2566,6 +2570,7 @@
             <CumulativeUpdate Name="November 2025" Build="16.0.10417.20068" Url="https://download.microsoft.com/download/9d13094e-7444-41cb-bb44-29e649ac5caf/wacserver2019-kb5002801-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002801-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2025" Build="16.0.10417.20075" Url="https://download.microsoft.com/download/8b01b0af-d438-496f-a328-7342ba5197f6/wacserver2019-kb5002817-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002817-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2026" Build="16.0.10417.20083" Url="https://download.microsoft.com/download/ee2af7c0-052b-4487-95b0-9814a93fbc47/wacserver2019-kb5002824-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002824-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2026" Build="16.0.10417.20097" Url="https://download.microsoft.com/download/671e5c5a-5a44-43d3-ae8b-43c511b738dc/wacserver2019-kb5002835-fullfile-x64-glb.exe" ExpandedFile="wacserver2019-kb5002835-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="az-Latn-AZ" Url="https://download.microsoft.com/download/A/0/3/A03B732F-512B-4D29-A2FD-49873FEA60C3/wacserverlanguagepack.exe">
@@ -2859,6 +2864,7 @@
             <CumulativeUpdate Name="November 2025" Build="16.0.19127.20338" Url="https://download.microsoft.com/download/2ac104e1-555a-4186-9f83-ffca3ec88258/uber-subscription-kb5002800-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002800-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="December 2025" Build="16.0.19127.20378" Url="https://download.microsoft.com/download/8c890414-9cdb-47b9-9acc-8406465353da/uber-subscription-kb5002815-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002815-fullfile-x64-glb.exe" />
             <CumulativeUpdate Name="January 2026" Build="16.0.19127.20442" Url="https://download.microsoft.com/download/0d705c25-8e44-4581-aea4-f13fac719c56/uber-subscription-kb5002822-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002822-fullfile-x64-glb.exe" />
+            <CumulativeUpdate Name="February 2026" Build="16.0.19127.20518" Url="https://download.microsoft.com/download/893696ea-60b1-443b-9794-a303597e6c12/uber-subscription-kb5002833-fullfile-x64-glb.exe" ExpandedFile="uber-subscription-kb5002833-fullfile-x64-glb.exe" />
         </CumulativeUpdates>
         <LanguagePacks>
             <LanguagePack Name="ar-SA" Url="https://download.microsoft.com/download/d/e/7/de7aa90a-b01c-4123-84be-cdaf41a80bed/ServerLanguagePack.iso">

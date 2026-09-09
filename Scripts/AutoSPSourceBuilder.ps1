@@ -100,6 +100,21 @@ param
 
 #region Functions
 # ===================================================================================
+# Func: Test-IsISE
+# Desc: Checks wether running inside PowerShell ISE
+# ===================================================================================
+Function Test-IsISE
+{
+    try 
+    {    
+        return $psISE -ne $null;
+    }
+    catch {
+        return $false;
+    }
+}
+
+# ===================================================================================
 # Func: Pause
 # Desc: Wait for user to press a key - normally used after an error has occured or input is required
 # ===================================================================================
@@ -108,9 +123,26 @@ Function Pause($action, $key)
     # From http://www.microsoft.com/technet/scriptcenter/resources/pstips/jan08/pstip0118.mspx
     if ($key -eq "any" -or ([string]::IsNullOrEmpty($key)))
     {
-        $actionString = "Press any key to $action..."
-        Write-Host $actionString
-        $null = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+        if(Test-IsISE -eq $true)
+        {
+            # $host.UI.RawUI.ReadKey does not work in ISE
+            $actionString = "Press Enter to $action..."
+            Read-Host -Prompt $actionString
+        }
+        else
+        {
+			$actionString = "Press any key to $action..."
+            Write-Host $actionString
+            try
+            {
+                $null = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+            }
+            catch [System.NotImplementedException]
+            {
+                $actionString = "Press Enter to $action..."
+                Read-Host -Prompt $actionString
+            }
+        }
     }
     else
     {
@@ -183,18 +215,22 @@ Function DownloadPackage
                 while ($job.JobState -ne "Transferred")
                 {
                     $percentDone = "{0:N2}" -f $($job.BytesTransferred / $job.BytesTotal * 100) + "% - $($job.JobState)"
-                    Write-Host $percentDone -NoNewline
-                    Start-Sleep -Milliseconds 500
-                    $backspaceCount = (($percentDone).ToString()).Length
-                    for ($count = 1; $count -le $backspaceCount; $count++) {Write-Host "`b `b" -NoNewline}
+                    #Write-Host $percentDone -NoNewline
+					Write-Progress -Activity "Downloading $file..." -Status $percentDone -PercentComplete $($job.BytesTransferred / $job.BytesTotal * 100)					
+                    Start-Sleep -Milliseconds 500					
+					#$backspaceCount = (($percentDone).ToString()).Length
+					#for ($count = 1; $count -le $backspaceCount; $count++) {Write-Host "`b `b" -NoNewline}					
                     if ($job.JobState -like "*Error")
                     {
+						Write-Progress -Activity "Downloading $file..." -Status "Error" -Completed
                         Write-Host -ForegroundColor Yellow "  - An error occurred downloading $file, retrying..."
                         Resume-BitsTransfer -BitsJob $job -Asynchronous | Out-Null
                     }
                 }
-                Write-Output "  - Completing transfer..."
-                Complete-BitsTransfer -BitsJob $job
+                Write-Progress -Activity "Downloading $file..." -Status "Completing transfer..." -PercentComplete 100
+                Write-Output "  - Completing transfer..."				
+                Complete-BitsTransfer -BitsJob $job				
+				Write-Progress -Activity "Downloading $file..." -Status "Ready" -Completed
                 Write-Output " - Done!"
             }
         }
@@ -273,6 +309,13 @@ Function EnsureFolder ($Path)
             $global:errorWarning = $true
         }
     }
+}
+#endregion
+
+#region ISE Check
+if(Test-IsISE -eq $true)
+{
+    Write-Warning " - PowerShell ISE is no longer in active feature development. Use Visual Studio Code or plain PowerShell console instead."
 }
 #endregion
 
